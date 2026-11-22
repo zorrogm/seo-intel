@@ -39,7 +39,8 @@ class LiveCheck:
         if not await robots.allowed(url):
             return
         result = await fetcher.get(url)
-        if result.status == 0:
+        # A refusal or outage tells us nothing
+        if result.status == 0 or result.status == 429 or result.status >= 500:
             return
         page = {"status": result.status, "redirect_to": "", "title": "", "h1": "",
                 "canonical": "", "meta_robots": "", "text": ""}

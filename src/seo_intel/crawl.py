@@ -101,6 +101,9 @@ class SiteCrawl:
         self.run_number = 0
         self.min_id = 0
         self.seeding = False
+        # URLs the site refused for now
+        self.cooling: Set[int] = set()
+        self.deferrals: Dict[int, int] = {}
 
     def in_scope(self, url: str) -> bool:
         return site_key(url) == self.site and not looks_like_file(url)
@@ -183,7 +186,12 @@ class SiteCrawl:
 
     def _next_job(self):
         if not self.ready:
-            batch = self.store.take(self.site, config.FRONTIER_BATCH, self.busy, self.min_id)
+            held = self.busy | self.cooling
+            batch = self.store.take(self.site, config.FRONTIER_BATCH, held, self.min_id)
+            if not batch and self.cooling and not self.busy:
+                # Nothing else left: try the refused ones
+                self.cooling.clear()
+                batch = self.store.take(self.site, config.FRONTIER_BATCH, self.busy, self.min_id)
             self.ready.extend(batch)
         if not self.ready:
             return None
@@ -223,6 +231,12 @@ class SiteCrawl:
             self.store.mark(url_id, BLOCKED)
             return
         result = await self.fetcher.get(url)
+        tries = self.deferrals.get(url_id, 0)
+        if result.status in config.SLOW_DOWN_STATUSES and tries < config.MAX_DEFERRALS_PER_URL:
+            # Leave it queued and come back later
+            self.deferrals[url_id] = tries + 1
+            self.cooling.add(url_id)
+            return
         self._save(job, result)
         if self.run_number and result.status == 200:
             self.store.add_change(self.run_number, self.site, url, "new")
@@ -271,7 +285,7 @@ class SiteCrawl:
             job = self._next_job()
             if job is None:
                 # Done when nobody can add more
-                if not self.busy and not self.seeding:
+                if not self.busy and not self.seeding and not self.cooling:
                     return
                 await asyncio.sleep(config.IDLE_POLL_SECONDS)
                 continue

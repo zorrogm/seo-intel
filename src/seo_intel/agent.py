@@ -14,6 +14,8 @@ _SYSTEM = (
     "Candidate actions were found by code and each has verified claims. "
     "Steps: call list_actions, inspect the promising ones with get_action, "
     "optionally check pages, then call submit_plan once. "
+    f"Make at most {config.AGENT_MAX_LOOKUPS_PER_STEP} tool calls per step. "
+    "Prefer a mix of action types over many of one type. "
     f"Pick up to {config.PLAN_ACTIONS} actions, ordered by expected impact. "
     "For each write a one or two sentence rationale. "
     "Rules for a rationale: never write a number, a URL or a page title. "
@@ -123,15 +125,23 @@ def _too_big(body: Dict) -> bool:
     return size / config.LLM_CHARS_PER_TOKEN > config.LLM_PROMPT_TOKEN_BUDGET
 
 
-def _trim(contents: List[Dict]) -> bool:
-    """Blank the oldest tool result still intact."""
-    for message in contents[1:-1]:
-        for part in message.get("parts", []):
-            response = part.get("functionResponse")
-            if response and response["response"] != {"trimmed": True}:
-                response["response"] = {"trimmed": True}
-                return True
+def _blank(parts: List[Dict], note: Dict) -> bool:
+    for part in parts:
+        response = part.get("functionResponse")
+        if response and response["response"] != note:
+            response["response"] = note
+            return True
     return False
+
+
+def _trim(contents: List[Dict]) -> bool:
+    """Blank one tool result, oldest messages first."""
+    for message in contents[1:-1]:
+        if _blank(message.get("parts", []), {"trimmed": True}):
+            return True
+    # Last resort: shorten the newest answers, keep the first
+    newest = contents[-1].get("parts", [])
+    return _blank(list(reversed(newest[1:])), {"error": "too much at once, ask again"})
 
 
 def run_agent(candidates: List[Dict], facts: Facts, llm: Gemini) -> Optional[List[Dict]]:

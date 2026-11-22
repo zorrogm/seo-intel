@@ -22,6 +22,7 @@ class TrapGuard:
 
     def __init__(self):
         self.variants: Dict[str, Set[str]] = {}
+        self.pagination: Dict[str, Set[str]] = {}
         self.calendars: Dict[str, Set[str]] = {}
         self.last_year = time.gmtime().tm_year + config.CALENDAR_FUTURE_YEARS
 
@@ -40,6 +41,15 @@ class TrapGuard:
         pattern = f"{path}?{'&'.join(names)}"
         if len(names) > config.MAX_QUERY_PARAMS:
             return "faceted", pattern
+        # One numeric parameter is plain pagination
+        _name, _sep, value = query.partition("=")
+        if "&" not in query and value.isdigit():
+            pages = self.pagination.setdefault(path, set())
+            if query not in pages:
+                if len(pages) >= config.MAX_PAGINATION_PER_PATH:
+                    return "pagination", f"{pattern} over {config.MAX_PAGINATION_PER_PATH} pages"
+                pages.add(query)
+            return None
         seen = self.variants.setdefault(path, set())
         if query not in seen:
             if len(seen) >= config.MAX_QUERY_VARIANTS_PER_PATH:

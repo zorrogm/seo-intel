@@ -263,3 +263,16 @@ RENDER_WORD_GROWTH = 1.2
 RENDER_MIN_NEW_WORDS = 50
 RENDER_MIN_NEW_LINKS = 5
 RENDER_BLOCKED_RESOURCES = ("image", "media", "font", "stylesheet")
+
+# Back off when a site says slow down
+SLOW_DOWN_STATUSES = (429, 503)
+MAX_BACKOFF_GAP_SECONDS = 5.0
+SPEED_UP_FACTOR = 0.9
+MAX_DEFERRALS_PER_URL = 3
+
+# Numbered pages are not a filter trap
+MAX_PAGINATION_PER_PATH = 300
+
+# Keep the plan from being one kind of action
+PLAN_MAX_PER_TYPE = 8
+AGENT_MAX_LOOKUPS_PER_STEP = 6

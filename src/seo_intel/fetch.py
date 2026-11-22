@@ -34,9 +34,19 @@ class HostLimiter:
     """Spaces out request starts for one host."""
 
     def __init__(self, gap_seconds: float):
+        self.base_gap = gap_seconds
         self.gap = gap_seconds
         self.next_at = 0.0
         self.lock = asyncio.Lock()
+
+    def slow_down(self) -> None:
+        """The site asked us to ease off."""
+        self.gap = min(max(self.gap * 2, self.base_gap), config.MAX_BACKOFF_GAP_SECONDS)
+        self.gap = max(self.gap, self.base_gap)
+
+    def went_well(self) -> None:
+        """Drift back toward the normal pace."""
+        self.gap = max(self.base_gap, self.gap * config.SPEED_UP_FACTOR)
 
     async def wait(self) -> None:
         async with self.lock:
@@ -73,11 +83,16 @@ class Fetcher:
 
     async def _once(self, url: str, max_bytes: int, any_type: bool, headers) -> FetchResult:
         result = FetchResult()
-        await self._limiter(url).wait()
+        limiter = self._limiter(url)
+        await limiter.wait()
         self.requests += 1
         try:
             async with self.client.stream("GET", url, headers=headers) as response:
                 result.status = response.status_code
+                if result.status in config.SLOW_DOWN_STATUSES:
+                    limiter.slow_down()
+                else:
+                    limiter.went_well()
                 result.headers = {k.lower(): v for k, v in response.headers.items()}
                 result.location = result.header("location")
                 # Skip bodies we cannot use

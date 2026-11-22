@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import re
+from collections import Counter
 from typing import Dict, List
 
 from seo_intel import config
@@ -191,8 +192,17 @@ def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts, live=None
         if pick.get("id") in by_id and pick["id"] not in rationale_of:
             order.append(pick["id"])
             rationale_of[pick["id"]] = str(pick.get("rationale", ""))
-    # Fill up with the best remaining candidates
-    order += [c["id"] for c in candidates if c["id"] not in rationale_of]
+    # Fill up with the best of the rest, mixed by type
+    rest = [c for c in candidates if c["id"] not in rationale_of]
+    per_type = Counter(by_id[i]["type"] for i in order)
+    first, later = [], []
+    for candidate in rest:
+        if per_type[candidate["type"]] < config.PLAN_MAX_PER_TYPE:
+            per_type[candidate["type"]] += 1
+            first.append(candidate["id"])
+        else:
+            later.append(candidate["id"])
+    order += first + later
 
     actions, rejections = [], []
     for action_id in order:
