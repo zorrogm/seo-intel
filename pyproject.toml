@@ -14,6 +14,7 @@ dev = ["pytest>=8"]
 
 [project.scripts]
 seo-intel = "seo_intel.cli:main"
+seo-intel-judge = "seo_intel.judge:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

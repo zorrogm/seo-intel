@@ -238,3 +238,9 @@ HEAD_MIN_SHARED_TERMS = 2
 # Final live recheck of cited pages
 LIVE_CHECK_ROUNDS = 4
 LIVE_FIELDS = ("status", "redirect_to", "title", "h1", "canonical", "meta_robots", "sentence")
+
+# Judge harness
+JUDGE_BATCH = 5
+JUDGE_LABELS = ("sound", "unsound")
+JUDGE_REPORT_NAME = "judge_report.json"
+JUDGE_SHEET_NAME = "labels_to_fill.csv"
