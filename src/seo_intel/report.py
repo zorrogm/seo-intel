@@ -8,6 +8,7 @@ from typing import Dict, List
 from seo_intel import config
 from seo_intel import issues
 from seo_intel.analysis import Analysis
+from seo_intel.render import render_report
 from seo_intel.store import Store
 
 
@@ -90,6 +91,8 @@ def write_outputs(folder: Path, a: Analysis, plan: Dict, store: Store) -> None:
     write_json(out / "spider_traps.json", issues.trap_report(a, store))
     write_json(out / "soft_404s.json", issues.soft_404s(a))
     write_json(out / "change_report.json", issues.change_report(store))
+    write_json(out / "render_report.json",
+               render_report(store, [a.target_site, a.competitor_site]))
     write_json(out / "near_duplicates.json", a.near_duplicates)
     write_json(out / "cannibalization.json", {"groups": a.groups, "healthy_pairs": a.healthy})
     write_json(out / "gaps.json", a.gaps)

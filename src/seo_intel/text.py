@@ -14,6 +14,8 @@ from seo_intel import config
 _TOKEN = re.compile(r"[0-9a-zß-ɏ]+|[ऀ-ॣ०-ॿ]+")
 _SENTENCE_END = re.compile(r"(?<=[.!?।])\s+")
 _SPACES = re.compile(r"\s+")
+# Invisible joiners would split Hindi words
+_JOINERS = re.compile("[\u200c\u200d]")
 _PRIME = 4294967311
 _NO_SHINGLES = np.zeros(0, dtype=np.uint32)
 
@@ -24,7 +26,9 @@ def clean(text: str) -> str:
 
 
 def tokenize(text: str) -> List[str]:
-    return _TOKEN.findall(unicodedata.normalize("NFC", text).lower())
+    """Lowercase words in Latin or Devanagari script."""
+    text = _JOINERS.sub("", unicodedata.normalize("NFC", text))
+    return _TOKEN.findall(text.lower())
 
 
 def token_spans(text: str) -> List[Tuple[str, int, int]]:

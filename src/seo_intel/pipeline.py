@@ -14,6 +14,7 @@ from seo_intel.facts import Facts
 from seo_intel.live import LiveCheck
 from seo_intel.llm import Gemini
 from seo_intel.plan import build_candidates, finalise
+from seo_intel.render import render_stage
 from seo_intel.report import write_json, write_outputs
 from seo_intel.store import Store
 from seo_intel.urls import site_key
@@ -24,7 +25,7 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
         priority_urls: Optional[List[str]] = None, link_budget: int = config.LINK_BUDGET,
         gap_seconds: float = config.REQUEST_GAP_SECONDS, use_llm: bool = True,
         revalidate_after_hours: float = config.REVALIDATE_AFTER_HOURS,
-        live_check: bool = True) -> Dict:
+        live_check: bool = True, render: bool = True) -> Dict:
     crawl = asyncio.run(crawl_sites(
         [domain, competitor], folder, crawl_minutes, max_urls, gap_seconds, revalidate_after_hours
     ))
@@ -33,6 +34,8 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
     try:
         start = store.get_meta("start:" + domain) or ""
         competitor_start = store.get_meta("start:" + competitor) or ""
+        if render:
+            render_stage(store, [site_key(start), site_key(competitor_start)], gap_seconds)
         llm = Gemini(folder / config.LLM_CACHE_FOLDER, seed)
         analysis = analyse(
             store, site_key(start), site_key(competitor_start), start, competitor_start,

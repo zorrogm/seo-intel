@@ -1,0 +1,15 @@
+{
+ "state": "done",
+ "html_pages": 223,
+ "pages_that_need_javascript": 22,
+ "rendered": 24,
+ "rendered_share": 0.1076,
+ "caught": 22,
+ "recall": 1.0,
+ "false_alarms": 0,
+ "why": {
+  "raw HTML looks script built": 12,
+  "template needs JavaScript": 8,
+  "template sample": 4
+ }
+}

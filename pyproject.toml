@@ -7,7 +7,7 @@ name = "seo-intel"
 version = "0.1.0"
 description = "Crawl a site and a competitor, find cannibalization, gaps and the best internal links, and write a fact-checked action plan."
 requires-python = ">=3.9"
-dependencies = ["httpx>=0.27", "selectolax>=0.3.27", "numpy>=1.24"]
+dependencies = ["httpx>=0.27", "selectolax>=0.3.27", "numpy>=1.24", "playwright>=1.40"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]

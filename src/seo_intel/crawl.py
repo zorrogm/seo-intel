@@ -242,7 +242,7 @@ class SiteCrawl:
         if result.status == 200 and result.body and result.is_html():
             if hashlib.sha256(result.body).hexdigest() == body_hash:
                 return
-            old = parse_page(self.store.body(url_id), url) if status == 200 and body_hash else None
+            old = parse_page(self.store.raw_body(url_id), url) if status == 200 and body_hash else None
             scan = self._save((url_id, url, depth), result)
             if old is None:
                 return

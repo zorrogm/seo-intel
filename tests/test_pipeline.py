@@ -32,7 +32,7 @@ def test_full_run_writes_every_output(sites, tmp_path):
     assert names == {
         "action_plan.json", "action_plan.md", "cannibalization.json", "change_report.json",
         "crawl_issues.json", "crawl_summary.json", "gaps.json", "internal_links.json",
-        "near_duplicates.json", "soft_404s.json", "spider_traps.json",
+        "near_duplicates.json", "render_report.json", "soft_404s.json", "spider_traps.json",
     }
 
 

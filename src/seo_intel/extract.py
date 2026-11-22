@@ -81,11 +81,20 @@ def parse_page(body: bytes, url: str) -> Dict:
         "canonical": normalize(canonical, base) or "" if canonical else "",
         "meta_robots": _attr(tree, 'meta[name="robots"]', "content").lower(),
         "hreflang": sorted(set(alternates)),
+        "script_bytes": 0,
+        "external_scripts": 0,
+        "noscript_js": False,
         "blocks": [],
     }
     root = tree.body
     if root is None:
         return page
+    # Script weight hints at JavaScript built pages
+    scripts = tree.css("script")
+    page["script_bytes"] = sum(len(tag.text(deep=True) or "") for tag in scripts)
+    page["external_scripts"] = sum(1 for tag in scripts if tag.attributes.get("src"))
+    notes = " ".join(_text(tag) for tag in tree.css("noscript")).lower()
+    page["noscript_js"] = "javascript" in notes
     tree.strip_tags(list(config.STRIP_TAGS))
 
     block_nodes = [n for n in root.traverse() if n.tag in _BLOCK]

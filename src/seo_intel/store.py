@@ -35,6 +35,8 @@ CREATE TABLE IF NOT EXISTS pages(
   body_hash TEXT NOT NULL DEFAULT '',
   body BLOB,
   truncated INTEGER NOT NULL DEFAULT 0,
+  rendered_body BLOB,
+  render_hash TEXT NOT NULL DEFAULT '',
   fetched_at REAL NOT NULL
 );
 CREATE TABLE IF NOT EXISTS robots(
@@ -64,10 +66,22 @@ CREATE TABLE IF NOT EXISTS changes(
   new TEXT NOT NULL DEFAULT '',
   PRIMARY KEY(run, url, kind)
 );
+CREATE TABLE IF NOT EXISTS renders(
+  url_id INTEGER PRIMARY KEY REFERENCES urls(id),
+  reason TEXT NOT NULL,
+  raw_words INTEGER NOT NULL,
+  rendered_words INTEGER NOT NULL,
+  differs INTEGER NOT NULL
+);
 CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 """
 
 Job = Tuple[int, str, int]
+_ADDED_COLUMNS = (
+    ("redirect_kind", "TEXT NOT NULL DEFAULT ''"),
+    ("rendered_body", "BLOB"),
+    ("render_hash", "TEXT NOT NULL DEFAULT ''"),
+)
 
 
 class Store:
@@ -78,6 +92,11 @@ class Store:
         self.db.execute("PRAGMA journal_mode=WAL")
         self.db.execute("PRAGMA synchronous=NORMAL")
         self.db.executescript(_SCHEMA)
+        # Older stores gain the newer columns
+        have = {row[1] for row in self.db.execute("PRAGMA table_info(pages)")}
+        for name, kind in _ADDED_COLUMNS:
+            if name not in have:
+                self.db.execute(f"ALTER TABLE pages ADD COLUMN {name} {kind}")
         self.max_urls_per_site = max_urls_per_site
 
     def close(self) -> None:
@@ -170,13 +189,49 @@ class Store:
         self.db.execute("INSERT OR REPLACE INTO meta(key, value) VALUES(?,?)", (key, value))
 
     def body(self, url_id: int) -> bytes:
+        """Rendered HTML when we have it, else raw."""
+        row = self.db.execute(
+            "SELECT COALESCE(rendered_body, body) FROM pages WHERE url_id=?", (url_id,)
+        ).fetchone()
+        return zlib.decompress(row[0]) if row and row[0] else b""
+
+    def raw_body(self, url_id: int) -> bytes:
         row = self.db.execute("SELECT body FROM pages WHERE url_id=?", (url_id,)).fetchone()
         return zlib.decompress(row[0]) if row and row[0] else b""
+
+    def save_render(self, url_id: int, html: bytes, reason: str, raw_words: int,
+                    rendered_words: int, differs: bool) -> None:
+        """Record a render; keep its HTML if it differs."""
+        self.db.execute("BEGIN IMMEDIATE")
+        if differs:
+            self.db.execute(
+                "UPDATE pages SET rendered_body=?, render_hash=? WHERE url_id=?",
+                (zlib.compress(html, 6), hashlib.sha256(html).hexdigest(), url_id),
+            )
+        self.db.execute(
+            "INSERT OR REPLACE INTO renders(url_id, reason, raw_words, rendered_words, differs)"
+            " VALUES(?,?,?,?,?)", (url_id, reason, raw_words, rendered_words, int(differs)),
+        )
+        self.db.execute("COMMIT")
+
+    def flag_render(self, url_id: int, reason: str, raw_words: int) -> None:
+        """Needs rendering, but the budget ran out."""
+        self.db.execute(
+            "INSERT OR IGNORE INTO renders(url_id, reason, raw_words, rendered_words, differs)"
+            " VALUES(?,?,?,-1,1)", (url_id, reason, raw_words),
+        )
+
+    def renders(self, site: str) -> List[Tuple]:
+        return self.db.execute(
+            "SELECT u.url, r.reason, r.raw_words, r.rendered_words, r.differs FROM renders r"
+            " JOIN urls u ON u.id = r.url_id WHERE u.site=? ORDER BY u.url", (site,)
+        ).fetchall()
 
     def fetched_rows(self, site: str) -> List[Tuple]:
         """Every fetched page of a site, by URL."""
         return self.db.execute(
-            "SELECT u.id, u.url, p.status, p.redirect_to, p.x_robots_tag, p.body_hash,"
+            "SELECT u.id, u.url, p.status, p.redirect_to, p.x_robots_tag,"
+            " CASE WHEN p.render_hash != '' THEN p.render_hash ELSE p.body_hash END,"
             " p.redirect_kind"
             " FROM urls u JOIN pages p ON p.url_id = u.id WHERE u.site=? ORDER BY u.url",
             (site,),
