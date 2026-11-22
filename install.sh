@@ -11,6 +11,10 @@ PYTHON="${PYTHON:-python3}"
 .venv/bin/python -m pip install --quiet --upgrade pip
 .venv/bin/python -m pip install --quiet .
 # Browser used for pages built by JavaScript
+# The browser driver needs this library on bare Linux
+if command -v apt-get >/dev/null 2>&1 && [ "$(id -u)" = "0" ]; then
+  apt-get install -y -qq libatomic1 >/dev/null 2>&1 || true
+fi
 # On Linux, system libraries come along when allowed
 .venv/bin/python -m playwright install --with-deps chromium 2>/dev/null \
   || .venv/bin/python -m playwright install chromium \
