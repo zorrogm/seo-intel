@@ -23,6 +23,7 @@ class Page:
     redirect_kind: str = ""
     x_robots: str = ""
     soft_404: str = ""
+    lang: str = ""
     total_words: int = 0
     title: str = ""
     h1: str = ""
@@ -78,9 +79,15 @@ def _fill(page: Page, data: Dict, template) -> None:
             main_blocks.append(block[2])
         for target, anchor in block[3]:
             page.links.append((target, anchor, in_content))
+    page.lang = data.get("lang", "")
     page.sentences = [s for b in main_blocks for s in sentences(b)]
     # Shared word objects keep memory low
     page.tokens = [sys.intern(t) for t in tokenize("\n".join(main_blocks))]
+    if not page.lang and page.tokens:
+        # No lang tag: guess Hindi from the script
+        hindi = sum("\u0900" <= t[0] <= "\u097f" for t in page.tokens)
+        if hindi / len(page.tokens) >= config.DEVANAGARI_MIN_SHARE:
+            page.lang = "hi"
 
 
 def _probe_page(store: Store, site: str, template) -> Optional[Page]:

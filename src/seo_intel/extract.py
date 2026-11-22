@@ -75,6 +75,7 @@ def parse_page(body: bytes, url: str) -> Dict:
         if alt:
             alternates.append(alt)
     page = {
+        "lang": _attr(tree, "html", "lang").lower().split("-")[0],
         "title": _text(tree.css_first("title")),
         "h1": _text(tree.css_first("h1")),
         "canonical": normalize(canonical, base) or "" if canonical else "",

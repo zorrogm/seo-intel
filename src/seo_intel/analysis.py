@@ -6,7 +6,7 @@ from typing import Dict, List, Optional, Set
 
 import numpy as np
 
-from seo_intel import config, graph, similar, topics
+from seo_intel import config, graph, intent, similar, topics
 from seo_intel.corpus import Page, load_site
 from seo_intel.store import Store
 from seo_intel.text import tokenize
@@ -26,6 +26,8 @@ class Analysis:
     labels: np.ndarray
     top_terms: List[List[str]]
     idf: Dict[str, float]
+    sparse: List[Dict[str, float]]
+    heads: List[Dict[str, float]]
     intents: List[str]
     shingle_sets: List[np.ndarray]
     anchors: Dict[int, List[str]]
@@ -54,10 +56,19 @@ def _default_priority(a: Analysis) -> List[int]:
 
 
 def analyse(store: Store, target_site: str, competitor_site: str, start: str,
-            competitor_start: str, seed: int, priority_urls: Optional[List[str]], budget: int) -> Analysis:
+            competitor_start: str, seed: int, priority_urls: Optional[List[str]],
+            budget: int, llm=None) -> Analysis:
     ours = load_site(store, target_site, start)
     different = competitor_site != target_site
     theirs = load_site(store, competitor_site, competitor_start) if different else []
+    return analyse_pages(ours, theirs, target_site, competitor_site, start, seed,
+                         priority_urls, budget, llm)
+
+
+def analyse_pages(ours: List[Page], theirs: List[Page], target_site: str,
+                  competitor_site: str, start: str, seed: int,
+                  priority_urls: Optional[List[str]], budget: int, llm=None) -> Analysis:
+    """Every analysis stage, given loaded pages."""
     pages = ours + theirs
     index = {p.url: i for i, p in enumerate(pages)}
     resolve = graph.resolver(pages)
@@ -72,9 +83,14 @@ def analyse(store: Store, target_site: str, competitor_site: str, start: str,
     rows = [i for i, p in enumerate(pages) if p.indexable and p.tokens]
     row_of = {page: row for row, page in enumerate(rows)}
     docs = [topics.weighted_tokens(pages[i], anchors.get(i, ())) for i in rows]
-    vectors, top_terms, idf = topics.build_vectors(docs)
+    vectors, top_terms, idf, sparse = topics.build_vectors(docs)
+    heads = topics.head_vectors(pages, rows, anchors, idf)
     labels = topics.cluster(vectors, seed)
-    intents = [topics.intent_of(p, anchors.get(i, ())) for i, p in enumerate(pages)]
+    judged = [intent.rule_intent(p, anchors.get(i, ())) for i, p in enumerate(pages)]
+    intents = [label for label, _unsure in judged]
+    if llm is not None:
+        unsure = [i for i in rows if judged[i][1]]
+        intent.refine_with_llm(pages, intents, unsure, llm)
     shingle_sets = similar.page_shingles(pages)
 
     count = len(ours)
@@ -91,7 +107,7 @@ def analyse(store: Store, target_site: str, competitor_site: str, start: str,
     a = Analysis(
         target_site=target_site, competitor_site=competitor_site, pages=pages, index=index,
         target_count=count, rows=rows, row_of=row_of, vectors=vectors, labels=labels,
-        top_terms=top_terms, idf=idf, intents=intents, shingle_sets=shingle_sets,
+        top_terms=top_terms, idf=idf, sparse=sparse, heads=heads, intents=intents, shingle_sets=shingle_sets,
         anchors=anchors, edges=weighted, rank=rank, depth=depth_all, inlinks=inlinks,
         resolve=resolve,
     )
@@ -104,6 +120,7 @@ def analyse(store: Store, target_site: str, competitor_site: str, start: str,
     a.groups, a.healthy = topics.find_cannibalization(
         pages, [rows[r] for r in our_rows], vectors[our_rows], labels[our_rows],
         intents, shingle_sets, inlinks, depth_all, anchor_tokens,
+        [sparse[r] for r in our_rows], [heads[r] for r in our_rows],
     )
     a.gaps = topics.find_gaps(pages, rows, labels, top_terms, target_site)
 

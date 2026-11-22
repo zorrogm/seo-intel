@@ -214,3 +214,23 @@ SWAP_SHORTLIST = 6
 CHROME_PATH_MIN_SHARE = 0.30
 CHROME_PATH_LINK_DENSITY = 0.60
 PATH_LABEL_LEVELS = 3
+
+# Languages
+LANGUAGE_MIN_SHARE = 0.05
+DEVANAGARI_MIN_SHARE = 0.5
+
+# LLM help for unclear intent
+INTENT_LLM_BATCH = 25
+INTENT_LLM_MAX_PAGES = 100
+INTENT_CURRENCY_MARKS = ("$", "₹", "€", "£", "rs.", "inr", "usd")
+INTENT_CURRENCY_MIN_HITS = 3
+INTENTS = ("informational", "commercial", "transactional", "navigational")
+
+# Exact check after the fast vector match
+EXACT_TERMS_PER_PAGE = 80
+GROUP_MIN_LINK_SHARE = 0.5
+
+# Title, heading and anchor matching channel
+HEAD_MIN_SIMILARITY = 0.70
+HEAD_TERM_MAX_PAGES = 30
+HEAD_MIN_SHARED_TERMS = 2

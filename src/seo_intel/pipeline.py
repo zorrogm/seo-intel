@@ -31,13 +31,13 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
     try:
         start = store.get_meta("start:" + domain) or ""
         competitor_start = store.get_meta("start:" + competitor) or ""
+        llm = Gemini(folder / config.LLM_CACHE_FOLDER, seed)
         analysis = analyse(
             store, site_key(start), site_key(competitor_start), start, competitor_start,
-            seed, priority_urls, link_budget,
+            seed, priority_urls, link_budget, llm if use_llm else None,
         )
         facts = Facts(analysis, store)
         candidates = build_candidates(analysis, facts)
-        llm = Gemini(folder / config.LLM_CACHE_FOLDER, seed)
         picks = run_agent(candidates, facts, llm) if use_llm else None
         plan = finalise(candidates, picks or [], facts)
         write_outputs(folder, analysis, plan, store)

@@ -1,0 +1,51 @@
+[
+ {
+  "setup": "all signals",
+  "groups_reported": 30,
+  "precision_all_groups": 1.0,
+  "precision_at_20": 1.0,
+  "recall_of_planted_groups": 1.0
+ },
+ {
+  "setup": "no title or heading",
+  "groups_reported": 30,
+  "precision_all_groups": 1.0,
+  "precision_at_20": 1.0,
+  "recall_of_planted_groups": 1.0
+ },
+ {
+  "setup": "no anchor text",
+  "groups_reported": 30,
+  "precision_all_groups": 1.0,
+  "precision_at_20": 1.0,
+  "recall_of_planted_groups": 1.0
+ },
+ {
+  "setup": "no title, heading or anchors",
+  "groups_reported": 15,
+  "precision_all_groups": 1.0,
+  "precision_at_20": 1.0,
+  "recall_of_planted_groups": 0.5
+ },
+ {
+  "setup": "no template removal",
+  "groups_reported": 30,
+  "precision_all_groups": 1.0,
+  "precision_at_20": 1.0,
+  "recall_of_planted_groups": 1.0
+ },
+ {
+  "setup": "no intent check",
+  "groups_reported": 40,
+  "precision_all_groups": 0.75,
+  "precision_at_20": 1.0,
+  "recall_of_planted_groups": 1.0
+ },
+ {
+  "setup": "no healthy pair rules",
+  "groups_reported": 50,
+  "precision_all_groups": 0.6,
+  "precision_at_20": 0.5,
+  "recall_of_planted_groups": 1.0
+ }
+]

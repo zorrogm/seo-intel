@@ -8,7 +8,7 @@ from seo_intel.analysis import Analysis
 from seo_intel.extract import parse_page
 from seo_intel.store import Store
 from seo_intel.text import jaccard
-from seo_intel.topics import dot
+from seo_intel.topics import pair_similarity
 
 PAGE_FIELDS = (
     "status", "title", "h1", "canonical", "redirect_to", "meta_robots",
@@ -47,7 +47,7 @@ class Facts:
             return round(overlap, config.FLOAT_DIGITS)
         if name == "topic_similarity":
             row_a, row_b = self.a.row_of[a], self.a.row_of[b]
-            cosine = float(dot(self.a.vectors[row_a], self.a.vectors[row_b]))
+            cosine = pair_similarity(row_a, row_b, self.a.sparse, self.a.heads)
             return round(cosine, config.FLOAT_DIGITS)
         if name == "links_to":
             return (a, b) in self.a.edges

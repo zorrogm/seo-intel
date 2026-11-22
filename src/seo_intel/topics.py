@@ -37,8 +37,8 @@ def weighted_tokens(page: Page, anchors: Sequence[str]) -> Counter:
     return counts
 
 
-def build_vectors(docs: List[Counter]) -> Tuple[np.ndarray, List[List[str]], Dict[str, float]]:
-    """Hashed TF-IDF vectors, top terms and IDF."""
+def build_vectors(docs: List[Counter]):
+    """Hashed TF-IDF vectors, top terms, IDF, exact terms."""
     total = len(docs)
     seen = Counter()
     for doc in docs:
@@ -53,6 +53,7 @@ def build_vectors(docs: List[Counter]) -> Tuple[np.ndarray, List[List[str]], Dic
     slots: Dict[str, Tuple[int, float]] = {}
     vectors = np.zeros((total, size), dtype=np.float32)
     top_terms = []
+    sparse: List[Dict[str, float]] = []
     for row, doc in enumerate(docs):
         weights = []
         for token, count in doc.items():
@@ -67,9 +68,58 @@ def build_vectors(docs: List[Counter]) -> Tuple[np.ndarray, List[List[str]], Dic
             weights.append((-weight, token))
         weights.sort()
         top_terms.append([token for _w, token in weights[:8]])
+        # Strongest terms, unit length, for exact checks
+        kept = weights[: config.EXACT_TERMS_PER_PAGE]
+        length = math.sqrt(sum(w * w for w, _t in kept)) or 1.0
+        sparse.append({token: -w / length for w, token in kept})
     norms = np.linalg.norm(vectors, axis=1, keepdims=True)
     norms[norms == 0] = 1.0
-    return vectors / norms, top_terms, idf
+    return vectors / norms, top_terms, idf, sparse
+
+
+def head_vectors(pages: List[Page], rows: List[int], anchors, idf: Dict[str, float]):
+    """Unit vectors from title, heading and anchors only."""
+    heads = []
+    for index in rows:
+        page = pages[index]
+        counts = Counter(tokenize(page.title)) + Counter(tokenize(page.h1))
+        for anchor in anchors.get(index, ()):
+            counts.update(tokenize(anchor))
+        weights = {t: (1 + math.log(n)) * idf[t] for t, n in counts.items() if t in idf}
+        length = math.sqrt(sum(w * w for w in weights.values())) or 1.0
+        heads.append({token: w / length for token, w in weights.items()})
+    return heads
+
+
+def head_candidates(heads: List[Dict[str, float]]) -> List[Tuple[int, int]]:
+    """Row pairs sharing rare title terms, via an index."""
+    by_term: Dict[str, List[int]] = {}
+    for row, head in enumerate(heads):
+        for token in head:
+            by_term.setdefault(token, []).append(row)
+    shared = Counter()
+    for token in sorted(by_term):
+        members = by_term[token]
+        # Common title words would pair everything
+        if 2 <= len(members) <= config.HEAD_TERM_MAX_PAGES:
+            for i, a in enumerate(members):
+                for b in members[i + 1 :]:
+                    shared[(a, b)] += 1
+    return sorted(pair for pair, n in shared.items() if n >= config.HEAD_MIN_SHARED_TERMS)
+
+
+def pair_similarity(a: int, b: int, sparse, heads) -> float:
+    """Best of body match and title match."""
+    body = exact_similarity(sparse[a], sparse[b])
+    head = exact_similarity(heads[a], heads[b])
+    return max(body, head if head >= config.HEAD_MIN_SIMILARITY else 0.0)
+
+
+def exact_similarity(a: Dict[str, float], b: Dict[str, float]) -> float:
+    """Cosine over real terms, no hashing noise."""
+    if len(a) > len(b):
+        a, b = b, a
+    return sum(weight * b[token] for token, weight in a.items() if token in b)
 
 
 def cluster(vectors: np.ndarray, seed: int) -> np.ndarray:
@@ -95,18 +145,6 @@ def cluster(vectors: np.ndarray, seed: int) -> np.ndarray:
     return labels
 
 
-def intent_of(page: Page, anchors: Sequence[str]) -> str:
-    """Informational, commercial, transactional or navigational."""
-    strong = tokenize(page.title) + tokenize(page.h1) + tokenize(urlsplit(page.url).path)
-    weak = [t for anchor in anchors for t in tokenize(anchor)]
-    best, best_score = config.DEFAULT_INTENT, config.INTENT_MIN_SCORE - 1
-    for intent, words in config.INTENT_WORDS.items():
-        score = 2 * sum(t in words for t in strong) + sum(t in words for t in weak)
-        if score > best_score:
-            best, best_score = intent, score
-    return best
-
-
 def _without_page_number(url: str) -> str:
     url = _PAGE_PATH.sub("/", url)
     return _PAGE_PARAM.sub(r"\1", url).rstrip("?&/")
@@ -114,6 +152,8 @@ def _without_page_number(url: str) -> str:
 
 def healthy_reason(a: Page, b: Page) -> str:
     """Why two similar pages are fine together."""
+    if a.lang and b.lang and a.lang != b.lang:
+        return "language versions"
     if b.url in a.hreflang or a.url in b.hreflang:
         return "language versions"
     if _without_page_number(a.url) == _without_page_number(b.url):
@@ -142,13 +182,36 @@ def pair_signals(a: int, b: int, similarity: float, shingle_sets, inlinks, depth
     }
 
 
+def _tight(pairs: List[Tuple[int, int]]) -> List[Tuple[int, int]]:
+    """Drop members tied to few others in the group."""
+    members = {i for pair in pairs for i in pair}
+    ties = Counter(i for pair in pairs for i in pair)
+    needed = config.GROUP_MIN_LINK_SHARE * (len(members) - 1)
+    loose = {i for i in members if ties[i] < needed}
+    return [pair for pair in pairs if pair[0] not in loose and pair[1] not in loose]
+
+
 def find_cannibalization(pages: List[Page], rows: List[int], vectors: np.ndarray,
                          labels: np.ndarray, intents: List[str], shingle_sets,
-                         inlinks, depth, anchor_tokens) -> Tuple[List[Dict], List[Dict]]:
+                         inlinks, depth, anchor_tokens, sparse, heads) -> Tuple[List[Dict], List[Dict]]:
     """Groups of pages competing for one intent."""
     by_topic: Dict[int, List[int]] = {}
     for row, page_index in enumerate(rows):
         by_topic.setdefault(int(labels[row]), []).append(row)
+
+    # Channel one: close in the shared topic space
+    candidates = set()
+    cap = config.CLUSTER_PAIR_CAP
+    for topic in sorted(by_topic):
+        members = by_topic[topic]
+        # Big topics are compared in fixed chunks
+        for start in range(0, len(members), cap):
+            chunk = members[start : start + cap]
+            sims = dot(vectors[chunk], vectors[chunk].T)
+            close = np.argwhere(np.triu(sims >= config.CANNIBAL_MIN_SIMILARITY, k=1))
+            candidates.update((chunk[i], chunk[j]) for i, j in close)
+    # Channel two: nearly the same title and anchors
+    candidates.update(head_candidates(heads))
 
     parent = {}
 
@@ -160,29 +223,27 @@ def find_cannibalization(pages: List[Page], rows: List[int], vectors: np.ndarray
 
     pair_info: Dict[Tuple[int, int], Dict] = {}
     healthy = []
-    cap = config.CLUSTER_PAIR_CAP
-    for topic in sorted(by_topic):
-        members = by_topic[topic]
-        # Big topics are compared in fixed chunks
-        for start in range(0, len(members), cap):
-            chunk = members[start : start + cap]
-            sims = dot(vectors[chunk], vectors[chunk].T)
-            close = np.argwhere(np.triu(sims >= config.CANNIBAL_MIN_SIMILARITY, k=1))
-            for i, j in close:
-                a, b = rows[chunk[i]], rows[chunk[j]]
-                if intents[a] != intents[b]:
-                    continue
-                reason = healthy_reason(pages[a], pages[b])
-                if reason:
-                    healthy.append({"url_a": pages[a].url, "url_b": pages[b].url, "reason": reason})
-                    continue
-                signals = pair_signals(a, b, sims[i, j], shingle_sets, inlinks, depth, anchor_tokens)
-                pair_info[(a, b)] = signals
-                parent[find(a)] = find(b)
+    for row_a, row_b in sorted(candidates):
+        a, b = rows[row_a], rows[row_b]
+        if intents[a] != intents[b]:
+            continue
+        # Confirm on real terms before trusting it
+        similarity = pair_similarity(row_a, row_b, sparse, heads)
+        if similarity < config.CANNIBAL_MIN_SIMILARITY:
+            continue
+        reason = healthy_reason(pages[a], pages[b])
+        if reason:
+            healthy.append({"url_a": pages[a].url, "url_b": pages[b].url, "reason": reason})
+            continue
+        signals = pair_signals(a, b, similarity, shingle_sets, inlinks, depth, anchor_tokens)
+        pair_info[(a, b)] = signals
+        parent[find(a)] = find(b)
 
     grouped: Dict[int, List[Tuple[int, int]]] = {}
     for pair in pair_info:
         grouped.setdefault(find(pair[0]), []).append(pair)
+    grouped = {key: _tight(pairs) for key, pairs in grouped.items()}
+    grouped = {key: pairs for key, pairs in grouped.items() if pairs}
 
     groups = []
     digits = config.FLOAT_DIGITS
@@ -209,9 +270,15 @@ def find_cannibalization(pages: List[Page], rows: List[int], vectors: np.ndarray
 def find_gaps(pages: List[Page], rows: List[int], labels: np.ndarray,
               top_terms: List[List[str]], target_site: str) -> List[Dict]:
     """Topics the competitor covers deeply and we barely do."""
+    ours = [p for p in pages if p.site == target_site and p.indexable]
+    spoken = Counter(p.lang for p in ours if p.lang)
+    known = {lang for lang, n in spoken.items() if n >= config.LANGUAGE_MIN_SHARE * len(ours)}
     topics: Dict[int, Dict] = {}
     for row, page_index in enumerate(rows):
         page = pages[page_index]
+        # Skip competitor pages in languages we lack
+        if page.site != target_site and known and page.lang and page.lang not in known:
+            continue
         topic = topics.setdefault(int(labels[row]), {"ours": [], "theirs": [], "terms": Counter()})
         topic["ours" if page.site == target_site else "theirs"].append(page)
         if page.site != target_site:
