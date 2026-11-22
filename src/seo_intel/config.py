@@ -158,6 +158,8 @@ LLM_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:gener
 LLM_TEMPERATURE = 0.0
 LLM_MAX_OUTPUT_TOKENS = 4096
 LLM_TIMEOUT_SECONDS = 60.0
+# Free tier allows 15 calls a minute
+LLM_MIN_GAP_SECONDS = 4.5
 LLM_MAX_STEPS = 12
 # Leave headroom under the 8,000 token cap
 LLM_PROMPT_TOKEN_BUDGET = 6500

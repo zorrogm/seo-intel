@@ -40,6 +40,7 @@ class Gemini:
         self.output_tokens = 0
         self.max_prompt_tokens = 0
         self.last_error = ""
+        self.last_call = 0.0
 
     @property
     def cost(self) -> float:
@@ -59,6 +60,11 @@ class Gemini:
         url = config.LLM_URL.format(model=config.LLM_MODEL)
         last = "no attempt"
         for attempt in range(config.FETCH_RETRIES + 1):
+            # Stay under the per minute call limit
+            wait = self.last_call + config.LLM_MIN_GAP_SECONDS - time.monotonic()
+            if wait > 0:
+                time.sleep(wait)
+            self.last_call = time.monotonic()
             try:
                 response = httpx.post(
                     url, json=body, headers={"x-goog-api-key": self.key},
