@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import asyncio
 from dataclasses import dataclass, field
-from typing import Dict
+from typing import Dict, Optional
 from urllib.parse import urlsplit
 
 import httpx
@@ -40,11 +40,12 @@ class HostLimiter:
 
     async def wait(self) -> None:
         async with self.lock:
-            now = asyncio.get_running_loop().time()
-            if self.next_at > now:
-                await asyncio.sleep(self.next_at - now)
-                now = self.next_at
-            self.next_at = now + self.gap
+            loop = asyncio.get_running_loop()
+            wait = self.next_at - loop.time()
+            if wait > 0:
+                await asyncio.sleep(wait)
+            # Measure from the real start, never bunch
+            self.next_at = loop.time() + self.gap
 
 
 class Fetcher:
@@ -70,12 +71,12 @@ class Fetcher:
             self.limiters[host] = HostLimiter(self.gap)
         return self.limiters[host]
 
-    async def _once(self, url: str, max_bytes: int, any_type: bool) -> FetchResult:
+    async def _once(self, url: str, max_bytes: int, any_type: bool, headers) -> FetchResult:
         result = FetchResult()
         await self._limiter(url).wait()
         self.requests += 1
         try:
-            async with self.client.stream("GET", url) as response:
+            async with self.client.stream("GET", url, headers=headers) as response:
                 result.status = response.status_code
                 result.headers = {k.lower(): v for k, v in response.headers.items()}
                 result.location = result.header("location")
@@ -104,12 +105,13 @@ class Fetcher:
         return min(max(wait, 0.0), config.MAX_RETRY_WAIT_SECONDS)
 
     async def get(
-        self, url: str, max_bytes: int = config.MAX_BODY_BYTES, any_type: bool = False
+        self, url: str, max_bytes: int = config.MAX_BODY_BYTES, any_type: bool = False,
+        headers: Optional[Dict[str, str]] = None,
     ) -> FetchResult:
         """Fetch one URL, retrying temporary failures."""
         result = FetchResult()
         for attempt in range(config.FETCH_RETRIES + 1):
-            result = await self._once(url, max_bytes, any_type)
+            result = await self._once(url, max_bytes, any_type, headers)
             if result.status and result.status not in _RETRY_STATUSES:
                 break
             if attempt < config.FETCH_RETRIES:

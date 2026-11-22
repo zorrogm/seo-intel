@@ -12,6 +12,30 @@ _SAFE_QUERY = "/%:@!$&'()*+,;=~-._?"
 _ESCAPE = re.compile(r"%[0-9a-fA-F]{2}")
 _JUNK = re.compile(r"[\t\r\n]")
 _DEFAULT_PORTS = {"http": 80, "https": 443}
+_PATH_SESSION = re.compile(r";jsessionid=[^/?#]*", re.I)
+_SESSION = frozenset(name.lower() for name in config.SESSION_PARAMS)
+_NOISE = frozenset(config.NOISE_PARAMS) | _SESSION
+
+
+def _is_noise(name: str) -> bool:
+    name = name.lower()
+    return name in _NOISE or name.startswith(config.NOISE_PARAM_PREFIXES)
+
+
+def _clean_query(query: str) -> str:
+    """Drop tracking and session parameters."""
+    kept = [pair for pair in query.split("&") if pair and not _is_noise(pair.split("=")[0])]
+    return "&".join(kept)
+
+
+def session_param(raw: str) -> str:
+    """Name of a session parameter in the URL."""
+    if _PATH_SESSION.search(raw):
+        return "jsessionid"
+    for pair in urlsplit(raw).query.split("&"):
+        if pair.split("=")[0].lower() in _SESSION:
+            return pair.split("=")[0]
+    return ""
 
 
 def _remove_dot_segments(path: str) -> str:
@@ -54,12 +78,14 @@ def normalize(raw: str, base: Optional[str] = None) -> Optional[str]:
     except UnicodeError:
         return None
     netloc = host if port in (None, _DEFAULT_PORTS[scheme]) else f"{host}:{port}"
-    path = _requote(_remove_dot_segments(parts.path or "/"), _SAFE_PATH)
+    clean_path = _PATH_SESSION.sub("", parts.path or "/")
+    path = _requote(_remove_dot_segments(clean_path), _SAFE_PATH)
     if not path.startswith("/"):
         path = "/" + path
     url = f"{scheme}://{netloc}{path}"
-    if parts.query:
-        url += "?" + _requote(parts.query, _SAFE_QUERY)
+    query = _clean_query(parts.query)
+    if query:
+        url += "?" + _requote(query, _SAFE_QUERY)
     if len(url) > config.MAX_URL_LENGTH:
         return None
     return url

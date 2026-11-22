@@ -54,9 +54,10 @@ def _default_priority(a: Analysis) -> List[int]:
 
 
 def analyse(store: Store, target_site: str, competitor_site: str, start: str,
-            seed: int, priority_urls: Optional[List[str]], budget: int) -> Analysis:
-    ours = load_site(store, target_site)
-    theirs = load_site(store, competitor_site) if competitor_site != target_site else []
+            competitor_start: str, seed: int, priority_urls: Optional[List[str]], budget: int) -> Analysis:
+    ours = load_site(store, target_site, start)
+    different = competitor_site != target_site
+    theirs = load_site(store, competitor_site, competitor_start) if different else []
     pages = ours + theirs
     index = {p.url: i for i, p in enumerate(pages)}
     resolve = graph.resolver(pages)

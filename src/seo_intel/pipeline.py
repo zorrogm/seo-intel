@@ -21,15 +21,18 @@ from seo_intel.urls import site_key
 def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_SEED,
         crawl_minutes: float = config.CRAWL_MINUTES, max_urls: int = config.MAX_URLS_PER_SITE,
         priority_urls: Optional[List[str]] = None, link_budget: int = config.LINK_BUDGET,
-        gap_seconds: float = config.REQUEST_GAP_SECONDS, use_llm: bool = True) -> Dict:
-    asyncio.run(crawl_sites([domain, competitor], folder, crawl_minutes, max_urls, gap_seconds))
+        gap_seconds: float = config.REQUEST_GAP_SECONDS, use_llm: bool = True,
+        revalidate_after_hours: float = config.REVALIDATE_AFTER_HOURS) -> Dict:
+    crawl = asyncio.run(crawl_sites(
+        [domain, competitor], folder, crawl_minutes, max_urls, gap_seconds, revalidate_after_hours
+    ))
 
     store = Store(folder / config.CRAWL_DB_NAME, max_urls)
     try:
         start = store.get_meta("start:" + domain) or ""
         competitor_start = store.get_meta("start:" + competitor) or ""
         analysis = analyse(
-            store, site_key(start), site_key(competitor_start), start,
+            store, site_key(start), site_key(competitor_start), start, competitor_start,
             seed, priority_urls, link_budget,
         )
         facts = Facts(analysis, store)
@@ -37,7 +40,7 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
         llm = Gemini(folder / config.LLM_CACHE_FOLDER, seed)
         picks = run_agent(candidates, facts, llm) if use_llm else None
         plan = finalise(candidates, picks or [], facts)
-        write_outputs(folder, analysis, plan)
+        write_outputs(folder, analysis, plan, store)
     finally:
         store.close()
 
@@ -49,6 +52,7 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
     usage = dict(llm.usage(), plan_written_by="agent" if picks else "fallback")
     write_json(logs / "llm_usage.json", usage)
     return {
+        "crawl_mode": crawl[domain]["mode"],
         "pages": len(analysis.pages),
         "candidates": len(candidates),
         "actions": len(plan["actions"]),

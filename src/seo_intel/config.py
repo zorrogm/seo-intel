@@ -163,3 +163,44 @@ LLM_CHARS_PER_TOKEN = 2.5
 LLM_INPUT_PRICE = 0.10
 LLM_OUTPUT_PRICE = 0.40
 AGENT_LIST_PAGE_SIZE = 40
+
+# Query parameters that never change the page
+NOISE_PARAMS = (
+    "gclid", "fbclid", "msclkid", "dclid", "yclid", "mc_cid", "mc_eid", "_ga", "_gl",
+    "ref", "ref_src", "igshid",
+)
+NOISE_PARAM_PREFIXES = ("utm_",)
+SESSION_PARAMS = (
+    "sid", "sessionid", "session_id", "phpsessid", "jsessionid", "sessid",
+    "aspsessionid", "cfid", "cftoken", "zenid", "osCsid",
+)
+
+# Spider trap limits
+MAX_PATH_DEPTH = 12
+MAX_SEGMENT_REPEATS = 3
+MAX_QUERY_PARAMS = 4
+MAX_QUERY_VARIANTS_PER_PATH = 20
+CALENDAR_MAX_PER_SHAPE = 60
+CALENDAR_MIN_YEAR = 1995
+CALENDAR_FUTURE_YEARS = 2
+CALENDAR_PARAMS = ("year", "month", "day", "date", "week", "start", "end", "from", "to")
+
+# Hidden redirects
+META_REFRESH_MAX_SECONDS = 10
+JS_REDIRECT_MAX_WORDS = 50
+
+# Soft 404 detection
+PROBE_SITE_PREFIX = "probe:"
+PROBE_PATH_PREFIX = "/seo-intel-missing-page-"
+SOFT_404_PROBE_OVERLAP = 0.80
+SOFT_404_EMPTY_WORDS = 3
+SOFT_404_PHRASE_MAX_WORDS = 150
+SOFT_404_PHRASES = (
+    "page not found", "not found", "404", "doesn't exist", "does not exist",
+    "no longer available", "no longer exists", "cannot be found", "can't be found",
+    "nothing found", "no results found", "पृष्ठ नहीं मिला", "नहीं मिला", "उपलब्ध नहीं",
+)
+
+# Next day rerun
+REVALIDATE_AFTER_HOURS = 12.0
+REVALIDATE_SHARE = 0.07

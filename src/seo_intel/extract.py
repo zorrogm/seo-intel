@@ -1,6 +1,7 @@
 """Page fields and main content, learned per site."""
 from __future__ import annotations
 
+import re
 import zlib
 from collections import Counter
 from typing import Dict, List, Set
@@ -14,6 +15,7 @@ from seo_intel.urls import normalize
 _BLOCK = frozenset(config.BLOCK_TAGS)
 _CHROME = frozenset(config.CHROME_TAGS)
 _CONTENT_ROOTS = frozenset(("article", "main"))
+_DIGITS = re.compile(r"\d+")
 
 
 def _attr(tree, selector: str, name: str) -> str:
@@ -40,6 +42,16 @@ def _ancestry(node):
     if "header" in tags and not any(t in _CONTENT_ROOTS for t in tags):
         chrome = True
     return "/".join(tags), chrome, wrap_href
+
+
+def _loose_text(node, parents: Set[int]) -> str:
+    """Direct text of a block that has child blocks."""
+    pieces = []
+    for child in node.iter(include_text=True):
+        if child.tag in _BLOCK or child.mem_id in parents:
+            continue
+        pieces.append(child.text(deep=True, separator=" "))
+    return clean(" ".join(pieces))
 
 
 def parse_page(body: bytes, url: str) -> Dict:
@@ -89,9 +101,10 @@ def parse_page(body: bytes, url: str) -> Dict:
         links = links_by_block.get(node.mem_id, [])
         path, chrome, wrap_href = _ancestry(node)
         if node.mem_id in parents:
-            # Loose links beside other blocks
-            for link in links:
-                page["blocks"].append([path + "/a", int(chrome), link[1], [link]])
+            # Text sitting beside child blocks
+            text = _loose_text(node, parents)
+            if text or links:
+                page["blocks"].append([path + "/text", int(chrome), text, links])
             continue
         text = _text(node)
         wrapped = normalize(wrap_href, base) if wrap_href else None
@@ -103,7 +116,8 @@ def parse_page(body: bytes, url: str) -> Dict:
 
 
 def block_key(block: List) -> int:
-    return zlib.crc32(block[2].lower().encode("utf-8"))
+    """Same key when only numbers differ."""
+    return zlib.crc32(_DIGITS.sub("0", block[2].lower()).encode("utf-8"))
 
 
 def learn_template(sample: List[Dict]) -> Set[int]:

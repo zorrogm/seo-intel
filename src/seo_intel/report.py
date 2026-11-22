@@ -6,7 +6,9 @@ from pathlib import Path
 from typing import Dict, List
 
 from seo_intel import config
+from seo_intel import issues
 from seo_intel.analysis import Analysis
+from seo_intel.store import Store
 
 
 def write_json(path: Path, data) -> None:
@@ -25,6 +27,7 @@ def crawl_summary(a: Analysis) -> Dict:
         summary[site] = {
             "pages_fetched": len(pages),
             "indexable": sum(p.indexable for p in pages),
+            "soft_404": sum(bool(p.soft_404) for p in pages),
             "by_status": statuses,
         }
     return summary
@@ -80,9 +83,13 @@ def plan_markdown(actions: List[Dict]) -> str:
     return "\n".join(lines)
 
 
-def write_outputs(folder: Path, a: Analysis, plan: Dict) -> None:
+def write_outputs(folder: Path, a: Analysis, plan: Dict, store: Store) -> None:
     out = folder / config.OUTPUT_FOLDER
     write_json(out / "crawl_summary.json", crawl_summary(a))
+    write_json(out / "crawl_issues.json", issues.crawl_issues(a))
+    write_json(out / "spider_traps.json", issues.trap_report(a, store))
+    write_json(out / "soft_404s.json", issues.soft_404s(a))
+    write_json(out / "change_report.json", issues.change_report(store))
     write_json(out / "near_duplicates.json", a.near_duplicates)
     write_json(out / "cannibalization.json", {"groups": a.groups, "healthy_pairs": a.healthy})
     write_json(out / "gaps.json", a.gaps)

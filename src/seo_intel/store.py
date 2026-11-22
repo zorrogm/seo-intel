@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS pages(
   last_modified TEXT NOT NULL DEFAULT '',
   x_robots_tag TEXT NOT NULL DEFAULT '',
   redirect_to TEXT NOT NULL DEFAULT '',
+  redirect_kind TEXT NOT NULL DEFAULT '',
   body_hash TEXT NOT NULL DEFAULT '',
   body BLOB,
   truncated INTEGER NOT NULL DEFAULT 0,
@@ -45,6 +46,23 @@ CREATE TABLE IF NOT EXISTS parsed(
   url_id INTEGER PRIMARY KEY REFERENCES urls(id),
   body_hash TEXT NOT NULL,
   data BLOB NOT NULL
+);
+CREATE TABLE IF NOT EXISTS traps(
+  site TEXT NOT NULL,
+  kind TEXT NOT NULL,
+  pattern TEXT NOT NULL,
+  example TEXT NOT NULL,
+  blocked INTEGER NOT NULL DEFAULT 1,
+  PRIMARY KEY(site, kind, pattern)
+);
+CREATE TABLE IF NOT EXISTS changes(
+  run INTEGER NOT NULL,
+  site TEXT NOT NULL,
+  url TEXT NOT NULL,
+  kind TEXT NOT NULL,
+  old TEXT NOT NULL DEFAULT '',
+  new TEXT NOT NULL DEFAULT '',
+  PRIMARY KEY(run, url, kind)
 );
 CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 """
@@ -85,29 +103,30 @@ class Store:
         self.db.execute("COMMIT")
         return added
 
-    def take(self, site: str, limit: int, busy: Iterable[int]) -> List[Job]:
+    def take(self, site: str, limit: int, busy: Iterable[int], min_id: int = 0) -> List[Job]:
         """Next queued URLs, shallowest first."""
         busy = list(busy)
         marks = ",".join("?" * len(busy))
         rows = self.db.execute(
-            f"SELECT id, url, depth FROM urls WHERE site=? AND state=? "
+            f"SELECT id, url, depth FROM urls WHERE site=? AND state=? AND id>=? "
             f"AND id NOT IN ({marks}) ORDER BY depth, id LIMIT ?",
-            (site, QUEUED, *busy, limit),
+            (site, QUEUED, min_id, *busy, limit),
         )
         return rows.fetchall()
 
     def mark(self, url_id: int, state: str) -> None:
         self.db.execute("UPDATE urls SET state=? WHERE id=?", (state, url_id))
 
-    def save_fetch(self, job: Job, site: str, result, new_urls: Iterable[str]) -> None:
+    def save_fetch(self, job: Job, site: str, result, new_urls: Iterable[str],
+                   redirect_kind: str = "") -> None:
         """Save the page and its links together."""
         url_id, _url, depth = job
         body = result.body
         self.db.execute("BEGIN IMMEDIATE")
         self.db.execute(
             "INSERT OR REPLACE INTO pages(url_id, status, error, content_type, etag,"
-            " last_modified, x_robots_tag, redirect_to, body_hash, body, truncated,"
-            " fetched_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
+            " last_modified, x_robots_tag, redirect_to, redirect_kind, body_hash, body,"
+            " truncated, fetched_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (
                 url_id,
                 result.status,
@@ -117,6 +136,7 @@ class Store:
                 result.header("last-modified"),
                 result.header("x-robots-tag"),
                 result.location,
+                redirect_kind,
                 hashlib.sha256(body).hexdigest() if body else "",
                 zlib.compress(body, 6) if body else None,
                 int(result.truncated),
@@ -156,7 +176,8 @@ class Store:
     def fetched_rows(self, site: str) -> List[Tuple]:
         """Every fetched page of a site, by URL."""
         return self.db.execute(
-            "SELECT u.id, u.url, p.status, p.redirect_to, p.x_robots_tag, p.body_hash"
+            "SELECT u.id, u.url, p.status, p.redirect_to, p.x_robots_tag, p.body_hash,"
+            " p.redirect_kind"
             " FROM urls u JOIN pages p ON p.url_id = u.id WHERE u.site=? ORDER BY u.url",
             (site,),
         ).fetchall()
@@ -176,3 +197,44 @@ class Store:
     def url_id(self, url: str) -> Optional[int]:
         row = self.db.execute("SELECT id FROM urls WHERE url=?", (url,)).fetchone()
         return row[0] if row else None
+
+    def site_urls(self, site: str) -> List[str]:
+        rows = self.db.execute("SELECT url FROM urls WHERE site=? ORDER BY id", (site,))
+        return [row[0] for row in rows]
+
+    def max_id(self) -> int:
+        return self.db.execute("SELECT COALESCE(MAX(id), 0) FROM urls").fetchone()[0]
+
+    def add_trap(self, site: str, kind: str, pattern: str, example: str) -> None:
+        self.db.execute(
+            "INSERT INTO traps(site, kind, pattern, example) VALUES(?,?,?,?)"
+            " ON CONFLICT(site, kind, pattern) DO UPDATE SET blocked = blocked + 1",
+            (site, kind, pattern, example),
+        )
+
+    def traps(self, site: str) -> List[Tuple]:
+        return self.db.execute(
+            "SELECT kind, pattern, example, blocked FROM traps WHERE site=?"
+            " ORDER BY kind, pattern", (site,)
+        ).fetchall()
+
+    def revalidation_rows(self, site: str) -> List[Tuple]:
+        """Fetched pages, most important first."""
+        return self.db.execute(
+            "SELECT u.id, u.url, u.depth, p.status, p.etag, p.last_modified, p.body_hash,"
+            " p.redirect_to FROM urls u JOIN pages p ON p.url_id = u.id"
+            " WHERE u.site=? ORDER BY u.depth, u.url", (site,)
+        ).fetchall()
+
+    def add_change(self, run: int, site: str, url: str, kind: str, old: str = "",
+                   new: str = "") -> None:
+        self.db.execute(
+            "INSERT OR REPLACE INTO changes(run, site, url, kind, old, new) VALUES(?,?,?,?,?,?)",
+            (run, site, url, kind, old, new),
+        )
+
+    def changes(self, run: int) -> List[Tuple]:
+        return self.db.execute(
+            "SELECT site, url, kind, old, new FROM changes WHERE run=? ORDER BY site, kind, url",
+            (run,),
+        ).fetchall()
