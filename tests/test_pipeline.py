@@ -74,3 +74,10 @@ def test_bad_rationale_is_regenerated():
     plan = finalise([action("a1", 1)], [{"id": "a1", "rationale": "Overlap is 82% [c1]"}], FakeFacts())
     assert "Evidence: [c1]" in plan["actions"][0]["rationale"]
     assert plan["rejections"][0]["result"] == "rationale regenerated"
+
+
+def test_live_change_drops_the_action():
+    changed = lambda claim: False if claim["id"] == "c2" else None
+    plan = finalise([action("a1", 1), action("a2", 1)], [], FakeFacts(), changed)
+    assert [a["id"] for a in plan["actions"]] == ["a1"]
+    assert "changed on the live site" in plan["rejections"][0]["found"]

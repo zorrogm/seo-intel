@@ -11,6 +11,7 @@ from seo_intel.agent import run_agent
 from seo_intel.analysis import analyse
 from seo_intel.crawl import crawl_sites
 from seo_intel.facts import Facts
+from seo_intel.live import LiveCheck
 from seo_intel.llm import Gemini
 from seo_intel.plan import build_candidates, finalise
 from seo_intel.report import write_json, write_outputs
@@ -22,7 +23,8 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
         crawl_minutes: float = config.CRAWL_MINUTES, max_urls: int = config.MAX_URLS_PER_SITE,
         priority_urls: Optional[List[str]] = None, link_budget: int = config.LINK_BUDGET,
         gap_seconds: float = config.REQUEST_GAP_SECONDS, use_llm: bool = True,
-        revalidate_after_hours: float = config.REVALIDATE_AFTER_HOURS) -> Dict:
+        revalidate_after_hours: float = config.REVALIDATE_AFTER_HOURS,
+        live_check: bool = True) -> Dict:
     crawl = asyncio.run(crawl_sites(
         [domain, competitor], folder, crawl_minutes, max_urls, gap_seconds, revalidate_after_hours
     ))
@@ -40,6 +42,15 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
         candidates = build_candidates(analysis, facts)
         picks = run_agent(candidates, facts, llm) if use_llm else None
         plan = finalise(candidates, picks or [], facts)
+        if live_check:
+            # Recheck cited pages until the plan settles
+            live = LiveCheck(store, gap_seconds)
+            for _round in range(config.LIVE_CHECK_ROUNDS):
+                todo = live.pending(plan["actions"])
+                if not todo:
+                    break
+                live.fetch(todo)
+                plan = finalise(candidates, picks or [], facts, live.verdict)
         write_outputs(folder, analysis, plan, store)
     finally:
         store.close()

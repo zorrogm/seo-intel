@@ -183,7 +183,7 @@ def rationale_problem(text: str, action: Dict) -> str:
     return ""
 
 
-def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts) -> Dict:
+def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts, live=None) -> Dict:
     """Verify every claim and build the final plan."""
     by_id = {c["id"]: c for c in candidates}
     order, rationale_of = [], {}
@@ -202,6 +202,9 @@ def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts) -> Dict:
         verified = []
         for claim in action["claims"]:
             passed, actual = facts.check(claim)
+            # The live site gets the last word
+            if passed and live is not None and live(claim) is False:
+                passed, actual = False, "changed on the live site"
             if passed:
                 verified.append(claim)
             else:

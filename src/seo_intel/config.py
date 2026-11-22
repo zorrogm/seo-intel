@@ -234,3 +234,7 @@ GROUP_MIN_LINK_SHARE = 0.5
 HEAD_MIN_SIMILARITY = 0.70
 HEAD_TERM_MAX_PAGES = 30
 HEAD_MIN_SHARED_TERMS = 2
+
+# Final live recheck of cited pages
+LIVE_CHECK_ROUNDS = 4
+LIVE_FIELDS = ("status", "redirect_to", "title", "h1", "canonical", "meta_robots", "sentence")
