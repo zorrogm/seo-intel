@@ -129,7 +129,7 @@ def analyse_pages(ours: List[Page], theirs: List[Page], target_site: str,
         a.priority = sorted({i for i in wanted if i is not None and i < count})
     else:
         a.priority = _default_priority(a)
-    candidates = graph.link_candidates(pages, a.priority, row_of, vectors, weighted, idf)
+    candidates = graph.link_candidates(pages, a.priority, row_of, vectors, weighted, idf, count)
     a.new_links, a.rank_after = graph.choose_links(
         count, weighted, candidates, a.priority, [p.url for p in ours], budget
     )

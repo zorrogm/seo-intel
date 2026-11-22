@@ -135,7 +135,8 @@ def find_anchor(source: Page, target: Page, idf: Dict[str, float]):
 
 
 def link_candidates(pages: List[Page], priority: Sequence[int], row_of: Dict[int, int],
-                    vectors: np.ndarray, edges: Edges, idf: Dict[str, float]) -> List[Dict]:
+                    vectors: np.ndarray, edges: Edges, idf: Dict[str, float],
+                    own_pages: int) -> List[Dict]:
     """Relevant source pages with a ready anchor sentence."""
     page_of_row = {row: page for page, row in row_of.items()}
     candidates = []
@@ -149,7 +150,10 @@ def link_candidates(pages: List[Page], priority: Sequence[int], row_of: Dict[int
             if scores[row] < config.LINK_MIN_RELEVANCE or picked >= config.LINK_SOURCES_PER_TARGET:
                 break
             source = page_of_row.get(int(row))
-            if source is None or source == target or (source, target) in edges:
+            # Links can only come from our own site
+            if source is None or source >= own_pages or source == target:
+                continue
+            if (source, target) in edges:
                 continue
             found = find_anchor(pages[source], pages[target], idf)
             if not found:
