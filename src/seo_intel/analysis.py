@@ -113,8 +113,7 @@ def analyse(store: Store, target_site: str, competitor_site: str, start: str,
     else:
         a.priority = _default_priority(a)
     candidates = graph.link_candidates(pages, a.priority, row_of, vectors, weighted, idf)
-    a.new_links, new_edges = graph.choose_links(
-        count, weighted, candidates, [p.url for p in ours], budget
+    a.new_links, a.rank_after = graph.choose_links(
+        count, weighted, candidates, a.priority, [p.url for p in ours], budget
     )
-    a.rank_after = graph.pagerank(count, new_edges)
     return a

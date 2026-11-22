@@ -44,26 +44,50 @@ def build_edges(pages: List[Page], index: Dict[str, int], resolve) -> Tuple[Edge
     return weighted, every
 
 
+class RankGraph:
+    """PageRank over fixed edges plus trial links."""
+
+    def __init__(self, count: int, edges: Edges):
+        keys = sorted(edges)
+        self.count = count
+        self.src = np.array([k[0] for k in keys], dtype=np.int64)
+        self.dst = np.array([k[1] for k in keys], dtype=np.int64)
+        self.weight = np.array([edges[k] for k in keys], dtype=np.float64)
+        self.base = None
+
+    def rank(self, extra: Sequence[Tuple[int, int]] = (), start=None) -> np.ndarray:
+        count = self.count
+        if count == 0:
+            return np.zeros(0)
+        src, dst, weight = self.src, self.dst, self.weight
+        if extra:
+            added = np.array(sorted(extra), dtype=np.int64).reshape(-1, 2)
+            src = np.concatenate([src, added[:, 0]])
+            dst = np.concatenate([dst, added[:, 1]])
+            weight = np.concatenate([weight, np.full(len(added), config.CONTENT_LINK_WEIGHT)])
+        out = np.bincount(src, weights=weight, minlength=count)
+        share = weight / out[src] if len(src) else weight
+        dangling = out == 0
+        damping = config.PAGERANK_DAMPING
+        rank = np.full(count, 1.0 / count) if start is None else start.copy()
+        for _round in range(config.PAGERANK_ROUNDS):
+            flow = np.bincount(dst, weights=rank[src] * share, minlength=count)
+            new_rank = (1 - damping) / count + damping * (flow + rank[dangling].sum() / count)
+            change = np.abs(new_rank - rank).sum()
+            rank = new_rank
+            if change < config.PAGERANK_TOLERANCE:
+                break
+        return rank
+
+    def out_weight(self, extra: Sequence[Tuple[int, int]] = ()) -> np.ndarray:
+        out = np.bincount(self.src, weights=self.weight, minlength=self.count)
+        for source, _target in extra:
+            out[source] += config.CONTENT_LINK_WEIGHT
+        return out
+
+
 def pagerank(count: int, edges: Edges) -> np.ndarray:
-    if count == 0:
-        return np.zeros(0)
-    keys = sorted(edges)
-    src = np.array([k[0] for k in keys], dtype=np.int64)
-    dst = np.array([k[1] for k in keys], dtype=np.int64)
-    weight = np.array([edges[k] for k in keys], dtype=np.float64)
-    out = np.bincount(src, weights=weight, minlength=count)
-    share = weight / out[src] if len(keys) else weight
-    dangling = out == 0
-    damping = config.PAGERANK_DAMPING
-    rank = np.full(count, 1.0 / count)
-    for _round in range(config.PAGERANK_ROUNDS):
-        flow = np.bincount(dst, weights=rank[src] * share, minlength=count)
-        new_rank = (1 - damping) / count + damping * (flow + rank[dangling].sum() / count)
-        change = np.abs(new_rank - rank).sum()
-        rank = new_rank
-        if change < config.PAGERANK_TOLERANCE:
-            break
-    return rank
+    return RankGraph(count, edges).rank()
 
 
 def click_depth(count: int, edges: Edges, home: Optional[int]) -> List[int]:
@@ -141,34 +165,112 @@ def link_candidates(pages: List[Page], priority: Sequence[int], row_of: Dict[int
     return candidates
 
 
-def choose_links(count: int, edges: Edges, candidates: List[Dict],
-                 urls: List[str], budget: int) -> Tuple[List[Dict], Edges]:
-    """Greedy: add the link sending most rank."""
-    edges = dict(edges)
-    chosen = []
-    used = Counter()
-    remaining = list(candidates)
-    weight = config.CONTENT_LINK_WEIGHT
-    while remaining and len(chosen) < budget:
-        rank = pagerank(count, edges)
-        out = np.zeros(count)
-        for (source, _target), w in edges.items():
-            out[source] += w
-        best = None
-        for candidate in remaining:
-            source = candidate["source"]
-            if used[source] >= config.MAX_NEW_LINKS_PER_SOURCE:
+Link = Tuple[int, int]
+
+
+class LinkOptimiser:
+    """Pick new links that lift priority pages most."""
+
+    def __init__(self, count: int, edges: Edges, candidates: List[Dict],
+                 priority: Sequence[int], urls: List[str], budget: int):
+        self.graph = RankGraph(count, edges)
+        self.links: List[Link] = sorted(
+            {(c["source"], c["target"]) for c in candidates},
+            key=lambda link: (urls[link[0]], urls[link[1]]),
+        )
+        self.priority = np.array(sorted(priority), dtype=np.int64)
+        self.budget = budget
+        self.base_rank = self.graph.rank()
+        self.evaluations = 0
+
+    def score(self, chosen: Sequence[Link], start=None) -> float:
+        """Total PageRank of the priority pages."""
+        self.evaluations += 1
+        rank = self.graph.rank(chosen, self.base_rank if start is None else start)
+        return float(rank[self.priority].sum())
+
+    def allowed(self, chosen: Sequence[Link], link: Link) -> bool:
+        if link in chosen:
+            return False
+        used = sum(1 for source, _t in chosen if source == link[0])
+        return used < config.MAX_NEW_LINKS_PER_SOURCE
+
+    def _estimates(self, chosen: Sequence[Link]) -> List[Tuple[float, int]]:
+        """Cheap guess: rank the link would pass on."""
+        rank = self.graph.rank(chosen, self.base_rank)
+        out = self.graph.out_weight(chosen)
+        weight = config.CONTENT_LINK_WEIGHT
+        guesses = []
+        for position, link in enumerate(self.links):
+            if self.allowed(chosen, link):
+                guesses.append((-rank[link[0]] * weight / (out[link[0]] + weight), position))
+        guesses.sort()
+        return guesses
+
+    def naive(self) -> List[Link]:
+        """Rank once on the original graph."""
+        chosen: List[Link] = []
+        for _guess, position in self._estimates([]):
+            if len(chosen) < self.budget and self.allowed(chosen, self.links[position]):
+                chosen.append(self.links[position])
+        return chosen
+
+    def greedy(self, shortlist: int = config.GREEDY_SHORTLIST) -> List[Link]:
+        """Each step, test the best guesses exactly."""
+        chosen: List[Link] = []
+        while len(chosen) < self.budget:
+            guesses = self._estimates(chosen)[:shortlist]
+            if not guesses:
+                break
+            best = max(
+                guesses,
+                key=lambda g: (self.score(chosen + [self.links[g[1]]]), -g[1]),
+            )
+            chosen.append(self.links[best[1]])
+        return chosen
+
+    def improve_by_swaps(self, chosen: List[Link], rounds: int = config.SWAP_ROUNDS,
+                         shortlist: int = config.SWAP_SHORTLIST) -> List[Link]:
+        """Swap a chosen link when a spare one scores higher."""
+        chosen = list(chosen)
+        best = self.score(chosen)
+        for _round in range(rounds):
+            improved = False
+            for slot in range(len(chosen)):
+                rest = chosen[:slot] + chosen[slot + 1 :]
+                for _guess, position in self._estimates(rest)[:shortlist]:
+                    trial = rest + [self.links[position]]
+                    value = self.score(trial)
+                    if value > best + 1e-12:
+                        chosen, best, improved = trial, value, True
+                        break
+            if not improved:
+                break
+        return chosen
+
+    def brute_force(self) -> List[Link]:
+        """Try every combination, only for tiny inputs."""
+        from itertools import combinations
+
+        best, best_value = [], self.score([])
+        size = min(self.budget, len(self.links))
+        for combo in combinations(self.links, size):
+            sources = Counter(source for source, _t in combo)
+            if max(sources.values(), default=0) > config.MAX_NEW_LINKS_PER_SOURCE:
                 continue
-            gain = rank[source] * weight / (out[source] + weight)
-            key = (-gain, urls[source], urls[candidate["target"]])
-            if best is None or key < best[0]:
-                best = (key, candidate)
-        if best is None:
-            break
-        pick = best[1]
-        edges[(pick["source"], pick["target"])] = weight
-        used[pick["source"]] += 1
-        chosen.append(pick)
-        remaining = [c for c in remaining
-                     if (c["source"], c["target"]) != (pick["source"], pick["target"])]
-    return chosen, edges
+            value = self.score(combo)
+            if value > best_value + 1e-15:
+                best, best_value = list(combo), value
+        return best
+
+
+def choose_links(count: int, edges: Edges, candidates: List[Dict], priority: Sequence[int],
+                 urls: List[str], budget: int) -> Tuple[List[Dict], np.ndarray]:
+    """Chosen links and the PageRank after adding them."""
+    optimiser = LinkOptimiser(count, edges, candidates, priority, urls, budget)
+    chosen = optimiser.improve_by_swaps(optimiser.greedy())
+    by_link = {(c["source"], c["target"]): c for c in candidates}
+    picked = sorted(chosen, key=lambda link: (urls[link[1]], urls[link[0]]))
+    # Proof: recompute from scratch on the new graph
+    after = optimiser.graph.rank(chosen)
+    return [by_link[link] for link in picked], after

@@ -73,7 +73,18 @@ def test_kill_and_resume_loses_nothing(site, tmp_path):
         "asyncio.run(crawl_sites([sys.argv[1]], Path(sys.argv[2]), 1.0, 1000, 0.03))"
     )
     proc = subprocess.Popen([sys.executable, "-c", code, site.base, str(tmp_path)])
-    time.sleep(0.8)
+    # Wait until some pages are saved
+    done_before = 0
+    for _try in range(400):
+        time.sleep(0.05)
+        try:
+            db = sqlite3.connect(str(tmp_path / config.CRAWL_DB_NAME))
+            done_before = db.execute("SELECT COUNT(*) FROM pages").fetchone()[0]
+            db.close()
+        except sqlite3.OperationalError:
+            continue
+        if done_before >= 5:
+            break
     proc.send_signal(signal.SIGKILL)
     proc.wait()
     db = sqlite3.connect(str(tmp_path / config.CRAWL_DB_NAME))
