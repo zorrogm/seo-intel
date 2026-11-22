@@ -41,6 +41,11 @@ CREATE TABLE IF NOT EXISTS robots(
   status INTEGER NOT NULL,
   body BLOB
 );
+CREATE TABLE IF NOT EXISTS parsed(
+  url_id INTEGER PRIMARY KEY REFERENCES urls(id),
+  body_hash TEXT NOT NULL,
+  data BLOB NOT NULL
+);
 CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 """
 
@@ -147,3 +152,27 @@ class Store:
     def body(self, url_id: int) -> bytes:
         row = self.db.execute("SELECT body FROM pages WHERE url_id=?", (url_id,)).fetchone()
         return zlib.decompress(row[0]) if row and row[0] else b""
+
+    def fetched_rows(self, site: str) -> List[Tuple]:
+        """Every fetched page of a site, by URL."""
+        return self.db.execute(
+            "SELECT u.id, u.url, p.status, p.redirect_to, p.x_robots_tag, p.body_hash"
+            " FROM urls u JOIN pages p ON p.url_id = u.id WHERE u.site=? ORDER BY u.url",
+            (site,),
+        ).fetchall()
+
+    def get_parsed(self, url_id: int, body_hash: str) -> Optional[bytes]:
+        row = self.db.execute(
+            "SELECT data FROM parsed WHERE url_id=? AND body_hash=?", (url_id, body_hash)
+        ).fetchone()
+        return zlib.decompress(row[0]) if row else None
+
+    def save_parsed(self, url_id: int, body_hash: str, data: bytes) -> None:
+        self.db.execute(
+            "INSERT OR REPLACE INTO parsed(url_id, body_hash, data) VALUES(?,?,?)",
+            (url_id, body_hash, zlib.compress(data, 6)),
+        )
+
+    def url_id(self, url: str) -> Optional[int]:
+        row = self.db.execute("SELECT id FROM urls WHERE url=?", (url,)).fetchone()
+        return row[0] if row else None

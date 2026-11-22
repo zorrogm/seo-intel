@@ -58,3 +58,108 @@ SITEMAP_MAX_BYTES = 20 * 1024 * 1024
 START_MAX_REDIRECTS = 5
 FRONTIER_BATCH = 8
 IDLE_POLL_SECONDS = 0.05
+
+# Output files, all written deterministically
+OUTPUT_FOLDER = "output"
+LOG_FOLDER = "logs"
+LLM_CACHE_FOLDER = "llm_cache"
+FLOAT_DIGITS = 4
+
+# Main content extraction
+BLOCK_TAGS = (
+    "body", "div", "p", "li", "ul", "ol", "table", "tr", "td", "th", "section",
+    "article", "main", "nav", "header", "footer", "aside", "h1", "h2", "h3",
+    "h4", "h5", "h6", "blockquote", "pre", "form", "figure", "figcaption",
+    "dl", "dt", "dd", "details", "summary", "address",
+)
+STRIP_TAGS = ("script", "style", "noscript", "template", "svg", "iframe")
+CHROME_TAGS = ("nav", "footer", "aside")
+TEMPLATE_SAMPLE_PAGES = 500
+TEMPLATE_MIN_PAGES = 3
+TEMPLATE_MIN_SHARE = 0.10
+
+# Near duplicate detection
+SHINGLE_TOKENS = 4
+MINHASH_PERMUTATIONS = 64
+LSH_BANDS = 16
+NEAR_DUPLICATE_OVERLAP = 0.80
+LSH_BUCKET_CAP = 50
+MIN_TOKENS_FOR_DUPLICATES = 20
+
+# Topic space shared by both sites
+VECTOR_DIMENSIONS = 512
+MAX_TOKENS_PER_PAGE = 2000
+COMMON_TOKEN_SHARE = 0.5
+KMEANS_ROUNDS = 15
+MAX_TOPICS = 300
+TOPIC_LABEL_TERMS = 3
+
+# Cannibalization
+CANNIBAL_MIN_SIMILARITY = 0.60
+CLUSTER_PAIR_CAP = 400
+SEVERITY_WEIGHTS = {
+    "content_overlap": 0.30,
+    "topic_similarity": 0.30,
+    "link_split": 0.20,
+    "anchor_conflict": 0.10,
+    "depth_closeness": 0.10,
+}
+
+# A gap is in depth above these numbers
+GAP_MIN_PAGES = 3
+GAP_MIN_WORDS = 1500
+GAP_MAX_TARGET_SHARE = 0.20
+
+# Intent words, checked in title, heading, URL
+INTENT_WORDS = {
+    "transactional": (
+        "buy", "order", "cart", "checkout", "price", "pricing", "shop", "purchase",
+        "book", "subscribe", "download", "coupon", "deal", "discount", "offer",
+        "खरीदें", "ऑर्डर", "कीमत", "kharide", "kimat",
+    ),
+    "commercial": (
+        "best", "top", "review", "reviews", "vs", "versus", "compare", "comparison",
+        "alternative", "alternatives", "cheapest", "rated",
+        "सर्वश्रेष्ठ", "तुलना", "समीक्षा", "sabse",
+    ),
+    "navigational": (
+        "login", "signin", "signup", "register", "account", "contact", "about",
+        "careers", "support", "help", "dashboard", "लॉगिन", "संपर्क",
+    ),
+}
+INTENT_MIN_SCORE = 2
+DEFAULT_INTENT = "informational"
+
+# Internal link optimiser
+PAGERANK_DAMPING = 0.85
+PAGERANK_ROUNDS = 100
+PAGERANK_TOLERANCE = 1e-10
+CONTENT_LINK_WEIGHT = 1.0
+NAV_LINK_WEIGHT = 0.0
+LINK_BUDGET = 40
+MAX_NEW_LINKS_PER_SOURCE = 3
+LINK_MIN_RELEVANCE = 0.30
+LINK_SOURCES_PER_TARGET = 50
+DEFAULT_PRIORITY_COUNT = 10
+SENTENCE_MIN_TOKENS = 6
+SENTENCE_MAX_TOKENS = 60
+ANCHOR_MAX_TOKENS = 4
+ANCHOR_MIN_TOKENS = 2
+
+# Action plan
+PLAN_ACTIONS = 25
+
+# LLM agent
+LLM_MODEL = "gemini-3.5-flash-lite"
+LLM_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+LLM_TEMPERATURE = 0.0
+LLM_MAX_OUTPUT_TOKENS = 4096
+LLM_TIMEOUT_SECONDS = 60.0
+LLM_MAX_STEPS = 12
+# Leave headroom under the 8,000 token cap
+LLM_PROMPT_TOKEN_BUDGET = 6500
+LLM_CHARS_PER_TOKEN = 2.5
+# Dollars per million tokens, check before submitting
+LLM_INPUT_PRICE = 0.10
+LLM_OUTPUT_PRICE = 0.40
+AGENT_LIST_PAGE_SIZE = 40

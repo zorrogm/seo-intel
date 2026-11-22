@@ -189,17 +189,25 @@ class SiteCrawl:
             "blocked": self.store.count(self.site, BLOCKED),
         }
 
-    async def run(self) -> None:
+    async def run(self, crawl: bool) -> None:
         start = await self._find_start()
         self.site = site_key(start)
+        if not crawl:
+            return
         self.store.add_urls(self.site, [start], 0)
         await self._seed_sitemaps(start)
         await asyncio.gather(*(self._worker() for _ in range(config.WORKERS_PER_SITE)))
 
 
-async def _progress(crawls: List[SiteCrawl]) -> None:
+def _seconds_used(store: Store) -> float:
+    return float(store.get_meta("crawl_seconds") or 0)
+
+
+async def _progress(crawls: List[SiteCrawl], store: Store) -> None:
     while True:
         await asyncio.sleep(config.PROGRESS_SECONDS)
+        # Remember time spent, for resume after kill
+        store.set_meta("crawl_seconds", str(_seconds_used(store) + config.PROGRESS_SECONDS))
         parts = [f"{c.domain}: {c.summary()['fetched']} fetched" for c in crawls if c.site]
         print("  " + ", ".join(parts), file=sys.stderr, flush=True)
 
@@ -215,11 +223,15 @@ async def crawl_sites(
     store = Store(run_dir / config.CRAWL_DB_NAME, max_urls)
     fetcher = Fetcher(gap_seconds)
     robots = RobotsRules(fetcher, store)
-    deadline = asyncio.get_running_loop().time() + minutes * 60
+    # A finished crawl is frozen, never extended
+    crawl = store.get_meta("crawl_done") is None
+    left = max(0.0, minutes * 60 - _seconds_used(store))
+    deadline = asyncio.get_running_loop().time() + left
     crawls = [SiteCrawl(store, fetcher, robots, d, deadline) for d in domains]
-    progress = asyncio.ensure_future(_progress(crawls))
+    progress = asyncio.ensure_future(_progress(crawls, store))
     try:
-        await asyncio.gather(*(c.run() for c in crawls))
+        await asyncio.gather(*(c.run(crawl) for c in crawls))
+        store.set_meta("crawl_done", "1")
         return {c.domain: dict(c.summary(), site=c.site) for c in crawls}
     finally:
         progress.cancel()

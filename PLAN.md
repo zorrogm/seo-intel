@@ -2,20 +2,18 @@
 
 Order follows the data flow. Each step is tested before the next starts.
 
-| Step | Part | What gets built | Status |
+| Stage | Part | Thin version working today | Still to deepen |
 |---|---|---|---|
-| 1 | A1 | Google style robots.txt parser, Google's tests ported | done, 22 tests pass |
-| 2 | A | URL rules, SQLite crawl store, polite async fetcher, resume after kill | done, 31 tests pass |
-| 3 | A | Redirect and canonical chains, meta refresh, X-Robots-Tag, soft 404s | next |
-| 4 | A | Spider trap detection with reported patterns | |
-| 5 | A | Render decision without rendering everything, headless browser on 15% max | |
-| 6 | A | Incremental rerun with ETag, Last-Modified, content hash, change report | |
-| 7 | B | Template learning across pages, main content extraction | |
-| 8 | B | Tokeniser for English, Hindi, Hinglish; MinHash and LSH duplicates | |
-| 9 | C | Local embeddings, intent model, sub-quadratic grouping, severity score, gaps | |
-| 10 | D | Link graph, PageRank, link optimiser compared to a better method | |
-| 11 | E | Claim schema, code verifier, tool-using agent, judge harness with kappa | |
-| 12 | all | BENCHMARKS.md, DECISIONS.md, ablation table, README | |
+| Robots | A1 | Google rules, Google's tests ported | nothing |
+| Crawler | A | Polite, resumable, sitemaps, 3xx chains recorded | traps, rendering, meta and JS redirects, soft 404s, nofollow |
+| Rerun | A6 | Finished crawl is frozen, rerun reuses it | ETag and hash revalidation, change report |
+| Extraction | B | Template learned from repeated blocks | DOM path statistics, F1 measurement |
+| Duplicates | B | MinHash and LSH, exact overlap check | planted pair recall, Hinglish tests |
+| Topics | C | Hashed TF-IDF vectors, seeded k-means, word list intent | real embeddings, LLM on 2% of pages, language handling in gaps |
+| Cannibalization | C | Groups, healthy pair rules, severity score | precision review, ablation table |
+| Links | D | Graph, PageRank, greedy optimiser, anchor sentences | exact gains, comparison with a better method |
+| Agent | E | Gemini with tools, claim verifier, rejection log, disk cache | live recheck of cited pages, judge harness with kappa |
+| Outputs | all | Seven files, byte identical on rerun | BENCHMARKS.md, DECISIONS.md, README |
 
 ## Rules for the code
 
