@@ -17,6 +17,9 @@ You need Python 3.9 or newer. In the project folder run:
 Open the file `.env` and paste a Gemini API key after `GEMINI_API_KEY=`.
 Without a key the tool still runs and writes the plan with standard wording.
 
+The key stays on your computer. `.env` is listed in `.gitignore`, so it is
+never uploaded, and the key is only ever sent to Google's Gemini service.
+
 ## Run
 
     ./seo-intel yoursite.com --competitor theirsite.com
