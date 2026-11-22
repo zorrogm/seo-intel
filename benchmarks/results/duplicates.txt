@@ -1,0 +1,11 @@
+{
+ "pages": 50000,
+ "all_pairs": 1249975000,
+ "planted_pairs": 200,
+ "planted_pairs_above_threshold": 200,
+ "found": 200,
+ "recall": 1.0,
+ "false_pairs_reported": 0,
+ "seconds": 11.4
+}
+           472727552  maximum resident set size

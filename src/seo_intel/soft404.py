@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from seo_intel import config
-from seo_intel.text import jaccard, shingles
+from seo_intel.text import jaccard, set_overlap, shingles
 
 
 def _says_missing(text: str) -> bool:
@@ -21,8 +21,8 @@ def soft_404_reason(page, probe) -> str:
     if probe is None or probe.redirect_to or not probe.tokens:
         return ""
     ours, theirs = shingles(page.tokens), shingles(probe.tokens)
-    if ours and theirs:
+    if len(ours) and len(theirs):
         alike = jaccard(ours, theirs) >= config.SOFT_404_PROBE_OVERLAP
     else:
-        alike = jaccard(set(page.tokens), set(probe.tokens)) >= config.SOFT_404_PROBE_OVERLAP
+        alike = set_overlap(set(page.tokens), set(probe.tokens)) >= config.SOFT_404_PROBE_OVERLAP
     return "same content as a missing page" if alike else ""

@@ -9,7 +9,7 @@ from typing import Dict, List, Set
 from selectolax.lexbor import LexborHTMLParser
 
 from seo_intel import config
-from seo_intel.text import clean
+from seo_intel.text import clean, tokenize
 from seo_intel.urls import normalize
 
 _BLOCK = frozenset(config.BLOCK_TAGS)
@@ -27,21 +27,31 @@ def _text(node) -> str:
     return clean(node.text(deep=True, separator=" ")) if node is not None else ""
 
 
+def _label(node) -> str:
+    """Tag plus its first class, numbers masked."""
+    name = (node.attributes.get("class") or "").split()
+    if name:
+        return node.tag + "." + _DIGITS.sub("0", name[0])
+    return node.tag
+
+
 def _ancestry(node):
     """Tag path, chrome flag and wrapping link."""
-    tags, wrap_href = [], ""
+    tags, labels, wrap_href = [], [], ""
     current = node
     while current is not None and current.tag not in ("html", "-undef"):
         tags.append(current.tag)
+        # Class names only near the block itself
+        labels.append(_label(current) if len(tags) <= config.PATH_LABEL_LEVELS else current.tag)
         if current.tag == "a" and not wrap_href:
             wrap_href = current.attributes.get("href") or ""
         current = current.parent
-    tags.reverse()
+    labels.reverse()
     chrome = any(t in _CHROME for t in tags)
     # A header inside an article is content
     if "header" in tags and not any(t in _CONTENT_ROOTS for t in tags):
         chrome = True
-    return "/".join(tags), chrome, wrap_href
+    return "/".join(labels), chrome, wrap_href
 
 
 def _loose_text(node, parents: Set[int]) -> str:
@@ -120,14 +130,47 @@ def block_key(block: List) -> int:
     return zlib.crc32(_DIGITS.sub("0", block[2].lower()).encode("utf-8"))
 
 
-def learn_template(sample: List[Dict]) -> Set[int]:
-    """Blocks repeated across many pages are template."""
+def _link_density(block: List) -> float:
+    words = len(tokenize(block[2]))
+    linked = sum(len(tokenize(anchor)) for _url, anchor in block[3])
+    return min(1.0, linked / words) if words else (1.0 if block[3] else 0.0)
+
+
+class Template:
+    """What one site repeats around its content."""
+
+    def __init__(self, repeated: Set[int], chrome_paths: Set[str]):
+        self.repeated = repeated
+        self.chrome_paths = chrome_paths
+
+
+def learn_template(sample: List[Dict]) -> Template:
+    """Find repeated blocks and link heavy positions."""
     seen = Counter()
+    path_pages = Counter()
+    path_density: Dict[str, List[float]] = {}
     for page in sample:
         seen.update({block_key(b) for b in page["blocks"]})
+        path_pages.update({b[0] for b in page["blocks"]})
+        for block in page["blocks"]:
+            path_density.setdefault(block[0], []).append(_link_density(block))
     needed = max(config.TEMPLATE_MIN_PAGES, config.TEMPLATE_MIN_SHARE * len(sample))
-    return {key for key, count in seen.items() if count >= needed}
+    repeated = {key for key, count in seen.items() if count >= needed}
+    path_needed = max(config.TEMPLATE_MIN_PAGES, config.CHROME_PATH_MIN_SHARE * len(sample))
+    chrome_paths = set()
+    for path, pages in path_pages.items():
+        density = sum(path_density[path]) / len(path_density[path])
+        if pages >= path_needed and density >= config.CHROME_PATH_LINK_DENSITY:
+            chrome_paths.add(path)
+    return Template(repeated, chrome_paths)
 
 
-def is_template(block: List, template: Set[int]) -> bool:
-    return bool(block[1]) or block_key(block) in template
+def is_template(block: List, template: Template) -> bool:
+    if block[1] or block_key(block) in template.repeated:
+        return True
+    return block[0] in template.chrome_paths
+
+
+def main_blocks(page: Dict, template: Template) -> List[str]:
+    """Text blocks that are real content."""
+    return [b[2] for b in page["blocks"] if b[2] and not is_template(b, template)]

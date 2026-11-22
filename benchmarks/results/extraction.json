@@ -1,0 +1,7 @@
+{
+ "pages": 120,
+ "f1_all_page_text": 0.882,
+ "f1_repeated_blocks_only": 0.9481,
+ "f1_after_template_removal": 0.9999,
+ "worst_page_f1": 0.9826
+}

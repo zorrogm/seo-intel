@@ -12,7 +12,7 @@ import numpy as np
 
 from seo_intel import config
 from seo_intel.corpus import Page
-from seo_intel.text import jaccard, tokenize
+from seo_intel.text import jaccard, set_overlap, tokenize
 
 _PAGE_PARAM = re.compile(r"([?&])(page|p|pg|paged)=\d+")
 _PAGE_PATH = re.compile(r"/page/\d+/?$")
@@ -137,7 +137,7 @@ def pair_signals(a: int, b: int, similarity: float, shingle_sets, inlinks, depth
         "content_overlap": jaccard(shingle_sets[a], shingle_sets[b]),
         "topic_similarity": float(similarity),
         "link_split": 1 - abs(links_a - links_b) / both if both else 0.0,
-        "anchor_conflict": jaccard(anchor_tokens[a], anchor_tokens[b]),
+        "anchor_conflict": set_overlap(anchor_tokens[a], anchor_tokens[b]),
         "depth_closeness": 1 / (1 + abs(depth[a] - depth[b])) if known_depth else 0.0,
     }
 

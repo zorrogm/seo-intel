@@ -1,7 +1,7 @@
 """Near duplicate pages without comparing every pair."""
 from __future__ import annotations
 
-from typing import Dict, List, Set
+from typing import Dict, List
 
 import numpy as np
 
@@ -10,17 +10,17 @@ from seo_intel.corpus import Page
 from seo_intel.text import MinHasher, jaccard, shingles
 
 
-def page_shingles(pages: List[Page]) -> List[Set[int]]:
+def page_shingles(pages: List[Page]) -> List[np.ndarray]:
     return [shingles(p.tokens) for p in pages]
 
 
-def near_duplicates(pages: List[Page], shingle_sets: List[Set[int]], seed: int) -> List[Dict]:
+def near_duplicates(pages: List[Page], shingle_sets: List[np.ndarray], seed: int) -> List[Dict]:
     """Pairs of pages with very high text overlap."""
     hasher = MinHasher(seed)
     rows = config.MINHASH_PERMUTATIONS // config.LSH_BANDS
     buckets: Dict[tuple, List[int]] = {}
     for index, page in enumerate(pages):
-        if len(page.tokens) < config.MIN_TOKENS_FOR_DUPLICATES or not shingle_sets[index]:
+        if len(page.tokens) < config.MIN_TOKENS_FOR_DUPLICATES or not len(shingle_sets[index]):
             continue
         signature = hasher.signature(shingle_sets[index])
         for band in range(config.LSH_BANDS):

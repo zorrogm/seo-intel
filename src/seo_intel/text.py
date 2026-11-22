@@ -15,6 +15,7 @@ _TOKEN = re.compile(r"[0-9a-zß-ɏ]+|[ऀ-ॣ०-ॿ]+")
 _SENTENCE_END = re.compile(r"(?<=[.!?।])\s+")
 _SPACES = re.compile(r"\s+")
 _PRIME = 4294967311
+_NO_SHINGLES = np.zeros(0, dtype=np.uint32)
 
 
 def clean(text: str) -> str:
@@ -39,18 +40,28 @@ def sentences(text: str) -> List[str]:
     return [s.strip() for s in _SENTENCE_END.split(text) if s.strip()]
 
 
-def shingles(tokens: List[str]) -> Set[int]:
-    """Hashed runs of neighbouring tokens."""
+def shingles(tokens: List[str]) -> np.ndarray:
+    """Sorted hashes of neighbouring token runs."""
     size = config.SHINGLE_TOKENS
     if len(tokens) < size:
-        return set()
-    return {
+        return _NO_SHINGLES
+    hashes = [
         zlib.crc32(" ".join(tokens[i : i + size]).encode("utf-8"))
         for i in range(len(tokens) - size + 1)
-    }
+    ]
+    # Compact arrays keep memory low at scale
+    return np.unique(np.array(hashes, dtype=np.uint32))
 
 
-def jaccard(a: Set[int], b: Set[int]) -> float:
+def jaccard(a: np.ndarray, b: np.ndarray) -> float:
+    """Overlap of two sorted shingle arrays."""
+    if len(a) == 0 or len(b) == 0:
+        return 0.0
+    shared = np.intersect1d(a, b, assume_unique=True).size
+    return shared / (len(a) + len(b) - shared)
+
+
+def set_overlap(a: Set, b: Set) -> float:
     if not a or not b:
         return 0.0
     return len(a & b) / len(a | b)
@@ -65,6 +76,6 @@ class MinHasher:
         self.a = rng.randint(1, 2**31 - 1, size=count).astype(np.uint64)[:, None]
         self.b = rng.randint(0, 2**31 - 1, size=count).astype(np.uint64)[:, None]
 
-    def signature(self, shingle_set: Set[int]) -> np.ndarray:
-        values = np.fromiter(sorted(shingle_set), dtype=np.uint64)[None, :]
+    def signature(self, shingle_array: np.ndarray) -> np.ndarray:
+        values = shingle_array.astype(np.uint64)[None, :]
         return ((self.a * values + self.b) % _PRIME).min(axis=1)

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Tuple
 
@@ -28,7 +29,6 @@ class Page:
     canonical: str = ""
     meta_robots: str = ""
     hreflang: List[str] = field(default_factory=list)
-    main_text: str = ""
     sentences: List[str] = field(default_factory=list)
     tokens: List[str] = field(default_factory=list)
     # target URL, anchor text, in content flag
@@ -78,9 +78,9 @@ def _fill(page: Page, data: Dict, template) -> None:
             main_blocks.append(block[2])
         for target, anchor in block[3]:
             page.links.append((target, anchor, in_content))
-    page.main_text = "\n".join(main_blocks)
     page.sentences = [s for b in main_blocks for s in sentences(b)]
-    page.tokens = tokenize(page.main_text)
+    # Shared word objects keep memory low
+    page.tokens = [sys.intern(t) for t in tokenize("\n".join(main_blocks))]
 
 
 def _probe_page(store: Store, site: str, template) -> Optional[Page]:

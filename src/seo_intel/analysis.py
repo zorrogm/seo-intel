@@ -27,7 +27,7 @@ class Analysis:
     top_terms: List[List[str]]
     idf: Dict[str, float]
     intents: List[str]
-    shingle_sets: List[Set[int]]
+    shingle_sets: List[np.ndarray]
     anchors: Dict[int, List[str]]
     edges: graph.Edges
     rank: np.ndarray
