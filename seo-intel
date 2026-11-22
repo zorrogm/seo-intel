@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Runs the tool from the project folder
+cd "$(dirname "$0")"
+exec .venv/bin/seo-intel "$@"
