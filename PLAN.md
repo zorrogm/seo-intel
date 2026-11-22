@@ -2,18 +2,21 @@
 
 Order follows the data flow. Each step is tested before the next starts.
 
-| Stage | Part | Thin version working today | Still to deepen |
+| Stage | Part | Built and tested | Measured by |
 |---|---|---|---|
-| Robots | A1 | Google rules, Google's tests ported | nothing |
-| Crawler | A | Polite, resumable, sitemaps, 3xx chains recorded | traps, rendering, meta and JS redirects, soft 404s, nofollow |
-| Rerun | A6 | Finished crawl is frozen, rerun reuses it | ETag and hash revalidation, change report |
-| Extraction | B | Template learned from repeated blocks | DOM path statistics, F1 measurement |
-| Duplicates | B | MinHash and LSH, exact overlap check | planted pair recall, Hinglish tests |
-| Topics | C | Hashed TF-IDF vectors, seeded k-means, word list intent | real embeddings, LLM on 2% of pages, language handling in gaps |
-| Cannibalization | C | Groups, healthy pair rules, severity score | precision review, ablation table |
-| Links | D | Graph, PageRank, greedy optimiser, anchor sentences | exact gains, comparison with a better method |
-| Agent | E | Gemini with tools, claim verifier, rejection log, disk cache | live recheck of cited pages, judge harness with kappa |
-| Outputs | all | Seven files, byte identical on rerun | BENCHMARKS.md, DECISIONS.md, README |
+| Robots | A1 | Google rules, Google's 21 tests ported | `tests/test_robots_google.py` |
+| Crawler | A | Polite, resumable, sitemaps, traps refused with patterns | `tests/test_crawl.py`, `tests/test_part_a.py` |
+| Redirects | A4 | 3xx chains and loops, meta refresh, script redirects, canonical chains, header rules | `tests/test_part_a.py` |
+| Soft 404 | A5 | Missing page probe, wording and empty checks | `tests/test_part_a.py` |
+| Rendering | A3 | Raw HTML hints and template samples, polite browser | `benchmarks/rendering.py` |
+| Rerun | A6 | Kill safe, conditional requests, change report | `tests/test_part_a.py` |
+| Extraction | B | Template learned from repeats and link heavy positions | `benchmarks/extraction.py` |
+| Duplicates | B | MinHash, banding, exact check; Hindi and Hinglish tokens | `benchmarks/duplicates.py`, `tests/test_text.py` |
+| Cannibalization | C | Two matching channels, intent, healthy pair rules, severity | `benchmarks/cannibalization.py` |
+| Gaps | C | Shared topic space, numeric depth rule, language filter | full runs |
+| Links | D | PageRank, exact greedy plus swaps, anchor sentences | `benchmarks/link_methods.py`, `tests/test_graph.py` |
+| Agent | E | Tools, claim verifier, live recheck, rejection log, cache | `tests/test_pipeline.py`, `tests/test_live.py` |
+| Judge | E | Fixed checks, LLM judge, Cohen's kappa | `tests/test_judge.py`; needs 40 human labels |
 
 ## Rules for the code
 
@@ -29,3 +32,9 @@ Order follows the data flow. Each step is tested before the next starts.
   holds up to 50,000 URLs per site. Chosen by the user on 2026-11-23.
 - LLM: Gemini, key read from `.env` (never committed).
 - Python 3.9 is the minimum version.
+
+## Still needs a person
+
+- 40 recommendations labelled sound or unsound, for the judge's kappa.
+- Review of cannibalization groups and gaps by SEOs.
+- Hand marked main content on real pages for a real F1 number.
