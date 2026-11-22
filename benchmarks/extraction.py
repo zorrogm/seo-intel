@@ -1,4 +1,4 @@
-"""Main content F1 on a generated site with known answers."""
+"""Main content F1 on a generated site."""
 import json
 import sys
 

@@ -2,7 +2,7 @@ from seo_intel.judge import action_key, cohen_kappa, fixed_checks
 
 
 def test_kappa_matches_a_worked_example():
-    # 20 both yes, 15 both no, 5 and 10 split
+    # Agree on 35 of 50, split 5 and 10
     human = ["sound"] * 25 + ["unsound"] * 25
     judge = ["sound"] * 20 + ["unsound"] * 5 + ["sound"] * 10 + ["unsound"] * 15
     assert abs(cohen_kappa(human, judge) - 0.4) < 1e-9

@@ -1,4 +1,4 @@
-"""Search intent of a page: rules first, LLM for ties."""
+"""Page intent: rules first, LLM for ties."""
 from __future__ import annotations
 
 from typing import Dict, List, Sequence, Tuple

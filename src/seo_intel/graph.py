@@ -231,7 +231,7 @@ class LinkOptimiser:
 
     def improve_by_swaps(self, chosen: List[Link], rounds: int = config.SWAP_ROUNDS,
                          shortlist: int = config.SWAP_SHORTLIST) -> List[Link]:
-        """Swap a chosen link when a spare one scores higher."""
+        """Swap in a spare link when it scores higher."""
         chosen = list(chosen)
         best = self.score(chosen)
         for _round in range(rounds):

@@ -1,1 +1,1 @@
-"""seo-intel: crawl, compare and plan, with every claim checked against the crawl."""
+"""Crawl two sites, compare them, write a checked plan."""

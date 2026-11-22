@@ -1,4 +1,4 @@
-"""Share rendered and share caught on a local JavaScript site."""
+"""Rendering share and recall on a local site."""
 import json
 import sys
 import tempfile

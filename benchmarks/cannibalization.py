@@ -1,6 +1,6 @@
 """Ablation: what each signal adds to cannibalization precision.
 
-Uses a generated site where the competing groups are known.
+Runs on a generated site with known groups.
 """
 import json
 import sys
