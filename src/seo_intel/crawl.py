@@ -100,6 +100,7 @@ class SiteCrawl:
         # Set during a next day rerun
         self.run_number = 0
         self.min_id = 0
+        self.seeding = False
 
     def in_scope(self, url: str) -> bool:
         return site_key(url) == self.site and not looks_like_file(url)
@@ -142,8 +143,10 @@ class SiteCrawl:
         if not todo:
             todo.append(origin(start) + "/sitemap.xml")
         seen = set(todo)
-        fetched = 0
-        while todo and fetched < config.MAX_SITEMAP_FILES:
+        fetched = added = 0
+        loop = asyncio.get_running_loop()
+        while (todo and fetched < config.MAX_SITEMAP_FILES
+               and added < config.MAX_SITEMAP_URLS and loop.time() < self.deadline):
             result = await self.fetcher.get(
                 todo.popleft(), config.SITEMAP_MAX_BYTES, any_type=True
             )
@@ -157,7 +160,9 @@ class SiteCrawl:
                         seen.add(loc)
                         todo.append(loc)
             else:
-                self.store.add_urls(self.site, [u for u in locs if self.accept(u)], 1)
+                room = config.MAX_SITEMAP_URLS - added
+                wanted = [u for u in locs if self.accept(u)][:room]
+                added += self.store.add_urls(self.site, wanted, config.SITEMAP_DEPTH)
         self.store.set_meta("sitemaps:" + self.site, "done")
 
     async def _probe_missing_page(self, start: str) -> None:
@@ -266,7 +271,7 @@ class SiteCrawl:
             job = self._next_job()
             if job is None:
                 # Done when nobody can add more
-                if not self.busy:
+                if not self.busy and not self.seeding:
                     return
                 await asyncio.sleep(config.IDLE_POLL_SECONDS)
                 continue
@@ -288,6 +293,14 @@ class SiteCrawl:
             "blocked": self.store.count(self.site, BLOCKED),
         }
 
+    async def _seed_in_background(self, start: str, again: bool = False) -> None:
+        """Read sitemaps while pages are already being fetched."""
+        self.seeding = True
+        try:
+            await self._seed_sitemaps(start, again)
+        finally:
+            self.seeding = False
+
     async def _prepare(self) -> str:
         start = await self._find_start()
         self.site = site_key(start)
@@ -301,16 +314,16 @@ class SiteCrawl:
         workers = range(config.WORKERS_PER_SITE)
         if mode == "crawl":
             self.store.add_urls(self.site, [start], 0)
-            await self._seed_sitemaps(start)
             await self._probe_missing_page(start)
-            await asyncio.gather(*(self._worker() for _ in workers))
+            await asyncio.gather(self._seed_in_background(start),
+                                 *(self._worker() for _ in workers))
         elif mode == "revalidate":
             self.run_number = run_number
             rows = deque(self.store.revalidation_rows(self.site))
             # Only URLs found from now on are new
             self.min_id = self.store.max_id() + 1
-            await self._seed_sitemaps(start, again=True)
-            await asyncio.gather(*(self._rechecker(rows) for _ in workers))
+            await asyncio.gather(self._seed_in_background(start, again=True),
+                                 *(self._rechecker(rows) for _ in workers))
             await asyncio.gather(*(self._worker() for _ in workers))
 
 
