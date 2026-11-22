@@ -11,7 +11,10 @@ PYTHON="${PYTHON:-python3}"
 .venv/bin/python -m pip install --quiet --upgrade pip
 .venv/bin/python -m pip install --quiet .
 # Browser used for pages built by JavaScript
-.venv/bin/python -m playwright install chromium || echo "Browser download failed, rendering will be skipped."
+# On Linux, system libraries come along when allowed
+.venv/bin/python -m playwright install --with-deps chromium 2>/dev/null \
+  || .venv/bin/python -m playwright install chromium \
+  || echo "Browser setup failed, rendering will be skipped."
 
 [ -f .env ] || cp .env.example .env
 echo "Installed. Try: ./seo-intel example.com --competitor example.org"

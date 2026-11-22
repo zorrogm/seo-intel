@@ -172,22 +172,22 @@ async def _render_all(store: Store, sites: List[str], gap_seconds: float) -> str
     try:
         from playwright.async_api import async_playwright
     except ImportError:
-        return "browser library not installed"
+        return "skipped: browser library not installed"
     limits = Fetcher(gap_seconds)
     robots = RobotsRules(limits, store)
     deadline = asyncio.get_running_loop().time() + config.RENDER_MINUTES * 60
     try:
         async with async_playwright() as playwright:
-            try:
-                browser = await playwright.chromium.launch()
-            except Exception as exc:
-                return f"browser could not start: {type(exc).__name__}"
+            browser = await playwright.chromium.launch()
             try:
                 plans = [RenderPlan(store, site) for site in sites]
                 await asyncio.gather(*(_render_site(p, browser, limits, robots, deadline)
                                        for p in plans))
             finally:
                 await browser.close()
+    except Exception as exc:
+        # A broken browser must never stop the run
+        return f"skipped: browser failed ({type(exc).__name__})"
     finally:
         await limits.close()
     return "done"
