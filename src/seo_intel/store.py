@@ -73,6 +73,11 @@ CREATE TABLE IF NOT EXISTS renders(
   rendered_words INTEGER NOT NULL,
   differs INTEGER NOT NULL
 );
+CREATE TABLE IF NOT EXISTS live_checks(
+  url TEXT PRIMARY KEY,
+  data TEXT NOT NULL,
+  checked_at REAL NOT NULL
+);
 CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
 """
 
@@ -292,4 +297,16 @@ class Store:
         return self.db.execute(
             "SELECT site, url, kind, old, new FROM changes WHERE run=? ORDER BY site, kind, url",
             (run,),
+        ).fetchall()
+
+    def save_live(self, url: str, data: str) -> None:
+        self.db.execute(
+            "INSERT OR REPLACE INTO live_checks(url, data, checked_at) VALUES(?,?,?)",
+            (url, data, time.time()),
+        )
+
+    def recent_live(self, max_age_seconds: float) -> List[Tuple[str, str]]:
+        return self.db.execute(
+            "SELECT url, data FROM live_checks WHERE checked_at >= ? ORDER BY url",
+            (time.time() - max_age_seconds,),
         ).fetchall()

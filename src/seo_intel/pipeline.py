@@ -47,7 +47,7 @@ def run(domain: str, competitor: str, folder: Path, seed: int = config.DEFAULT_S
         plan = finalise(candidates, picks or [], facts)
         if live_check:
             # Recheck cited pages until the plan settles
-            live = LiveCheck(store, gap_seconds)
+            live = LiveCheck(store, gap_seconds, revalidate_after_hours)
             for _round in range(config.LIVE_CHECK_ROUNDS):
                 todo = live.pending(plan["actions"])
                 if not todo:

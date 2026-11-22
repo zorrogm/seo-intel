@@ -22,7 +22,8 @@ def test_live_check_sees_a_changed_title(tmp_path):
         assert live.verdict(sentence) is True
 
         site.changed = True
-        fresh = LiveCheck(store, 0.001)
+        assert LiveCheck(store, 0.001).verdict(title) is True
+        fresh = LiveCheck(store, 0.001, max_age_hours=0)
         fresh.fetch([url])
         assert fresh.verdict(title) is False
         gone = {"id": "c4", "url": site.base + "/b", "field": "status", "value": 200}

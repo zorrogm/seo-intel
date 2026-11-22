@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 from typing import Dict, Iterable, List, Optional
 
 from seo_intel import config
@@ -17,10 +18,13 @@ from seo_intel.urls import normalize
 class LiveCheck:
     """Current state of pages the plan cites."""
 
-    def __init__(self, store: Store, gap_seconds: float):
+    def __init__(self, store: Store, gap_seconds: float,
+                 max_age_hours: float = config.REVALIDATE_AFTER_HOURS):
         self.store = store
         self.gap_seconds = gap_seconds
-        self.pages: Dict[str, Optional[Dict]] = {}
+        # Same day reruns reuse earlier rechecks
+        saved = store.recent_live(max_age_hours * 3600)
+        self.pages: Dict[str, Optional[Dict]] = {url: json.loads(data) for url, data in saved}
 
     async def _fetch_all(self, urls: List[str]) -> None:
         fetcher = Fetcher(self.gap_seconds)
@@ -47,6 +51,7 @@ class LiveCheck:
             page.update({name: parsed[name] for name in ("title", "h1", "canonical", "meta_robots")})
             page["text"] = clean(" ".join(block[2] for block in parsed["blocks"]))
         self.pages[url] = page
+        self.store.save_live(url, json.dumps(page, ensure_ascii=False))
 
     def fetch(self, urls: Iterable[str]) -> None:
         todo = sorted(set(urls) - set(self.pages))
