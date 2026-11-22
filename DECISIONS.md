@@ -1,0 +1,201 @@
+# Decisions
+
+What was tried, what failed, and the numbers that settled it. Every number
+here came from a test or benchmark in this repo. The command that reproduces
+it is given next to it.
+
+## Reading the brief
+
+Two limits in the brief pull against each other, so they needed a decision.
+
+| Conflict | Arithmetic | Decision |
+|---|---|---|
+| 50,000 URLs per site, 3 requests per second, 90 minutes | 50,000 pages at 3 per second is 4.6 hours for one host | The crawl is capped by time (60 of the 90 minutes), about 10,500 fetches per host. The frontier still tracks up to 50,000 URLs per site and all analysis is tested at 50,000 pages. |
+| Rerun in 10% of the time, with conditional requests | Even a "not modified" reply costs one request, so rechecking every page takes as long as the first crawl | The rerun gets 7% of the crawl time and rechecks pages closest to the homepage first, then fetches newly found URLs. |
+| Byte identical output, and a rerun that detects changes | A rerun that refetches pages can legitimately change the output | A rerun within 12 hours reuses the stored crawl and makes no requests. After 12 hours it revalidates and writes a change report. |
+
+Scope is the start host with and without `www`. Other subdomains are treated
+as other sites.
+
+## Part A: crawler
+
+**Failed: rate limiter scheduled from planned times.** Each request was
+scheduled one gap after the previous planned start. When the event loop was
+busy, a late request was followed too closely by the next. In
+`tests/test_crawl.py::test_host_limiter_spaces_requests` the smallest gap
+measured 0.0238 s against a 0.05 s target. Now the gap is measured from the
+real start of the previous request, and the test passes repeatedly.
+
+**Failed: treating every 3xx reply as a redirect.** During revalidation a
+`304 Not Modified` reply was handled as a redirect. On the trap test site
+this reported 80 pages as "newly redirected" when one was. `304` and failed
+requests now leave the stored page untouched
+(`tests/test_part_a.py::test_next_day_rerun_reports_changes`).
+
+**Failed: reading all sitemaps before crawling.** On two large news sites a
+25 second trial fetched 0 pages: the whole budget went on sitemap files, and
+100,000 sitemap URLs filled both frontiers before the homepage was read.
+Sitemaps now load alongside the workers, are capped at 20,000 URLs per site
+and rank below pages linked from the homepage. The same trial then fetched
+155 pages.
+
+**Kept: traps are refused at enqueue time, not after fetching.** A URL is
+checked against calendar, faceted, growing path and session rules before it
+enters the frontier, so a trap costs at most its cap in fetches (20 filter
+mixes per path, 60 dates per calendar shape). Each refusal is counted with
+its pattern in `spider_traps.json`.
+
+**Kept: soft 404 needs evidence, not just thin text.** A page is flagged only
+if it has no text, or a short page says "not found" in its title or heading,
+or its content matches the site's own answer to a URL that cannot exist. The
+homepage is never flagged. On the trap test site this finds 3 of 3 with no
+false alarms (`tests/test_part_a.py::test_soft_404s_are_found_without_false_alarms`).
+
+**Known limit: kill and resume.** Stored pages are never duplicated or lost.
+Requests that were in flight at the moment of a kill are fetched again on
+resume, at most 4 (one per worker).
+
+## Part B: main content and duplicates
+
+**Failed: repeated text alone as the template signal.** Marking a block as
+template when its text repeats on 10% of pages misses chrome that changes
+per page, such as related links and breadcrumbs.
+
+| Method | Token F1 |
+|---|---|
+| All page text | 0.8820 |
+| Repeated blocks only | 0.9481 |
+| Repeated blocks plus link heavy positions | 0.9999 |
+
+Reproduce: `.venv/bin/python benchmarks/extraction.py`. This is a generated
+120 page site with known answers, not hand marked real pages.
+
+**Failed: text beside child blocks was dropped.** The first extractor only
+read leaf blocks, so `<div>text <p>more</p></div>` lost "text". This was
+found by reading the code after a soft 404 test misfired, not by a
+benchmark, so there is no number for it. Loose text is now kept as its own
+block.
+
+**Failed: one Python string per word.** Holding every token as its own
+object used 1.81 GB for 50,000 pages of 300 words, too close to the 2 GB
+limit. Sharing word objects and storing shingles as sorted arrays brought
+this to 473 MB, and the duplicate search from 47.9 s to 11.4 s.
+
+**Kept: MinHash with banding, then an exact check.** 64 hash functions in
+16 bands find candidates; every candidate is confirmed with exact shingle
+overlap, so no false pair is reported. On 50,000 pages it found 200 of 200
+planted pairs out of 1.25 billion possible pairs.
+Reproduce: `.venv/bin/python benchmarks/duplicates.py`.
+
+## Part C: cannibalization and gaps
+
+**Failed: compact vectors alone, grouped by single links.** Pages were
+hashed into 512 dimensions and any two above the threshold were merged into
+a group. Unrelated pages collided in the small vector space, and one weak
+link pulled them into real groups.
+
+| Version | Test site | Precision at 20 | Recall of planted groups |
+|---|---|---|---|
+| Hashed vectors, single link groups | first | 0.65 | 0.70 |
+| Plus exact term check and tight groups | first | 1.00 | 1.00 |
+| Same version | harder | 1.00 | 0.50 |
+| Plus title, heading and anchor channel | harder | 1.00 | 1.00 |
+
+**Failed: body text as the only evidence.** After the fix above, a harder
+test site (half the competing pages say little about their topic in the
+body) showed recall of 0.50. Pages like thin category pages compete through
+titles and anchors, not body text. A second channel now pairs pages that
+share rare title, heading and anchor terms, found through an index.
+
+**Ablation: what each signal adds.**
+Reproduce: `.venv/bin/python benchmarks/cannibalization.py`.
+
+| Setup | Groups reported | Precision, all groups | Precision at 20 | Recall |
+|---|---|---|---|---|
+| All signals | 30 | 1.00 | 1.00 | 1.00 |
+| No title or heading | 30 | 1.00 | 1.00 | 1.00 |
+| No anchor text | 30 | 1.00 | 1.00 | 1.00 |
+| No title, heading or anchors | 15 | 1.00 | 1.00 | 0.50 |
+| No template removal | 30 | 1.00 | 1.00 | 1.00 |
+| No intent check | 40 | 0.75 | 1.00 | 1.00 |
+| No healthy pair rules | 50 | 0.60 | 0.50 | 1.00 |
+
+Reading it: titles and anchors back each other up, losing both halves
+recall. The intent check and the healthy pair rules are what keep precision
+up. Template removal made no difference here because the exact term check
+already ignores words that appear on most pages. These are results on a
+generated site with planted groups; they are not the judged precision the
+brief asks for, which needs human reviewers.
+
+**Kept: severity is a weighted sum of five signals.** Content overlap 0.30,
+topic similarity 0.30, internal link split 0.20, anchor conflict 0.10, depth
+closeness 0.10. Overlap and similarity say the pages are substitutes; an
+even link split says the site itself has not chosen a winner.
+
+**Kept: "in depth" has numbers.** A gap is a topic where the competitor has
+at least 3 pages and 1,500 words, and the target has at most 20% of those
+words. Competitor pages in languages the target does not publish in are
+left out.
+
+**Kept: LLM on at most 2% of pages.** Intent comes from word and price rules.
+Only pages where the rules tie or see one weak hint go to the LLM, capped at
+2% of pages and 100 pages.
+
+## Part D: internal links
+
+**Failed: greedy on an estimate.** The first optimiser added, at each step,
+the link with the highest estimated flow (source rank divided by its
+outlinks) without checking the real effect.
+
+| Method | Mean share of best possible gain | Worst case | Optimal in 40 graphs | Seconds |
+|---|---|---|---|---|
+| Rank once, take top K | 0.8763 | 0.5397 | 5 | 0.00 |
+| Greedy on estimates | 0.9201 | 0.6826 | 7 | 0.07 |
+| Greedy on exact gain | 0.9993 | 0.9845 | 37 | 0.34 |
+| Greedy on exact gain, then swaps | 1.0000 | 1.0000 | 40 | 0.63 |
+
+Reproduce: `.venv/bin/python benchmarks/link_methods.py`. "Best possible" is
+brute force over every combination, on 40 random graphs of 30 pages with 14
+candidate links and a budget of 4.
+
+The tool uses the last row: the 8 best estimates are each scored with a full
+PageRank recompute, then every chosen link is tested for a better swap. The
+problem is known to be NP-hard, so brute force is only for the small graphs.
+
+**Kept: links must already fit the page.** A source page qualifies only if it
+is topically related, does not link to the target yet, and has a sentence
+that already contains words from the target's title or heading. Those words
+become the anchor.
+
+## Part E: agent and verified claims
+
+**Failed: strict claim reference format.** On the first real run the model
+wrote `c77` where the rules wanted `[c77]`, and 16 of 25 rationales were
+rejected and replaced with standard text. References without brackets are
+now accepted and normalised; the same run then had 0 rejections.
+
+**Failed: checking claims only against the stored crawl.** A stored fact can
+be stale by the time the plan is read. Cited pages are now fetched again
+just before writing; a changed title, canonical, status, redirect or quoted
+sentence drops the action and the next best one takes its place.
+
+**Failed: first model choice.** `gemini-2.5-flash-lite` returned 404 "no
+longer available to new users". The run fell back to standard wording
+without failing. The model is now `gemini-3.5-flash-lite` and the failure
+reason is written to `logs/llm_usage.json`.
+
+**Kept: the model never writes facts.** Code finds candidate actions and
+builds their claims. The model reads them through five tools, picks and
+orders actions, and writes prose that may only point at claim IDs. Prose
+containing a digit or URL is rejected.
+
+**Kept: the run cannot fail because of the LLM.** No key, an error, a prompt
+over budget or a bad answer all lead to the same place: actions ranked by
+score with standard wording.
+
+## What is not done
+
+- Precision at 20 judged by SEOs, and token F1 on hand marked real pages,
+  need people. The repo measures both only on generated sites.
+- The judge harness needs 40 human labels before it can report kappa.
+- Rendering recall is measured on a local test site, not on the open web.
