@@ -46,8 +46,8 @@ and does this:
 What would raise the fetch count, and why it is not the default:
 
 - **More crawl time.** `--crawl-minutes 75` fetches about 13,000 per site.
-  It leaves 15 minutes for rendering, analysis and the agent, which took 7
-  to 10 minutes on a fast laptop. Too thin a margin for a 4 core machine.
+  It leaves 15 minutes for rendering, analysis and the agent, which took
+  about 7 minutes on a fast laptop. Too thin a margin for a 4 core machine.
 - **Counting subdomains as one site.** Each host has its own 3 per second,
   so a site spread over several hosts could pass 16,200. Not built: it
   changes what "the site" means and was not tested.
