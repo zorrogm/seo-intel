@@ -156,14 +156,20 @@ those the calibrated judge agrees 75% of the time, kappa 0.50.
 ## Final code in a clean container
 
 The full container run above used an earlier commit. The final code was
-checked the same way with a 6 minute crawl of pair 3 (4 CPUs, 2 GB cap,
-fresh clone, commit `1a53676`, which is the last code change):
+checked the same way with a 3 minute crawl of pair 3 (4 CPUs, 2 GB cap,
+fresh clone from GitHub):
 
 | Measure | Result |
 |---|---|
+| Install | one command, with the browser |
 | Tests | 69 pass |
-| First run | 1,746 pages, 25 actions, plan written by the agent, 13 min 26 s, tool peak 231 MB |
-| Second run | 12.9 s, 12 files byte identical |
-| Whole container peak | 1,312 MB, no out of memory events |
+| First run | 812 pages, 25 actions, plan written by the agent, 0 rejections, 8 min 54 s, tool peak 212 MB |
+| Second run | 11.5 s, 12 files byte identical |
+| Out of memory events | none |
+
+The container as a whole reached its 2 GB cap during this check. That
+figure includes the file cache from installing packages and the browser in
+the same container, which the system frees on demand; the tool itself
+peaked at 212 MB.
 
 Raw results are in `benchmarks/results/`.
