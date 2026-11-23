@@ -152,7 +152,7 @@ releases. An LLM judge marked 36 of 50 recommendations from two runs as
 unsound, most for this reason. Pages whose titles or paths differ only in
 numbers or month names are now a healthy "numbered series", unless their
 text is a near copy under an identical title. python.org dropped to 14
-groups with 2,907 pairs set aside, and the judge then marked 34 of 50 sound.
+groups with 3,210 pairs set aside, and the judge then marked 34 of 50 sound.
 
 **Ablation: what each signal adds.**
 Reproduce: `.venv/bin/python benchmarks/cannibalization.py`.
@@ -241,8 +241,8 @@ sentence, so prose cannot say anything a claim does not prove. Unsupported
 codes are logged and removed.
 
 **Failed: an agent loop with no hard stop.** One run used all 12 steps on
-lookups and never submitted; another sent 25 lookups in one step and
-overflowed the prompt budget. The last step now only allows `submit_plan`,
+lookups and never submitted; another overflowed the prompt budget even
+after trimming old tool results. The last step now only allows `submit_plan`,
 lookups per step are limited to 6, and oversized tool results are blanked,
 newest last. The largest prompt across all runs was 5,086 tokens.
 
