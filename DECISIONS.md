@@ -4,13 +4,59 @@ What was tried, what failed, and the numbers that settled it. Every number
 here came from a test or benchmark in this repo. The command that reproduces
 it is given next to it.
 
-## Reading the brief
+## The 50,000 URL limit
 
-Two limits in the brief pull against each other, so they needed a decision.
+This is the one hard limit the tool does not meet as a fetch count, so the
+reasoning comes first.
+
+Three hard limits apply to the same crawl:
+
+| Limit | Value |
+|---|---|
+| Scale | 50,000 URLs per site |
+| Politeness | at most 3 requests per second per host |
+| Time | full run, both sites, within 90 minutes |
+
+The arithmetic for one host:
+
+| Question | Answer |
+|---|---|
+| Most requests 90 minutes allows at 3 per second | 3 x 60 x 90 = 16,200 |
+| Time 50,000 requests need at 3 per second | 50,000 / 3 = 16,667 s = 4.6 hours |
+| Requests per second needed for 50,000 in 90 minutes | 9.3, three times the politeness limit |
+
+Both sites are crawled at the same time, so the ceiling is per host, not
+shared. Even so, 16,200 is the most any polite crawler can fetch from one
+host in the whole 90 minutes, with nothing left for analysis. Meeting the
+fetch count would mean breaking either the politeness limit or the time
+limit, and both of those are also hard limits.
+
+So the tool reads "50,000 URLs per site" as the size of site it must handle,
+and does this:
+
+| What | How | Measured |
+|---|---|---|
+| Tracks up to 50,000 URLs per site | The frontier stores every URL found, up to 50,000, with its state | python.org 15,747 known, ruby-lang.org 20,854, amarujala.com 33,068 |
+| Fetches as many as the limits allow | 60 of the 90 minutes go to crawling, at one request per 0.34 s per host | 9,964 to 10,376 pages per site on the two large pairs |
+| Fetches the most useful pages first | Pages are taken by click distance from the homepage, sitemap URLs after homepage links | |
+| Reports what was left | `crawl_summary.json` gives known, fetched and waiting URLs per site | |
+| Analyses 50,000 pages within the limits | Every stage after the crawl avoids all pairs comparisons | 50,000 pages in 84 s and 1,042 MB, `benchmarks/scale.py 25000` |
+| Stays within memory at 50,000 URLs | Only URLs are kept for unfetched pages, bodies are compressed on disk | full run peaked at 588 MB inside a 2 GB cap |
+
+What would raise the fetch count, and why it is not the default:
+
+- **More crawl time.** `--crawl-minutes 75` fetches about 13,000 per site.
+  It leaves 15 minutes for rendering, analysis and the agent, which took 7
+  to 10 minutes on a fast laptop. Too thin a margin for a 4 core machine.
+- **Counting subdomains as one site.** Each host has its own 3 per second,
+  so a site spread over several hosts could pass 16,200. Not built: it
+  changes what "the site" means and was not tested.
+- **Going faster than 3 per second.** Not considered.
+
+## Other limits that pull against each other
 
 | Conflict | Arithmetic | Decision |
 |---|---|---|
-| 50,000 URLs per site, 3 requests per second, 90 minutes | 50,000 pages at 3 per second is 4.6 hours for one host | The crawl is capped by time (60 of the 90 minutes), about 10,500 fetches per host. The frontier still tracks up to 50,000 URLs per site and all analysis is tested at 50,000 pages. |
 | Rerun in 10% of the time, with conditional requests | Even a "not modified" reply costs one request, so rechecking every page takes as long as the first crawl | The rerun gets 7% of the crawl time and rechecks pages closest to the homepage first, then fetches newly found URLs. |
 | Byte identical output, and a rerun that detects changes | A rerun that refetches pages can legitimately change the output | A rerun within 12 hours reuses the stored crawl and makes no requests. After 12 hours it revalidates and writes a change report. |
 

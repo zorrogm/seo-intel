@@ -55,9 +55,11 @@ Notes on honesty:
 - The next day rerun (conditional requests and a change report) is tested on
   a local site only (`tests/test_part_a.py`). It gets 7% of the crawl time,
   which is 4.2 minutes, plus under a minute of analysis.
-- "Scale" is the brief's hardest line. 50,000 fetches per site cannot fit in
-  90 minutes at 3 requests per second (it needs 4.6 hours per host), so the
-  crawl is capped by time. See DECISIONS.md.
+- "Scale" is the one limit not met as a fetch count. 90 minutes at 3
+  requests per second allows 16,200 requests per host, so 50,000 fetches
+  cannot fit. The tool tracks up to 50,000 URLs per site, fetches about
+  10,000 and analyses 50,000 within the limits. The full reasoning is the
+  first section of DECISIONS.md.
 
 ## Results per pair
 

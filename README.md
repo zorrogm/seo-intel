@@ -24,7 +24,8 @@ never uploaded, and the key is only ever sent to Google's Gemini service.
 
     ./seo-intel yoursite.com --competitor theirsite.com
 
-A full run takes up to 90 minutes. Results appear in
+A full run takes up to 90 minutes and reads about 10,000 pages per site,
+the most the 3 pages a second limit allows in that time. Results appear in
 `runs/yoursite.com__theirsite.com/output/`.
 
 ## What you get
