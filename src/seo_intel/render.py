@@ -20,22 +20,22 @@ from seo_intel.urls import site_key
 _DIGITS = re.compile(r"\d+")
 
 
-def word_count(parsed: Dict) -> int:
-    return sum(len(tokenize(block[2])) for block in parsed["blocks"])
-
-
-def link_count(parsed: Dict) -> int:
-    return len({link[0] for block in parsed["blocks"] for link in block[3]})
-
-
-def looks_script_built(parsed: Dict) -> bool:
-    """Thin text with heavy scripts, judged from raw HTML."""
-    words = word_count(parsed)
+def summarise(parsed: Dict) -> Dict:
+    """The few numbers rendering decisions need."""
+    words = sum(len(tokenize(block[2])) for block in parsed["blocks"])
     scripted = (parsed.get("script_bytes", 0) >= config.RENDER_MIN_SCRIPT_BYTES
                 or parsed.get("external_scripts", 0) >= 1)
-    if words < config.RENDER_THIN_WORDS and scripted:
-        return True
-    return bool(parsed.get("noscript_js")) and words < config.RENDER_NOSCRIPT_WORDS
+    thin = words < config.RENDER_THIN_WORDS and scripted
+    told = bool(parsed.get("noscript_js")) and words < config.RENDER_NOSCRIPT_WORDS
+    return {
+        "words": words,
+        "links": len({link[0] for block in parsed["blocks"] for link in block[3]}),
+        "title": parsed["title"],
+        "canonical": parsed["canonical"],
+        "meta_robots": parsed["meta_robots"],
+        # Thin text with heavy scripts, from raw HTML
+        "script_built": thin or told,
+    }
 
 
 def url_shape(url: str) -> str:
@@ -48,11 +48,11 @@ def url_shape(url: str) -> str:
 
 def differs(raw: Dict, rendered: Dict) -> bool:
     """Did rendering add real content or links?"""
-    before, after = word_count(raw), word_count(rendered)
+    before, after = raw["words"], rendered["words"]
     grew = after >= before * config.RENDER_WORD_GROWTH
     if grew and after - before >= config.RENDER_MIN_NEW_WORDS:
         return True
-    links_before, links_after = link_count(raw), link_count(rendered)
+    links_before, links_after = raw["links"], rendered["links"]
     more = links_after >= links_before * config.RENDER_WORD_GROWTH
     if more and links_after - links_before >= config.RENDER_MIN_NEW_LINKS:
         return True
@@ -72,7 +72,7 @@ class RenderPlan:
         self.site = site
         self.ids = {r[1]: r[0] for r in rows}
         store.db.execute("BEGIN")
-        self.parsed = {r[1]: _parsed(store, r[0], r[1], r[5]) for r in rows}
+        self.parsed = {r[1]: summarise(_parsed(store, r[0], r[1], r[5])) for r in rows}
         store.db.execute("COMMIT")
         self.cap = int(config.MAX_RENDER_SHARE * len(rows))
         self.shapes: Dict[str, List[str]] = {}
@@ -83,7 +83,7 @@ class RenderPlan:
     def first_queue(self) -> List[Tuple[str, str]]:
         """Suspicious pages, then samples of each template."""
         queue = [(url, "raw HTML looks script built")
-                 for url in sorted(self.parsed) if looks_script_built(self.parsed[url])]
+                 for url in sorted(self.parsed) if self.parsed[url]["script_built"]]
         picked = {url for url, _why in queue}
         for shape in sorted(self.shapes):
             urls = self.shapes[shape]
@@ -141,11 +141,11 @@ async def _render_site(plan: RenderPlan, browser, limits: Fetcher, robots: Robot
         finally:
             await page.close()
         raw = plan.parsed[url]
-        rendered = parse_page(html, url)
+        rendered = summarise(parse_page(html, url))
         changed = differs(raw, rendered)
         results[url] = changed
-        plan.store.save_render(plan.ids[url], html, reason, word_count(raw),
-                               word_count(rendered), changed)
+        plan.store.save_render(plan.ids[url], html, reason, raw["words"],
+                               rendered["words"], changed)
 
     async def drain(queue) -> None:
         async def tab():
@@ -161,7 +161,7 @@ async def _render_site(plan: RenderPlan, browser, limits: Fetcher, robots: Robot
         for url, reason in queue:
             if url not in done and reason != "template sample":
                 done.add(url)
-                plan.store.flag_render(plan.ids[url], reason, word_count(plan.parsed[url]))
+                plan.store.flag_render(plan.ids[url], reason, plan.parsed[url]["words"])
 
     await drain(deque(plan.first_queue()))
     await drain(deque(plan.follow_up(results, done)))

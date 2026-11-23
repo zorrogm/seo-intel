@@ -105,26 +105,30 @@ def _probe_page(store: Store, site: str, template) -> Optional[Page]:
 def load_site(store: Store, site: str, home: str = "") -> List[Page]:
     """All fetched pages of a site, sorted by URL."""
     rows = store.fetched_rows(site)
-    html_rows = [r for r in rows if r[2] == 200 and r[5]]
-    store.db.execute("BEGIN")
-    parsed = {r[1]: _parsed(store, r[0], r[1], r[5]) for r in html_rows}
-    store.db.execute("COMMIT")
+    html = {r[1]: (r[0], r[5]) for r in rows if r[2] == 200 and r[5]}
 
+    def parsed(url: str) -> Dict:
+        url_id, body_hash = html[url]
+        return _parsed(store, url_id, url, body_hash)
+
+    store.db.execute("BEGIN")
     # Learn the template from a fixed sample
-    sample_urls = sorted(parsed, key=_sample_order)[: config.TEMPLATE_SAMPLE_PAGES]
-    template = learn_template([parsed[u] for u in sample_urls])
+    sample_urls = sorted(html, key=_sample_order)[: config.TEMPLATE_SAMPLE_PAGES]
+    template = learn_template([parsed(u) for u in sample_urls])
 
     pages = []
     for _id, url, status, redirect_to, x_robots, _hash, kind in rows:
         page = Page(url=url, site=site, status=status, redirect_to=redirect_to,
                     redirect_kind=kind, x_robots=x_robots)
-        if url in parsed:
-            _fill(page, parsed[url], template)
+        if url in html:
+            # One page in memory at a time
+            _fill(page, parsed(url), template)
         pages.append(page)
+    store.db.execute("COMMIT")
 
     probe = _probe_page(store, site, template)
     for page in pages:
         # The homepage is never a missing page
-        if page.url != home and page.status == 200 and not page.redirect_to and page.url in parsed:
+        if page.url != home and page.status == 200 and not page.redirect_to and page.url in html:
             page.soft_404 = soft_404_reason(page, probe)
     return pages

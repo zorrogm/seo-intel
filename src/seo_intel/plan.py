@@ -192,17 +192,19 @@ def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts, live=None
         if pick.get("id") in by_id and pick["id"] not in rationale_of:
             order.append(pick["id"])
             rationale_of[pick["id"]] = str(pick.get("rationale", ""))
-    # Fill up with the best of the rest, mixed by type
-    rest = [c for c in candidates if c["id"] not in rationale_of]
-    per_type = Counter(by_id[i]["type"] for i in order)
+    # The agent's picks first, then the best of the rest
+    order += [c["id"] for c in candidates if c["id"] not in rationale_of]
+    # No action type may crowd out the others
+    per_type = Counter()
     first, later = [], []
-    for candidate in rest:
-        if per_type[candidate["type"]] < config.PLAN_MAX_PER_TYPE:
-            per_type[candidate["type"]] += 1
-            first.append(candidate["id"])
+    for action_id in order:
+        kind = by_id[action_id]["type"]
+        if per_type[kind] < config.PLAN_MAX_PER_TYPE:
+            per_type[kind] += 1
+            first.append(action_id)
         else:
-            later.append(candidate["id"])
-    order += first + later
+            later.append(action_id)
+    order = first + later
 
     actions, rejections = [], []
     for action_id in order:
