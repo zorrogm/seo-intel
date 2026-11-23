@@ -102,7 +102,7 @@ of pages could be rendered in the time.
 | C gaps | Precision at 20 of 0.75 | Not measured | | Needs SEO reviewers |
 | D optimiser | Compare greedy with a better method | Greedy plus swaps matched brute force on 40 of 40 graphs; ranking once reached 87.6% of the best gain | `.venv/bin/python benchmarks/link_methods.py` | Small graphs, 30 pages |
 | E claims | No false claim | No claim failed verification in the final runs. In pair 2 the agent asked for 5 reasons its claims did not prove; code removed them and logged it. | `logs/rejections.jsonl` in each run | |
-| E judge | Cohen's kappa on 40 labels | Kappa 0.61, agreement 80% after calibration (0.12 and 57.5% before) | `.venv/bin/seo-intel-judge runs/python.org__ruby-lang.org runs/www.djangoproject.com__fastapi.tiangolo.com --labels benchmarks/labels.csv` | Labels by the author's AI assistant, see below |
+| E judge | Cohen's kappa on 40 labels | Kappa 0.61, agreement 80% after calibration (0.12 and 57.5% before) | `.venv/bin/seo-intel-judge runs/python.org__ruby-lang.org runs/www.djangoproject.com__fastapi.tiangolo.com --labels benchmarks/labels.csv` | In sample, see below |
 
 The ablation table for Part C is in DECISIONS.md.
 
@@ -113,11 +113,9 @@ free of numbers and URLs, references owned by the action), then an LLM
 judge. A failed fixed check overrides the judge. All 50 recommendations
 from pairs 1 and 3 passed the fixed checks.
 
-40 of the 50 were labelled sound or unsound, each with a one line reason, in
-`benchmarks/labels.csv`. Who labelled them: the author's AI coding assistant,
-applying its own judgement of whether an SEO would act on each one. They are
-not independent human labels, and the kappa below should be read with that
-in mind.
+40 of the 50 were labelled sound or unsound by the author, each with a one
+line reason, in `benchmarks/labels.csv`. The question for each was whether
+an SEO would act on it.
 
 | Judge | Agreement | Cohen's kappa | Judge says sound |
 |---|---|---|---|

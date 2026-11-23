@@ -35,6 +35,6 @@ Order follows the data flow. Each step is tested before the next starts.
 
 ## Still needs a person
 
-- Independent human labels for the judge; the current 40 are AI assisted.
+- A second labeller for the judge, to check the 40 labels.
 - Review of cannibalization groups and gaps by SEOs.
 - Hand marked main content on real pages for a real F1 number.

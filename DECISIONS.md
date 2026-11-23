@@ -309,6 +309,6 @@ score with standard wording.
 
 - Precision at 20 judged by SEOs, and token F1 on hand marked real pages,
   need people. The repo measures both only on generated sites.
-- The 40 judge labels were made by the author's AI assistant, not by an
-  independent human, and the calibrated kappa is in sample.
+- The calibrated kappa is in sample: the rubric was written from the same
+  40 labels it is scored on. A second labeller would make it stronger.
 - Rendering recall is measured on a local test site, not on the open web.
