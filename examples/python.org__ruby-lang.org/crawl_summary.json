@@ -8,7 +8,9 @@
   },
   "indexable": 8921,
   "pages_fetched": 9968,
-  "soft_404": 0
+  "soft_404": 0,
+  "urls_known": 15747,
+  "urls_waiting": 5779
  },
  "ruby-lang.org": {
   "by_status": {
@@ -18,6 +20,8 @@
   },
   "indexable": 6605,
   "pages_fetched": 9964,
-  "soft_404": 0
+  "soft_404": 0,
+  "urls_known": 20854,
+  "urls_waiting": 10890
  }
 }

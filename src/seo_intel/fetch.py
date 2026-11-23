@@ -62,7 +62,6 @@ class Fetcher:
     def __init__(self, gap_seconds: float = config.REQUEST_GAP_SECONDS):
         self.gap = gap_seconds
         self.limiters: Dict[str, HostLimiter] = {}
-        self.requests = 0
         timeout = httpx.Timeout(
             config.READ_TIMEOUT_SECONDS, connect=config.CONNECT_TIMEOUT_SECONDS
         )
@@ -85,7 +84,6 @@ class Fetcher:
         result = FetchResult()
         limiter = self._limiter(url)
         await limiter.wait()
-        self.requests += 1
         try:
             async with self.client.stream("GET", url, headers=headers) as response:
                 result.status = response.status_code

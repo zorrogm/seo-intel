@@ -10,7 +10,7 @@ from seo_intel import issues
 from seo_intel.analysis import Analysis
 from seo_intel.plan import claim_text
 from seo_intel.render import render_report
-from seo_intel.store import Store
+from seo_intel.store import QUEUED, Store
 
 
 def write_json(path: Path, data) -> None:
@@ -19,7 +19,7 @@ def write_json(path: Path, data) -> None:
     path.write_text(text + "\n", encoding="utf-8")
 
 
-def crawl_summary(a: Analysis) -> Dict:
+def crawl_summary(a: Analysis, store: Store) -> Dict:
     summary = {}
     for site in sorted({a.target_site, a.competitor_site}):
         pages = [p for p in a.pages if p.site == site]
@@ -27,6 +27,8 @@ def crawl_summary(a: Analysis) -> Dict:
         for page in pages:
             statuses[str(page.status)] = statuses.get(str(page.status), 0) + 1
         summary[site] = {
+            "urls_known": store.count(site),
+            "urls_waiting": store.count(site, QUEUED),
             "pages_fetched": len(pages),
             "indexable": sum(p.indexable for p in pages),
             "soft_404": sum(bool(p.soft_404) for p in pages),
@@ -85,7 +87,7 @@ def plan_markdown(actions: List[Dict]) -> str:
 
 def write_outputs(folder: Path, a: Analysis, plan: Dict, store: Store) -> None:
     out = folder / config.OUTPUT_FOLDER
-    write_json(out / "crawl_summary.json", crawl_summary(a))
+    write_json(out / "crawl_summary.json", crawl_summary(a, store))
     write_json(out / "crawl_issues.json", issues.crawl_issues(a))
     write_json(out / "spider_traps.json", issues.trap_report(a, store))
     write_json(out / "soft_404s.json", issues.soft_404s(a))

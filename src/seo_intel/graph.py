@@ -188,11 +188,9 @@ class LinkOptimiser:
         self.priority = np.array(sorted(priority), dtype=np.int64)
         self.budget = budget
         self.base_rank = self.graph.rank()
-        self.evaluations = 0
 
     def score(self, chosen: Sequence[Link], start=None) -> float:
         """Total PageRank of the priority pages."""
-        self.evaluations += 1
         rank = self.graph.rank(chosen, self.base_rank if start is None else start)
         return float(rank[self.priority].sum())
 

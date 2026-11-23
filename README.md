@@ -12,7 +12,7 @@ You need Python 3.9 or newer. In the project folder run:
 
     bash install.sh
 
-## Add your AI key (optional)
+## Add a Gemini key (optional)
 
 Open the file `.env` and paste a Gemini API key after `GEMINI_API_KEY=`.
 Without a key the tool still runs and writes the plan with standard wording.
@@ -60,7 +60,7 @@ A real result, python.org against ruby-lang.org, is in
 | `--priority-urls file.txt` | Pages you most want to rank, one URL per line |
 | `--link-budget 40` | How many new links to suggest |
 | `--seed 0` | Same seed gives the same result |
-| `--no-llm` | Skip the AI writer |
+| `--no-llm` | Write the plan without the language model |
 
 ## Good manners
 
