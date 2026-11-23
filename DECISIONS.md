@@ -39,6 +39,31 @@ Sitemaps now load alongside the workers, are capped at 20,000 URLs per site
 and rank below pages linked from the homepage. The same trial then fetched
 155 pages.
 
+**Failed: storing "too many requests" replies as pages.** On a full run
+djangoproject.com answered 429 for 92 of 1,898 URLs and those pages were
+lost. A refused URL now stays queued, the host's gap doubles (up to 5 s) and
+eases back on success, and the URL is retried up to 3 times
+(`tests/test_fixes.py::test_rate_limited_pages_are_retried_not_lost`).
+
+**Failed: two trap limits that cut real pages.** A 20 variant limit per path
+refused `/weblog/?page=21` on djangoproject.com as a "filter" trap, and a
+60 page limit per calendar shape refused monthly news archives on
+ruby-lang.org. A single numeric parameter is now treated as pagination
+(limit 300), and the calendar limit is 400, enough for every month in the
+allowed years. Refused URLs are also counted once each; the first report
+counted every repeat sighting and showed 11,401 for ruby-lang.org.
+
+**Failed: assuming the browser can start.** In a clean Linux container the
+browser driver failed on a missing system library and the whole run stopped.
+Any browser failure now skips rendering and records why in
+`render_report.json`; the installer also adds the library when it can.
+
+**Failed: "no text" as proof of a soft 404.** On livehindustan.com 102 game
+and widget pages have no text in raw HTML because scripts build them. They
+were reported as soft 404s. An empty page with scripts is now a rendering
+candidate instead, and loose phrases such as "not found" on their own were
+dropped after one matched a short Hindi news story. That run now reports 0.
+
 **Kept: traps are refused at enqueue time, not after fetching.** A URL is
 checked against calendar, faceted, growing path and session rules before it
 enters the frontier, so a trap costs at most its cap in fetches (20 filter
@@ -81,6 +106,19 @@ object used 1.81 GB for 50,000 pages of 300 words, too close to the 2 GB
 limit. Sharing word objects and storing shingles as sorted arrays brought
 this to 473 MB, and the duplicate search from 47.9 s to 11.4 s.
 
+**Failed: holding every parsed page and every link string.** Two real runs
+were far heavier than the generated test data.
+
+| Run | Pages | Peak before | Peak after |
+|---|---|---|---|
+| djangoproject.com and fastapi.tiangolo.com | 3,927 | 922 MB | 632 MB |
+| livehindustan.com and amarujala.com | 20,728 | 1,852 MB | 1,044 MB |
+
+The fixes: parse results are read one page at a time, link targets and
+anchors are shared objects (one site had 1.85 million links to 83,160
+distinct URLs), menu link text is dropped, and word counts are freed once
+the vectors are built.
+
 **Kept: MinHash with banding, then an exact check.** 64 hash functions in
 16 bands find candidates; every candidate is confirmed with exact shingle
 overlap, so no false pair is reported. On 50,000 pages it found 200 of 200
@@ -106,6 +144,15 @@ test site (half the competing pages say little about their topic in the
 body) showed recall of 0.50. Pages like thin category pages compete through
 titles and anchors, not body text. A second channel now pairs pages that
 share rare title, heading and anchor terms, found through an index.
+
+**Failed: treating a numbered series as competitors.** On python.org the
+first full run reported 216 groups, mostly release pages such as Python
+3.8.19 and 3.9.19, election pages for different years, and dated press
+releases. An LLM judge marked 36 of 50 recommendations from two runs as
+unsound, most for this reason. Pages whose titles or paths differ only in
+numbers or month names are now a healthy "numbered series", unless their
+text is a near copy under an identical title. python.org dropped to 14
+groups with 2,907 pairs set aside, and the judge then marked 34 of 50 sound.
 
 **Ablation: what each signal adds.**
 Reproduce: `.venv/bin/python benchmarks/cannibalization.py`.
@@ -183,6 +230,25 @@ sentence drops the action and the next best one takes its place.
 longer available to new users". The run fell back to standard wording
 without failing. The model is now `gemini-3.5-flash-lite` and the failure
 reason is written to `logs/llm_usage.json`.
+
+**Failed: letting the model write the rationale.** Even with the rule "no
+numbers, only claim references", the model wrote descriptions that were
+wrong: it called Python release pages "user group event pages" and said
+"transactional intent" where the claim said informational. That is an
+invented fact in the output. The model now chooses reason codes only. Code
+checks each code against the action's verified claims and writes the
+sentence, so prose cannot say anything a claim does not prove. Unsupported
+codes are logged and removed.
+
+**Failed: an agent loop with no hard stop.** One run used all 12 steps on
+lookups and never submitted; another sent 25 lookups in one step and
+overflowed the prompt budget. The last step now only allows `submit_plan`,
+lookups per step are limited to 6, and oversized tool results are blanked,
+newest last. The largest prompt across all runs was 5,086 tokens.
+
+**Known limit: Gemini can refuse a prompt.** Intent batches made of page
+titles were refused once with `RECITATION`. The run keeps the rule based
+intent for those pages and records the error.
 
 **Kept: the model never writes facts.** Code finds candidate actions and
 builds their claims. The model reads them through five tools, picks and

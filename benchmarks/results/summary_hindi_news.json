@@ -1,0 +1,54 @@
+{
+ "folder": "www.livehindustan.com__www.amarujala.com",
+ "sites": {
+  "amarujala.com": {
+   "urls_known": 33068,
+   "pages_fetched": 10352,
+   "indexable": 10321,
+   "soft_404": 0,
+   "blocked_by_robots": 44,
+   "trap_urls_refused": 0,
+   "trap_patterns": 0,
+   "rendered_share": 0.0021,
+   "changed_by_rendering": 20,
+   "flagged_not_rendered": 698
+  },
+  "livehindustan.com": {
+   "urls_known": 29483,
+   "pages_fetched": 10376,
+   "indexable": 7392,
+   "soft_404": 0,
+   "blocked_by_robots": 10,
+   "trap_urls_refused": 7315,
+   "trap_patterns": 1,
+   "rendered_share": 0.0021,
+   "changed_by_rendering": 3,
+   "flagged_not_rendered": 84
+  }
+ },
+ "cannibalization_groups": 333,
+ "gaps": 22,
+ "near_duplicate_pairs": 255,
+ "new_links": 18,
+ "priority_pagerank_before": 0.00195796,
+ "priority_pagerank_after": 0.00229153,
+ "actions": {
+  "canonicalize": 8,
+  "merge_301": 8,
+  "add_internal_link": 1,
+  "create_page": 8
+ },
+ "claims_in_plan": 190,
+ "llm": {
+  "cached_calls": 10,
+  "calls": 0,
+  "cost_usd": 0.0,
+  "input_tokens": 0,
+  "last_error": "",
+  "max_prompt_tokens": 0,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 0,
+  "plan_written_by": "agent"
+ },
+ "rejections": 5
+}

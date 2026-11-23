@@ -1,0 +1,55 @@
+{
+ "folder": "python.org__ruby-lang.org",
+ "sites": {
+  "python.org": {
+   "urls_known": 15747,
+   "pages_fetched": 9968,
+   "indexable": 8921,
+   "soft_404": 0,
+   "blocked_by_robots": 0,
+   "trap_urls_refused": 2,
+   "trap_patterns": 2,
+   "rendered_share": 0.0223,
+   "changed_by_rendering": 0,
+   "flagged_not_rendered": 0
+  },
+  "ruby-lang.org": {
+   "urls_known": 20854,
+   "pages_fetched": 9964,
+   "indexable": 6605,
+   "soft_404": 0,
+   "blocked_by_robots": 0,
+   "trap_urls_refused": 11401,
+   "trap_patterns": 18,
+   "rendered_share": 0.02,
+   "changed_by_rendering": 0,
+   "flagged_not_rendered": 0
+  }
+ },
+ "cannibalization_groups": 14,
+ "gaps": 8,
+ "near_duplicate_pairs": 184,
+ "new_links": 40,
+ "priority_pagerank_before": 0.00150546,
+ "priority_pagerank_after": 0.00597839,
+ "actions": {
+  "canonicalize": 8,
+  "merge_301": 3,
+  "fix_redirect_chain": 8,
+  "add_internal_link": 2,
+  "create_page": 4
+ },
+ "claims_in_plan": 193,
+ "llm": {
+  "cached_calls": 2,
+  "calls": 1,
+  "cost_usd": 0.000247,
+  "input_tokens": 1523,
+  "last_error": "intent: KeyError: 'parts'",
+  "max_prompt_tokens": 1523,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 238,
+  "plan_written_by": "agent"
+ },
+ "rejections": 0
+}
