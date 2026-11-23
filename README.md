@@ -44,6 +44,9 @@ A full run takes up to 90 minutes. Results appear in
 | `change_report.json` | What changed since the last run |
 | `crawl_summary.json` | How many pages were read |
 
+A real result, python.org against ruby-lang.org, is in
+`examples/python.org__ruby-lang.org/`.
+
 ## Running it again
 
 - The same day: it reuses what it read and writes identical files.

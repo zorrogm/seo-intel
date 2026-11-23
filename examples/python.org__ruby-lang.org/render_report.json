@@ -1,0 +1,1501 @@
+{
+ "sites": {
+  "python.org": {
+   "changed_by_rendering": 0,
+   "flagged_but_not_rendered": 0,
+   "html_pages": 2335,
+   "pages": [
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/about/help/",
+     "words_raw": 734,
+     "words_rendered": 741
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/about/legal/",
+     "words_raw": 700,
+     "words_rendered": 707
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/accounts/login/?next=/success-stories/create/",
+     "words_raw": 336,
+     "words_rendered": 343
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/accounts/login/?next=/users/membership/edit/",
+     "words_raw": 336,
+     "words_rendered": 343
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/irc/",
+     "words_raw": 555,
+     "words_rendered": 562
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/lists/",
+     "words_raw": 1523,
+     "words_rendered": 1530
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/current/distutils-sig/doc/interface/",
+     "words_raw": 1355,
+     "words_rendered": 1362
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/current/distutils-sig/doc/tasks/",
+     "words_raw": 1058,
+     "words_rendered": 1065
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/retired/",
+     "words_raw": 584,
+     "words_rendered": 591
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/retired/gui-sig/",
+     "words_raw": 446,
+     "words_rendered": 453
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/retired/types-sig/",
+     "words_raw": 505,
+     "words_rendered": 512
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/survey/es/",
+     "words_raw": 345,
+     "words_rendered": 352
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/2.5.3/",
+     "words_raw": 457,
+     "words_rendered": 464
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/essays/",
+     "words_raw": 974,
+     "words_rendered": 981
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/essays/everybody/",
+     "words_raw": 6096,
+     "words_rendered": 6103
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/essays/metaclasses/",
+     "words_raw": 3459,
+     "words_rendered": 3466
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/2.4/highlights/",
+     "words_raw": 1447,
+     "words_rendered": 1454
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/2.4/notes/",
+     "words_raw": 9622,
+     "words_rendered": 9629
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/3.0/",
+     "words_raw": 685,
+     "words_rendered": 692
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/early/",
+     "words_raw": 411,
+     "words_rendered": 418
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/macos/",
+     "words_raw": 5996,
+     "words_rendered": 6003
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/release/python-2714/",
+     "words_raw": 533,
+     "words_rendered": 540
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/release/python-376rc1/",
+     "words_raw": 1079,
+     "words_rendered": 1086
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/source/",
+     "words_raw": 8087,
+     "words_rendered": 8094
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-events/429/",
+     "words_raw": 369,
+     "words_rendered": 376
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-events/locations/764/",
+     "words_raw": 395,
+     "words_rendered": 402
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-events/past/?page=2",
+     "words_raw": 445,
+     "words_rendered": 449
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-user-group/2174/",
+     "words_raw": 416,
+     "words_rendered": 423
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-user-group/locations/1695/",
+     "words_raw": 385,
+     "words_rendered": 392
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-user-group/past/?page=2",
+     "words_raw": 458,
+     "words_rendered": 465
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/2.5.2/",
+     "words_raw": 167,
+     "words_rendered": 167
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/3.9.3/",
+     "words_raw": 290,
+     "words_rendered": 290
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/doc/3.2.1/",
+     "words_raw": 147,
+     "words_rendered": 147
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/doc/3.9.7/",
+     "words_raw": 159,
+     "words_rendered": 159
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/8136/",
+     "words_raw": 920,
+     "words_rendered": 927
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/8139/",
+     "words_raw": 808,
+     "words_rendered": 815
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/location/remote-within-2-hours-of-london-timezone-remote/",
+     "words_raw": 445,
+     "words_rendered": 452
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/location/vilnius-kaunas-warsaw-lithuaniapoland/",
+     "words_raw": 433,
+     "words_rendered": 440
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2021-bylaws-proposed-changes/nominees/",
+     "words_raw": 331,
+     "words_rendered": 338
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/lavnish-lalchandani/",
+     "words_raw": 462,
+     "words_rendered": 469
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/",
+     "words_raw": 18629,
+     "words_rendered": 18636
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/",
+     "words_raw": 1281,
+     "words_rendered": 1288
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/donations/2018-q2-drive/",
+     "words_raw": 1117,
+     "words_rendered": 1124
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/donations/matching-gifts/",
+     "words_raw": 604,
+     "words_rendered": 611
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/records/board/minutes/2016-03-09/",
+     "words_raw": 1103,
+     "words_rendered": 1110
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/records/board/minutes/2018-09-25/",
+     "words_raw": 4153,
+     "words_rendered": 4160
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/sponsorship/",
+     "words_raw": 935,
+     "words_rendered": 942
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/trademarks-faq/",
+     "words_raw": 3380,
+     "words_rendered": 3387
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/building-an-open-source-and-cross-platform-azure-cli-with-python/",
+     "words_raw": 945,
+     "words_rendered": 952
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/category/arts/",
+     "words_raw": 331,
+     "words_rendered": 338
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/category/business/",
+     "words_raw": 453,
+     "words_rendered": 460
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/python-provides-convenience-and-flexibility-for-scalable-mlai/",
+     "words_raw": 456,
+     "words_rendered": 463
+    }
+   ],
+   "rendered": 52,
+   "rendered_share": 0.0223,
+   "why": {
+    "template sample": 52
+   }
+  },
+  "ruby-lang.org": {
+   "changed_by_rendering": 0,
+   "flagged_but_not_rendered": 0,
+   "html_pages": 6606,
+   "pages": [
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/about/logo/",
+     "words_raw": 111,
+     "words_rendered": 126
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/community/mailing-lists/",
+     "words_raw": 78,
+     "words_rendered": 93
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/documentation/",
+     "words_raw": 221,
+     "words_rendered": 238
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/documentation/quickstart/4/",
+     "words_raw": 237,
+     "words_rendered": 254
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/libraries/",
+     "words_raw": 194,
+     "words_rendered": 223
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2015/02/",
+     "words_raw": 74,
+     "words_rendered": 89
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2015/04/13/ruby-openssl-hostname-matching-vulnerability/",
+     "words_raw": 180,
+     "words_rendered": 195
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2015/08/18/ruby-2-1-7-released/",
+     "words_raw": 214,
+     "words_rendered": 229
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/about/",
+     "words_raw": 1348,
+     "words_rendered": 1426
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/",
+     "words_raw": 520,
+     "words_rendered": 536
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/2004/",
+     "words_raw": 1474,
+     "words_rendered": 1490
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/2005/08/31/rubyconf-2005-registration-time-is-running-out/",
+     "words_raw": 254,
+     "words_rendered": 270
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/2007/10/",
+     "words_raw": 119,
+     "words_rendered": 135
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/2010/03/",
+     "words_raw": 129,
+     "words_rendered": 145
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/2016/",
+     "words_raw": 629,
+     "words_rendered": 645
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/de/news/2019/04/01/ruby-2-4-6-released/",
+     "words_raw": 450,
+     "words_rendered": 470
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/community/",
+     "words_raw": 473,
+     "words_rendered": 489
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/community/user-groups/",
+     "words_raw": 398,
+     "words_rendered": 428
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/conduct/",
+     "words_raw": 264,
+     "words_rendered": 280
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/news/2002/01/",
+     "words_raw": 124,
+     "words_rendered": 140
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/news/2006/09/",
+     "words_raw": 177,
+     "words_rendered": 193
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/news/2008/",
+     "words_raw": 1027,
+     "words_rendered": 1043
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/news/2012/06/29/ruby-1-8-7-p370-released/",
+     "words_raw": 352,
+     "words_rendered": 372
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/en/news/2014/02/12/the-2014-ruby-hero-awards/",
+     "words_raw": 299,
+     "words_rendered": 315
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/es/news/2012/10/",
+     "words_raw": 170,
+     "words_rendered": 186
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/es/news/2013/",
+     "words_raw": 1515,
+     "words_rendered": 1531
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/es/news/2013/05/",
+     "words_raw": 214,
+     "words_rendered": 230
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/es/news/2019/12/17/ruby-2-7-0-rc1-released/",
+     "words_raw": 1933,
+     "words_rendered": 2033
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/es/news/2023/12/11/ruby-3-3-0-rc1-released/",
+     "words_raw": 2227,
+     "words_rendered": 2387
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/es/security/",
+     "words_raw": 1081,
+     "words_rendered": 1081
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/about/",
+     "words_raw": 1550,
+     "words_rendered": 1652
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/documentation/quickstart/4/",
+     "words_raw": 1303,
+     "words_rendered": 1357
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/examples/cities/",
+     "words_raw": 29,
+     "words_rendered": 29
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/examples/greeter/",
+     "words_raw": 31,
+     "words_rendered": 31
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/libraries/",
+     "words_raw": 746,
+     "words_rendered": 812
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/news/2012/11/",
+     "words_raw": 245,
+     "words_rendered": 267
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/news/2020/12/25/ruby-3-0-0-released/",
+     "words_raw": 2391,
+     "words_rendered": 2475
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/fr/news/2025/04/14/ruby-3-4-3-released/",
+     "words_raw": 428,
+     "words_rendered": 466
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/documentation/ruby-from-other-languages/",
+     "words_raw": 2029,
+     "words_rendered": 2197
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/news/",
+     "words_raw": 429,
+     "words_rendered": 445
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/news/2011/12/",
+     "words_raw": 119,
+     "words_rendered": 135
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/news/2012/10/12/ruby-1-9-3-p286-is-released/",
+     "words_raw": 320,
+     "words_rendered": 338
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/news/2014/12/",
+     "words_raw": 170,
+     "words_rendered": 186
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/news/2022/",
+     "words_raw": 494,
+     "words_rendered": 510
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/news/2022/11/24/ruby-2-7-7-released/",
+     "words_raw": 359,
+     "words_rendered": 381
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/id/security/",
+     "words_raw": 1031,
+     "words_rendered": 1061
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/it/about/",
+     "words_raw": 1330,
+     "words_rendered": 1422
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/it/community/user-groups/",
+     "words_raw": 362,
+     "words_rendered": 398
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/it/downloads/",
+     "words_raw": 439,
+     "words_rendered": 475
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/it/news/2008/",
+     "words_raw": 466,
+     "words_rendered": 484
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/it/news/2011/02/",
+     "words_raw": 229,
+     "words_rendered": 246
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/it/news/2015/10/13/fukuoka-ruby-award-2016/",
+     "words_raw": 492,
+     "words_rendered": 510
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/community/",
+     "words_raw": 126,
+     "words_rendered": 134
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/documentation/",
+     "words_raw": 261,
+     "words_rendered": 265
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/documentation/ruby-from-other-languages/to-ruby-from-java/",
+     "words_raw": 147,
+     "words_rendered": 155
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/08/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2006/05/02/20060502/",
+     "words_raw": 126,
+     "words_rendered": 130
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2018/",
+     "words_raw": 546,
+     "words_rendered": 550
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2021/04/05/ruby-2-5-9-released/",
+     "words_raw": 249,
+     "words_rendered": 253
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2025/",
+     "words_raw": 515,
+     "words_rendered": 519
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/about/",
+     "words_raw": 295,
+     "words_rendered": 313
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/community/mailing-lists/",
+     "words_raw": 88,
+     "words_rendered": 92
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/documentation/faq/6/",
+     "words_raw": 470,
+     "words_rendered": 516
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/documentation/ruby-from-other-languages/",
+     "words_raw": 628,
+     "words_rendered": 634
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/",
+     "words_raw": 189,
+     "words_rendered": 201
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2017/12/25/ruby-2-5-0-released/",
+     "words_raw": 361,
+     "words_rendered": 369
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2021/11/24/ruby-2-6-9-released/",
+     "words_raw": 215,
+     "words_rendered": 219
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/security/",
+     "words_raw": 598,
+     "words_rendered": 602
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/about/",
+     "words_raw": 1256,
+     "words_rendered": 1331
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/about/logo/",
+     "words_raw": 198,
+     "words_rendered": 215
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/documentation/success-stories/",
+     "words_raw": 472,
+     "words_rendered": 503
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/downloads/",
+     "words_raw": 365,
+     "words_rendered": 394
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/news/2014/07/",
+     "words_raw": 149,
+     "words_rendered": 164
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/news/2014/07/01/eol-for-1-8-7-and-1-9-2/",
+     "words_raw": 400,
+     "words_rendered": 400
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/news/2014/10/",
+     "words_raw": 250,
+     "words_rendered": 265
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pl/news/2014/11/13/ruby-2-0-0-p598-is-released/",
+     "words_raw": 394,
+     "words_rendered": 417
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/about/logo/",
+     "words_raw": 238,
+     "words_rendered": 254
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/community/",
+     "words_raw": 372,
+     "words_rendered": 386
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/news/2012/10/",
+     "words_raw": 170,
+     "words_rendered": 184
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/news/2013/12/21/ruby-version-policy-changes-with-2-1-0/",
+     "words_raw": 482,
+     "words_rendered": 530
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/news/2016/",
+     "words_raw": 605,
+     "words_rendered": 619
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/news/2022/11/22/http-response-splitting-in-cgi-cve-2021-33621/",
+     "words_raw": 423,
+     "words_rendered": 447
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/news/2026/01/",
+     "words_raw": 141,
+     "words_rendered": 155
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/pt/security/",
+     "words_raw": 360,
+     "words_rendered": 386
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/community/",
+     "words_raw": 82,
+     "words_rendered": 86
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/community/conferences/",
+     "words_raw": 99,
+     "words_rendered": 109
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/examples/i_love_ruby/",
+     "words_raw": 17,
+     "words_rendered": 17
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/news/",
+     "words_raw": 212,
+     "words_rendered": 216
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/news/2013/05/",
+     "words_raw": 95,
+     "words_rendered": 99
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/news/2014/02/24/ruby-2-1-1-is-released/",
+     "words_raw": 184,
+     "words_rendered": 188
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/news/2015/06/",
+     "words_raw": 54,
+     "words_rendered": 58
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ru/news/2019/04/17/ruby-2-6-3-released/",
+     "words_raw": 202,
+     "words_rendered": 206
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/about/",
+     "words_raw": 1277,
+     "words_rendered": 1371
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/community/",
+     "words_raw": 418,
+     "words_rendered": 432
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/documentation/installation/",
+     "words_raw": 1270,
+     "words_rendered": 1411
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/examples/cities/",
+     "words_raw": 36,
+     "words_rendered": 36
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/news/2019/01/",
+     "words_raw": 119,
+     "words_rendered": 133
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/news/2020/03/31/ruby-2-6-6-released/",
+     "words_raw": 360,
+     "words_rendered": 382
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/news/2021/07/",
+     "words_raw": 242,
+     "words_rendered": 242
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/tr/news/2026/01/14/ruby-3-2-10-released/",
+     "words_raw": 310,
+     "words_rendered": 332
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/about/logo/",
+     "words_raw": 92,
+     "words_rendered": 96
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/documentation/",
+     "words_raw": 287,
+     "words_rendered": 297
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/downloads/",
+     "words_raw": 138,
+     "words_rendered": 146
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/news/2003/10/",
+     "words_raw": 81,
+     "words_rendered": 85
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/news/2004/05/23/rubyconf-2004-pre-registration-is-open/",
+     "words_raw": 102,
+     "words_rendered": 106
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/news/2005/07/",
+     "words_raw": 74,
+     "words_rendered": 78
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/news/2013/",
+     "words_raw": 671,
+     "words_rendered": 675
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/uk/news/2021/07/07/starttls-stripping-in-net-imap/",
+     "words_raw": 156,
+     "words_rendered": 160
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/about/",
+     "words_raw": 2580,
+     "words_rendered": 2772
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/news/2002/03/",
+     "words_raw": 197,
+     "words_rendered": 227
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/news/2002/12/",
+     "words_raw": 528,
+     "words_rendered": 558
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/news/2008/10/28/ruby-1-9-1-preview-1-released/",
+     "words_raw": 536,
+     "words_rendered": 566
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/news/2013/09/28/design-contest/",
+     "words_raw": 500,
+     "words_rendered": 530
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/news/2015/",
+     "words_raw": 1256,
+     "words_rendered": 1286
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/news/2017/",
+     "words_raw": 1165,
+     "words_rendered": 1195
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/vi/privacy/",
+     "words_raw": 534,
+     "words_rendered": 588
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/about/",
+     "words_raw": 312,
+     "words_rendered": 328
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/community/",
+     "words_raw": 86,
+     "words_rendered": 90
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2011/",
+     "words_raw": 114,
+     "words_rendered": 118
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2013/06/",
+     "words_raw": 108,
+     "words_rendered": 112
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/",
+     "words_raw": 322,
+     "words_rendered": 326
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/03/",
+     "words_raw": 83,
+     "words_rendered": 87
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/12/14/ruby-2-5-0-rc1-released/",
+     "words_raw": 282,
+     "words_rendered": 290
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2025/07/15/ruby-3-4-5-released/",
+     "words_raw": 186,
+     "words_rendered": 190
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/about/",
+     "words_raw": 307,
+     "words_rendered": 325
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/documentation/ruby-from-other-languages/to-ruby-from-perl/",
+     "words_raw": 150,
+     "words_rendered": 154
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/downloads/",
+     "words_raw": 118,
+     "words_rendered": 126
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2007/",
+     "words_raw": 123,
+     "words_rendered": 127
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/06/16/rubyworld-conference-2014-speaker-invite/",
+     "words_raw": 105,
+     "words_rendered": 109
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/09/",
+     "words_raw": 100,
+     "words_rendered": 104
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/",
+     "words_raw": 344,
+     "words_rendered": 348
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/05/20/getaddrinfo-cve-2026-46727/",
+     "words_raw": 167,
+     "words_rendered": 171
+    }
+   ],
+   "rendered": 132,
+   "rendered_share": 0.02,
+   "why": {
+    "template sample": 132
+   }
+  }
+ },
+ "state": "done"
+}

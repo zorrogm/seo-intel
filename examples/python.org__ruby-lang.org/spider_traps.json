@@ -1,0 +1,132 @@
+{
+ "python.org": {
+  "traps": [
+   {
+    "blocked": 1,
+    "example": "https://www.python.org/psf/records/board/minutes/2009-04-13/",
+    "kind": "session_id",
+    "pattern": "parameter sessionid"
+   },
+   {
+    "blocked": 1,
+    "example": "https://www.python.org/doc/essays/",
+    "kind": "session_id",
+    "pattern": "parameter sid"
+   }
+  ],
+  "urls_blocked": 2
+ },
+ "ruby-lang.org": {
+  "traps": [
+   {
+    "blocked": 522,
+    "example": "https://www.ruby-lang.org/bg/news/2007/10/",
+    "kind": "calendar",
+    "pattern": "/bg/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 720,
+    "example": "https://www.ruby-lang.org/de/news/2010/09/",
+    "kind": "calendar",
+    "pattern": "/de/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 825,
+    "example": "https://www.ruby-lang.org/en/news/2008/11/",
+    "kind": "calendar",
+    "pattern": "/en/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 664,
+    "example": "https://www.ruby-lang.org/es/news/2016/02/",
+    "kind": "calendar",
+    "pattern": "/es/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 580,
+    "example": "https://www.ruby-lang.org/fr/news/2017/04/",
+    "kind": "calendar",
+    "pattern": "/fr/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 649,
+    "example": "https://www.ruby-lang.org/id/news/2017/08/",
+    "kind": "calendar",
+    "pattern": "/id/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 540,
+    "example": "https://www.ruby-lang.org/it/news/2004/08/",
+    "kind": "calendar",
+    "pattern": "/it/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 842,
+    "example": "https://www.ruby-lang.org/ja/news/2009/11/",
+    "kind": "calendar",
+    "pattern": "/ja/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 751,
+    "example": "https://www.ruby-lang.org/ko/news/2013/09/",
+    "kind": "calendar",
+    "pattern": "/ko/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 516,
+    "example": "https://www.ruby-lang.org/pl/news/2005/06/",
+    "kind": "calendar",
+    "pattern": "/pl/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 638,
+    "example": "https://www.ruby-lang.org/pt/news/2002/12/",
+    "kind": "calendar",
+    "pattern": "/pt/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 616,
+    "example": "https://www.ruby-lang.org/ru/news/2025/09/",
+    "kind": "calendar",
+    "pattern": "/ru/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 599,
+    "example": "https://www.ruby-lang.org/tr/news/2005/04/",
+    "kind": "calendar",
+    "pattern": "/tr/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 821,
+    "example": "https://www.ruby-lang.org/uk/news/2008/11/",
+    "kind": "calendar",
+    "pattern": "/uk/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 807,
+    "example": "https://www.ruby-lang.org/vi/news/2008/11/",
+    "kind": "calendar",
+    "pattern": "/vi/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 664,
+    "example": "https://www.ruby-lang.org/zh_cn/news/2019/12/",
+    "kind": "calendar",
+    "pattern": "/zh_cn/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 636,
+    "example": "https://www.ruby-lang.org/zh_tw/news/2018/03/",
+    "kind": "calendar",
+    "pattern": "/zh_tw/news/N/N/ over 60 dates"
+   },
+   {
+    "blocked": 11,
+    "example": "https://www.ruby-lang.org/ja/news/2003/03/14/20030314/",
+    "kind": "session_id",
+    "pattern": "parameter sid"
+   }
+  ],
+  "urls_blocked": 11401
+ }
+}

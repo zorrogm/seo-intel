@@ -1,0 +1,922 @@
+[
+ {
+  "content_overlap": 0.872,
+  "url_a": "https://www.python.org/doc/2.4.4/",
+  "url_b": "https://www.python.org/doc/2.5.3/"
+ },
+ {
+  "content_overlap": 0.8871,
+  "url_a": "https://www.python.org/doc/2.4.4/",
+  "url_b": "https://www.python.org/doc/2.5.4/"
+ },
+ {
+  "content_overlap": 0.879,
+  "url_a": "https://www.python.org/doc/2.4.4/",
+  "url_b": "https://www.python.org/doc/2.5/"
+ },
+ {
+  "content_overlap": 0.9339,
+  "url_a": "https://www.python.org/doc/2.5.3/",
+  "url_b": "https://www.python.org/doc/2.5.4/"
+ },
+ {
+  "content_overlap": 0.9417,
+  "url_a": "https://www.python.org/doc/2.5.3/",
+  "url_b": "https://www.python.org/doc/2.5/"
+ },
+ {
+  "content_overlap": 0.9585,
+  "url_a": "https://www.python.org/doc/2.5.3/download/",
+  "url_b": "https://www.python.org/doc/2.5.4/download/"
+ },
+ {
+  "content_overlap": 0.9417,
+  "url_a": "https://www.python.org/doc/2.5.4/",
+  "url_b": "https://www.python.org/doc/2.5/"
+ },
+ {
+  "content_overlap": 0.9087,
+  "url_a": "https://www.python.org/download/releases/2.2.3/descrintro/",
+  "url_b": "https://www.python.org/download/releases/2.2/descrintro/"
+ },
+ {
+  "content_overlap": 0.9038,
+  "url_a": "https://www.python.org/download/releases/2.3/",
+  "url_b": "https://www.python.org/downloads/release/python-230/"
+ },
+ {
+  "content_overlap": 0.9089,
+  "url_a": "https://www.python.org/download/releases/2.4/",
+  "url_b": "https://www.python.org/downloads/release/python-240/"
+ },
+ {
+  "content_overlap": 0.9213,
+  "url_a": "https://www.python.org/download/releases/2.4/msi/",
+  "url_b": "https://www.python.org/download/releases/2.5/msi/"
+ },
+ {
+  "content_overlap": 0.886,
+  "url_a": "https://www.python.org/download/releases/2.5/",
+  "url_b": "https://www.python.org/downloads/release/python-250/"
+ },
+ {
+  "content_overlap": 0.8753,
+  "url_a": "https://www.python.org/download/releases/2.7/",
+  "url_b": "https://www.python.org/downloads/release/python-270/"
+ },
+ {
+  "content_overlap": 0.8054,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b10/"
+ },
+ {
+  "content_overlap": 0.8054,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b11/"
+ },
+ {
+  "content_overlap": 0.8054,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b12/"
+ },
+ {
+  "content_overlap": 0.8054,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b13/"
+ },
+ {
+  "content_overlap": 0.8054,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b14/"
+ },
+ {
+  "content_overlap": 0.8054,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
+ },
+ {
+  "content_overlap": 0.8968,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8968,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.8846,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260/"
+ },
+ {
+  "content_overlap": 0.8846,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-261/"
+ },
+ {
+  "content_overlap": 0.8257,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-262/"
+ },
+ {
+  "content_overlap": 0.8257,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-263/"
+ },
+ {
+  "content_overlap": 0.8102,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b11/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b12/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b13/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b14/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
+ },
+ {
+  "content_overlap": 0.8784,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b9/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b12/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b13/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b14/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
+ },
+ {
+  "content_overlap": 0.8727,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b9/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b13/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b14/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
+ },
+ {
+  "content_overlap": 0.8727,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b9/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.9074,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b14/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
+ },
+ {
+  "content_overlap": 0.8727,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b9/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
+ },
+ {
+  "content_overlap": 0.8727,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b9/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.8727,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-250b9/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+ },
+ {
+  "content_overlap": 0.8,
+  "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.8968,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-252/"
+ },
+ {
+  "content_overlap": 0.8846,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260/"
+ },
+ {
+  "content_overlap": 0.8846,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-261/"
+ },
+ {
+  "content_overlap": 0.8257,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-262/"
+ },
+ {
+  "content_overlap": 0.8257,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-263/"
+ },
+ {
+  "content_overlap": 0.8102,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.9074,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+ },
+ {
+  "content_overlap": 0.8841,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260b1/"
+ },
+ {
+  "content_overlap": 0.8784,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260b2/"
+ },
+ {
+  "content_overlap": 0.8784,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251b2/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260b1/"
+ },
+ {
+  "content_overlap": 0.8841,
+  "url_a": "https://www.python.org/downloads/release/pymanager-251b2/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260b2/"
+ },
+ {
+  "content_overlap": 0.8846,
+  "url_a": "https://www.python.org/downloads/release/pymanager-252/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260/"
+ },
+ {
+  "content_overlap": 0.8846,
+  "url_a": "https://www.python.org/downloads/release/pymanager-252/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-261/"
+ },
+ {
+  "content_overlap": 0.8257,
+  "url_a": "https://www.python.org/downloads/release/pymanager-252/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-262/"
+ },
+ {
+  "content_overlap": 0.8257,
+  "url_a": "https://www.python.org/downloads/release/pymanager-252/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-263/"
+ },
+ {
+  "content_overlap": 0.8102,
+  "url_a": "https://www.python.org/downloads/release/pymanager-252/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.9029,
+  "url_a": "https://www.python.org/downloads/release/pymanager-260/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-261/"
+ },
+ {
+  "content_overlap": 0.8369,
+  "url_a": "https://www.python.org/downloads/release/pymanager-260/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-262/"
+ },
+ {
+  "content_overlap": 0.8369,
+  "url_a": "https://www.python.org/downloads/release/pymanager-260/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-263/"
+ },
+ {
+  "content_overlap": 0.8212,
+  "url_a": "https://www.python.org/downloads/release/pymanager-260/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.9015,
+  "url_a": "https://www.python.org/downloads/release/pymanager-260b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-260b2/"
+ },
+ {
+  "content_overlap": 0.8369,
+  "url_a": "https://www.python.org/downloads/release/pymanager-261/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-262/"
+ },
+ {
+  "content_overlap": 0.8369,
+  "url_a": "https://www.python.org/downloads/release/pymanager-261/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-263/"
+ },
+ {
+  "content_overlap": 0.8212,
+  "url_a": "https://www.python.org/downloads/release/pymanager-261/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.8762,
+  "url_a": "https://www.python.org/downloads/release/pymanager-262/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-263/"
+ },
+ {
+  "content_overlap": 0.8598,
+  "url_a": "https://www.python.org/downloads/release/pymanager-262/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.8598,
+  "url_a": "https://www.python.org/downloads/release/pymanager-263/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264/"
+ },
+ {
+  "content_overlap": 0.8924,
+  "url_a": "https://www.python.org/downloads/release/pymanager-264b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264b2/"
+ },
+ {
+  "content_overlap": 0.8924,
+  "url_a": "https://www.python.org/downloads/release/pymanager-264b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264b3/"
+ },
+ {
+  "content_overlap": 0.8659,
+  "url_a": "https://www.python.org/downloads/release/pymanager-264b1/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-265b1/"
+ },
+ {
+  "content_overlap": 0.8924,
+  "url_a": "https://www.python.org/downloads/release/pymanager-264b2/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-264b3/"
+ },
+ {
+  "content_overlap": 0.8556,
+  "url_a": "https://www.python.org/downloads/release/pymanager-264b2/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-265b1/"
+ },
+ {
+  "content_overlap": 0.8556,
+  "url_a": "https://www.python.org/downloads/release/pymanager-264b3/",
+  "url_b": "https://www.python.org/downloads/release/pymanager-265b1/"
+ },
+ {
+  "content_overlap": 0.8739,
+  "url_a": "https://www.python.org/downloads/release/python-277/",
+  "url_b": "https://www.python.org/downloads/release/python-277rc1/"
+ },
+ {
+  "content_overlap": 0.8336,
+  "url_a": "https://www.python.org/downloads/release/python-31015/",
+  "url_b": "https://www.python.org/downloads/release/python-31110/"
+ },
+ {
+  "content_overlap": 0.8291,
+  "url_a": "https://www.python.org/downloads/release/python-31015/",
+  "url_b": "https://www.python.org/downloads/release/python-3820/"
+ },
+ {
+  "content_overlap": 0.818,
+  "url_a": "https://www.python.org/downloads/release/python-31015/",
+  "url_b": "https://www.python.org/downloads/release/python-3920/"
+ },
+ {
+  "content_overlap": 0.8239,
+  "url_a": "https://www.python.org/downloads/release/python-31019/",
+  "url_b": "https://www.python.org/downloads/release/python-31114/"
+ },
+ {
+  "content_overlap": 0.8147,
+  "url_a": "https://www.python.org/downloads/release/python-3108/",
+  "url_b": "https://www.python.org/downloads/release/python-3109/"
+ },
+ {
+  "content_overlap": 0.801,
+  "url_a": "https://www.python.org/downloads/release/python-3111/",
+  "url_b": "https://www.python.org/downloads/release/python-3112/"
+ },
+ {
+  "content_overlap": 0.8291,
+  "url_a": "https://www.python.org/downloads/release/python-31110/",
+  "url_b": "https://www.python.org/downloads/release/python-3820/"
+ },
+ {
+  "content_overlap": 0.818,
+  "url_a": "https://www.python.org/downloads/release/python-31110/",
+  "url_b": "https://www.python.org/downloads/release/python-3920/"
+ },
+ {
+  "content_overlap": 0.854,
+  "url_a": "https://www.python.org/downloads/release/python-31116/",
+  "url_b": "https://www.python.org/downloads/release/python-31214/"
+ },
+ {
+  "content_overlap": 0.8139,
+  "url_a": "https://www.python.org/downloads/release/python-335-rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-335/"
+ },
+ {
+  "content_overlap": 0.8789,
+  "url_a": "https://www.python.org/downloads/release/python-335-rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-335rc1/"
+ },
+ {
+  "content_overlap": 0.8216,
+  "url_a": "https://www.python.org/downloads/release/python-335-rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-335rc2/"
+ },
+ {
+  "content_overlap": 0.8056,
+  "url_a": "https://www.python.org/downloads/release/python-335/",
+  "url_b": "https://www.python.org/downloads/release/python-335rc1/"
+ },
+ {
+  "content_overlap": 0.8324,
+  "url_a": "https://www.python.org/downloads/release/python-335/",
+  "url_b": "https://www.python.org/downloads/release/python-335rc2/"
+ },
+ {
+  "content_overlap": 0.8131,
+  "url_a": "https://www.python.org/downloads/release/python-335rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-335rc2/"
+ },
+ {
+  "content_overlap": 0.8406,
+  "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-349/"
+ },
+ {
+  "content_overlap": 0.8328,
+  "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-349rc1/"
+ },
+ {
+  "content_overlap": 0.8536,
+  "url_a": "https://www.python.org/downloads/release/python-345/",
+  "url_b": "https://www.python.org/downloads/release/python-346/"
+ },
+ {
+  "content_overlap": 0.8328,
+  "url_a": "https://www.python.org/downloads/release/python-345/",
+  "url_b": "https://www.python.org/downloads/release/python-346rc1/"
+ },
+ {
+  "content_overlap": 0.811,
+  "url_a": "https://www.python.org/downloads/release/python-345/",
+  "url_b": "https://www.python.org/downloads/release/python-348/"
+ },
+ {
+  "content_overlap": 0.8036,
+  "url_a": "https://www.python.org/downloads/release/python-345/",
+  "url_b": "https://www.python.org/downloads/release/python-348rc1/"
+ },
+ {
+  "content_overlap": 0.87,
+  "url_a": "https://www.python.org/downloads/release/python-346/",
+  "url_b": "https://www.python.org/downloads/release/python-346rc1/"
+ },
+ {
+  "content_overlap": 0.8072,
+  "url_a": "https://www.python.org/downloads/release/python-346/",
+  "url_b": "https://www.python.org/downloads/release/python-347rc1/"
+ },
+ {
+  "content_overlap": 0.8085,
+  "url_a": "https://www.python.org/downloads/release/python-346/",
+  "url_b": "https://www.python.org/downloads/release/python-348/"
+ },
+ {
+  "content_overlap": 0.8121,
+  "url_a": "https://www.python.org/downloads/release/python-346/",
+  "url_b": "https://www.python.org/downloads/release/python-348rc1/"
+ },
+ {
+  "content_overlap": 0.8384,
+  "url_a": "https://www.python.org/downloads/release/python-347/",
+  "url_b": "https://www.python.org/downloads/release/python-347rc1/"
+ },
+ {
+  "content_overlap": 0.8042,
+  "url_a": "https://www.python.org/downloads/release/python-347rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-348/"
+ },
+ {
+  "content_overlap": 0.8012,
+  "url_a": "https://www.python.org/downloads/release/python-347rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-349rc1/"
+ },
+ {
+  "content_overlap": 0.8313,
+  "url_a": "https://www.python.org/downloads/release/python-348/",
+  "url_b": "https://www.python.org/downloads/release/python-348rc1/"
+ },
+ {
+  "content_overlap": 0.8464,
+  "url_a": "https://www.python.org/downloads/release/python-349/",
+  "url_b": "https://www.python.org/downloads/release/python-349rc1/"
+ },
+ {
+  "content_overlap": 0.8893,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-355rc1/"
+ },
+ {
+  "content_overlap": 0.8738,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-356/"
+ },
+ {
+  "content_overlap": 0.8639,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-356rc1/"
+ },
+ {
+  "content_overlap": 0.8702,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-357/"
+ },
+ {
+  "content_overlap": 0.8604,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-357rc1/"
+ },
+ {
+  "content_overlap": 0.8702,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-358/"
+ },
+ {
+  "content_overlap": 0.8604,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.8604,
+  "url_a": "https://www.python.org/downloads/release/python-355/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.8639,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-356/"
+ },
+ {
+  "content_overlap": 0.8542,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-356rc1/"
+ },
+ {
+  "content_overlap": 0.8604,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-357/"
+ },
+ {
+  "content_overlap": 0.8507,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-357rc1/"
+ },
+ {
+  "content_overlap": 0.8604,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358/"
+ },
+ {
+  "content_overlap": 0.8507,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.8507,
+  "url_a": "https://www.python.org/downloads/release/python-355rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.8994,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-356rc1/"
+ },
+ {
+  "content_overlap": 0.9062,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-357/"
+ },
+ {
+  "content_overlap": 0.8958,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-357rc1/"
+ },
+ {
+  "content_overlap": 0.9062,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-358/"
+ },
+ {
+  "content_overlap": 0.8958,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.8958,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.8198,
+  "url_a": "https://www.python.org/downloads/release/python-356/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.8958,
+  "url_a": "https://www.python.org/downloads/release/python-356rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-357/"
+ },
+ {
+  "content_overlap": 0.8855,
+  "url_a": "https://www.python.org/downloads/release/python-356rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-357rc1/"
+ },
+ {
+  "content_overlap": 0.8958,
+  "url_a": "https://www.python.org/downloads/release/python-356rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358/"
+ },
+ {
+  "content_overlap": 0.8855,
+  "url_a": "https://www.python.org/downloads/release/python-356rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.8855,
+  "url_a": "https://www.python.org/downloads/release/python-356rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.8112,
+  "url_a": "https://www.python.org/downloads/release/python-356rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.9068,
+  "url_a": "https://www.python.org/downloads/release/python-357/",
+  "url_b": "https://www.python.org/downloads/release/python-357rc1/"
+ },
+ {
+  "content_overlap": 0.91,
+  "url_a": "https://www.python.org/downloads/release/python-357/",
+  "url_b": "https://www.python.org/downloads/release/python-358/"
+ },
+ {
+  "content_overlap": 0.8994,
+  "url_a": "https://www.python.org/downloads/release/python-357/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.8994,
+  "url_a": "https://www.python.org/downloads/release/python-357/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.823,
+  "url_a": "https://www.python.org/downloads/release/python-357/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.8994,
+  "url_a": "https://www.python.org/downloads/release/python-357rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358/"
+ },
+ {
+  "content_overlap": 0.8891,
+  "url_a": "https://www.python.org/downloads/release/python-357rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.8891,
+  "url_a": "https://www.python.org/downloads/release/python-357rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.8144,
+  "url_a": "https://www.python.org/downloads/release/python-357rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.8994,
+  "url_a": "https://www.python.org/downloads/release/python-358/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc1/"
+ },
+ {
+  "content_overlap": 0.9068,
+  "url_a": "https://www.python.org/downloads/release/python-358/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.823,
+  "url_a": "https://www.python.org/downloads/release/python-358/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.8891,
+  "url_a": "https://www.python.org/downloads/release/python-358rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-358rc2/"
+ },
+ {
+  "content_overlap": 0.8144,
+  "url_a": "https://www.python.org/downloads/release/python-358rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.8144,
+  "url_a": "https://www.python.org/downloads/release/python-358rc2/",
+  "url_b": "https://www.python.org/downloads/release/python-359/"
+ },
+ {
+  "content_overlap": 0.8029,
+  "url_a": "https://www.python.org/downloads/release/python-362/",
+  "url_b": "https://www.python.org/downloads/release/python-363/"
+ },
+ {
+  "content_overlap": 0.8029,
+  "url_a": "https://www.python.org/downloads/release/python-362/",
+  "url_b": "https://www.python.org/downloads/release/python-364/"
+ },
+ {
+  "content_overlap": 0.8083,
+  "url_a": "https://www.python.org/downloads/release/python-363/",
+  "url_b": "https://www.python.org/downloads/release/python-364/"
+ },
+ {
+  "content_overlap": 0.8006,
+  "url_a": "https://www.python.org/downloads/release/python-366/",
+  "url_b": "https://www.python.org/downloads/release/python-367/"
+ },
+ {
+  "content_overlap": 0.8025,
+  "url_a": "https://www.python.org/downloads/release/python-366rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-367rc1/"
+ },
+ {
+  "content_overlap": 0.8154,
+  "url_a": "https://www.python.org/downloads/release/python-367rc1/",
+  "url_b": "https://www.python.org/downloads/release/python-367rc2/"
+ },
+ {
+  "content_overlap": 0.8394,
+  "url_a": "https://www.python.org/downloads/release/python-3820/",
+  "url_b": "https://www.python.org/downloads/release/python-3920/"
+ },
+ {
+  "content_overlap": 0.8333,
+  "url_a": "https://www.python.org/events/python-user-group/2204/",
+  "url_b": "https://www.python.org/events/python-user-group/2207/"
+ },
+ {
+  "content_overlap": 0.8895,
+  "url_a": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
+  "url_b": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html"
+ },
+ {
+  "content_overlap": 0.8301,
+  "url_a": "https://www.python.org/jobs/",
+  "url_b": "https://www.python.org/jobs/category/developer-engineer/"
+ },
+ {
+  "content_overlap": 1.0,
+  "url_a": "https://www.python.org/jobs/category/researcher-scientist/",
+  "url_b": "https://www.python.org/jobs/location/remote-remote-north-america-europe/"
+ },
+ {
+  "content_overlap": 1.0,
+  "url_a": "https://www.python.org/jobs/location/detroit-michigan-usa/",
+  "url_b": "https://www.python.org/jobs/type/image-processing/"
+ },
+ {
+  "content_overlap": 1.0,
+  "url_a": "https://www.python.org/jobs/location/detroit-michigan-usa/",
+  "url_b": "https://www.python.org/jobs/type/numeric-processing/"
+ },
+ {
+  "content_overlap": 1.0,
+  "url_a": "https://www.python.org/jobs/location/remote-within-2-hours-of-london-timezone-remote/",
+  "url_b": "https://www.python.org/jobs/type/management/"
+ },
+ {
+  "content_overlap": 1.0,
+  "url_a": "https://www.python.org/jobs/type/image-processing/",
+  "url_b": "https://www.python.org/jobs/type/numeric-processing/"
+ },
+ {
+  "content_overlap": 0.9606,
+  "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+  "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/"
+ },
+ {
+  "content_overlap": 0.8731,
+  "url_a": "https://www.python.org/psf/press-release/pr20030923/",
+  "url_b": "https://www.python.org/psf/press-release/pr20031003/"
+ },
+ {
+  "content_overlap": 0.9609,
+  "url_a": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+  "url_b": "https://www.python.org/success-stories/d-link-australia/"
+ }
+]

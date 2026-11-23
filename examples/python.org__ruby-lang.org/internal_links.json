@@ -1,0 +1,338 @@
+{
+ "new_links": [
+  {
+   "anchor": "in python",
+   "relevance": 0.307,
+   "sentence": "when in python-mode for extensive help.",
+   "source": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
+   "target": "https://www.python.org/download/releases/2.2.3/descrintro/"
+  },
+  {
+   "anchor": "in python",
+   "relevance": 0.3118,
+   "sentence": "when in python-mode for extensive help.",
+   "source": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
+   "target": "https://www.python.org/download/releases/2.2.3/descrintro/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.6277,
+   "sentence": "Nominee for 2020 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+   "target": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3397,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/",
+   "target": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3464,
+   "sentence": "Nominee for 2019 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/dustin-ingram/",
+   "target": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3615,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/deep-shah/",
+   "target": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.553,
+   "sentence": "Nominee for 2019 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3585,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3049,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3942,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.7304,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3273,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3195,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3782,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3071,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3295,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3306,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3093,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3599,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3309,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Python Software Foundation",
+   "relevance": 0.3082,
+   "sentence": "The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and international community of Python programmers.",
+   "source": "https://www.python.org/psf/fiscal-sponsorees/",
+   "target": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3452,
+   "sentence": "Nominee for 2020 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3291,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.424,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3363,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3845,
+   "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.8971,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3593,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.4587,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3824,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3238,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.4493,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/elaine-wong/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3937,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/",
+   "target": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3225,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+   "target": "https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3455,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+   "target": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3394,
+   "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
+   "target": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3649,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/ee-durbin/",
+   "target": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.3551,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/georgi-ker/",
+   "target": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "Software Foundation Board Election",
+   "relevance": 0.5795,
+   "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+   "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/ramya-ravi/",
+   "target": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/"
+  },
+  {
+   "anchor": "PSF Board",
+   "relevance": 0.444,
+   "sentence": "The PSF Community Service Awards are a formal way for the PSF Board of Directors to offer recognition of work which, in its opinion, significantly improves the Foundation's fulfillment of its mission and benefits the broader Python community.",
+   "source": "https://www.python.org/community/awards/psf-awards/",
+   "target": "https://www.python.org/psf/records/board/resolutions/"
+  }
+ ],
+ "priority_pagerank_after": 0.00597839,
+ "priority_pagerank_before": 0.00150546,
+ "priority_pages": [
+  {
+   "pagerank_after": 0.00074181,
+   "pagerank_before": 0.00060315,
+   "url": "https://www.python.org/psf/records/board/resolutions/"
+  },
+  {
+   "pagerank_after": 0.00019542,
+   "pagerank_before": 8.416e-05,
+   "url": "https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/"
+  },
+  {
+   "pagerank_after": 0.00055376,
+   "pagerank_before": 8.416e-05,
+   "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/"
+  },
+  {
+   "pagerank_after": 8.168e-05,
+   "pagerank_before": 8.238e-05,
+   "url": "https://www.python.org/ftp/python/3.15.0/"
+  },
+  {
+   "pagerank_after": 0.00158954,
+   "pagerank_before": 8.416e-05,
+   "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/"
+  },
+  {
+   "pagerank_after": 0.00064847,
+   "pagerank_before": 8.416e-05,
+   "url": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/"
+  },
+  {
+   "pagerank_after": 0.00125271,
+   "pagerank_before": 8.416e-05,
+   "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/"
+  },
+  {
+   "pagerank_after": 0.0002122,
+   "pagerank_before": 0.00021402,
+   "url": "https://www.python.org/doc/essays/cp4e/"
+  },
+  {
+   "pagerank_after": 0.00029145,
+   "pagerank_before": 8.416e-05,
+   "url": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/"
+  },
+  {
+   "pagerank_after": 0.00041135,
+   "pagerank_before": 0.00010095,
+   "url": "https://www.python.org/download/releases/2.2.3/descrintro/"
+  }
+ ]
+}
