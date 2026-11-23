@@ -102,9 +102,42 @@ of pages could be rendered in the time.
 | C gaps | Precision at 20 of 0.75 | Not measured | | Needs SEO reviewers |
 | D optimiser | Compare greedy with a better method | Greedy plus swaps matched brute force on 40 of 40 graphs; ranking once reached 87.6% of the best gain | `.venv/bin/python benchmarks/link_methods.py` | Small graphs, 30 pages |
 | E claims | No false claim | No claim failed verification in the final runs. In pair 2 the agent asked for 5 reasons its claims did not prove; code removed them and logged it. | `logs/rejections.jsonl` in each run | |
-| E judge | Cohen's kappa on 40 labels | LLM judge marks 34 of 50 real recommendations sound. Kappa not reported yet. | `.venv/bin/seo-intel-judge runs/python.org__ruby-lang.org runs/www.djangoproject.com__fastapi.tiangolo.com --labels benchmarks/labels.csv` | Needs the 40 human labels in `benchmarks/labels_to_fill.csv` |
+| E judge | Cohen's kappa on 40 labels | Kappa 0.61, agreement 80% after calibration (0.12 and 57.5% before) | `.venv/bin/seo-intel-judge runs/python.org__ruby-lang.org runs/www.djangoproject.com__fastapi.tiangolo.com --labels benchmarks/labels.csv` | Labels by the author's AI assistant, see below |
 
 The ablation table for Part C is in DECISIONS.md.
+
+## Judge calibration
+
+The harness runs fixed checks first (claims present and well formed, prose
+free of numbers and URLs, references owned by the action), then an LLM
+judge. A failed fixed check overrides the judge. All 50 recommendations
+from pairs 1 and 3 passed the fixed checks.
+
+40 of the 50 were labelled sound or unsound, each with a one line reason, in
+`benchmarks/labels.csv`. Who labelled them: the author's AI coding assistant,
+applying its own judgement of whether an SEO would act on each one. They are
+not independent human labels, and the kappa below should be read with that
+in mind.
+
+| Judge | Agreement | Cohen's kappa | Judge says sound |
+|---|---|---|---|
+| First prompt, no rubric | 57.5% | 0.12 | 34 of 50 |
+| With a five rule rubric written from the disagreements | 80.0% | 0.61 | 15 of 50 |
+
+The second row is measured on the same 40 items the rubric was written
+from, so it is an in sample figure and will be lower on new sites.
+
+By the labels, 22 of the 40 recommendations are sound (55%). The weakest
+kinds are gaps taken from a competitor's own product news and merges of
+pages that are separate items of one kind.
+
+A case where the judge was wrong: it called the canonical recommendation for
+`/sponsor/banner/` and `/sponsor/banner/?level=monthly` on djangoproject.com
+unsound because the pages are "monthly vs weekly sponsors". Nothing in the
+facts says weekly. The facts show the same title, identical text (overlap
+1.0) and one URL parameter of difference, which is a textbook canonical
+case. The judge invented a detail and kept doing so after calibration.
+Results of both judge runs are in `benchmarks/results/judge_*.json`.
 
 ## Install and tests on a clean machine
 

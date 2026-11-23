@@ -14,9 +14,21 @@ from seo_intel.report import write_json
 
 _SYSTEM = (
     "You review SEO recommendations. Each has a type, a rationale and verified "
-    "facts. Judge only whether the recommended action follows sensibly from "
-    "the facts. Answer sound or unsound for each, with a short reason. "
-    "Call the judge tool once, with one verdict per recommendation, in order."
+    "facts. Judge whether you would act on it. Answer sound or unsound for "
+    "each, with a short reason that only uses the facts given. "
+    "Call the judge tool once, with one verdict per recommendation, in order. "
+    "Rubric, learned from human labels: "
+    "1. Canonicalize is sound when two URLs show the same page: same title "
+    "with nearly the same text, or the same address differing only by "
+    "protocol or a query parameter. "
+    "2. Merge or canonicalize is unsound when the pages are different items "
+    "of a kind, such as different releases, years, events, plans or groups, "
+    "even if their text overlaps. "
+    "3. Create page is sound only when the topic fits the target site's own "
+    "subject. A competitor's own product news or archive lists are not a gap. "
+    "4. Add internal link is unsound when the target is a numbered list page "
+    "or the source is about a different year or item. "
+    "5. Fixing a redirect chain of two or more hops is sound."
 )
 _TOOL = [{"functionDeclarations": [{
     "name": "judge",

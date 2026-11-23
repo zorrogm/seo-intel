@@ -272,6 +272,14 @@ newest last. The largest prompt across all runs was 5,086 tokens.
 titles were refused once with `RECITATION`. The run keeps the rule based
 intent for those pages and records the error.
 
+**Failed: an LLM judge with no rubric.** Asked only whether each
+recommendation "follows from the facts", the judge agreed with the labels
+on 57.5% of 40 items, a Cohen's kappa of 0.12. It approved gaps built from
+the competitor's own release news and merges of different sponsorship
+plans. A five rule rubric written from those disagreements raised agreement
+to 80% and kappa to 0.61 on the same items. It still invents details: see
+the sponsor banner case in BENCHMARKS.md.
+
 **Kept: the model never writes facts.** Code finds candidate actions and
 builds their claims. The model reads them through five tools, picks and
 orders actions, and chooses reason codes. Code turns codes into sentences
@@ -285,5 +293,6 @@ score with standard wording.
 
 - Precision at 20 judged by SEOs, and token F1 on hand marked real pages,
   need people. The repo measures both only on generated sites.
-- The judge harness needs 40 human labels before it can report kappa.
+- The 40 judge labels were made by the author's AI assistant, not by an
+  independent human, and the calibrated kappa is in sample.
 - Rendering recall is measured on a local test site, not on the open web.

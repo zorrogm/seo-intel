@@ -16,7 +16,7 @@ Order follows the data flow. Each step is tested before the next starts.
 | Gaps | C | Shared topic space, numeric depth rule, language filter | full runs |
 | Links | D | PageRank, exact greedy plus swaps, anchor sentences | `benchmarks/link_methods.py`, `tests/test_graph.py` |
 | Agent | E | Tools, claim verifier, live recheck, rejection log, cache | `tests/test_pipeline.py`, `tests/test_live.py` |
-| Judge | E | Fixed checks, LLM judge, Cohen's kappa | `tests/test_judge.py`; needs 40 human labels |
+| Judge | E | Fixed checks, LLM judge, Cohen's kappa | `tests/test_judge.py`, `benchmarks/labels.csv` |
 
 ## Rules for the code
 
@@ -35,6 +35,6 @@ Order follows the data flow. Each step is tested before the next starts.
 
 ## Still needs a person
 
-- 40 recommendations labelled sound or unsound, for the judge's kappa.
+- Independent human labels for the judge; the current 40 are AI assisted.
 - Review of cannibalization groups and gaps by SEOs.
 - Hand marked main content on real pages for a real F1 number.

@@ -1,0 +1,68 @@
+{
+ "agreement": 0.8,
+ "cohen_kappa": 0.6117,
+ "disagreements": [
+  {
+   "action": "canonicalize|https://www.djangoproject.com/accounts/login/?next=/community/add/blogs/|https://www.djangoproject.com/accounts/login/?next=/community/add/jobs/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "Canonicalizing login pages with different query parameters pointing to different redirect targets is unsound as they are different pages."
+  },
+  {
+   "action": "canonicalize|https://www.djangoproject.com/sponsor/banner/|https://www.djangoproject.com/sponsor/banner/?level=monthly",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "The pages are for different levels (monthly vs weekly sponsors), making them different items rather than duplicate pages."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/accounts/login/|https://www.python.org/accounts/login/?next=/jobs/create/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "The pages are different login query parameters pointing to different creation pages (/jobs/create/ and /success-stories/create/), so merging or canonicalizing is unsound."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/download/releases/2.2.3/descrintro/|https://www.python.org/download/releases/2.2/descrintro/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "The pages are different releases (Python 2.2.3 and Python 2.2), so merging or canonicalizing is unsound."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/download/releases/2.4/msi/|https://www.python.org/download/releases/2.5/msi/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "The pages are different releases (Python 2.4 and Python 2.5), so merging or canonicalizing is unsound."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html|https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "The pages are different releases (version 1.1 and version 1.3), making canonicalization incorrect for different versions or years."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/jobs/location/detroit-michigan-usa/|https://www.python.org/jobs/type/image-processing/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "The pages are different job types (image-processing and numeric-processing), so merging or canonicalizing is unsound."
+  },
+  {
+   "action": "create_page|https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/|https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "Creating a page based on a competitor's product news or similar is unsound when it's not a gap for the target site's own subject."
+  }
+ ],
+ "failed_fixed_checks": {},
+ "judge_sound": 15,
+ "labelled": 40,
+ "llm": {
+  "cached_calls": 0,
+  "calls": 10,
+  "cost_usd": 0.003318,
+  "input_tokens": 26458,
+  "last_error": "",
+  "max_prompt_tokens": 3916,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 1681
+ },
+ "recommendations": 50
+}

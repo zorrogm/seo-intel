@@ -1,0 +1,122 @@
+{
+ "agreement": 0.575,
+ "cohen_kappa": 0.1192,
+ "disagreements": [
+  {
+   "action": "add_internal_link|https://www.djangoproject.com/community/jobs/?page=14|https://www.djangoproject.com/community/jobs/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The page has zero inlinks and matching sentences exist to add a helpful internal link."
+  },
+  {
+   "action": "add_internal_link|https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/|https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The target page has few internal links and relevant pages exist that do not yet link to it."
+  },
+  {
+   "action": "add_internal_link|https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/|https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The target page has few inlinks, relevant sentences exist on source pages, and the source pages do not currently link to it, making an internal link recommendation sound."
+  },
+  {
+   "action": "canonicalize|https://www.djangoproject.com/sponsor/banner/|https://www.djangoproject.com/sponsor/banner/?level=monthly",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "Rec 1 compares two different pages: monthly vs weekly sponsor banners, which serve different purposes despite high content overlap."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/accounts/login/|https://www.python.org/accounts/login/?next=/jobs/create/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "These are login pages with different redirect destinations (?next=), so canonicalizing them would break the intended redirect functionality."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/download/releases/2.2.3/descrintro/|https://www.python.org/download/releases/2.2/descrintro/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "These are version-specific release documentation pages (Python 2.2 vs 2.2.3) and should be kept separate for version-specific search intent."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/download/releases/2.4/msi/|https://www.python.org/download/releases/2.5/msi/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "These are documentation pages for different Python versions (2.4 vs 2.5) which should remain distinct for version-specific queries."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/events/python-user-group/2204/|https://www.python.org/events/python-user-group/2207/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "High content overlap, near-identical topic similarity, and same informational intent justify canonicalization between the duplicate event pages."
+  },
+  {
+   "action": "canonicalize|https://www.python.org/jobs/location/detroit-michigan-usa/|https://www.python.org/jobs/type/image-processing/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "These are different job category pages (image processing vs numeric processing) and should not be canonicalized to each other despite high text overlap in the template."
+  },
+  {
+   "action": "create_page|https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/|https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/",
+   "human": "sound",
+   "judge": "unsound",
+   "judge_reason": "Topic 36 (OAuth2/Security) is specific to FastAPI and not relevant or necessary to add to Django's documentation based purely on competitor volume."
+  },
+  {
+   "action": "create_page|https://www.ruby-lang.org/en/news/2008/|https://www.ruby-lang.org/en/news/2010/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The competitor has significantly more pages and word count on the topic, while python.org has almost no content, supporting the creation of a new page."
+  },
+  {
+   "action": "create_page|https://www.ruby-lang.org/en/news/2013/|https://www.ruby-lang.org/en/news/2014/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The site has no pages or content on topic 24 while a competitor has many, supporting the recommendation to create content on the topic."
+  },
+  {
+   "action": "create_page|https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/|https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The site has no coverage on topic 28 while a competitor has significant coverage, making the recommendation to create a page sound."
+  },
+  {
+   "action": "create_page|https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/|https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "Competitor has extensive coverage while the target site has very little, supporting creating a new page on the topic."
+  },
+  {
+   "action": "merge_301|http://www.djangoproject.com/weblog/2008/jul/21/10-alpha/|https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The weblog pages cover the same topic with high content overlap and similar intent, making a 301 merge appropriate."
+  },
+  {
+   "action": "merge_301|https://www.djangoproject.com/sponsor/plans/diamond/|https://www.djangoproject.com/sponsor/plans/fellow/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The pages have high content overlap, topic similarity, and the same intent, making a 301 merge appropriate."
+  },
+  {
+   "action": "merge_301|https://www.python.org/psf/board/|https://www.python.org/psf/records/board/history/",
+   "human": "unsound",
+   "judge": "sound",
+   "judge_reason": "The two board/officers pages have high topic similarity and overlap, making them appropriate for merging with a 301 redirect."
+  }
+ ],
+ "failed_fixed_checks": {},
+ "judge_sound": 34,
+ "labelled": 40,
+ "llm": {
+  "cached_calls": 10,
+  "calls": 0,
+  "cost_usd": 0.0,
+  "input_tokens": 0,
+  "last_error": "",
+  "max_prompt_tokens": 0,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 0
+ },
+ "recommendations": 50
+}

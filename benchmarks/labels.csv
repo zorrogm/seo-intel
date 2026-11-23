@@ -1,0 +1,41 @@
+action,type,human_label,note
+canonicalize|https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/|https://www.python.org/success-stories/d-link-australia/,canonicalize,sound,One page carries the other's title and text; a real duplicate
+merge_301|https://www.python.org/psf/board/|https://www.python.org/psf/records/board/history/,merge_301,unsound,Current board and board history serve different needs
+fix_redirect_chain|http://www.python.org/psf/forms/sponsor-application/|https://www.python.org/psf/forms/sponsor-application/,fix_redirect_chain,sound,Three hops ending at a login page
+add_internal_link|https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/|https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/,add_internal_link,unsound,A 2019 nominee page is not a relevant source for the 2022 list
+create_page|https://www.ruby-lang.org/en/news/2008/|https://www.ruby-lang.org/en/news/2010/,create_page,unsound,Yearly news archive pages are not a topic to copy
+canonicalize|https://www.python.org/download/releases/2.4/msi/|https://www.python.org/download/releases/2.5/msi/,canonicalize,sound,"Same title, 92% same text; old installer notes can share a canonical"
+canonicalize|https://www.python.org/downloads/release/python-335-rc1/|https://www.python.org/downloads/release/python-335rc1/,canonicalize,sound,Same release under two URL spellings
+canonicalize|https://www.python.org/jobs/location/detroit-michigan-usa/|https://www.python.org/jobs/type/image-processing/,canonicalize,sound,Two empty job listings with identical text
+canonicalize|https://www.python.org/accounts/login/|https://www.python.org/accounts/login/?next=/jobs/create/,canonicalize,sound,Login page and its parameter variant
+canonicalize|https://www.python.org/download/releases/2.2.3/descrintro/|https://www.python.org/download/releases/2.2/descrintro/,canonicalize,sound,Same essay published under two release folders
+canonicalize|https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html|https://www.python.org/ftp/python/doc/quick-ref.1.3.html,canonicalize,sound,Near identical legacy quick reference pages
+fix_redirect_chain|http://www.python.org/sigs/distutils-sig/|https://www.python.org/sigs/distutils-sig/,fix_redirect_chain,sound,Chain of redirects to the same final page
+fix_redirect_chain|https://python.org/downloads|https://www.python.org/downloads,fix_redirect_chain,sound,"http, then https, then trailing slash"
+create_page|https://www.ruby-lang.org/en/news/2013/|https://www.ruby-lang.org/en/news/2014/,create_page,unsound,Ruby security news is not a gap for python.org
+create_page|https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/|https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/,create_page,unsound,Ruby release news is not a gap for python.org
+create_page|https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/|https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/,create_page,unsound,Ruby release news is not a gap for python.org
+merge_301|https://www.python.org/community/sigs/retired/locator-sig/|https://www.python.org/community/sigs/retired/pythonwin-sig/,merge_301,unsound,Two different interest groups
+canonicalize|https://www.python.org/events/python-user-group/2204/|https://www.python.org/events/python-user-group/2207/,canonicalize,unsound,Separate dated events of one user group
+merge_301|https://www.python.org/jobs/8129/|https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/,merge_301,unsound,A job post and a location listing; almost no shared text
+fix_redirect_chain|http://python.org/dev/peps/pep-0392/|https://www.python.org/dev/peps/pep-0392/,fix_redirect_chain,sound,Extra hop before the PEP site
+fix_redirect_chain|http://python.org/dev/peps/pep-0398/|https://www.python.org/dev/peps/pep-0398/,fix_redirect_chain,sound,Extra hop before the PEP site
+fix_redirect_chain|http://python.org/psf/mission|https://www.python.org/psf/mission,fix_redirect_chain,sound,Two hops for one page
+fix_redirect_chain|http://python.org/psf/trademarks|https://www.python.org/psf/trademarks,fix_redirect_chain,sound,Two hops for one page
+fix_redirect_chain|http://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq|https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq,fix_redirect_chain,sound,Old wiki address chained to the new wiki
+add_internal_link|https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/|https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/,add_internal_link,unsound,A 2020 nominee page is not a relevant source for the 2023 list
+merge_301|https://www.djangoproject.com/sponsor/plans/diamond/|https://www.djangoproject.com/sponsor/plans/fellow/,merge_301,unsound,Different sponsorship plans
+merge_301|http://www.djangoproject.com/weblog/2008/jul/21/10-alpha/|https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/,merge_301,unsound,Announcements of different releases
+add_internal_link|https://www.djangoproject.com/community/jobs/?page=14|https://www.djangoproject.com/community/jobs/,add_internal_link,unsound,Page 14 of a list should not be a priority page
+create_page|https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/|https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/,create_page,sound,Authentication with tokens is a fair topic for a web framework site
+canonicalize|https://www.djangoproject.com/accounts/login/?next=/community/add/blogs/|https://www.djangoproject.com/accounts/login/?next=/community/add/jobs/,canonicalize,sound,Login page parameter variants
+canonicalize|https://www.djangoproject.com/sponsor/banner/|https://www.djangoproject.com/sponsor/banner/?level=monthly,canonicalize,sound,Same page with and without a parameter
+canonicalize|http://www.djangoproject.com/accessibility/talk-guidelines/|https://www.djangoproject.com/accessibility/talk-guidelines/,canonicalize,sound,http and https copies of one page
+canonicalize|http://www.djangoproject.com/weblog/2010/may/05/12-rc-1/|https://www.djangoproject.com/weblog/2009/feb/23/11-alpha-1/,canonicalize,unsound,Announcements of different releases
+canonicalize|https://www.djangoproject.com/weblog/2014/sep/10/call-nominations-2014-malcolm-tredinnick-memorial/|https://www.djangoproject.com/weblog/2015/sep/29/call-nominations-2015-malcolm-tredinnick-memorial/,canonicalize,unsound,Prize nominations for different years
+canonicalize|http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/|https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/,canonicalize,sound,http and https copies of one post
+canonicalize|http://www.djangoproject.com/weblog/2005/nov/23/template_errors/|https://www.djangoproject.com/weblog/2005/nov/23/template_errors/,canonicalize,sound,http and https copies of one post
+canonicalize|http://www.djangoproject.com/weblog/2010/may/17/12/|https://www.djangoproject.com/weblog/2010/may/17/12/,canonicalize,sound,http and https copies of one post
+merge_301|https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/|https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/,merge_301,unsound,Posts about different events
+merge_301|https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/|https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/,merge_301,unsound,Calls for different conference years
+merge_301|https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/|https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/,merge_301,unsound,Posts about different programme sessions
