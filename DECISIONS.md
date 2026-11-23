@@ -182,7 +182,7 @@ copy. A merge is only suggested when half the text is shared and severity
 is at least 0.60; weaker pairs get the milder advice to tell the pages
 apart, at a lower rank.
 
-**Failed: counting a competitor's dated news as a gap.** 4 of the 5 gap
+**Failed: counting a competitor's dated news as a gap.** All 4 gap
 suggestions for python.org were Ruby release announcements and yearly news
 archives. Competitor pages with a year in the path are now left out of gap
 topics, and python.org went from 8 gaps to 1. Link suggestions between two
