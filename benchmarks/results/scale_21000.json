@@ -1,9 +1,9 @@
 {
  "pages_total": 21000,
  "internal_links": 125907,
- "analysis_seconds": 22.6,
- "peak_ram_mb": 646,
- "cannibalization_groups": 400,
+ "analysis_seconds": 22.7,
+ "peak_ram_mb": 459,
+ "cannibalization_groups": 0,
  "gaps": 0,
  "new_links": 18
 }

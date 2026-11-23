@@ -14,19 +14,19 @@
    "mean_share_of_best_gain": 0.9201,
    "worst_share_of_best_gain": 0.6826,
    "times_optimal": 7,
-   "seconds": 0.07
+   "seconds": 0.05
   },
   "greedy on exact gain": {
    "mean_share_of_best_gain": 0.9993,
    "worst_share_of_best_gain": 0.9845,
    "times_optimal": 37,
-   "seconds": 0.34
+   "seconds": 0.26
   },
   "greedy plus swaps": {
    "mean_share_of_best_gain": 1.0,
    "worst_share_of_best_gain": 1.0,
    "times_optimal": 40,
-   "seconds": 0.63
+   "seconds": 0.47
   }
  }
 }
