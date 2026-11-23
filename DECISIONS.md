@@ -132,14 +132,15 @@ JavaScript adds more were caught only by the template samples.
 **Kept: traps are refused at enqueue time, not after fetching.** A URL is
 checked against calendar, faceted, growing path and session rules before it
 enters the frontier, so a trap costs at most its cap in fetches (20 filter
-mixes per path, 60 dates per calendar shape). Each refusal is counted with
+mixes per path, 300 numbered pages per path, 400 dates per calendar shape). Each refusal is counted with
 its pattern in `spider_traps.json`.
 
 **Kept: soft 404 needs evidence, not just thin text.** A page is flagged only
-if it has no text, or a short page says "not found" in its title or heading,
-or its content matches the site's own answer to a URL that cannot exist. The
-homepage is never flagged. On the trap test site this finds 3 of 3 with no
-false alarms (`tests/test_part_a.py::test_soft_404s_are_found_without_false_alarms`).
+if it has no text and no scripts, or a short page's title or heading says
+"page not found" or similar, or its content matches the site's own answer to
+a URL that cannot exist. The homepage is never flagged. On the trap test
+site this finds 3 of 3 with no false alarms
+(`tests/test_part_a.py::test_soft_404s_are_found_without_false_alarms`).
 
 **Known limit: kill and resume.** Stored pages are never duplicated or lost.
 Requests that were in flight at the moment of a kill are fetched again on
