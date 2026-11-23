@@ -171,12 +171,15 @@ def _group_actions(a: Analysis, facts: Facts) -> List[Dict]:
         pair = group["worst_pair"]
         url_a, url_b = pair["url_a"], pair["url_b"]
         overlap = pair["signals"]["content_overlap"]
+        score = group["severity"]
         if overlap >= config.NEAR_DUPLICATE_OVERLAP:
             kind = "canonicalize"
-        elif group["severity"] >= 0.6:
+        elif overlap >= config.MERGE_MIN_OVERLAP and score >= config.MERGE_MIN_SEVERITY:
             kind = "merge_301"
         else:
+            # Little shared text: tell them apart, do not merge
             kind = "retarget_intent"
+            score *= config.RETARGET_SCORE_FACTOR
         claims = [
             _field(facts, url_a, "title"), _field(facts, url_b, "title"),
             _field(facts, url_a, "intent"), _field(facts, url_b, "intent"),
@@ -185,7 +188,7 @@ def _group_actions(a: Analysis, facts: Facts) -> List[Dict]:
             _field(facts, url_a, "inlinks"), _field(facts, url_b, "inlinks"),
         ]
         actions.append({
-            "type": kind, "score": group["severity"], "urls": group["urls"],
+            "type": kind, "score": score, "urls": group["urls"],
             "claims": claims, "keep": group["keep"],
         })
     return actions

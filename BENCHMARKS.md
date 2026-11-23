@@ -36,7 +36,7 @@ Headline numbers of a finished run:
 | Scale | 50,000 URLs per site | Frontier tracks up to 50,000 per site. Fetched in the crawl time: 9,968 and 9,964 (pair 1), 10,376 and 10,352 (pair 2), 1,898 and 2,029 (pair 3, sites exhausted). Analysis alone handles 50,000 pages in 84 s and 1,042 MB. | pairs 1 to 3, `benchmarks/scale.py 25000` |
 | Time | 90 min | Crawl stops at 60 min. Rendering, analysis, agent and live recheck then took 7.2 min on pair 1. About 67 min in total. | pair 1, laptop |
 | Memory | 2 GB peak | Full run inside a 2 GB hard cap: finished, 0 out of memory events. Tool process peak 588 MB; whole container with the browser 1,168 MB. | pair 1, container |
-| Memory, heaviest pair | 2 GB peak | 1,044 MB for analysis of 20,728 link heavy Hindi pages | pair 2, laptop |
+| Memory, heaviest pair | 2 GB peak | 1,002 MB for analysis of 20,728 link heavy Hindi pages | pair 2, laptop |
 | LLM cost | $0.50 per run | $0.0008 to $0.0042 per run, 3 to 12 calls, largest prompt 5,086 tokens against the 8,000 cap | all pairs, `logs/llm_usage.json` |
 | Politeness | 3 requests per second per host | Requests to one host start at least 0.34 s apart, at most 2.94 per second. Pair 1 averaged 2.78 pages per second per host. | `tests/test_crawl.py`, pair 1 |
 | Robots | Google rules | All 21 tests from Google's parser pass | `.venv/bin/pytest tests/test_robots_google.py` |
@@ -71,12 +71,12 @@ Notes on honesty:
 | Flagged as needing JavaScript but not rendered | 0 | 782 | 0 |
 | Soft 404s reported | 0 | 0 | 0 |
 | Near duplicate pairs | 184 | 255 | 109 |
-| Cannibalization groups | 14 | 333 | 82 |
-| Competitor gaps | 8 | 22 | 9 |
-| New links chosen (budget 40) | 40 | 18 | 40 |
-| Priority PageRank, before to after | 0.00151 to 0.00598 | 0.00196 to 0.00229 | 0.00203 to 0.00793 |
+| Cannibalization groups | 16 | 306 | 80 |
+| Competitor gaps | 1 | 22 | 9 |
+| New links chosen (budget 40) | 40 | 17 | 31 |
+| Priority PageRank, before to after | 0.00151 to 0.00616 | 0.00196 to 0.00229 | 0.00365 to 0.00633 |
 | Actions in the plan | 25 | 25 | 25 |
-| Verified claims in the plan | 193 | 190 | 220 |
+| Verified claims in the plan | 196 | 190 | 186 |
 | Plan written by | agent | agent | agent |
 
 Pairs 1 and 2 were crawled with an earlier build and re-analysed with the
@@ -138,6 +138,10 @@ facts says weekly. The facts show the same title, identical text (overlap
 1.0) and one URL parameter of difference, which is a textbook canonical
 case. The judge invented a detail and kept doing so after calibration.
 Results of both judge runs are in `benchmarks/results/judge_*.json`.
+
+The labels then drove three fixes (see DECISIONS.md), so the plans changed.
+28 of the 40 labelled recommendations are still in the final plans; on
+those the calibrated judge agrees 75% of the time, kappa 0.50.
 
 ## Install and tests on a clean machine
 

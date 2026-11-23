@@ -26,29 +26,30 @@
    "flagged_not_rendered": 0
   }
  },
- "cannibalization_groups": 82,
+ "cannibalization_groups": 80,
  "gaps": 9,
  "near_duplicate_pairs": 109,
- "new_links": 40,
- "priority_pagerank_before": 0.00203093,
- "priority_pagerank_after": 0.0079346,
+ "new_links": 31,
+ "priority_pagerank_before": 0.0036539,
+ "priority_pagerank_after": 0.00632772,
  "actions": {
-  "merge_301": 8,
-  "add_internal_link": 2,
-  "create_page": 6,
+  "create_page": 8,
+  "retarget_intent": 2,
+  "fix_redirect_chain": 3,
   "canonicalize": 8,
-  "fix_redirect_chain": 1
+  "merge_301": 3,
+  "add_internal_link": 1
  },
- "claims_in_plan": 220,
+ "claims_in_plan": 186,
  "llm": {
   "cached_calls": 5,
-  "calls": 3,
-  "cost_usd": 0.001232,
-  "input_tokens": 11313,
+  "calls": 7,
+  "cost_usd": 0.002769,
+  "input_tokens": 24478,
   "last_error": "",
-  "max_prompt_tokens": 4801,
+  "max_prompt_tokens": 4575,
   "model": "gemini-3.5-flash-lite",
-  "output_tokens": 251,
+  "output_tokens": 803,
   "plan_written_by": "agent"
  },
  "rejections": 0

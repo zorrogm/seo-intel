@@ -27,7 +27,6 @@ def build_site(rng, site, vocabulary):
             rng.zipf(1.3, size=WORDS // 2) % 3000 + TOPICS * 40,
         ])
         tokens = [vocabulary[i] for i in picks]
-        text = " ".join(tokens)
         sentences = [" ".join(tokens[i : i + 20]) + "." for i in range(0, WORDS, 20)]
         title = " ".join(vocabulary[topic * 40 + i] for i in range(3)) + f" part {number}"
         page = Page(url=url, site=site, status=200, lang="en", title=title, h1=title,

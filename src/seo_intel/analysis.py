@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Set
+from typing import Dict, List, Optional
 
 import numpy as np
 
@@ -50,6 +50,8 @@ def _default_priority(a: Analysis) -> List[int]:
     deep = [
         i for i in range(a.target_count)
         if a.pages[i].indexable and i in a.row_of and a.depth[i] != 0 and a.depth[i] != 1
+        # Numbered list pages are never a priority
+        and "?" not in a.pages[i].url
     ]
     deep.sort(key=lambda i: (-a.pages[i].word_count, a.pages[i].url))
     return deep[: config.DEFAULT_PRIORITY_COUNT]

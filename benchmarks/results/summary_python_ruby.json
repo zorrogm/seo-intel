@@ -26,29 +26,30 @@
    "flagged_not_rendered": 0
   }
  },
- "cannibalization_groups": 14,
- "gaps": 8,
+ "cannibalization_groups": 16,
+ "gaps": 1,
  "near_duplicate_pairs": 184,
  "new_links": 40,
  "priority_pagerank_before": 0.00150546,
- "priority_pagerank_after": 0.00597839,
+ "priority_pagerank_after": 0.00616229,
  "actions": {
   "canonicalize": 8,
-  "merge_301": 3,
+  "merge_301": 2,
   "fix_redirect_chain": 8,
-  "add_internal_link": 2,
-  "create_page": 4
+  "add_internal_link": 4,
+  "retarget_intent": 2,
+  "create_page": 1
  },
- "claims_in_plan": 193,
+ "claims_in_plan": 196,
  "llm": {
   "cached_calls": 2,
-  "calls": 1,
-  "cost_usd": 0.000247,
-  "input_tokens": 1523,
+  "calls": 2,
+  "cost_usd": 0.000664,
+  "input_tokens": 5711,
   "last_error": "intent: KeyError: 'parts'",
-  "max_prompt_tokens": 1523,
+  "max_prompt_tokens": 4192,
   "model": "gemini-3.5-flash-lite",
-  "output_tokens": 238,
+  "output_tokens": 233,
   "plan_written_by": "agent"
  },
  "rejections": 0

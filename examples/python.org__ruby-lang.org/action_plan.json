@@ -55,7 +55,7 @@
   "id": "a1",
   "keep": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
   "rank": 1,
-  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c5]. They cover the same topic [c6]. They answer the same search intent [c3] [c4]. Internal links are split between them [c7] [c8]. Pages and other evidence: [c1] [c2].",
+  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c5]. They cover the same topic [c6]. They answer the same search intent [c3] [c4]. Pages and other evidence: [c1] [c2] [c7] [c8].",
   "score": 0.9883,
   "type": "canonicalize",
   "urls": [
@@ -67,60 +67,60 @@
   "claims": [
    {
     "field": "title",
-    "id": "c57",
+    "id": "c73",
     "url": "https://www.python.org/psf/board/",
     "value": "PSF Officers & Board Members | Python Software Foundation"
    },
    {
     "field": "title",
-    "id": "c58",
+    "id": "c74",
     "url": "https://www.python.org/psf/records/board/history/",
     "value": "Current and Past PSF Officers & Board Members | Python Software Foundation"
    },
    {
     "field": "intent",
-    "id": "c59",
+    "id": "c75",
     "url": "https://www.python.org/psf/board/",
     "value": "informational"
    },
    {
     "field": "intent",
-    "id": "c60",
+    "id": "c76",
     "url": "https://www.python.org/psf/records/board/history/",
     "value": "informational"
    },
    {
-    "id": "c61",
+    "id": "c77",
     "metric": "content_overlap",
     "url_a": "https://www.python.org/psf/board/",
     "url_b": "https://www.python.org/psf/records/board/history/",
     "value": 0.5838
    },
    {
-    "id": "c62",
+    "id": "c78",
     "metric": "topic_similarity",
     "url_a": "https://www.python.org/psf/board/",
     "url_b": "https://www.python.org/psf/records/board/history/",
-    "value": 0.8613
+    "value": 0.8584
    },
    {
     "field": "inlinks",
-    "id": "c63",
+    "id": "c79",
     "url": "https://www.python.org/psf/board/",
     "value": 3
    },
    {
     "field": "inlinks",
-    "id": "c64",
+    "id": "c80",
     "url": "https://www.python.org/psf/records/board/history/",
     "value": 3
    }
   ],
-  "id": "a8",
+  "id": "a10",
   "keep": "https://www.python.org/psf/board/",
   "rank": 2,
-  "rationale": "Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c62]. They answer the same search intent [c59] [c60]. Internal links are split between them [c63] [c64]. Pages and other evidence: [c57] [c58] [c61].",
-  "score": 0.739,
+  "rationale": "Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c78]. They answer the same search intent [c75] [c76]. Pages and other evidence: [c73] [c74] [c77] [c79] [c80].",
+  "score": 0.7382,
   "type": "merge_301",
   "urls": [
    "https://www.python.org/psf/board/",
@@ -131,26 +131,26 @@
   "claims": [
    {
     "field": "redirect_to",
-    "id": "c65",
+    "id": "c81",
     "url": "http://www.python.org/psf/forms/sponsor-application/",
     "value": "https://www.python.org/psf/forms/sponsor-application/"
    },
    {
     "field": "redirect_to",
-    "id": "c66",
+    "id": "c82",
     "url": "https://www.python.org/psf/forms/sponsor-application/",
     "value": "https://www.python.org/sponsors/application/new/"
    },
    {
     "field": "redirect_to",
-    "id": "c67",
+    "id": "c83",
     "url": "https://www.python.org/sponsors/application/new/",
     "value": "https://www.python.org/accounts/login/?next=/sponsors/application/new/"
    }
   ],
-  "id": "a9",
+  "id": "a11",
   "rank": 3,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c65] [c66] [c67].",
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c81] [c82] [c83].",
   "score": 0.7,
   "type": "fix_redirect_chain",
   "urls": [
@@ -163,223 +163,210 @@
   "claims": [
    {
     "field": "title",
-    "id": "c74",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": "Nominees for 2022 Python Software Foundation Board Election | Python.org"
+    "id": "c90",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": "Nominees for 2023 Python Software Foundation Board Election | Python.org"
    },
    {
     "field": "inlinks",
-    "id": "c75",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "id": "c91",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": 1
    },
    {
     "field": "sentence",
-    "id": "c76",
-    "url": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
-    "value": "Nominee for 2019 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c77",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c78",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
-    "value": "Nominee for 2022 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c79",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c80",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
-    "value": "Nominee for 2022 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c81",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c82",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
-    "value": "Nominee for 2022 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c83",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c84",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
-    "value": "Nominee for 2022 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c85",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c86",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
-    "value": "Nominee for 2022 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c87",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c88",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
-    "value": "Nominee for 2022 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c89",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c90",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
-    "value": "Nominee for 2023 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c91",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
     "id": "c92",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
-    "value": "Nominee for 2023 Python Software Foundation Board Election"
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
     "id": "c93",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
     "id": "c94",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/",
-    "value": "Nominee for 2023 Python Software Foundation Board Election"
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
     "id": "c95",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
     "id": "c96",
-    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/",
-    "value": "Nominee for 2026 Python Software Foundation Board Election"
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
     "id": "c97",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
     "id": "c98",
-    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/",
-    "value": "Nominee for 2026 Python Software Foundation Board Election"
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
     "id": "c99",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
     "id": "c100",
-    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/",
-    "value": "Nominee for 2026 Python Software Foundation Board Election"
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
     "id": "c101",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
     "id": "c102",
-    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/",
-    "value": "Nominee for 2026 Python Software Foundation Board Election"
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
     "id": "c103",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
     "id": "c104",
-    "url": "https://www.python.org/psf/fiscal-sponsorees/",
-    "value": "The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and international community of Python programmers."
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
    },
    {
     "id": "c105",
     "metric": "links_to",
-    "url_a": "https://www.python.org/psf/fiscal-sponsorees/",
-    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c106",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c107",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c108",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c109",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c110",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c111",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c112",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kelvin-oyanna/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c113",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kelvin-oyanna/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c114",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c115",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c116",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c117",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c118",
+    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/",
+    "value": "Nominee for 2026 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c119",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
     "value": false
    }
   ],
-  "id": "a12",
+  "id": "a14",
   "links": [
    {
     "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2019 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/"
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/"
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/"
    },
    {
     "anchor": "Software Foundation Board Election",
@@ -389,22 +376,17 @@
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
     "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/"
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/"
    },
    {
     "anchor": "Software Foundation Board Election",
@@ -414,7 +396,12 @@
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2023 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/"
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/"
    },
    {
     "anchor": "Software Foundation Board Election",
@@ -423,116 +410,109 @@
    },
    {
     "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/"
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kelvin-oyanna/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2026 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/"
-   },
-   {
-    "anchor": "Python Software Foundation",
-    "sentence": "The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and international community of Python programmers.",
-    "source": "https://www.python.org/psf/fiscal-sponsorees/"
+    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/"
    }
   ],
   "rank": 4,
-  "rationale": "Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c75]. A sentence that suits the link already exists [c76] [c78] [c80] [c82] [c84] [c86] [c88] [c90] [c92] [c94] [c96] [c98] [c100] [c102] [c104]. The source page does not link to it yet [c77] [c79] [c81] [c83] [c85] [c87] [c89] [c91] [c93] [c95] [c97] [c99] [c101] [c103] [c105]. Pages and other evidence: [c74].",
+  "rationale": "Add a link to this page from the quoted sentence, using words already there. The source page does not link to it yet [c93] [c95] [c97] [c99] [c101] [c103] [c105] [c107] [c109] [c111] [c113] [c115] [c117] [c119]. The page gets few internal links [c91]. A sentence that suits the link already exists [c92] [c94] [c96] [c98] [c100] [c102] [c104] [c106] [c108] [c110] [c112] [c114] [c116] [c118]. Pages and other evidence: [c90].",
   "score": 0.7,
   "type": "add_internal_link",
   "urls": [
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
-   "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
    "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
    "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
    "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
-   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
    "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/",
-   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/",
-   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/",
-   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/",
-   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/",
-   "https://www.python.org/psf/fiscal-sponsorees/"
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kelvin-oyanna/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
+   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/"
   ]
  },
  {
   "claims": [
    {
-    "id": "c106",
-    "metric": "pages",
-    "site": "ruby-lang.org",
-    "topic_id": 26,
-    "value": 208
-   },
-   {
-    "id": "c107",
-    "metric": "words",
-    "site": "ruby-lang.org",
-    "topic_id": 26,
-    "value": 38002
-   },
-   {
-    "id": "c108",
-    "metric": "pages",
-    "site": "python.org",
-    "topic_id": 26,
-    "value": 1
-   },
-   {
-    "id": "c109",
-    "metric": "words",
-    "site": "python.org",
-    "topic_id": 26,
-    "value": 11
+    "field": "title",
+    "id": "c128",
+    "url": "https://www.python.org/events/python-user-group/2204/",
+    "value": "Python Leiden User Group | Python.org"
    },
    {
     "field": "title",
-    "id": "c110",
-    "url": "https://www.ruby-lang.org/en/news/2008/",
-    "value": "2008 Archives | Ruby"
+    "id": "c129",
+    "url": "https://www.python.org/events/python-user-group/2207/",
+    "value": "Python Leiden User Group | Python.org"
    },
    {
-    "field": "title",
-    "id": "c111",
-    "url": "https://www.ruby-lang.org/en/news/2010/",
-    "value": "2010 Archives | Ruby"
+    "field": "intent",
+    "id": "c130",
+    "url": "https://www.python.org/events/python-user-group/2204/",
+    "value": "informational"
    },
    {
-    "field": "title",
-    "id": "c112",
-    "url": "https://www.ruby-lang.org/en/news/2012/",
-    "value": "2012 Archives | Ruby"
+    "field": "intent",
+    "id": "c131",
+    "url": "https://www.python.org/events/python-user-group/2207/",
+    "value": "informational"
+   },
+   {
+    "id": "c132",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/events/python-user-group/2204/",
+    "url_b": "https://www.python.org/events/python-user-group/2207/",
+    "value": 0.8333
+   },
+   {
+    "id": "c133",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/events/python-user-group/2204/",
+    "url_b": "https://www.python.org/events/python-user-group/2207/",
+    "value": 0.9988
+   },
+   {
+    "field": "inlinks",
+    "id": "c134",
+    "url": "https://www.python.org/events/python-user-group/2204/",
+    "value": 2
+   },
+   {
+    "field": "inlinks",
+    "id": "c135",
+    "url": "https://www.python.org/events/python-user-group/2207/",
+    "value": 0
    }
   ],
-  "id": "a13",
+  "id": "a16",
+  "keep": "https://www.python.org/events/python-user-group/2204/",
   "rank": 5,
-  "rationale": "Create a page on this topic. The competitor has many pages on the topic [c106]. This site has little on the topic [c108] [c109]. Pages and other evidence: [c107] [c110] [c111] [c112].",
-  "score": 0.7,
-  "topic": [
-   "released",
-   "posted",
-   "nov"
-  ],
-  "type": "create_page",
+  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c132]. They cover the same topic [c133]. They answer the same search intent [c130] [c131]. Pages and other evidence: [c128] [c129] [c134] [c135].",
+  "score": 0.6496,
+  "type": "canonicalize",
   "urls": [
-   "https://www.ruby-lang.org/en/news/2008/",
-   "https://www.ruby-lang.org/en/news/2010/",
-   "https://www.ruby-lang.org/en/news/2012/"
+   "https://www.python.org/events/python-user-group/2204/",
+   "https://www.python.org/events/python-user-group/2207/"
   ]
  },
  {
@@ -733,36 +713,100 @@
    {
     "field": "title",
     "id": "c33",
+    "url": "https://www.python.org/jobs/category/researcher-scientist/",
+    "value": "Python Job Board | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c34",
+    "url": "https://www.python.org/jobs/location/remote-remote-north-america-europe/",
+    "value": "Python Job Board | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c35",
+    "url": "https://www.python.org/jobs/category/researcher-scientist/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c36",
+    "url": "https://www.python.org/jobs/location/remote-remote-north-america-europe/",
+    "value": "informational"
+   },
+   {
+    "id": "c37",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/jobs/category/researcher-scientist/",
+    "url_b": "https://www.python.org/jobs/location/remote-remote-north-america-europe/",
+    "value": 1.0
+   },
+   {
+    "id": "c38",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/jobs/category/researcher-scientist/",
+    "url_b": "https://www.python.org/jobs/location/remote-remote-north-america-europe/",
+    "value": 0.9338
+   },
+   {
+    "field": "inlinks",
+    "id": "c39",
+    "url": "https://www.python.org/jobs/category/researcher-scientist/",
+    "value": 13
+   },
+   {
+    "field": "inlinks",
+    "id": "c40",
+    "url": "https://www.python.org/jobs/location/remote-remote-north-america-europe/",
+    "value": 13
+   }
+  ],
+  "id": "a5",
+  "keep": "https://www.python.org/jobs/category/researcher-scientist/",
+  "rank": 9,
+  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c37]. They cover the same topic [c38]. They answer the same search intent [c35] [c36]. Internal links are split between them [c39] [c40]. Pages and other evidence: [c33] [c34].",
+  "score": 0.8801,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/jobs/category/researcher-scientist/",
+   "https://www.python.org/jobs/location/remote-remote-north-america-europe/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c41",
     "url": "https://www.python.org/accounts/login/?next=/jobs/create/",
     "value": "Sign In to Python.org"
    },
    {
     "field": "title",
-    "id": "c34",
+    "id": "c42",
     "url": "https://www.python.org/accounts/login/?next=/success-stories/create/",
     "value": "Sign In to Python.org"
    },
    {
     "field": "intent",
-    "id": "c35",
+    "id": "c43",
     "url": "https://www.python.org/accounts/login/?next=/jobs/create/",
     "value": "navigational"
    },
    {
     "field": "intent",
-    "id": "c36",
+    "id": "c44",
     "url": "https://www.python.org/accounts/login/?next=/success-stories/create/",
     "value": "navigational"
    },
    {
-    "id": "c37",
+    "id": "c45",
     "metric": "content_overlap",
     "url_a": "https://www.python.org/accounts/login/?next=/jobs/create/",
     "url_b": "https://www.python.org/accounts/login/?next=/success-stories/create/",
     "value": 1.0
    },
    {
-    "id": "c38",
+    "id": "c46",
     "metric": "topic_similarity",
     "url_a": "https://www.python.org/accounts/login/?next=/jobs/create/",
     "url_b": "https://www.python.org/accounts/login/?next=/success-stories/create/",
@@ -770,21 +814,21 @@
    },
    {
     "field": "inlinks",
-    "id": "c39",
+    "id": "c47",
     "url": "https://www.python.org/accounts/login/?next=/jobs/create/",
     "value": 1
    },
    {
     "field": "inlinks",
-    "id": "c40",
+    "id": "c48",
     "url": "https://www.python.org/accounts/login/?next=/success-stories/create/",
     "value": 1
    }
   ],
-  "id": "a5",
+  "id": "a6",
   "keep": "https://www.python.org/accounts/login/?next=/users/membership/",
-  "rank": 9,
-  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c37]. They cover the same topic [c38]. They answer the same search intent [c35] [c36]. Internal links are split between them [c39] [c40]. Pages and other evidence: [c33] [c34].",
+  "rank": 10,
+  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c45]. They cover the same topic [c46]. They answer the same search intent [c43] [c44]. Internal links are split between them [c47] [c48]. Pages and other evidence: [c41] [c42].",
   "score": 0.864,
   "type": "canonicalize",
   "urls": [
@@ -800,60 +844,60 @@
   "claims": [
    {
     "field": "title",
-    "id": "c41",
+    "id": "c49",
     "url": "https://www.python.org/download/releases/2.2.3/descrintro/",
     "value": "Unifying types and classes in Python 2.2 | Python.org"
    },
    {
     "field": "title",
-    "id": "c42",
+    "id": "c50",
     "url": "https://www.python.org/download/releases/2.2/descrintro/",
     "value": "Unifying types and classes in Python 2.2 | Python.org"
    },
    {
     "field": "intent",
-    "id": "c43",
+    "id": "c51",
     "url": "https://www.python.org/download/releases/2.2.3/descrintro/",
     "value": "transactional"
    },
    {
     "field": "intent",
-    "id": "c44",
+    "id": "c52",
     "url": "https://www.python.org/download/releases/2.2/descrintro/",
     "value": "transactional"
    },
    {
-    "id": "c45",
+    "id": "c53",
     "metric": "content_overlap",
     "url_a": "https://www.python.org/download/releases/2.2.3/descrintro/",
     "url_b": "https://www.python.org/download/releases/2.2/descrintro/",
     "value": 0.9087
    },
    {
-    "id": "c46",
+    "id": "c54",
     "metric": "topic_similarity",
     "url_a": "https://www.python.org/download/releases/2.2.3/descrintro/",
     "url_b": "https://www.python.org/download/releases/2.2/descrintro/",
-    "value": 0.9668
+    "value": 0.96
    },
    {
     "field": "inlinks",
-    "id": "c47",
+    "id": "c55",
     "url": "https://www.python.org/download/releases/2.2.3/descrintro/",
     "value": 3
    },
    {
     "field": "inlinks",
-    "id": "c48",
+    "id": "c56",
     "url": "https://www.python.org/download/releases/2.2/descrintro/",
     "value": 2
    }
   ],
-  "id": "a6",
+  "id": "a7",
   "keep": "https://www.python.org/download/releases/2.2.3/descrintro/",
-  "rank": 10,
-  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c45]. They cover the same topic [c46]. They answer the same search intent [c43] [c44]. Internal links are split between them [c47] [c48]. Pages and other evidence: [c41] [c42].",
-  "score": 0.853,
+  "rank": 11,
+  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c53]. They cover the same topic [c54]. They answer the same search intent [c51] [c52]. Internal links are split between them [c55] [c56]. Pages and other evidence: [c49] [c50].",
+  "score": 0.8509,
   "type": "canonicalize",
   "urls": [
    "https://www.python.org/download/releases/2.2.3/descrintro/",
@@ -863,91 +907,27 @@
  {
   "claims": [
    {
-    "field": "title",
-    "id": "c49",
-    "url": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
-    "value": "A Python Quick Reference"
-   },
-   {
-    "field": "title",
-    "id": "c50",
-    "url": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
-    "value": "A Python Quick Reference"
-   },
-   {
-    "field": "intent",
-    "id": "c51",
-    "url": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
-    "value": "transactional"
-   },
-   {
-    "field": "intent",
-    "id": "c52",
-    "url": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
-    "value": "transactional"
-   },
-   {
-    "id": "c53",
-    "metric": "content_overlap",
-    "url_a": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
-    "url_b": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
-    "value": 0.8895
-   },
-   {
-    "id": "c54",
-    "metric": "topic_similarity",
-    "url_a": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
-    "url_b": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
-    "value": 0.9922
-   },
-   {
-    "field": "inlinks",
-    "id": "c55",
-    "url": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
-    "value": 1
-   },
-   {
-    "field": "inlinks",
-    "id": "c56",
-    "url": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
-    "value": 2
-   }
-  ],
-  "id": "a7",
-  "keep": "https://www.python.org/ftp/python/doc/quick-ref.1.3.html",
-  "rank": 11,
-  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c53]. They cover the same topic [c54]. They answer the same search intent [c51] [c52]. Internal links are split between them [c55] [c56]. Pages and other evidence: [c49] [c50].",
-  "score": 0.8456,
-  "type": "canonicalize",
-  "urls": [
-   "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
-   "https://www.python.org/ftp/python/doc/quick-ref.1.3.html"
-  ]
- },
- {
-  "claims": [
-   {
     "field": "redirect_to",
-    "id": "c68",
+    "id": "c84",
     "url": "http://www.python.org/sigs/distutils-sig/",
     "value": "https://www.python.org/sigs/distutils-sig/"
    },
    {
     "field": "redirect_to",
-    "id": "c69",
+    "id": "c85",
     "url": "https://www.python.org/sigs/distutils-sig/",
     "value": "https://www.python.org/community/sigs"
    },
    {
     "field": "redirect_to",
-    "id": "c70",
+    "id": "c86",
     "url": "https://www.python.org/community/sigs",
     "value": "https://www.python.org/community/sigs/"
    }
   ],
-  "id": "a10",
+  "id": "a12",
   "rank": 12,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c68] [c69] [c70].",
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c84] [c85] [c86].",
   "score": 0.7,
   "type": "fix_redirect_chain",
   "urls": [
@@ -960,26 +940,26 @@
   "claims": [
    {
     "field": "redirect_to",
-    "id": "c71",
+    "id": "c87",
     "url": "https://python.org/downloads",
     "value": "https://www.python.org/downloads"
    },
    {
     "field": "redirect_to",
-    "id": "c72",
+    "id": "c88",
     "url": "https://www.python.org/downloads",
     "value": "http://www.python.org/downloads/"
    },
    {
     "field": "redirect_to",
-    "id": "c73",
+    "id": "c89",
     "url": "http://www.python.org/downloads/",
     "value": "https://www.python.org/downloads/"
    }
   ],
-  "id": "a11",
+  "id": "a13",
   "rank": 13,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c71] [c72] [c73].",
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c87] [c88] [c89].",
   "score": 0.7,
   "type": "fix_redirect_chain",
   "urls": [
@@ -991,233 +971,38 @@
  {
   "claims": [
    {
-    "id": "c113",
-    "metric": "pages",
-    "site": "ruby-lang.org",
-    "topic_id": 24,
-    "value": 111
-   },
-   {
-    "id": "c114",
-    "metric": "words",
-    "site": "ruby-lang.org",
-    "topic_id": 24,
-    "value": 43028
-   },
-   {
-    "id": "c115",
-    "metric": "pages",
-    "site": "python.org",
-    "topic_id": 24,
-    "value": 0
-   },
-   {
-    "id": "c116",
-    "metric": "words",
-    "site": "python.org",
-    "topic_id": 24,
-    "value": 0
-   },
-   {
     "field": "title",
-    "id": "c117",
-    "url": "https://www.ruby-lang.org/en/news/2013/",
-    "value": "2013 Archives | Ruby"
-   },
-   {
-    "field": "title",
-    "id": "c118",
-    "url": "https://www.ruby-lang.org/en/news/2014/",
-    "value": "2014 Archives | Ruby"
-   },
-   {
-    "field": "title",
-    "id": "c119",
-    "url": "https://www.ruby-lang.org/en/security/",
-    "value": "Security | Ruby"
-   }
-  ],
-  "id": "a14",
-  "rank": 14,
-  "rationale": "Create a page on this topic. The competitor has many pages on the topic [c113]. This site has little on the topic [c115] [c116]. Pages and other evidence: [c114] [c117] [c118] [c119].",
-  "score": 0.7,
-  "topic": [
-   "vulnerability",
-   "released",
-   "dos"
-  ],
-  "type": "create_page",
-  "urls": [
-   "https://www.ruby-lang.org/en/news/2013/",
-   "https://www.ruby-lang.org/en/news/2014/",
-   "https://www.ruby-lang.org/en/security/"
-  ]
- },
- {
-  "claims": [
-   {
     "id": "c120",
-    "metric": "pages",
-    "site": "ruby-lang.org",
-    "topic_id": 28,
-    "value": 151
-   },
-   {
-    "id": "c121",
-    "metric": "words",
-    "site": "ruby-lang.org",
-    "topic_id": 28,
-    "value": 29922
-   },
-   {
-    "id": "c122",
-    "metric": "pages",
-    "site": "python.org",
-    "topic_id": 28,
-    "value": 0
-   },
-   {
-    "id": "c123",
-    "metric": "words",
-    "site": "python.org",
-    "topic_id": 28,
-    "value": 0
-   },
-   {
-    "field": "title",
-    "id": "c124",
-    "url": "https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/",
-    "value": "Support plans for Ruby 2.0.0 and Ruby 2.1 | Ruby"
-   },
-   {
-    "field": "title",
-    "id": "c125",
-    "url": "https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/",
-    "value": "Ruby 2.3.7 Released | Ruby"
-   },
-   {
-    "field": "title",
-    "id": "c126",
-    "url": "https://www.ruby-lang.org/en/news/2022/02/18/ruby-3-1-1-released/",
-    "value": "Ruby 3.1.1 Released | Ruby"
-   }
-  ],
-  "id": "a15",
-  "rank": 15,
-  "rationale": "Create a page on this topic. The competitor has many pages on the topic [c120]. This site has little on the topic [c122] [c123]. Pages and other evidence: [c121] [c124] [c125] [c126].",
-  "score": 0.7,
-  "topic": [
-   "released",
-   "posted",
-   "release"
-  ],
-  "type": "create_page",
-  "urls": [
-   "https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/",
-   "https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/",
-   "https://www.ruby-lang.org/en/news/2022/02/18/ruby-3-1-1-released/"
-  ]
- },
- {
-  "claims": [
-   {
-    "id": "c127",
-    "metric": "pages",
-    "site": "ruby-lang.org",
-    "topic_id": 27,
-    "value": 72
-   },
-   {
-    "id": "c128",
-    "metric": "words",
-    "site": "ruby-lang.org",
-    "topic_id": 27,
-    "value": 60925
-   },
-   {
-    "id": "c129",
-    "metric": "pages",
-    "site": "python.org",
-    "topic_id": 27,
-    "value": 3
-   },
-   {
-    "id": "c130",
-    "metric": "words",
-    "site": "python.org",
-    "topic_id": 27,
-    "value": 6908
-   },
-   {
-    "field": "title",
-    "id": "c131",
-    "url": "https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/",
-    "value": "Ruby 4.0.0 Released | Ruby"
-   },
-   {
-    "field": "title",
-    "id": "c132",
-    "url": "https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/",
-    "value": "Ruby 4.1.0-preview1 Released | Ruby"
-   },
-   {
-    "field": "title",
-    "id": "c133",
-    "url": "https://www.ruby-lang.org/en/news/2002/12/11/ruby-hacking-guide/",
-    "value": "\"Ruby Hacking Guide\" is out though ... | Ruby"
-   }
-  ],
-  "id": "a16",
-  "rank": 16,
-  "rationale": "Create a page on this topic. The competitor has many pages on the topic [c127]. This site has little on the topic [c129] [c130]. Pages and other evidence: [c128] [c131] [c132] [c133].",
-  "score": 0.7,
-  "topic": [
-   "released",
-   "yjit",
-   "competition"
-  ],
-  "type": "create_page",
-  "urls": [
-   "https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/",
-   "https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/",
-   "https://www.ruby-lang.org/en/news/2002/12/11/ruby-hacking-guide/"
-  ]
- },
- {
-  "claims": [
-   {
-    "field": "title",
-    "id": "c134",
     "url": "https://www.python.org/community/sigs/retired/locator-sig/",
     "value": "Python Locator Special Interest Group | Python.org"
    },
    {
     "field": "title",
-    "id": "c135",
+    "id": "c121",
     "url": "https://www.python.org/community/sigs/retired/pythonwin-sig/",
     "value": "PythonWin Special Interest Group | Python.org"
    },
    {
     "field": "intent",
-    "id": "c136",
+    "id": "c122",
     "url": "https://www.python.org/community/sigs/retired/locator-sig/",
     "value": "informational"
    },
    {
     "field": "intent",
-    "id": "c137",
+    "id": "c123",
     "url": "https://www.python.org/community/sigs/retired/pythonwin-sig/",
     "value": "informational"
    },
    {
-    "id": "c138",
+    "id": "c124",
     "metric": "content_overlap",
     "url_a": "https://www.python.org/community/sigs/retired/locator-sig/",
     "url_b": "https://www.python.org/community/sigs/retired/pythonwin-sig/",
     "value": 0.5395
    },
    {
-    "id": "c139",
+    "id": "c125",
     "metric": "topic_similarity",
     "url_a": "https://www.python.org/community/sigs/retired/locator-sig/",
     "url_b": "https://www.python.org/community/sigs/retired/pythonwin-sig/",
@@ -1225,21 +1010,21 @@
    },
    {
     "field": "inlinks",
-    "id": "c140",
+    "id": "c126",
     "url": "https://www.python.org/community/sigs/retired/locator-sig/",
     "value": 1
    },
    {
     "field": "inlinks",
-    "id": "c141",
+    "id": "c127",
     "url": "https://www.python.org/community/sigs/retired/pythonwin-sig/",
     "value": 1
    }
   ],
-  "id": "a17",
+  "id": "a15",
   "keep": "https://www.python.org/community/sigs/retired/locator-sig/",
-  "rank": 17,
-  "rationale": "Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c139]. They answer the same search intent [c136] [c137]. Internal links are split between them [c140] [c141]. Pages and other evidence: [c134] [c135] [c138].",
+  "rank": 14,
+  "rationale": "Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c125]. They answer the same search intent [c122] [c123]. Internal links are split between them [c126] [c127]. Pages and other evidence: [c120] [c121] [c124].",
   "score": 0.6959,
   "type": "merge_301",
   "urls": [
@@ -1250,149 +1035,21 @@
  {
   "claims": [
    {
-    "field": "title",
-    "id": "c142",
-    "url": "https://www.python.org/events/python-user-group/2204/",
-    "value": "Python Leiden User Group | Python.org"
-   },
-   {
-    "field": "title",
-    "id": "c143",
-    "url": "https://www.python.org/events/python-user-group/2207/",
-    "value": "Python Leiden User Group | Python.org"
-   },
-   {
-    "field": "intent",
-    "id": "c144",
-    "url": "https://www.python.org/events/python-user-group/2204/",
-    "value": "informational"
-   },
-   {
-    "field": "intent",
-    "id": "c145",
-    "url": "https://www.python.org/events/python-user-group/2207/",
-    "value": "informational"
-   },
-   {
-    "id": "c146",
-    "metric": "content_overlap",
-    "url_a": "https://www.python.org/events/python-user-group/2204/",
-    "url_b": "https://www.python.org/events/python-user-group/2207/",
-    "value": 0.8333
-   },
-   {
-    "id": "c147",
-    "metric": "topic_similarity",
-    "url_a": "https://www.python.org/events/python-user-group/2204/",
-    "url_b": "https://www.python.org/events/python-user-group/2207/",
-    "value": 0.9988
-   },
-   {
-    "field": "inlinks",
-    "id": "c148",
-    "url": "https://www.python.org/events/python-user-group/2204/",
-    "value": 2
-   },
-   {
-    "field": "inlinks",
-    "id": "c149",
-    "url": "https://www.python.org/events/python-user-group/2207/",
-    "value": 0
-   }
-  ],
-  "id": "a18",
-  "keep": "https://www.python.org/events/python-user-group/2204/",
-  "rank": 18,
-  "rationale": "Keep one page and point the canonical tag of the other at it. Their text is almost the same [c146]. They cover the same topic [c147]. They answer the same search intent [c144] [c145]. Pages and other evidence: [c142] [c143] [c148] [c149].",
-  "score": 0.6496,
-  "type": "canonicalize",
-  "urls": [
-   "https://www.python.org/events/python-user-group/2204/",
-   "https://www.python.org/events/python-user-group/2207/"
-  ]
- },
- {
-  "claims": [
-   {
-    "field": "title",
-    "id": "c150",
-    "url": "https://www.python.org/jobs/8129/",
-    "value": "Python developer, Eleks | Python.org"
-   },
-   {
-    "field": "title",
-    "id": "c151",
-    "url": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
-    "value": "Python Job Board | Python.org"
-   },
-   {
-    "field": "intent",
-    "id": "c152",
-    "url": "https://www.python.org/jobs/8129/",
-    "value": "informational"
-   },
-   {
-    "field": "intent",
-    "id": "c153",
-    "url": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
-    "value": "informational"
-   },
-   {
-    "id": "c154",
-    "metric": "content_overlap",
-    "url_a": "https://www.python.org/jobs/8129/",
-    "url_b": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
-    "value": 0.0398
-   },
-   {
-    "id": "c155",
-    "metric": "topic_similarity",
-    "url_a": "https://www.python.org/jobs/8129/",
-    "url_b": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
-    "value": 0.8663
-   },
-   {
-    "field": "inlinks",
-    "id": "c156",
-    "url": "https://www.python.org/jobs/8129/",
-    "value": 8
-   },
-   {
-    "field": "inlinks",
-    "id": "c157",
-    "url": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
-    "value": 7
-   }
-  ],
-  "id": "a19",
-  "keep": "https://www.python.org/jobs/8129/",
-  "rank": 19,
-  "rationale": "Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c155]. They answer the same search intent [c152] [c153]. Internal links are split between them [c156] [c157]. Pages and other evidence: [c150] [c151] [c154].",
-  "score": 0.621,
-  "type": "merge_301",
-  "urls": [
-   "https://www.python.org/jobs/8129/",
-   "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/"
-  ]
- },
- {
-  "claims": [
-   {
     "field": "redirect_to",
-    "id": "c158",
+    "id": "c136",
     "url": "http://python.org/dev/peps/pep-0392/",
     "value": "https://www.python.org/dev/peps/pep-0392/"
    },
    {
     "field": "redirect_to",
-    "id": "c159",
+    "id": "c137",
     "url": "https://www.python.org/dev/peps/pep-0392/",
     "value": "https://peps.python.org/pep-0392/"
    }
   ],
-  "id": "a20",
-  "rank": 20,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c158] [c159].",
+  "id": "a17",
+  "rank": 15,
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c136] [c137].",
   "score": 0.6,
   "type": "fix_redirect_chain",
   "urls": [
@@ -1404,20 +1061,20 @@
   "claims": [
    {
     "field": "redirect_to",
-    "id": "c160",
+    "id": "c138",
     "url": "http://python.org/dev/peps/pep-0398/",
     "value": "https://www.python.org/dev/peps/pep-0398/"
    },
    {
     "field": "redirect_to",
-    "id": "c161",
+    "id": "c139",
     "url": "https://www.python.org/dev/peps/pep-0398/",
     "value": "https://peps.python.org/pep-0398/"
    }
   ],
-  "id": "a21",
-  "rank": 21,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c160] [c161].",
+  "id": "a18",
+  "rank": 16,
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c138] [c139].",
   "score": 0.6,
   "type": "fix_redirect_chain",
   "urls": [
@@ -1429,20 +1086,20 @@
   "claims": [
    {
     "field": "redirect_to",
-    "id": "c162",
+    "id": "c140",
     "url": "http://python.org/psf/mission",
     "value": "https://www.python.org/psf/mission"
    },
    {
     "field": "redirect_to",
-    "id": "c163",
+    "id": "c141",
     "url": "https://www.python.org/psf/mission",
     "value": "https://www.python.org/psf/mission/"
    }
   ],
-  "id": "a22",
-  "rank": 22,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c162] [c163].",
+  "id": "a19",
+  "rank": 17,
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c140] [c141].",
   "score": 0.6,
   "type": "fix_redirect_chain",
   "urls": [
@@ -1454,20 +1111,20 @@
   "claims": [
    {
     "field": "redirect_to",
-    "id": "c164",
+    "id": "c142",
     "url": "http://python.org/psf/trademarks",
     "value": "https://www.python.org/psf/trademarks"
    },
    {
     "field": "redirect_to",
-    "id": "c165",
+    "id": "c143",
     "url": "https://www.python.org/psf/trademarks",
     "value": "https://www.python.org/psf/trademarks/"
    }
   ],
-  "id": "a23",
-  "rank": 23,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c164] [c165].",
+  "id": "a20",
+  "rank": 18,
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c142] [c143].",
   "score": 0.6,
   "type": "fix_redirect_chain",
   "urls": [
@@ -1479,20 +1136,20 @@
   "claims": [
    {
     "field": "redirect_to",
-    "id": "c166",
+    "id": "c144",
     "url": "http://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq",
     "value": "https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq"
    },
    {
     "field": "redirect_to",
-    "id": "c167",
+    "id": "c145",
     "url": "https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq",
     "value": "https://wiki.python.org/moin"
    }
   ],
-  "id": "a24",
-  "rank": 24,
-  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c166] [c167].",
+  "id": "a21",
+  "rank": 19,
+  "rationale": "Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c144] [c145].",
   "score": 0.6,
   "type": "fix_redirect_chain",
   "urls": [
@@ -1504,224 +1161,183 @@
   "claims": [
    {
     "field": "title",
-    "id": "c396",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
-    "value": "Nominees for 2023 Python Software Foundation Board Election | Python.org"
+    "id": "c374",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "value": "Nominees for 2022 Python Software Foundation Board Election | Python.org"
    },
    {
     "field": "inlinks",
-    "id": "c397",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "id": "c375",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": 1
    },
    {
     "field": "sentence",
-    "id": "c398",
-    "url": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/",
-    "value": "Nominee for 2020 Python Software Foundation Board Election"
+    "id": "c376",
+    "url": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
+    "value": "Nominee for 2019 Python Software Foundation Board Election"
    },
    {
-    "id": "c399",
+    "id": "c377",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c400",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
+    "id": "c378",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
     "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
-    "id": "c401",
+    "id": "c379",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c402",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
+    "id": "c380",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
     "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
-    "id": "c403",
+    "id": "c381",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c404",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+    "id": "c382",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
     "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
-    "id": "c405",
+    "id": "c383",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c406",
-    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+    "id": "c384",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
     "value": "Nominee for 2022 Python Software Foundation Board Election"
    },
    {
-    "id": "c407",
+    "id": "c385",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c408",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+    "id": "c386",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
     "value": "Nominee for 2023 Python Software Foundation Board Election"
    },
    {
-    "id": "c409",
+    "id": "c387",
     "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c410",
+    "id": "c388",
     "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
     "value": "Nominee for 2023 Python Software Foundation Board Election"
    },
    {
-    "id": "c411",
+    "id": "c389",
     "metric": "links_to",
     "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c412",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
-    "value": "Nominee for 2023 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c413",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c414",
-    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
-    "value": "Nominee for 2023 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c415",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c416",
-    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/",
-    "value": "Nominee for 2026 Python Software Foundation Board Election"
-   },
-   {
-    "id": "c417",
-    "metric": "links_to",
-    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
-    "value": false
-   },
-   {
-    "field": "sentence",
-    "id": "c418",
+    "id": "c390",
     "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/elaine-wong/",
     "value": "Nominee for 2026 Python Software Foundation Board Election"
    },
    {
-    "id": "c419",
+    "id": "c391",
     "metric": "links_to",
     "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/elaine-wong/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    },
    {
     "field": "sentence",
-    "id": "c420",
+    "id": "c392",
     "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/",
     "value": "Nominee for 2026 Python Software Foundation Board Election"
    },
    {
-    "id": "c421",
+    "id": "c393",
     "metric": "links_to",
     "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/",
-    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c394",
+    "url": "https://www.python.org/psf/fiscal-sponsorees/",
+    "value": "The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and international community of Python programmers."
+   },
+   {
+    "id": "c395",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/psf/fiscal-sponsorees/",
+    "url_b": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
     "value": false
    }
   ],
-  "id": "a139",
+  "id": "a136",
   "links": [
    {
     "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2020 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/"
+    "sentence": "Nominee for 2019 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/"
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/"
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/"
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2022 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/"
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2023 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/"
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/"
    },
    {
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2023 Python Software Foundation Board Election",
     "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/"
-   },
-   {
-    "anchor": "Software Foundation Board Election",
-    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
-    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/"
    },
    {
     "anchor": "Software Foundation Board Election",
@@ -1732,26 +1348,448 @@
     "anchor": "Software Foundation Board Election",
     "sentence": "Nominee for 2026 Python Software Foundation Board Election",
     "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/"
+   },
+   {
+    "anchor": "Python Software Foundation",
+    "sentence": "The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and international community of Python programmers.",
+    "source": "https://www.python.org/psf/fiscal-sponsorees/"
    }
   ],
-  "rank": 25,
-  "rationale": "Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c397]. A sentence that suits the link already exists [c398] [c400] [c402] [c404] [c406] [c408] [c410] [c412] [c414] [c416] [c418] [c420]. The source page does not link to it yet [c399] [c401] [c403] [c405] [c407] [c409] [c411] [c413] [c415] [c417] [c419] [c421]. Pages and other evidence: [c396].",
-  "score": 0.5881,
+  "rank": 20,
+  "rationale": "Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c375]. A sentence that suits the link already exists [c376] [c378] [c380] [c382] [c384] [c386] [c388] [c390] [c392] [c394]. The source page does not link to it yet [c377] [c379] [c381] [c383] [c385] [c387] [c389] [c391] [c393] [c395]. Pages and other evidence: [c374].",
+  "score": 0.5408,
   "type": "add_internal_link",
   "urls": [
-   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
-   "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
-   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
-   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/",
+   "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/",
    "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
-   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/",
-   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
-   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/",
    "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/elaine-wong/",
-   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/"
+   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/",
+   "https://www.python.org/psf/fiscal-sponsorees/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c396",
+    "url": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "value": "Python Job Board | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c397",
+    "url": "https://www.python.org/jobs/location/remote-worldwide/",
+    "value": "Python Job Board | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c398",
+    "url": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c399",
+    "url": "https://www.python.org/jobs/location/remote-worldwide/",
+    "value": "informational"
+   },
+   {
+    "id": "c400",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "url_b": "https://www.python.org/jobs/location/remote-worldwide/",
+    "value": 0.0247
+   },
+   {
+    "id": "c401",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "url_b": "https://www.python.org/jobs/location/remote-worldwide/",
+    "value": 0.9969
+   },
+   {
+    "field": "inlinks",
+    "id": "c402",
+    "url": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "value": 13
+   },
+   {
+    "field": "inlinks",
+    "id": "c403",
+    "url": "https://www.python.org/jobs/location/remote-worldwide/",
+    "value": 12
+   }
+  ],
+  "id": "a137",
+  "keep": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+  "rank": 21,
+  "rationale": "Rewrite one page for a different intent so the two stop competing. They cover the same topic [c401]. They answer the same search intent [c398] [c399]. Internal links are split between them [c402] [c403]. Pages and other evidence: [c396] [c397] [c400].",
+  "score": 0.4191,
+  "type": "retarget_intent",
+  "urls": [
+   "https://www.python.org/jobs/location/remote-remote-worldwide/",
+   "https://www.python.org/jobs/location/remote-remote/",
+   "https://www.python.org/jobs/location/remote-remoteworldwide-remoteworldwide-remote/",
+   "https://www.python.org/jobs/location/remote-worldwide/",
+   "https://www.python.org/jobs/location/remote-worlwide-worldwide/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c404",
+    "url": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/",
+    "value": "Nominees for 2020 Python Software Foundation Board Election | Python.org"
+   },
+   {
+    "field": "inlinks",
+    "id": "c405",
+    "url": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/",
+    "value": 1
+   },
+   {
+    "field": "sentence",
+    "id": "c406",
+    "url": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+    "value": "Nominee for 2020 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c407",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+    "url_b": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c408",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gajendra-deshpande/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c409",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gajendra-deshpande/",
+    "url_b": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c410",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c411",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/",
+    "url_b": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/",
+    "value": false
+   }
+  ],
+  "id": "a138",
+  "links": [
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2020 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gajendra-deshpande/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/"
+   }
+  ],
+  "rank": 22,
+  "rationale": "Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c405]. A sentence that suits the link already exists [c406] [c408] [c410]. The source page does not link to it yet [c407] [c409] [c411]. Pages and other evidence: [c404].",
+  "score": 0.4187,
+  "type": "add_internal_link",
+  "urls": [
+   "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/",
+   "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gajendra-deshpande/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c412",
+    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": "Nominees for 2026 Python Software Foundation Board Election | Python.org"
+   },
+   {
+    "field": "inlinks",
+    "id": "c413",
+    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": 1
+   },
+   {
+    "field": "sentence",
+    "id": "c414",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/simon-willison/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c415",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/simon-willison/",
+    "url_b": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c416",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c417",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+    "url_b": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c418",
+    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/christopher-neugebauer/",
+    "value": "Nominee for 2026 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c419",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/christopher-neugebauer/",
+    "url_b": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c420",
+    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/ee-durbin/",
+    "value": "Nominee for 2026 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c421",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/ee-durbin/",
+    "url_b": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c422",
+    "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/georgi-ker/",
+    "value": "Nominee for 2026 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c423",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/georgi-ker/",
+    "url_b": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c424",
+    "url": "https://www.python.org/psf/volunteer/",
+    "value": "The Python Software Foundation needs your help building infrastructure for the PSF and PyCon US, helping with fundraising and advocacy, and running important parts of the Python community (mailing lists, website, job board, etc)."
+   },
+   {
+    "id": "c425",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/psf/volunteer/",
+    "url_b": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+    "value": false
+   }
+  ],
+  "id": "a139",
+  "links": [
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/simon-willison/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/christopher-neugebauer/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/ee-durbin/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2026 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/georgi-ker/"
+   },
+   {
+    "anchor": "Python Software Foundation",
+    "sentence": "The Python Software Foundation needs your help building infrastructure for the PSF and PyCon US, helping with fundraising and advocacy, and running important parts of the Python community (mailing lists, website, job board, etc).",
+    "source": "https://www.python.org/psf/volunteer/"
+   }
+  ],
+  "rank": 23,
+  "rationale": "Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c413]. A sentence that suits the link already exists [c414] [c416] [c418] [c420] [c422] [c424]. The source page does not link to it yet [c415] [c417] [c419] [c421] [c423] [c425]. Pages and other evidence: [c412].",
+  "score": 0.4154,
+  "type": "add_internal_link",
+  "urls": [
+   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/simon-willison/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/christopher-neugebauer/",
+   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/ee-durbin/",
+   "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/georgi-ker/",
+   "https://www.python.org/psf/volunteer/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "id": "c426",
+    "metric": "pages",
+    "site": "ruby-lang.org",
+    "topic_id": 42,
+    "value": 47
+   },
+   {
+    "id": "c427",
+    "metric": "words",
+    "site": "ruby-lang.org",
+    "topic_id": 42,
+    "value": 2857
+   },
+   {
+    "id": "c428",
+    "metric": "pages",
+    "site": "python.org",
+    "topic_id": 42,
+    "value": 0
+   },
+   {
+    "id": "c429",
+    "metric": "words",
+    "site": "python.org",
+    "topic_id": 42,
+    "value": 0
+   },
+   {
+    "field": "title",
+    "id": "c430",
+    "url": "https://www.ruby-lang.org/en/",
+    "value": "Ruby Programming Language"
+   },
+   {
+    "field": "title",
+    "id": "c431",
+    "url": "https://www.ruby-lang.org/en/documentation/quickstart/2/",
+    "value": "Ruby in Twenty Minutes | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c432",
+    "url": "https://www.ruby-lang.org/bg/examples/cities/",
+    "value": ""
+   }
+  ],
+  "id": "a140",
+  "rank": 24,
+  "rationale": "Create a page on this topic. The competitor has many pages on the topic [c426]. This site has little on the topic [c428] [c429]. Pages and other evidence: [c427] [c430] [c431] [c432].",
+  "score": 0.4143,
+  "topic": [
+   "puts",
+   "greeter",
+   "name"
+  ],
+  "type": "create_page",
+  "urls": [
+   "https://www.ruby-lang.org/en/",
+   "https://www.ruby-lang.org/en/documentation/quickstart/2/",
+   "https://www.ruby-lang.org/bg/examples/cities/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c433",
+    "url": "https://www.python.org/jobs/8129/",
+    "value": "Python developer, Eleks | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c434",
+    "url": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
+    "value": "Python Job Board | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c435",
+    "url": "https://www.python.org/jobs/8129/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c436",
+    "url": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
+    "value": "informational"
+   },
+   {
+    "id": "c437",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/jobs/8129/",
+    "url_b": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
+    "value": 0.0398
+   },
+   {
+    "id": "c438",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/jobs/8129/",
+    "url_b": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
+    "value": 0.8663
+   },
+   {
+    "field": "inlinks",
+    "id": "c439",
+    "url": "https://www.python.org/jobs/8129/",
+    "value": 8
+   },
+   {
+    "field": "inlinks",
+    "id": "c440",
+    "url": "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/",
+    "value": 7
+   }
+  ],
+  "id": "a141",
+  "keep": "https://www.python.org/jobs/8129/",
+  "rank": 25,
+  "rationale": "Rewrite one page for a different intent so the two stop competing. They cover the same topic [c438]. They answer the same search intent [c435] [c436]. Internal links are split between them [c439] [c440]. Pages and other evidence: [c433] [c434] [c437].",
+  "score": 0.3726,
+  "type": "retarget_intent",
+  "urls": [
+   "https://www.python.org/jobs/8129/",
+   "https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/"
   ]
  }
 ]

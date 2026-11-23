@@ -9,7 +9,7 @@ import numpy as np
 from seo_intel import config
 from seo_intel.corpus import Page
 from seo_intel.text import token_spans, tokenize
-from seo_intel.topics import dot
+from seo_intel.topics import dot, healthy_reason
 
 Edges = Dict[Tuple[int, int], float]
 
@@ -154,6 +154,9 @@ def link_candidates(pages: List[Page], priority: Sequence[int], row_of: Dict[int
             if source is None or source >= own_pages or source == target:
                 continue
             if (source, target) in edges:
+                continue
+            # Another year or number of the same series
+            if healthy_reason(pages[source], pages[target]) == "numbered series":
                 continue
             found = find_anchor(pages[source], pages[target], idf)
             if not found:

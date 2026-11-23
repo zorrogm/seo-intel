@@ -9,7 +9,7 @@ from seo_intel import config
 from seo_intel.crawl import RobotsRules
 from seo_intel.extract import parse_page
 from seo_intel.fetch import Fetcher
-from seo_intel.links import scan_page
+from seo_intel.scan import scan_page
 from seo_intel.store import Store
 from seo_intel.text import clean
 from seo_intel.urls import normalize

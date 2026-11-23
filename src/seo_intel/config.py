@@ -292,3 +292,17 @@ MONTH_WORDS = (
     "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर",
     "अक्टूबर", "नवंबर", "दिसंबर",
 )
+
+# Words that number or stage an item in a series
+SERIES_WORDS = MONTH_WORDS + (
+    "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth",
+    "ninth", "tenth", "alpha", "beta", "rc", "preview", "final", "part", "vol", "volume",
+    "पहला", "दूसरा", "तीसरा", "भाग",
+)
+# A body match also needs some title agreement
+HEAD_SUPPORT_SIMILARITY = 0.40
+
+# Merging needs real shared text and a high score
+MERGE_MIN_OVERLAP = 0.50
+MERGE_MIN_SEVERITY = 0.60
+RETARGET_SCORE_FACTOR = 0.60

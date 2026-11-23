@@ -82,6 +82,26 @@
    }
   },
   {
+   "intent": "informational",
+   "keep": "https://www.python.org/jobs/category/researcher-scientist/",
+   "severity": 0.8801,
+   "urls": [
+    "https://www.python.org/jobs/category/researcher-scientist/",
+    "https://www.python.org/jobs/location/remote-remote-north-america-europe/"
+   ],
+   "worst_pair": {
+    "signals": {
+     "anchor_conflict": 0.0,
+     "content_overlap": 1.0,
+     "depth_closeness": 1.0,
+     "link_split": 1.0,
+     "topic_similarity": 0.9338
+    },
+    "url_a": "https://www.python.org/jobs/category/researcher-scientist/",
+    "url_b": "https://www.python.org/jobs/location/remote-remote-north-america-europe/"
+   }
+  },
+  {
    "intent": "navigational",
    "keep": "https://www.python.org/accounts/login/?next=/users/membership/",
    "severity": 0.864,
@@ -108,7 +128,7 @@
   {
    "intent": "transactional",
    "keep": "https://www.python.org/download/releases/2.2.3/descrintro/",
-   "severity": 0.853,
+   "severity": 0.8509,
    "urls": [
     "https://www.python.org/download/releases/2.2.3/descrintro/",
     "https://www.python.org/download/releases/2.2/descrintro/"
@@ -119,7 +139,7 @@
      "content_overlap": 0.9087,
      "depth_closeness": 0.5,
      "link_split": 0.8,
-     "topic_similarity": 0.9668
+     "topic_similarity": 0.96
     },
     "url_a": "https://www.python.org/download/releases/2.2.3/descrintro/",
     "url_b": "https://www.python.org/download/releases/2.2/descrintro/"
@@ -147,8 +167,28 @@
   },
   {
    "intent": "informational",
+   "keep": "https://www.python.org/jobs/location/remote-within-2-hours-of-london-timezone-remote/",
+   "severity": 0.8297,
+   "urls": [
+    "https://www.python.org/jobs/location/remote-within-2-hours-of-london-timezone-remote/",
+    "https://www.python.org/jobs/type/management/"
+   ],
+   "worst_pair": {
+    "signals": {
+     "anchor_conflict": 0.0,
+     "content_overlap": 1.0,
+     "depth_closeness": 1.0,
+     "link_split": 1.0,
+     "topic_similarity": 0.7655
+    },
+    "url_a": "https://www.python.org/jobs/location/remote-within-2-hours-of-london-timezone-remote/",
+    "url_b": "https://www.python.org/jobs/type/management/"
+   }
+  },
+  {
+   "intent": "informational",
    "keep": "https://www.python.org/psf/board/",
-   "severity": 0.739,
+   "severity": 0.7382,
    "urls": [
     "https://www.python.org/psf/board/",
     "https://www.python.org/psf/records/board/history/"
@@ -159,10 +199,33 @@
      "content_overlap": 0.5838,
      "depth_closeness": 0.3333,
      "link_split": 1.0,
-     "topic_similarity": 0.8613
+     "topic_similarity": 0.8584
     },
     "url_a": "https://www.python.org/psf/board/",
     "url_b": "https://www.python.org/psf/records/board/history/"
+   }
+  },
+  {
+   "intent": "informational",
+   "keep": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+   "severity": 0.6985,
+   "urls": [
+    "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "https://www.python.org/jobs/location/remote-remote/",
+    "https://www.python.org/jobs/location/remote-remoteworldwide-remoteworldwide-remote/",
+    "https://www.python.org/jobs/location/remote-worldwide/",
+    "https://www.python.org/jobs/location/remote-worlwide-worldwide/"
+   ],
+   "worst_pair": {
+    "signals": {
+     "anchor_conflict": 1.0,
+     "content_overlap": 0.0247,
+     "depth_closeness": 1.0,
+     "link_split": 0.96,
+     "topic_similarity": 0.9969
+    },
+    "url_a": "https://www.python.org/jobs/location/remote-remote-worldwide/",
+    "url_b": "https://www.python.org/jobs/location/remote-worldwide/"
    }
   },
   {
@@ -265,26 +328,6 @@
     "url_a": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/deep-shah/",
     "url_b": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/jay-miller/"
    }
-  },
-  {
-   "intent": "informational",
-   "keep": "https://www.python.org/psf/records/board/minutes/",
-   "severity": 0.4229,
-   "urls": [
-    "https://www.python.org/doc/versions/",
-    "https://www.python.org/psf/records/board/minutes/"
-   ],
-   "worst_pair": {
-    "signals": {
-     "anchor_conflict": 0.0,
-     "content_overlap": 0.0,
-     "depth_closeness": 0.5,
-     "link_split": 0.8889,
-     "topic_similarity": 0.6506
-    },
-    "url_a": "https://www.python.org/doc/versions/",
-    "url_b": "https://www.python.org/psf/records/board/minutes/"
-   }
   }
  ],
  "healthy_pairs": [
@@ -367,6 +410,36 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/download/releases/2.4/",
    "url_b": "https://www.python.org/download/releases/2.5/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-250b10/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-250b11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-250b12/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-250b13/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-250b14/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-250b15/"
   },
   {
    "reason": "numbered series",
@@ -476,12 +549,22 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b10/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-252/"
   },
   {
    "reason": "numbered series",
@@ -561,12 +644,22 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b11/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-252/"
   },
   {
    "reason": "numbered series",
@@ -641,12 +734,22 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b12/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-252/"
   },
   {
    "reason": "numbered series",
@@ -716,12 +819,22 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b13/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-252/"
   },
   {
    "reason": "numbered series",
@@ -786,12 +899,22 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b14/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-252/"
   },
   {
    "reason": "numbered series",
@@ -851,12 +974,22 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-251/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
    "url_b": "https://www.python.org/downloads/release/pymanager-251b2/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/downloads/release/pymanager-250b15/",
+   "url_b": "https://www.python.org/downloads/release/pymanager-252/"
   },
   {
    "reason": "numbered series",
@@ -1450,21 +1583,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-233/",
-   "url_b": "https://www.python.org/downloads/release/python-234/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-233/",
-   "url_b": "https://www.python.org/downloads/release/python-235/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-234/",
-   "url_b": "https://www.python.org/downloads/release/python-235/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-237/",
    "url_b": "https://www.python.org/downloads/release/python-245/"
   },
@@ -1487,11 +1605,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-245/",
    "url_b": "https://www.python.org/downloads/release/python-246/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-251/",
-   "url_b": "https://www.python.org/downloads/release/python-252/"
   },
   {
    "reason": "numbered series",
@@ -1522,16 +1635,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-263/",
    "url_b": "https://www.python.org/downloads/release/python-264/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-263/",
-   "url_b": "https://www.python.org/downloads/release/python-265/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-264/",
-   "url_b": "https://www.python.org/downloads/release/python-265/"
   },
   {
    "reason": "numbered series",
@@ -1572,16 +1675,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3100b2/",
    "url_b": "https://www.python.org/downloads/release/python-3110b2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-31010/",
-   "url_b": "https://www.python.org/downloads/release/python-3108/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-31010/",
-   "url_b": "https://www.python.org/downloads/release/python-3109/"
   },
   {
    "reason": "numbered series",
@@ -1715,11 +1808,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3110b2/",
-   "url_b": "https://www.python.org/downloads/release/python-3110b3/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3111/",
    "url_b": "https://www.python.org/downloads/release/python-3112/"
   },
@@ -1792,21 +1880,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3120/",
    "url_b": "https://www.python.org/downloads/release/python-3127/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3120b3/",
-   "url_b": "https://www.python.org/downloads/release/python-3120b4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3120rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3120rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3120rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3120rc3/"
   },
   {
    "reason": "numbered series",
@@ -2070,103 +2143,8 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130a3/",
-   "url_b": "https://www.python.org/downloads/release/python-3130a4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130a4/",
-   "url_b": "https://www.python.org/downloads/release/python-3130a5/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130a5/",
-   "url_b": "https://www.python.org/downloads/release/python-3130a6/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b1/",
-   "url_b": "https://www.python.org/downloads/release/python-3130b2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b1/",
-   "url_b": "https://www.python.org/downloads/release/python-3130b3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b1/",
-   "url_b": "https://www.python.org/downloads/release/python-3130b4/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3130b2/",
    "url_b": "https://www.python.org/downloads/release/python-3130b3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b2/",
-   "url_b": "https://www.python.org/downloads/release/python-3130b4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b3/",
-   "url_b": "https://www.python.org/downloads/release/python-3130b4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3130rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3130rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3132/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3133/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3136/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3138/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130b4/",
-   "url_b": "https://www.python.org/downloads/release/python-3139/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3130rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3130rc3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3132/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3133/"
   },
   {
    "reason": "numbered series",
@@ -2177,61 +2155,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
    "url_b": "https://www.python.org/downloads/release/python-3137/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3138/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-3139/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3130rc3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-31310/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3132/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3133/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3136/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3137/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3138/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-3139/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3130rc3/",
-   "url_b": "https://www.python.org/downloads/release/python-3132/"
   },
   {
    "reason": "numbered series",
@@ -2545,11 +2468,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-326/",
-   "url_b": "https://www.python.org/downloads/release/python-326rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-335-rc1/",
    "url_b": "https://www.python.org/downloads/release/python-335rc2/"
   },
@@ -2570,21 +2488,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-336/",
-   "url_b": "https://www.python.org/downloads/release/python-337rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-336rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-337/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-336rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-337rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-337/",
    "url_b": "https://www.python.org/downloads/release/python-337rc1/"
   },
@@ -2595,16 +2498,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-340rc3/",
-   "url_b": "https://www.python.org/downloads/release/python-342/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410/",
-   "url_b": "https://www.python.org/downloads/release/python-3410rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3410/",
    "url_b": "https://www.python.org/downloads/release/python-345/"
   },
@@ -2616,72 +2509,17 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3410/",
-   "url_b": "https://www.python.org/downloads/release/python-346rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410/",
    "url_b": "https://www.python.org/downloads/release/python-347/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3410/",
-   "url_b": "https://www.python.org/downloads/release/python-347rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410/",
    "url_b": "https://www.python.org/downloads/release/python-348/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410/",
-   "url_b": "https://www.python.org/downloads/release/python-348rc1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3410/",
    "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-345/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-346/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-346rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-347/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-347rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-348/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3410rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-348rc1/"
   },
   {
    "reason": "numbered series",
@@ -2695,66 +2533,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-341rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-342/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-341rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-343/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-341rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-344/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342/",
-   "url_b": "https://www.python.org/downloads/release/python-342rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342/",
-   "url_b": "https://www.python.org/downloads/release/python-343/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342/",
-   "url_b": "https://www.python.org/downloads/release/python-343rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342/",
-   "url_b": "https://www.python.org/downloads/release/python-344/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342/",
-   "url_b": "https://www.python.org/downloads/release/python-344rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-343/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-343rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-344/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-342rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-344rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-343/",
    "url_b": "https://www.python.org/downloads/release/python-343rc1/"
   },
@@ -2762,21 +2540,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-343/",
    "url_b": "https://www.python.org/downloads/release/python-344/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-343/",
-   "url_b": "https://www.python.org/downloads/release/python-344rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-343rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-344/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-343rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-344rc1/"
   },
   {
    "reason": "numbered series",
@@ -2801,11 +2564,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-345/",
-   "url_b": "https://www.python.org/downloads/release/python-347rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-345/",
    "url_b": "https://www.python.org/downloads/release/python-348/"
   },
   {
@@ -2817,11 +2575,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-345/",
    "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-345/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
   },
   {
    "reason": "numbered series",
@@ -2855,41 +2608,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-347/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-347rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-348/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-348rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-346rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-347/",
    "url_b": "https://www.python.org/downloads/release/python-347rc1/"
   },
@@ -2901,17 +2619,7 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-347/",
-   "url_b": "https://www.python.org/downloads/release/python-348rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-347/",
    "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-347/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
   },
   {
    "reason": "numbered series",
@@ -2921,16 +2629,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-347rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-348rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-347rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-347rc1/",
    "url_b": "https://www.python.org/downloads/release/python-349rc1/"
   },
   {
@@ -2942,31 +2640,11 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-348/",
    "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-348/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-348rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-349/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-348rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-349rc1/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-349/",
    "url_b": "https://www.python.org/downloads/release/python-349rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-350/",
-   "url_b": "https://www.python.org/downloads/release/python-350rc2/"
   },
   {
    "reason": "numbered series",
@@ -2985,28 +2663,8 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-350/",
-   "url_b": "https://www.python.org/downloads/release/python-351rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-350a1/",
-   "url_b": "https://www.python.org/downloads/release/python-350a2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-350a1/",
-   "url_b": "https://www.python.org/downloads/release/python-350a3/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-350a2/",
    "url_b": "https://www.python.org/downloads/release/python-350a3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-350b1/",
-   "url_b": "https://www.python.org/downloads/release/python-350b2/"
   },
   {
    "reason": "numbered series",
@@ -3020,36 +2678,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-350rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-351/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-351/",
-   "url_b": "https://www.python.org/downloads/release/python-351rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3510/",
-   "url_b": "https://www.python.org/downloads/release/python-3510rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-352/",
-   "url_b": "https://www.python.org/downloads/release/python-353/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-352/",
-   "url_b": "https://www.python.org/downloads/release/python-353rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-352/",
-   "url_b": "https://www.python.org/downloads/release/python-354/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-353/",
    "url_b": "https://www.python.org/downloads/release/python-353rc1/"
   },
@@ -3057,26 +2685,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-353/",
    "url_b": "https://www.python.org/downloads/release/python-354/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-353/",
-   "url_b": "https://www.python.org/downloads/release/python-354rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-353rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-354/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-353rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-354rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-354/",
-   "url_b": "https://www.python.org/downloads/release/python-354rc1/"
   },
   {
    "reason": "numbered series",
@@ -3162,11 +2770,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-355rc1/",
    "url_b": "https://www.python.org/downloads/release/python-358rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-355rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-359/"
   },
   {
    "reason": "numbered series",
@@ -3320,36 +2923,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360/",
-   "url_b": "https://www.python.org/downloads/release/python-361/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360a1/",
-   "url_b": "https://www.python.org/downloads/release/python-360a2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360a1/",
-   "url_b": "https://www.python.org/downloads/release/python-360a3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360a1/",
-   "url_b": "https://www.python.org/downloads/release/python-360a4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360a2/",
-   "url_b": "https://www.python.org/downloads/release/python-360a3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360a3/",
-   "url_b": "https://www.python.org/downloads/release/python-360a4/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-360a3/",
    "url_b": "https://www.python.org/downloads/release/python-370a3/"
   },
@@ -3357,41 +2930,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-360a4/",
    "url_b": "https://www.python.org/downloads/release/python-370a4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360b1/",
-   "url_b": "https://www.python.org/downloads/release/python-360b2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360b1/",
-   "url_b": "https://www.python.org/downloads/release/python-360b3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360b1/",
-   "url_b": "https://www.python.org/downloads/release/python-360b4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360b2/",
-   "url_b": "https://www.python.org/downloads/release/python-360b3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360b2/",
-   "url_b": "https://www.python.org/downloads/release/python-360b4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360b3/",
-   "url_b": "https://www.python.org/downloads/release/python-360b4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-360rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-360rc2/"
   },
   {
    "reason": "numbered series",
@@ -3460,16 +2998,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3610rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-369/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-3610rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-369rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-3611/",
    "url_b": "https://www.python.org/downloads/release/python-3612/"
   },
@@ -3620,46 +3148,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-362/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-362rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-362rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-363/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-363rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-364/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-361rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-364rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362/",
-   "url_b": "https://www.python.org/downloads/release/python-362rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-362/",
    "url_b": "https://www.python.org/downloads/release/python-362rc2/"
   },
@@ -3671,82 +3159,17 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-362/",
-   "url_b": "https://www.python.org/downloads/release/python-363rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362/",
-   "url_b": "https://www.python.org/downloads/release/python-364/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362/",
-   "url_b": "https://www.python.org/downloads/release/python-364rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-362rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-363/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-363rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-364/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-364rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-363/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-364/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-362rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-364rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-363/",
-   "url_b": "https://www.python.org/downloads/release/python-363rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-363/",
    "url_b": "https://www.python.org/downloads/release/python-364/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-363/",
-   "url_b": "https://www.python.org/downloads/release/python-364rc1/"
+   "url_b": "https://www.python.org/downloads/release/python-364/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-363rc1/",
    "url_b": "https://www.python.org/downloads/release/python-364/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-363rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-364rc1/"
   },
   {
    "reason": "numbered series",
@@ -3766,22 +3189,7 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-365/",
-   "url_b": "https://www.python.org/downloads/release/python-366rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365/",
    "url_b": "https://www.python.org/downloads/release/python-367/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc2/"
   },
   {
    "reason": "numbered series",
@@ -3790,31 +3198,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-366/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-366rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-367/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-365rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc2/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-366/",
    "url_b": "https://www.python.org/downloads/release/python-366rc1/"
   },
@@ -3822,16 +3205,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-366/",
    "url_b": "https://www.python.org/downloads/release/python-367/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-366/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-366/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc2/"
   },
   {
    "reason": "numbered series",
@@ -3841,21 +3214,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-366rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-367/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-366rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-366rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-367rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-367/",
    "url_b": "https://www.python.org/downloads/release/python-367rc1/"
   },
   {
@@ -3885,73 +3243,13 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-369/",
-   "url_b": "https://www.python.org/downloads/release/python-369rc1/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-370/",
    "url_b": "https://www.python.org/downloads/release/python-371/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-370/",
-   "url_b": "https://www.python.org/downloads/release/python-371rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370/",
    "url_b": "https://www.python.org/downloads/release/python-372/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370/",
-   "url_b": "https://www.python.org/downloads/release/python-372rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370/",
-   "url_b": "https://www.python.org/downloads/release/python-373/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370/",
-   "url_b": "https://www.python.org/downloads/release/python-374/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370/",
-   "url_b": "https://www.python.org/downloads/release/python-375/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370/",
-   "url_b": "https://www.python.org/downloads/release/python-376/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370a1/",
-   "url_b": "https://www.python.org/downloads/release/python-370a2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370a2/",
-   "url_b": "https://www.python.org/downloads/release/python-370a3/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370a3/",
-   "url_b": "https://www.python.org/downloads/release/python-370a4/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-370b1/",
-   "url_b": "https://www.python.org/downloads/release/python-370b2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371/",
-   "url_b": "https://www.python.org/downloads/release/python-371rc1/"
   },
   {
    "reason": "numbered series",
@@ -3966,27 +3264,7 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-371/",
-   "url_b": "https://www.python.org/downloads/release/python-372rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371/",
-   "url_b": "https://www.python.org/downloads/release/python-373/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371/",
-   "url_b": "https://www.python.org/downloads/release/python-374/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371/",
    "url_b": "https://www.python.org/downloads/release/python-375/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371/",
-   "url_b": "https://www.python.org/downloads/release/python-376/"
   },
   {
    "reason": "numbered series",
@@ -4050,57 +3328,7 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-371rc2/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-372rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-373/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-373rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-372rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-371rc2/",
-   "url_b": "https://www.python.org/downloads/release/python-373/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-372/",
-   "url_b": "https://www.python.org/downloads/release/python-373/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-372/",
-   "url_b": "https://www.python.org/downloads/release/python-376/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-372rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-373/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-372rc1/",
-   "url_b": "https://www.python.org/downloads/release/python-373rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-372rc1/",
    "url_b": "https://www.python.org/downloads/release/python-376/"
   },
   {
@@ -4121,11 +3349,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-373/",
-   "url_b": "https://www.python.org/downloads/release/python-376/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-373rc1/",
    "url_b": "https://www.python.org/downloads/release/python-376/"
   },
   {
@@ -4151,16 +3374,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/downloads/release/python-375/",
-   "url_b": "https://www.python.org/downloads/release/python-376/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-375/",
-   "url_b": "https://www.python.org/downloads/release/python-376rc1/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/downloads/release/python-375rc1/",
    "url_b": "https://www.python.org/downloads/release/python-376/"
   },
   {
@@ -4857,11 +4070,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-events/2193/",
    "url_b": "https://www.python.org/events/python-events/2214/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-events/2193/",
-   "url_b": "https://www.python.org/events/python-events/2256/"
   },
   {
    "reason": "numbered series",
@@ -6535,11 +5743,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1200/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1201/",
    "url_b": "https://www.python.org/events/python-user-group/1444/"
   },
@@ -6860,11 +6063,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/124/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1253/",
    "url_b": "https://www.python.org/events/python-user-group/130/"
   },
@@ -7140,11 +6338,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/130/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1313/",
    "url_b": "https://www.python.org/events/python-user-group/1381/"
   },
@@ -7285,11 +6478,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1322/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1323/",
    "url_b": "https://www.python.org/events/python-user-group/133/"
   },
@@ -7415,11 +6603,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1323/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/133/",
    "url_b": "https://www.python.org/events/python-user-group/137/"
   },
@@ -7652,11 +6835,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/137/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/137/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -7925,11 +7103,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1431/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1441/",
    "url_b": "https://www.python.org/events/python-user-group/1705/"
   },
@@ -8065,11 +7238,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1517/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1518/",
    "url_b": "https://www.python.org/events/python-user-group/1632/"
   },
@@ -8162,11 +7330,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1518/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1518/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -8275,11 +7438,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1632/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1633/",
    "url_b": "https://www.python.org/events/python-user-group/1763/"
   },
@@ -8362,11 +7520,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1633/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1633/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -8485,11 +7638,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1763/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1764/",
    "url_b": "https://www.python.org/events/python-user-group/1855/"
   },
@@ -8562,11 +7710,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1764/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1764/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -8700,11 +7843,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1855/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1856/",
    "url_b": "https://www.python.org/events/python-user-group/2029/"
   },
@@ -8767,11 +7905,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/1856/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/1856/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -9000,11 +8133,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2029/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2030/",
    "url_b": "https://www.python.org/events/python-user-group/2103/"
   },
@@ -9057,11 +8185,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2030/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2030/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -9200,11 +8323,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2103/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2104/",
    "url_b": "https://www.python.org/events/python-user-group/2215/"
   },
@@ -9247,11 +8365,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2104/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2104/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -9400,11 +8513,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2213/",
-   "url_b": "https://www.python.org/events/python-user-group/2216/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2215/",
    "url_b": "https://www.python.org/events/python-user-group/2216/"
   },
@@ -9442,11 +8550,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2215/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2215/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -9515,11 +8618,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2217/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2218/",
    "url_b": "https://www.python.org/events/python-user-group/2219/"
   },
@@ -9531,11 +8629,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2218/",
-   "url_b": "https://www.python.org/events/python-user-group/2264/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2218/",
    "url_b": "https://www.python.org/events/python-user-group/904/"
   },
   {
@@ -9547,11 +8640,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2218/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2218/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -9576,11 +8664,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2220/",
-   "url_b": "https://www.python.org/events/python-user-group/2263/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2220/",
    "url_b": "https://www.python.org/events/python-user-group/904/"
   },
   {
@@ -9592,21 +8675,11 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2220/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2220/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/2249/",
    "url_b": "https://www.python.org/events/python-user-group/79/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/2264/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "numbered series",
@@ -9625,18 +8698,8 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/904/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/events/python-user-group/911/",
    "url_b": "https://www.python.org/events/python-user-group/912/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/events/python-user-group/911/",
-   "url_b": "https://www.python.org/events/python-user-group/?page=2"
   },
   {
    "reason": "parent and child",
@@ -11889,36 +10952,6 @@
    "url_b": "https://www.python.org/jobs/category/developer-engineer/"
   },
   {
-   "reason": "parent and child",
-   "url_a": "https://www.python.org/jobs/",
-   "url_b": "https://www.python.org/jobs/type/back-end/"
-  },
-  {
-   "reason": "parent and child",
-   "url_a": "https://www.python.org/jobs/",
-   "url_b": "https://www.python.org/jobs/type/big-data/"
-  },
-  {
-   "reason": "parent and child",
-   "url_a": "https://www.python.org/jobs/",
-   "url_b": "https://www.python.org/jobs/type/cloud/"
-  },
-  {
-   "reason": "parent and child",
-   "url_a": "https://www.python.org/jobs/",
-   "url_b": "https://www.python.org/jobs/type/database/"
-  },
-  {
-   "reason": "parent and child",
-   "url_a": "https://www.python.org/jobs/",
-   "url_b": "https://www.python.org/jobs/type/machine-learning/"
-  },
-  {
-   "reason": "parent and child",
-   "url_a": "https://www.python.org/jobs/",
-   "url_b": "https://www.python.org/jobs/type/systems/"
-  },
-  {
    "reason": "numbered series",
    "url_a": "https://www.python.org/jobs/8130/",
    "url_b": "https://www.python.org/jobs/8133/"
@@ -12012,11 +11045,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/manuel-kaufmann/",
    "url_b": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/manuel-kaufmann/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/thomas-wouters/",
-   "url_b": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/thomas-wouters/"
   },
   {
    "reason": "parent and child",
@@ -12355,13 +11383,13 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2007-11-12/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2008-01-14/"
+   "url_a": "https://www.python.org/psf/records/board/minutes/2008-01-14/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2008-02-11/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2008-01-14/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2008-02-11/"
+   "url_b": "https://www.python.org/psf/records/board/minutes/2008-03-10/"
   },
   {
    "reason": "numbered series",
@@ -12375,8 +11403,8 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2008-06-16/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2008-07-14/"
+   "url_a": "https://www.python.org/psf/records/board/minutes/2008-07-14/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2008-08-11/"
   },
   {
    "reason": "numbered series",
@@ -12395,6 +11423,16 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2008-10-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2008-11-10/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2008-11-10/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2008-12-08/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2009-01-12/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2009-02-09/"
   },
@@ -12405,8 +11443,23 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-04-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2009-05-11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-04-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2009-06-08/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2009-05-11/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2009-06-08/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-05-11/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2009-07-13/"
   },
   {
    "reason": "numbered series",
@@ -12461,6 +11514,11 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2009-10-12/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2009-11-09/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-10-12/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2009-12-14/"
   },
   {
@@ -12471,6 +11529,26 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2009-10-12/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2010-02-08/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-10-12/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2010-03-08/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-11-09/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2009-12-14/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-11-09/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2010-01-11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2009-11-09/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2010-02-08/"
   },
   {
@@ -12515,6 +11593,21 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-03-21/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-06-27/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-03-21/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-08-15/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-03-21/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-10-17/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2011-04-18/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2011-05-16/"
   },
@@ -12522,6 +11615,11 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2011-04-18/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2011-10-17/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-05-16/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-06-27/"
   },
   {
    "reason": "numbered series",
@@ -12541,6 +11639,31 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2011-05-16/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-12-19/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-06-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-07-18/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-06-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-08-15/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-06-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-10-17/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-06-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2011-11-21/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-06-27/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2011-12-19/"
   },
   {
@@ -12590,6 +11713,11 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-08-15/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-02-27/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2011-10-17/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2011-11-21/"
   },
@@ -12605,8 +11733,38 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-11-21/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-02-27/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2011-12-19/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2012-01-16/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-12-19/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-02-27/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2011-12-19/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-03-26/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2012-01-16/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-02-27/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2012-02-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-03-26/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2012-02-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2012-04-30/"
   },
   {
    "reason": "numbered series",
@@ -12645,6 +11803,21 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2013-03-05/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2013-06-28/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2013-05-10/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2013-11-01/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2013-08-16/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2013-11-15/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2013-09-13/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2013-11-01/"
   },
@@ -12660,13 +11833,13 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2014-08-08/",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2014-07-18/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2014-11-14/"
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2015-11-09/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2016-01-05/"
+   "url_a": "https://www.python.org/psf/records/board/minutes/2014-08-08/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2014-11-14/"
   },
   {
    "reason": "numbered series",
@@ -12712,11 +11885,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2017-07-25/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2017-11-20/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2017-07-25/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2018-01-30/"
   },
   {
    "reason": "numbered series",
@@ -12805,11 +11973,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2017-09-26/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2018-10-30/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2017-10-16/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2017-12-18/"
   },
@@ -12835,16 +11998,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2017-11-20/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2018-08-21/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2017-11-20/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2018-10-30/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-01-30/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2018-02-27/"
   },
@@ -12860,6 +12013,11 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2018-01-30/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2018-10-30/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-02-27/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2018-03-27/"
   },
@@ -12905,6 +12063,16 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2018-03-27/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2019-03-26/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2018-04-24/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2018-07-24/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-04-24/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2018-08-21/"
   },
@@ -12970,16 +12138,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-07-24/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2020-08-26/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-07-24/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2020-10-28/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-08-21/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2018-09-25/"
   },
@@ -13035,11 +12193,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-08-21/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-02-24/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-09-25/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2018-10-30/"
   },
@@ -13095,16 +12248,6 @@
   },
   {
    "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-09-25/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-02-24/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-09-25/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-04-28/"
-  },
-  {
-   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-10-30/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2019-01-29/"
   },
@@ -13146,22 +12289,7 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2018-10-30/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2020-09-30/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-10-30/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2020-10-28/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-10-30/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-01-27/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2018-10-30/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-02-24/"
   },
   {
    "reason": "numbered series",
@@ -13202,11 +12330,6 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2019-01-29/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2020-08-26/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2019-01-29/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2020-09-30/"
   },
   {
    "reason": "numbered series",
@@ -13556,11 +12679,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2020-08-26/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-09-23/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2020-08-26/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2021-10-26/"
   },
   {
@@ -13590,6 +12708,11 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2020-09-30/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2021-09-23/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2020-10-28/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2021-01-27/"
   },
@@ -13611,16 +12734,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2020-10-28/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-08-24/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2020-10-28/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2021-09-23/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2020-10-28/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2021-10-26/"
   },
   {
@@ -13696,11 +12809,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2021-02-24/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2022-01-25/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2021-02-24/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2022-02-24/"
   },
   {
@@ -13781,11 +12889,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2021-04-28/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2022-02-24/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2021-04-28/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2022-03-22/"
   },
   {
@@ -13875,6 +12978,11 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2021-08-24/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2023-08-29/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2021-09-23/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2021-10-26/"
   },
@@ -14265,6 +13373,11 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2022-06-07/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-06-12/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2022-07-27/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2022-08-17/"
   },
@@ -14516,6 +13629,11 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2022-10-26/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-03-13/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2022-10-26/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-04-10/"
   },
   {
@@ -14576,6 +13694,16 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2022-12-14/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-02-14/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2022-12-14/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-03-13/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2022-12-14/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-04-10/"
   },
   {
@@ -14631,17 +13759,17 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-01-18/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-03-13/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-01-18/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-04-10/"
   },
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-01-18/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-06-12/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2023-01-18/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2025-01-08/"
   },
   {
    "reason": "numbered series",
@@ -14686,6 +13814,11 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-02-15/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-02-14/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-02-15/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-04-10/"
   },
   {
@@ -14731,6 +13864,11 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-03-17/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2024-03-13/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-03-17/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-04-10/"
   },
   {
@@ -14916,16 +14054,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-09-21/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2024-08-14/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2023-09-21/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2024-10-09/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2023-09-21/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2025-01-08/"
   },
   {
@@ -14971,11 +14099,6 @@
   {
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-10-10/",
-   "url_b": "https://www.python.org/psf/records/board/minutes/2024-08-14/"
-  },
-  {
-   "reason": "numbered series",
-   "url_a": "https://www.python.org/psf/records/board/minutes/2023-10-10/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-10-09/"
   },
   {
@@ -15090,6 +14213,26 @@
   },
   {
    "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-11-15/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-02-11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-11-15/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-03-11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-11-15/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-06-10/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-11-15/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-08-12/"
+  },
+  {
+   "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-12-13/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2024-02-14/"
   },
@@ -15177,6 +14320,26 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2023-12-13/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2025-11-12/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-12-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-02-11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-12-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-03-11/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-12-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-06-10/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2023-12-13/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-08-12/"
   },
   {
    "reason": "numbered series",
@@ -15282,6 +14445,11 @@
    "reason": "numbered series",
    "url_a": "https://www.python.org/psf/records/board/minutes/2024-02-14/",
    "url_b": "https://www.python.org/psf/records/board/minutes/2026-08-12/"
+  },
+  {
+   "reason": "numbered series",
+   "url_a": "https://www.python.org/psf/records/board/minutes/2024-02-14/",
+   "url_b": "https://www.python.org/psf/records/board/minutes/2026-09-09/"
   },
   {
    "reason": "numbered series",

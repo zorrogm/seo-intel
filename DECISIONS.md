@@ -173,6 +173,22 @@ numbers or month names are now a healthy "numbered series", unless their
 text is a near copy under an identical title. python.org dropped to 14
 groups with 3,210 pairs set aside, and the judge then marked 34 of 50 sound.
 
+**Failed: trusting body similarity to mean rivalry.** In the 40 labelled
+recommendations every one of the 11 merge suggestions was unsound: two
+sponsorship plans, two interest groups, a job post and a job list. They
+shared vocabulary but were different items. A pair now needs title, heading
+or anchor agreement of at least 0.40 as well, unless the text is a near
+copy. A merge is only suggested when half the text is shared and severity
+is at least 0.60; weaker pairs get the milder advice to tell the pages
+apart, at a lower rank.
+
+**Failed: counting a competitor's dated news as a gap.** 4 of the 5 gap
+suggestions for python.org were Ruby release announcements and yearly news
+archives. Competitor pages with a year in the path are now left out of gap
+topics, and python.org went from 8 gaps to 1. Link suggestions between two
+numbers of one series (a 2019 nominee page linking to the 2022 list) are
+skipped the same way, and numbered list pages are never priority pages.
+
 **Ablation: what each signal adds.**
 Reproduce: `.venv/bin/python benchmarks/cannibalization.py`.
 
@@ -181,14 +197,14 @@ Reproduce: `.venv/bin/python benchmarks/cannibalization.py`.
 | All signals | 30 | 1.00 | 1.00 | 1.00 |
 | No title or heading | 30 | 1.00 | 1.00 | 1.00 |
 | No anchor text | 30 | 1.00 | 1.00 | 1.00 |
-| No title, heading or anchors | 15 | 1.00 | 1.00 | 0.50 |
+| No title, heading or anchors | 0 | 0.00 | 0.00 | 0.00 |
 | No topic vectors | 30 | 1.00 | 1.00 | 1.00 |
 | No template removal | 30 | 1.00 | 1.00 | 1.00 |
 | No intent check | 40 | 0.75 | 1.00 | 1.00 |
 | No healthy pair rules | 50 | 0.60 | 0.50 | 1.00 |
 
-Reading it: titles and anchors back each other up, losing both halves
-recall. The intent check and the healthy pair rules are what keep precision
+Reading it: titles and anchors back each other up, but with neither nothing
+is reported, because a pair now needs some title agreement to count. The intent check and the healthy pair rules are what keep precision
 up. Topic vectors and template removal made no difference on this site,
 because the title channel and the exact term check found the same groups
 without them. The tool uses hashed TF-IDF vectors it builds itself, not a

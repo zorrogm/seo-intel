@@ -16,7 +16,7 @@ from seo_intel import config
 from seo_intel.fetch import Fetcher
 from seo_intel.extract import parse_page
 from seo_intel.fetch import FetchResult
-from seo_intel.links import scan_page
+from seo_intel.scan import scan_page
 from seo_intel.robots import RobotsTxt
 from seo_intel.store import BLOCKED, FETCHED, QUEUED, Job, Store
 from seo_intel.traps import TrapGuard

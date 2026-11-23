@@ -22,10 +22,10 @@
  },
  {
   "setup": "no title, heading or anchors",
-  "groups_reported": 15,
-  "precision_all_groups": 1.0,
-  "precision_at_20": 1.0,
-  "recall_of_planted_groups": 0.5
+  "groups_reported": 0,
+  "precision_all_groups": 0.0,
+  "precision_at_20": 0.0,
+  "recall_of_planted_groups": 0.0
  },
  {
   "setup": "no topic vectors",
