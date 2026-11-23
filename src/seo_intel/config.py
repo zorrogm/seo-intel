@@ -160,7 +160,7 @@ LLM_MAX_OUTPUT_TOKENS = 4096
 LLM_TIMEOUT_SECONDS = 60.0
 # Free tier allows 15 calls a minute
 LLM_MIN_GAP_SECONDS = 4.5
-LLM_MAX_STEPS = 12
+LLM_MAX_STEPS = 8
 # Leave headroom under the 8,000 token cap
 LLM_PROMPT_TOKEN_BUDGET = 6500
 LLM_CHARS_PER_TOKEN = 2.5
@@ -277,3 +277,17 @@ MAX_PAGINATION_PER_PATH = 300
 # Keep the plan from being one kind of action
 PLAN_MAX_PER_TYPE = 8
 AGENT_MAX_LOOKUPS_PER_STEP = 6
+
+# Bump when page parsing changes, to refresh caches
+PARSE_VERSION = 2
+FEW_INLINKS = 3
+MAX_REASONS_PER_ACTION = 4
+
+# Words that mark a date, like numbers do
+MONTH_WORDS = (
+    "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec",
+    "january", "february", "march", "april", "june", "july", "august", "september",
+    "october", "november", "december",
+    "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून", "जुलाई", "अगस्त", "सितंबर",
+    "अक्टूबर", "नवंबर", "दिसंबर",
+)

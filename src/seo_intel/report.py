@@ -8,6 +8,7 @@ from typing import Dict, List
 from seo_intel import config
 from seo_intel import issues
 from seo_intel.analysis import Analysis
+from seo_intel.plan import claim_text
 from seo_intel.render import render_report
 from seo_intel.store import Store
 
@@ -63,9 +64,7 @@ def link_report(a: Analysis) -> Dict:
 
 
 def _claim_line(claim: Dict) -> str:
-    if "metric" in claim:
-        return f"- `{claim['id']}` {claim['metric']} of {claim['url_a']} and {claim['url_b']} = {claim['value']}"
-    return f"- `{claim['id']}` {claim['field']} of {claim['url']} = {claim['value']}"
+    return f"- `{claim['id']}` {claim_text(claim, 300)}"
 
 
 def plan_markdown(actions: List[Dict]) -> str:

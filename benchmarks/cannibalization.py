@@ -16,6 +16,7 @@ TOPICS = 60
 SINGLE_PAGES = 250
 CHROME_WORDS = [f"chrome{i}" for i in range(40)]
 CHROME_SIZE = 500
+SLUGS = ["overview", "handbook", "explained"]
 # Half the groups say little about their topic
 THIN_TOPIC_WORDS = 12
 RICH_TOPIC_WORDS = 220
@@ -52,9 +53,10 @@ def build(rng, use_titles=True, use_anchors=True, strip_template=True):
         kind = topic % 6
         if kind in (0, 1, 2):
             # Real cannibals: same topic, same intent
-            made = [add(f"/guides/{topic}-{n}", f"{head} guide", pool, group=topic,
+            # Different slugs, since numbered URLs mean a series
+            made = [add(f"/guides/{topic}/{slug}", f"{head} guide", pool, group=topic,
                         thin=topic % 4 < 2)
-                    for n in range(2 + topic % 2)]
+                    for slug in SLUGS[: 2 + topic % 2]]
         elif kind == 3:
             # Different intent, should not be grouped
             made = [add(f"/guides/{topic}", f"{head} guide", pool),
@@ -119,7 +121,7 @@ def main():
         measure("no template removal", strip_template=False),
         measure("no intent check",
                 patch=[(intent, "rule_intent", lambda page, anchors: ("informational", False))]),
-        measure("no healthy pair rules", patch=[(topics, "healthy_reason", lambda a, b: "")]),
+        measure("no healthy pair rules", patch=[(topics, "healthy_reason", lambda a, b, overlap=0.0: "")]),
     ]
     json.dump(rows, sys.stdout, indent=1)
     print()

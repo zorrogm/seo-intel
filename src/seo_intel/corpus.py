@@ -53,11 +53,13 @@ class Page:
 
 
 def _parsed(store: Store, url_id: int, url: str, body_hash: str) -> Dict:
-    cached = store.get_parsed(url_id, body_hash)
+    # Old parses are redone after a parser change
+    key = f"{body_hash}:v{config.PARSE_VERSION}"
+    cached = store.get_parsed(url_id, key)
     if cached is not None:
         return json.loads(cached)
     data = parse_page(store.body(url_id), url)
-    store.save_parsed(url_id, body_hash, json.dumps(data, ensure_ascii=False).encode("utf-8"))
+    store.save_parsed(url_id, key, json.dumps(data, ensure_ascii=False).encode("utf-8"))
     return data
 
 

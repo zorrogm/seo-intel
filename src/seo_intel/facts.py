@@ -15,6 +15,7 @@ PAGE_FIELDS = (
     "intent", "inlinks", "click_depth", "word_count",
 )
 PAIR_METRICS = ("content_overlap", "topic_similarity", "links_to")
+TOPIC_METRICS = ("pages", "words")
 # These are re-read from the raw crawl
 _RAW_FIELDS = ("title", "h1", "canonical", "meta_robots")
 
@@ -53,6 +54,14 @@ class Facts:
             return (a, b) in self.a.edges
         raise KeyError(name)
 
+    def topic_stat(self, topic_id: int, site: str, name: str) -> int:
+        """Pages or words a site has in a topic."""
+        for gap in self.a.gaps:
+            if gap["topic_id"] == topic_id:
+                side = "target" if site == self.a.target_site else "competitor"
+                return gap[f"{side}_{name}"]
+        raise KeyError(topic_id)
+
     def _raw_field(self, url: str, name: str):
         """Parse the stored HTML again, skipping caches."""
         row = self.store.db.execute(
@@ -71,7 +80,11 @@ class Facts:
     def check(self, claim: Dict) -> Tuple[bool, object]:
         """True when the claim matches the crawl."""
         try:
-            if "metric" in claim:
+            if "topic_id" in claim:
+                if claim["metric"] not in TOPIC_METRICS:
+                    return False, "unknown metric"
+                actual = self.topic_stat(claim["topic_id"], claim["site"], claim["metric"])
+            elif "metric" in claim:
                 if claim["metric"] not in PAIR_METRICS:
                     return False, "unknown metric"
                 actual = self.metric(claim["url_a"], claim["url_b"], claim["metric"])

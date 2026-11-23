@@ -1,0 +1,504 @@
+action,type,pages,facts,rationale,human_label,note
+canonicalize|https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/|https://www.python.org/success-stories/d-link-australia/,canonicalize,"https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/
+https://www.python.org/success-stories/d-link-australia/","c1: title of https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/ = D-Link Australia Uses Python to Control Firmware Updates | Our Success Stories | Python.org
+c2: title of https://www.python.org/success-stories/d-link-australia/ = D-Link Australia Uses Python to Control Firmware Updates | Our Success Stories | Python.org
+c3: intent of https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/ = informational
+c4: intent of https://www.python.org/success-stories/d-link-australia/ = informational
+c5: content_overlap of https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/ and https://www.python.org/success-stories/d-link-australia/ = 0.9609
+c6: topic_similarity of https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/ and https://www.python.org/success-stories/d-link-australia/ = 1.0
+c7: inlinks of https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/ = 1
+c8: inlinks of https://www.python.org/success-stories/d-link-australia/ = 1",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c5]. They cover the same topic [c6]. They answer the same search intent [c3] [c4]. Internal links are split between them [c7] [c8]. Pages and other evidence: [c1] [c2].,,
+merge_301|https://www.python.org/psf/board/|https://www.python.org/psf/records/board/history/,merge_301,"https://www.python.org/psf/board/
+https://www.python.org/psf/records/board/history/","c57: title of https://www.python.org/psf/board/ = PSF Officers & Board Members | Python Software Foundation
+c58: title of https://www.python.org/psf/records/board/history/ = Current and Past PSF Officers & Board Members | Python Software Foundation
+c59: intent of https://www.python.org/psf/board/ = informational
+c60: intent of https://www.python.org/psf/records/board/history/ = informational
+c61: content_overlap of https://www.python.org/psf/board/ and https://www.python.org/psf/records/board/history/ = 0.5838
+c62: topic_similarity of https://www.python.org/psf/board/ and https://www.python.org/psf/records/board/history/ = 0.8613
+c63: inlinks of https://www.python.org/psf/board/ = 3
+c64: inlinks of https://www.python.org/psf/records/board/history/ = 3",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c62]. They answer the same search intent [c59] [c60]. Internal links are split between them [c63] [c64]. Pages and other evidence: [c57] [c58] [c61].,,
+fix_redirect_chain|http://www.python.org/psf/forms/sponsor-application/|https://www.python.org/psf/forms/sponsor-application/,fix_redirect_chain,"http://www.python.org/psf/forms/sponsor-application/
+https://www.python.org/psf/forms/sponsor-application/
+https://www.python.org/sponsors/application/new/","c65: redirect_to of http://www.python.org/psf/forms/sponsor-application/ = https://www.python.org/psf/forms/sponsor-application/
+c66: redirect_to of https://www.python.org/psf/forms/sponsor-application/ = https://www.python.org/sponsors/application/new/
+c67: redirect_to of https://www.python.org/sponsors/application/new/ = https://www.python.org/accounts/login/?next=/sponsors/application/new/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c65] [c66] [c67].,,
+add_internal_link|https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/|https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/,add_internal_link,"https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/
+https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/
+https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/
+https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/","c74: title of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = Nominees for 2022 Python Software Foundation Board Election | Python.org
+c75: inlinks of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = 1
+c76: sentence of https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/ = Nominee for 2019 Python Software Foundation Board Election
+c77: links_to of https://www.python.org/nominations/elections/2019-python-software-foundation-board/nominees/jannis-leidel/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c78: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/ = Nominee for 2022 Python Software Foundation Board Election
+c79: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/dawn-wages/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c80: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/ = Nominee for 2022 Python Software Foundation Board Election
+c81: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c82: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/ = Nominee for 2022 Python Software Foundation Board Election
+c83: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/gift-ojeabulu/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c84: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/ = Nominee for 2022 Python Software Foundation Board Election
+c85: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jannis-leidel/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c86: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/ = Nominee for 2022 Python Software Foundation Board Election
+c87: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c88: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/ = Nominee for 2022 Python Software Foundation Board Election
+c89: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jon-banafato/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c90: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/ = Nominee for 2023 Python Software Foundation Board Election
+c91: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c92: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/ = Nominee for 2023 Python Software Foundation Board Election
+c93: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/georgi-ker/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c94: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/ = Nominee for 2023 Python Software Foundation Board Election
+c95: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/jon-banafato/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c96: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/ = Nominee for 2026 Python Software Foundation Board Election
+c97: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kojo-idrissa/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c98: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/ = Nominee for 2026 Python Software Foundation Board Election
+c99: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/lais-carvalho/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c100: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/ = Nominee for 2026 Python Software Foundation Board Election
+c101: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/nina-zakharenko/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c102: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/ = Nominee for 2026 Python Software Foundation Board Election
+c103: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False
+c104: sentence of https://www.python.org/psf/fiscal-sponsorees/ = The Python Software Foundation promotes, protects, and advances the Python programming language and supports and facilitates the growth of a diverse and interna
+c105: links_to of https://www.python.org/psf/fiscal-sponsorees/ and https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ = False","Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c75]. A sentence that suits the link already exists [c76] [c78] [c80] [c82] [c84] [c86] [c88] [c90] [c92] [c94] [c96] [c98] [c100] [c102] [c104]. The source page does not link to it yet [c77] [c79] [c81] [c83] [c85] [c87] [c89] [c91] [c93] [c95] [c97] [c99] [c101] [c103] [c105]. Pages and other evidence: [c74].",,
+create_page|https://www.ruby-lang.org/en/news/2008/|https://www.ruby-lang.org/en/news/2010/,create_page,"https://www.ruby-lang.org/en/news/2008/
+https://www.ruby-lang.org/en/news/2010/
+https://www.ruby-lang.org/en/news/2012/","c106: pages on topic 26 for ruby-lang.org = 208
+c107: words on topic 26 for ruby-lang.org = 38002
+c108: pages on topic 26 for python.org = 1
+c109: words on topic 26 for python.org = 11
+c110: title of https://www.ruby-lang.org/en/news/2008/ = 2008 Archives | Ruby
+c111: title of https://www.ruby-lang.org/en/news/2010/ = 2010 Archives | Ruby
+c112: title of https://www.ruby-lang.org/en/news/2012/ = 2012 Archives | Ruby",Create a page on this topic. The competitor has many pages on the topic [c106]. This site has little on the topic [c108] [c109]. Pages and other evidence: [c107] [c110] [c111] [c112].,,
+canonicalize|https://www.python.org/download/releases/2.4/msi/|https://www.python.org/download/releases/2.5/msi/,canonicalize,"https://www.python.org/download/releases/2.4/msi/
+https://www.python.org/download/releases/2.5/msi/","c9: title of https://www.python.org/download/releases/2.4/msi/ = Using Windows Installer | Python.org
+c10: title of https://www.python.org/download/releases/2.5/msi/ = Using Windows Installer | Python.org
+c11: intent of https://www.python.org/download/releases/2.4/msi/ = transactional
+c12: intent of https://www.python.org/download/releases/2.5/msi/ = transactional
+c13: content_overlap of https://www.python.org/download/releases/2.4/msi/ and https://www.python.org/download/releases/2.5/msi/ = 0.9213
+c14: topic_similarity of https://www.python.org/download/releases/2.4/msi/ and https://www.python.org/download/releases/2.5/msi/ = 0.9834
+c15: inlinks of https://www.python.org/download/releases/2.4/msi/ = 5
+c16: inlinks of https://www.python.org/download/releases/2.5/msi/ = 5",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c13]. They cover the same topic [c14]. They answer the same search intent [c11] [c12]. Internal links are split between them [c15] [c16]. Pages and other evidence: [c9] [c10].,,
+canonicalize|https://www.python.org/downloads/release/python-335-rc1/|https://www.python.org/downloads/release/python-335rc1/,canonicalize,"https://www.python.org/downloads/release/python-335-rc1/
+https://www.python.org/downloads/release/python-335rc1/","c17: title of https://www.python.org/downloads/release/python-335-rc1/ = Python Release Python 3.3.5rc1 | Python.org
+c18: title of https://www.python.org/downloads/release/python-335rc1/ = Python Release Python 3.3.5rc1 | Python.org
+c19: intent of https://www.python.org/downloads/release/python-335-rc1/ = informational
+c20: intent of https://www.python.org/downloads/release/python-335rc1/ = informational
+c21: content_overlap of https://www.python.org/downloads/release/python-335-rc1/ and https://www.python.org/downloads/release/python-335rc1/ = 0.8789
+c22: topic_similarity of https://www.python.org/downloads/release/python-335-rc1/ and https://www.python.org/downloads/release/python-335rc1/ = 1.0
+c23: inlinks of https://www.python.org/downloads/release/python-335-rc1/ = 3
+c24: inlinks of https://www.python.org/downloads/release/python-335rc1/ = 3",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c21]. They cover the same topic [c22]. They answer the same search intent [c19] [c20]. Internal links are split between them [c23] [c24]. Pages and other evidence: [c17] [c18].,,
+canonicalize|https://www.python.org/jobs/location/detroit-michigan-usa/|https://www.python.org/jobs/type/image-processing/,canonicalize,"https://www.python.org/jobs/location/detroit-michigan-usa/
+https://www.python.org/jobs/type/image-processing/
+https://www.python.org/jobs/type/numeric-processing/","c25: title of https://www.python.org/jobs/type/image-processing/ = Python Job Board | Python.org
+c26: title of https://www.python.org/jobs/type/numeric-processing/ = Python Job Board | Python.org
+c27: intent of https://www.python.org/jobs/type/image-processing/ = informational
+c28: intent of https://www.python.org/jobs/type/numeric-processing/ = informational
+c29: content_overlap of https://www.python.org/jobs/type/image-processing/ and https://www.python.org/jobs/type/numeric-processing/ = 1.0
+c30: topic_similarity of https://www.python.org/jobs/type/image-processing/ and https://www.python.org/jobs/type/numeric-processing/ = 0.917
+c31: inlinks of https://www.python.org/jobs/type/image-processing/ = 7
+c32: inlinks of https://www.python.org/jobs/type/numeric-processing/ = 7",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c29]. They cover the same topic [c30]. They answer the same search intent [c27] [c28]. Internal links are split between them [c31] [c32]. Pages and other evidence: [c25] [c26].,,
+canonicalize|https://www.python.org/accounts/login/|https://www.python.org/accounts/login/?next=/jobs/create/,canonicalize,"https://www.python.org/accounts/login/
+https://www.python.org/accounts/login/?next=/jobs/create/
+https://www.python.org/accounts/login/?next=/jobs/mine/
+https://www.python.org/accounts/login/?next=/success-stories/create/","c33: title of https://www.python.org/accounts/login/?next=/jobs/create/ = Sign In to Python.org
+c34: title of https://www.python.org/accounts/login/?next=/success-stories/create/ = Sign In to Python.org
+c35: intent of https://www.python.org/accounts/login/?next=/jobs/create/ = navigational
+c36: intent of https://www.python.org/accounts/login/?next=/success-stories/create/ = navigational
+c37: content_overlap of https://www.python.org/accounts/login/?next=/jobs/create/ and https://www.python.org/accounts/login/?next=/success-stories/create/ = 1.0
+c38: topic_similarity of https://www.python.org/accounts/login/?next=/jobs/create/ and https://www.python.org/accounts/login/?next=/success-stories/create/ = 0.88
+c39: inlinks of https://www.python.org/accounts/login/?next=/jobs/create/ = 1
+c40: inlinks of https://www.python.org/accounts/login/?next=/success-stories/create/ = 1",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c37]. They cover the same topic [c38]. They answer the same search intent [c35] [c36]. Internal links are split between them [c39] [c40]. Pages and other evidence: [c33] [c34].,,
+canonicalize|https://www.python.org/download/releases/2.2.3/descrintro/|https://www.python.org/download/releases/2.2/descrintro/,canonicalize,"https://www.python.org/download/releases/2.2.3/descrintro/
+https://www.python.org/download/releases/2.2/descrintro/","c41: title of https://www.python.org/download/releases/2.2.3/descrintro/ = Unifying types and classes in Python 2.2 | Python.org
+c42: title of https://www.python.org/download/releases/2.2/descrintro/ = Unifying types and classes in Python 2.2 | Python.org
+c43: intent of https://www.python.org/download/releases/2.2.3/descrintro/ = transactional
+c44: intent of https://www.python.org/download/releases/2.2/descrintro/ = transactional
+c45: content_overlap of https://www.python.org/download/releases/2.2.3/descrintro/ and https://www.python.org/download/releases/2.2/descrintro/ = 0.9087
+c46: topic_similarity of https://www.python.org/download/releases/2.2.3/descrintro/ and https://www.python.org/download/releases/2.2/descrintro/ = 0.9668
+c47: inlinks of https://www.python.org/download/releases/2.2.3/descrintro/ = 3
+c48: inlinks of https://www.python.org/download/releases/2.2/descrintro/ = 2",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c45]. They cover the same topic [c46]. They answer the same search intent [c43] [c44]. Internal links are split between them [c47] [c48]. Pages and other evidence: [c41] [c42].,,
+canonicalize|https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html|https://www.python.org/ftp/python/doc/quick-ref.1.3.html,canonicalize,"https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html
+https://www.python.org/ftp/python/doc/quick-ref.1.3.html","c49: title of https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html = A Python Quick Reference
+c50: title of https://www.python.org/ftp/python/doc/quick-ref.1.3.html = A Python Quick Reference
+c51: intent of https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html = transactional
+c52: intent of https://www.python.org/ftp/python/doc/quick-ref.1.3.html = transactional
+c53: content_overlap of https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html and https://www.python.org/ftp/python/doc/quick-ref.1.3.html = 0.8895
+c54: topic_similarity of https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html and https://www.python.org/ftp/python/doc/quick-ref.1.3.html = 0.9922
+c55: inlinks of https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html = 1
+c56: inlinks of https://www.python.org/ftp/python/doc/quick-ref.1.3.html = 2",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c53]. They cover the same topic [c54]. They answer the same search intent [c51] [c52]. Internal links are split between them [c55] [c56]. Pages and other evidence: [c49] [c50].,,
+fix_redirect_chain|http://www.python.org/sigs/distutils-sig/|https://www.python.org/sigs/distutils-sig/,fix_redirect_chain,"http://www.python.org/sigs/distutils-sig/
+https://www.python.org/sigs/distutils-sig/
+https://www.python.org/community/sigs","c68: redirect_to of http://www.python.org/sigs/distutils-sig/ = https://www.python.org/sigs/distutils-sig/
+c69: redirect_to of https://www.python.org/sigs/distutils-sig/ = https://www.python.org/community/sigs
+c70: redirect_to of https://www.python.org/community/sigs = https://www.python.org/community/sigs/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c68] [c69] [c70].,,
+fix_redirect_chain|https://python.org/downloads|https://www.python.org/downloads,fix_redirect_chain,"https://python.org/downloads
+https://www.python.org/downloads
+http://www.python.org/downloads/","c71: redirect_to of https://python.org/downloads = https://www.python.org/downloads
+c72: redirect_to of https://www.python.org/downloads = http://www.python.org/downloads/
+c73: redirect_to of http://www.python.org/downloads/ = https://www.python.org/downloads/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c71] [c72] [c73].,,
+create_page|https://www.ruby-lang.org/en/news/2013/|https://www.ruby-lang.org/en/news/2014/,create_page,"https://www.ruby-lang.org/en/news/2013/
+https://www.ruby-lang.org/en/news/2014/
+https://www.ruby-lang.org/en/security/","c113: pages on topic 24 for ruby-lang.org = 111
+c114: words on topic 24 for ruby-lang.org = 43028
+c115: pages on topic 24 for python.org = 0
+c116: words on topic 24 for python.org = 0
+c117: title of https://www.ruby-lang.org/en/news/2013/ = 2013 Archives | Ruby
+c118: title of https://www.ruby-lang.org/en/news/2014/ = 2014 Archives | Ruby
+c119: title of https://www.ruby-lang.org/en/security/ = Security | Ruby",Create a page on this topic. The competitor has many pages on the topic [c113]. This site has little on the topic [c115] [c116]. Pages and other evidence: [c114] [c117] [c118] [c119].,,
+create_page|https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/|https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/,create_page,"https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/
+https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/
+https://www.ruby-lang.org/en/news/2022/02/18/ruby-3-1-1-released/","c120: pages on topic 28 for ruby-lang.org = 151
+c121: words on topic 28 for ruby-lang.org = 29922
+c122: pages on topic 28 for python.org = 0
+c123: words on topic 28 for python.org = 0
+c124: title of https://www.ruby-lang.org/en/news/2016/02/24/support-plan-of-ruby-2-0-0-and-2-1/ = Support plans for Ruby 2.0.0 and Ruby 2.1 | Ruby
+c125: title of https://www.ruby-lang.org/en/news/2018/03/28/ruby-2-3-7-released/ = Ruby 2.3.7 Released | Ruby
+c126: title of https://www.ruby-lang.org/en/news/2022/02/18/ruby-3-1-1-released/ = Ruby 3.1.1 Released | Ruby",Create a page on this topic. The competitor has many pages on the topic [c120]. This site has little on the topic [c122] [c123]. Pages and other evidence: [c121] [c124] [c125] [c126].,,
+create_page|https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/|https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/,create_page,"https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/
+https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/
+https://www.ruby-lang.org/en/news/2002/12/11/ruby-hacking-guide/","c127: pages on topic 27 for ruby-lang.org = 72
+c128: words on topic 27 for ruby-lang.org = 60925
+c129: pages on topic 27 for python.org = 3
+c130: words on topic 27 for python.org = 6908
+c131: title of https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/ = Ruby 4.0.0 Released | Ruby
+c132: title of https://www.ruby-lang.org/en/news/2026/10/12/ruby-4-1-0-preview1-released/ = Ruby 4.1.0-preview1 Released | Ruby
+c133: title of https://www.ruby-lang.org/en/news/2002/12/11/ruby-hacking-guide/ = ""Ruby Hacking Guide"" is out though ... | Ruby",Create a page on this topic. The competitor has many pages on the topic [c127]. This site has little on the topic [c129] [c130]. Pages and other evidence: [c128] [c131] [c132] [c133].,,
+merge_301|https://www.python.org/community/sigs/retired/locator-sig/|https://www.python.org/community/sigs/retired/pythonwin-sig/,merge_301,"https://www.python.org/community/sigs/retired/locator-sig/
+https://www.python.org/community/sigs/retired/pythonwin-sig/","c134: title of https://www.python.org/community/sigs/retired/locator-sig/ = Python Locator Special Interest Group | Python.org
+c135: title of https://www.python.org/community/sigs/retired/pythonwin-sig/ = PythonWin Special Interest Group | Python.org
+c136: intent of https://www.python.org/community/sigs/retired/locator-sig/ = informational
+c137: intent of https://www.python.org/community/sigs/retired/pythonwin-sig/ = informational
+c138: content_overlap of https://www.python.org/community/sigs/retired/locator-sig/ and https://www.python.org/community/sigs/retired/pythonwin-sig/ = 0.5395
+c139: topic_similarity of https://www.python.org/community/sigs/retired/locator-sig/ and https://www.python.org/community/sigs/retired/pythonwin-sig/ = 0.6692
+c140: inlinks of https://www.python.org/community/sigs/retired/locator-sig/ = 1
+c141: inlinks of https://www.python.org/community/sigs/retired/pythonwin-sig/ = 1",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c139]. They answer the same search intent [c136] [c137]. Internal links are split between them [c140] [c141]. Pages and other evidence: [c134] [c135] [c138].,,
+canonicalize|https://www.python.org/events/python-user-group/2204/|https://www.python.org/events/python-user-group/2207/,canonicalize,"https://www.python.org/events/python-user-group/2204/
+https://www.python.org/events/python-user-group/2207/","c142: title of https://www.python.org/events/python-user-group/2204/ = Python Leiden User Group | Python.org
+c143: title of https://www.python.org/events/python-user-group/2207/ = Python Leiden User Group | Python.org
+c144: intent of https://www.python.org/events/python-user-group/2204/ = informational
+c145: intent of https://www.python.org/events/python-user-group/2207/ = informational
+c146: content_overlap of https://www.python.org/events/python-user-group/2204/ and https://www.python.org/events/python-user-group/2207/ = 0.8333
+c147: topic_similarity of https://www.python.org/events/python-user-group/2204/ and https://www.python.org/events/python-user-group/2207/ = 0.9988
+c148: inlinks of https://www.python.org/events/python-user-group/2204/ = 2
+c149: inlinks of https://www.python.org/events/python-user-group/2207/ = 0",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c146]. They cover the same topic [c147]. They answer the same search intent [c144] [c145]. Pages and other evidence: [c142] [c143] [c148] [c149].,,
+merge_301|https://www.python.org/jobs/8129/|https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/,merge_301,"https://www.python.org/jobs/8129/
+https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/","c150: title of https://www.python.org/jobs/8129/ = Python developer, Eleks | Python.org
+c151: title of https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/ = Python Job Board | Python.org
+c152: intent of https://www.python.org/jobs/8129/ = informational
+c153: intent of https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/ = informational
+c154: content_overlap of https://www.python.org/jobs/8129/ and https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/ = 0.0398
+c155: topic_similarity of https://www.python.org/jobs/8129/ and https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/ = 0.8663
+c156: inlinks of https://www.python.org/jobs/8129/ = 8
+c157: inlinks of https://www.python.org/jobs/location/poland-lviv-ivano-frankivsk-ternopil-uzhhorod-chernivtsi-or-kyiv-ukrainepoland/ = 7",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c155]. They answer the same search intent [c152] [c153]. Internal links are split between them [c156] [c157]. Pages and other evidence: [c150] [c151] [c154].,,
+fix_redirect_chain|http://python.org/dev/peps/pep-0392/|https://www.python.org/dev/peps/pep-0392/,fix_redirect_chain,"http://python.org/dev/peps/pep-0392/
+https://www.python.org/dev/peps/pep-0392/","c158: redirect_to of http://python.org/dev/peps/pep-0392/ = https://www.python.org/dev/peps/pep-0392/
+c159: redirect_to of https://www.python.org/dev/peps/pep-0392/ = https://peps.python.org/pep-0392/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c158] [c159].,,
+fix_redirect_chain|http://python.org/dev/peps/pep-0398/|https://www.python.org/dev/peps/pep-0398/,fix_redirect_chain,"http://python.org/dev/peps/pep-0398/
+https://www.python.org/dev/peps/pep-0398/","c160: redirect_to of http://python.org/dev/peps/pep-0398/ = https://www.python.org/dev/peps/pep-0398/
+c161: redirect_to of https://www.python.org/dev/peps/pep-0398/ = https://peps.python.org/pep-0398/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c160] [c161].,,
+fix_redirect_chain|http://python.org/psf/mission|https://www.python.org/psf/mission,fix_redirect_chain,"http://python.org/psf/mission
+https://www.python.org/psf/mission","c162: redirect_to of http://python.org/psf/mission = https://www.python.org/psf/mission
+c163: redirect_to of https://www.python.org/psf/mission = https://www.python.org/psf/mission/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c162] [c163].,,
+fix_redirect_chain|http://python.org/psf/trademarks|https://www.python.org/psf/trademarks,fix_redirect_chain,"http://python.org/psf/trademarks
+https://www.python.org/psf/trademarks","c164: redirect_to of http://python.org/psf/trademarks = https://www.python.org/psf/trademarks
+c165: redirect_to of https://www.python.org/psf/trademarks = https://www.python.org/psf/trademarks/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c164] [c165].,,
+fix_redirect_chain|http://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq|https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq,fix_redirect_chain,"http://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq
+https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq","c166: redirect_to of http://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq = https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq
+c167: redirect_to of https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq = https://wiki.python.org/moin",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c166] [c167].,,
+add_internal_link|https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/|https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/,add_internal_link,"https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/
+https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/
+https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/
+https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/","c396: title of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = Nominees for 2023 Python Software Foundation Board Election | Python.org
+c397: inlinks of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = 1
+c398: sentence of https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/ = Nominee for 2020 Python Software Foundation Board Election
+c399: links_to of https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/debora-azevedo/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c400: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/ = Nominee for 2022 Python Software Foundation Board Election
+c401: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/ashia-zawaduk/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c402: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/ = Nominee for 2022 Python Software Foundation Board Election
+c403: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/cristian-maureira-fredes/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c404: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/ = Nominee for 2022 Python Software Foundation Board Election
+c405: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c406: sentence of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/ = Nominee for 2022 Python Software Foundation Board Election
+c407: links_to of https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c408: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/ = Nominee for 2023 Python Software Foundation Board Election
+c409: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c410: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/ = Nominee for 2023 Python Software Foundation Board Election
+c411: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c412: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/ = Nominee for 2023 Python Software Foundation Board Election
+c413: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/paolo-melchiorre/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c414: sentence of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/ = Nominee for 2023 Python Software Foundation Board Election
+c415: links_to of https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c416: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/ = Nominee for 2026 Python Software Foundation Board Election
+c417: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/cecilia-tivir/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c418: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/elaine-wong/ = Nominee for 2026 Python Software Foundation Board Election
+c419: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/elaine-wong/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False
+c420: sentence of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/ = Nominee for 2026 Python Software Foundation Board Election
+c421: links_to of https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/kalyan-prasad/ and https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/ = False","Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c397]. A sentence that suits the link already exists [c398] [c400] [c402] [c404] [c406] [c408] [c410] [c412] [c414] [c416] [c418] [c420]. The source page does not link to it yet [c399] [c401] [c403] [c405] [c407] [c409] [c411] [c413] [c415] [c417] [c419] [c421]. Pages and other evidence: [c396].",,
+merge_301|https://www.djangoproject.com/sponsor/plans/diamond/|https://www.djangoproject.com/sponsor/plans/fellow/,merge_301,"https://www.djangoproject.com/sponsor/plans/diamond/
+https://www.djangoproject.com/sponsor/plans/fellow/
+https://www.djangoproject.com/sponsor/plans/gold/","c145: title of https://www.djangoproject.com/sponsor/plans/diamond/ = Diamond sponsorship | Django
+c146: title of https://www.djangoproject.com/sponsor/plans/fellow/ = Sponsored Fellow sponsorship | Django
+c147: intent of https://www.djangoproject.com/sponsor/plans/diamond/ = transactional
+c148: intent of https://www.djangoproject.com/sponsor/plans/fellow/ = transactional
+c149: content_overlap of https://www.djangoproject.com/sponsor/plans/diamond/ and https://www.djangoproject.com/sponsor/plans/fellow/ = 0.7713
+c150: topic_similarity of https://www.djangoproject.com/sponsor/plans/diamond/ and https://www.djangoproject.com/sponsor/plans/fellow/ = 0.8267
+c151: inlinks of https://www.djangoproject.com/sponsor/plans/diamond/ = 2
+c152: inlinks of https://www.djangoproject.com/sponsor/plans/fellow/ = 2",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c150]. They answer the same search intent [c147] [c148]. Internal links are split between them [c151] [c152]. Pages and other evidence: [c145] [c146] [c149].,,
+merge_301|http://www.djangoproject.com/weblog/2008/jul/21/10-alpha/|https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/,merge_301,"http://www.djangoproject.com/weblog/2008/jul/21/10-alpha/
+https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/
+https://www.djangoproject.com/weblog/2008/aug/14/10-beta-1/
+https://www.djangoproject.com/weblog/2008/aug/27/10-beta-2/","c161: title of https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/ = Django 1.0 alpha 2 released! | Weblog | Django
+c162: title of https://www.djangoproject.com/weblog/2008/aug/14/10-beta-1/ = Django 1.0 beta 1 released! | Weblog | Django
+c163: intent of https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/ = informational
+c164: intent of https://www.djangoproject.com/weblog/2008/aug/14/10-beta-1/ = informational
+c165: content_overlap of https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/ and https://www.djangoproject.com/weblog/2008/aug/14/10-beta-1/ = 0.7234
+c166: topic_similarity of https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/ and https://www.djangoproject.com/weblog/2008/aug/14/10-beta-1/ = 0.9237
+c167: inlinks of https://www.djangoproject.com/weblog/2008/aug/08/10-alpha-2/ = 2
+c168: inlinks of https://www.djangoproject.com/weblog/2008/aug/14/10-beta-1/ = 3",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c166]. They answer the same search intent [c163] [c164]. Internal links are split between them [c167] [c168]. Pages and other evidence: [c161] [c162] [c165].,,
+add_internal_link|https://www.djangoproject.com/community/jobs/?page=14|https://www.djangoproject.com/community/jobs/,add_internal_link,"https://www.djangoproject.com/community/jobs/?page=14
+https://www.djangoproject.com/community/jobs/
+https://www.djangoproject.com/community/jobs/?page=1
+https://www.djangoproject.com/community/jobs/?page=10","c369: title of https://www.djangoproject.com/community/jobs/?page=14 = Django Community | Django
+c370: inlinks of https://www.djangoproject.com/community/jobs/?page=14 = 0
+c371: sentence of https://www.djangoproject.com/community/jobs/ = This page, updated regularly, aggregates Django jobs from the Django community.
+c372: links_to of https://www.djangoproject.com/community/jobs/ and https://www.djangoproject.com/community/jobs/?page=14 = False
+c373: sentence of https://www.djangoproject.com/community/jobs/?page=1 = This page, updated regularly, aggregates Django jobs from the Django community.
+c374: links_to of https://www.djangoproject.com/community/jobs/?page=1 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c375: sentence of https://www.djangoproject.com/community/jobs/?page=10 = This page, updated regularly, aggregates Django jobs from the Django community.
+c376: links_to of https://www.djangoproject.com/community/jobs/?page=10 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c377: sentence of https://www.djangoproject.com/community/jobs/?page=11 = This page, updated regularly, aggregates Django jobs from the Django community.
+c378: links_to of https://www.djangoproject.com/community/jobs/?page=11 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c379: sentence of https://www.djangoproject.com/community/jobs/?page=12 = This page, updated regularly, aggregates Django jobs from the Django community.
+c380: links_to of https://www.djangoproject.com/community/jobs/?page=12 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c381: sentence of https://www.djangoproject.com/community/jobs/?page=13 = This page, updated regularly, aggregates Django jobs from the Django community.
+c382: links_to of https://www.djangoproject.com/community/jobs/?page=13 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c383: sentence of https://www.djangoproject.com/community/jobs/?page=15 = This page, updated regularly, aggregates Django jobs from the Django community.
+c384: links_to of https://www.djangoproject.com/community/jobs/?page=15 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c385: sentence of https://www.djangoproject.com/community/jobs/?page=16 = This page, updated regularly, aggregates Django jobs from the Django community.
+c386: links_to of https://www.djangoproject.com/community/jobs/?page=16 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c387: sentence of https://www.djangoproject.com/community/jobs/?page=18 = This page, updated regularly, aggregates Django jobs from the Django community.
+c388: links_to of https://www.djangoproject.com/community/jobs/?page=18 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c389: sentence of https://www.djangoproject.com/community/jobs/?page=19 = This page, updated regularly, aggregates Django jobs from the Django community.
+c390: links_to of https://www.djangoproject.com/community/jobs/?page=19 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c391: sentence of https://www.djangoproject.com/community/jobs/?page=2 = This page, updated regularly, aggregates Django jobs from the Django community.
+c392: links_to of https://www.djangoproject.com/community/jobs/?page=2 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c393: sentence of https://www.djangoproject.com/community/jobs/?page=20 = This page, updated regularly, aggregates Django jobs from the Django community.
+c394: links_to of https://www.djangoproject.com/community/jobs/?page=20 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c395: sentence of https://www.djangoproject.com/community/jobs/?page=3 = This page, updated regularly, aggregates Django jobs from the Django community.
+c396: links_to of https://www.djangoproject.com/community/jobs/?page=3 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c397: sentence of https://www.djangoproject.com/community/jobs/?page=5 = This page, updated regularly, aggregates Django jobs from the Django community.
+c398: links_to of https://www.djangoproject.com/community/jobs/?page=5 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c399: sentence of https://www.djangoproject.com/community/jobs/?page=7 = This page, updated regularly, aggregates Django jobs from the Django community.
+c400: links_to of https://www.djangoproject.com/community/jobs/?page=7 and https://www.djangoproject.com/community/jobs/?page=14 = False
+c401: sentence of https://www.djangoproject.com/foundation/cla/faq/ = We love to support and contribute to the Django community with open source projects, talks, and meetups.
+c402: links_to of https://www.djangoproject.com/foundation/cla/faq/ and https://www.djangoproject.com/community/jobs/?page=14 = False
+c403: sentence of https://www.djangoproject.com/foundation/corporate-members/ = We love to support and contribute to the Django community with open source projects, talks, and meetups.
+c404: links_to of https://www.djangoproject.com/foundation/corporate-members/ and https://www.djangoproject.com/community/jobs/?page=14 = False","Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c370]. A sentence that suits the link already exists [c371] [c373] [c375] [c377] [c379] [c381] [c383] [c385] [c387] [c389] [c391] [c393] [c395] [c397] [c399] [c401] [c403]. The source page does not link to it yet [c372] [c374] [c376] [c378] [c380] [c382] [c384] [c386] [c388] [c390] [c392] [c394] [c396] [c398] [c400] [c402] [c404]. Pages and other evidence: [c369].",,
+create_page|https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/|https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/,create_page,"https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/
+https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/
+https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/","c405: pages on topic 36 for fastapi.tiangolo.com = 5
+c406: words on topic 36 for fastapi.tiangolo.com = 26231
+c407: pages on topic 36 for djangoproject.com = 0
+c408: words on topic 36 for djangoproject.com = 0
+c409: title of https://fastapi.tiangolo.com/advanced/security/oauth2-scopes/ = OAuth2 scopes - FastAPI
+c410: title of https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/ = OAuth2 with Password (and hashing), Bearer with JWT tokens - FastAPI
+c411: title of https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/ = Simple OAuth2 with Password and Bearer - FastAPI",Create a page on this topic. The competitor has many pages on the topic [c405]. This site has little on the topic [c407] [c408]. Pages and other evidence: [c406] [c409] [c410] [c411].,,
+canonicalize|https://www.djangoproject.com/accounts/login/?next=/community/add/blogs/|https://www.djangoproject.com/accounts/login/?next=/community/add/jobs/,canonicalize,"https://www.djangoproject.com/accounts/login/?next=/community/add/blogs/
+https://www.djangoproject.com/accounts/login/?next=/community/add/jobs/
+https://www.djangoproject.com/accounts/login/?next=/community/add/links/
+https://www.djangoproject.com/accounts/login/?next=/community/add/packages/","c1: title of https://www.djangoproject.com/accounts/login/?next=/community/add/packages/ = Log in | Django
+c2: title of https://www.djangoproject.com/accounts/login/?next=/community/add/q-and-a/ = Log in | Django
+c3: intent of https://www.djangoproject.com/accounts/login/?next=/community/add/packages/ = navigational
+c4: intent of https://www.djangoproject.com/accounts/login/?next=/community/add/q-and-a/ = navigational
+c5: content_overlap of https://www.djangoproject.com/accounts/login/?next=/community/add/packages/ and https://www.djangoproject.com/accounts/login/?next=/community/add/q-and-a/ = 1.0
+c6: topic_similarity of https://www.djangoproject.com/accounts/login/?next=/community/add/packages/ and https://www.djangoproject.com/accounts/login/?next=/community/add/q-and-a/ = 1.0
+c7: inlinks of https://www.djangoproject.com/accounts/login/?next=/community/add/packages/ = 2
+c8: inlinks of https://www.djangoproject.com/accounts/login/?next=/community/add/q-and-a/ = 2",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c5]. They cover the same topic [c6]. They answer the same search intent [c3] [c4]. Internal links are split between them [c7] [c8]. Pages and other evidence: [c1] [c2].,,
+canonicalize|https://www.djangoproject.com/sponsor/banner/|https://www.djangoproject.com/sponsor/banner/?level=monthly,canonicalize,"https://www.djangoproject.com/sponsor/banner/
+https://www.djangoproject.com/sponsor/banner/?level=monthly
+https://www.djangoproject.com/sponsor/banner/?level=weekly","c9: title of https://www.djangoproject.com/sponsor/banner/?level=monthly = Sponsor Django's website and documentation | Django
+c10: title of https://www.djangoproject.com/sponsor/banner/?level=weekly = Sponsor Django's website and documentation | Django
+c11: intent of https://www.djangoproject.com/sponsor/banner/?level=monthly = transactional
+c12: intent of https://www.djangoproject.com/sponsor/banner/?level=weekly = transactional
+c13: content_overlap of https://www.djangoproject.com/sponsor/banner/?level=monthly and https://www.djangoproject.com/sponsor/banner/?level=weekly = 1.0
+c14: topic_similarity of https://www.djangoproject.com/sponsor/banner/?level=monthly and https://www.djangoproject.com/sponsor/banner/?level=weekly = 0.9995
+c15: inlinks of https://www.djangoproject.com/sponsor/banner/?level=monthly = 3
+c16: inlinks of https://www.djangoproject.com/sponsor/banner/?level=weekly = 3",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c13]. They cover the same topic [c14]. They answer the same search intent [c11] [c12]. Internal links are split between them [c15] [c16]. Pages and other evidence: [c9] [c10].,,
+canonicalize|http://www.djangoproject.com/accessibility/talk-guidelines/|https://www.djangoproject.com/accessibility/talk-guidelines/,canonicalize,"http://www.djangoproject.com/accessibility/talk-guidelines/
+https://www.djangoproject.com/accessibility/talk-guidelines/","c17: title of http://www.djangoproject.com/accessibility/talk-guidelines/ = Accessibility guidelines for talks | Django
+c18: title of https://www.djangoproject.com/accessibility/talk-guidelines/ = Accessibility guidelines for talks | Django
+c19: intent of http://www.djangoproject.com/accessibility/talk-guidelines/ = informational
+c20: intent of https://www.djangoproject.com/accessibility/talk-guidelines/ = informational
+c21: content_overlap of http://www.djangoproject.com/accessibility/talk-guidelines/ and https://www.djangoproject.com/accessibility/talk-guidelines/ = 1.0
+c22: topic_similarity of http://www.djangoproject.com/accessibility/talk-guidelines/ and https://www.djangoproject.com/accessibility/talk-guidelines/ = 1.0
+c23: inlinks of http://www.djangoproject.com/accessibility/talk-guidelines/ = 1
+c24: inlinks of https://www.djangoproject.com/accessibility/talk-guidelines/ = 1",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c21]. They cover the same topic [c22]. They answer the same search intent [c19] [c20]. Internal links are split between them [c23] [c24]. Pages and other evidence: [c17] [c18].,,
+canonicalize|http://www.djangoproject.com/weblog/2010/may/05/12-rc-1/|https://www.djangoproject.com/weblog/2009/feb/23/11-alpha-1/,canonicalize,"http://www.djangoproject.com/weblog/2010/may/05/12-rc-1/
+https://www.djangoproject.com/weblog/2009/feb/23/11-alpha-1/
+https://www.djangoproject.com/weblog/2010/jan/06/12-alpha-1/
+https://www.djangoproject.com/weblog/2010/may/05/12-rc-1/","c25: title of https://www.djangoproject.com/weblog/2012/nov/27/15-beta-1/ = Django 1.5 beta 1 released | Weblog | Django
+c26: title of https://www.djangoproject.com/weblog/2012/oct/25/15-alpha-1/ = Django 1.5 alpha 1 released | Weblog | Django
+c27: intent of https://www.djangoproject.com/weblog/2012/nov/27/15-beta-1/ = informational
+c28: intent of https://www.djangoproject.com/weblog/2012/oct/25/15-alpha-1/ = informational
+c29: content_overlap of https://www.djangoproject.com/weblog/2012/nov/27/15-beta-1/ and https://www.djangoproject.com/weblog/2012/oct/25/15-alpha-1/ = 0.8727
+c30: topic_similarity of https://www.djangoproject.com/weblog/2012/nov/27/15-beta-1/ and https://www.djangoproject.com/weblog/2012/oct/25/15-alpha-1/ = 0.9404
+c31: inlinks of https://www.djangoproject.com/weblog/2012/nov/27/15-beta-1/ = 2
+c32: inlinks of https://www.djangoproject.com/weblog/2012/oct/25/15-alpha-1/ = 2",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c29]. They cover the same topic [c30]. They answer the same search intent [c27] [c28]. Internal links are split between them [c31] [c32]. Pages and other evidence: [c25] [c26].,,
+canonicalize|https://www.djangoproject.com/weblog/2014/sep/10/call-nominations-2014-malcolm-tredinnick-memorial/|https://www.djangoproject.com/weblog/2015/sep/29/call-nominations-2015-malcolm-tredinnick-memorial/,canonicalize,"https://www.djangoproject.com/weblog/2014/sep/10/call-nominations-2014-malcolm-tredinnick-memorial/
+https://www.djangoproject.com/weblog/2015/sep/29/call-nominations-2015-malcolm-tredinnick-memorial/
+https://www.djangoproject.com/weblog/2017/nov/10/nominations-malcolm-prize-2017/
+https://www.djangoproject.com/weblog/2018/dec/16/2018-malcolm-prize-nominations/","c33: title of https://www.djangoproject.com/weblog/2018/dec/16/2018-malcolm-prize-nominations/ = 2018 Malcolm Tredinnick Memorial Prize Nominations | Weblog | Django
+c34: title of https://www.djangoproject.com/weblog/2019/oct/22/nominations-2019-malcolm-tredinnick-memorial-prize/ = Nominations for 2019 Malcolm Tredinnick Memorial Prize | Weblog | Django
+c35: intent of https://www.djangoproject.com/weblog/2018/dec/16/2018-malcolm-prize-nominations/ = informational
+c36: intent of https://www.djangoproject.com/weblog/2019/oct/22/nominations-2019-malcolm-tredinnick-memorial-prize/ = informational
+c37: content_overlap of https://www.djangoproject.com/weblog/2018/dec/16/2018-malcolm-prize-nominations/ and https://www.djangoproject.com/weblog/2019/oct/22/nominations-2019-malcolm-tredinnick-memorial-prize/ = 0.824
+c38: topic_similarity of https://www.djangoproject.com/weblog/2018/dec/16/2018-malcolm-prize-nominations/ and https://www.djangoproject.com/weblog/2019/oct/22/nominations-2019-malcolm-tredinnick-memorial-prize/ = 0.8963
+c39: inlinks of https://www.djangoproject.com/weblog/2018/dec/16/2018-malcolm-prize-nominations/ = 3
+c40: inlinks of https://www.djangoproject.com/weblog/2019/oct/22/nominations-2019-malcolm-tredinnick-memorial-prize/ = 3",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c37]. They cover the same topic [c38]. They answer the same search intent [c35] [c36]. Internal links are split between them [c39] [c40]. Pages and other evidence: [c33] [c34].,,
+canonicalize|http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/|https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/,canonicalize,"http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/
+https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/","c41: title of http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = Introducing Django 0.90 | Weblog | Django
+c42: title of https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = Introducing Django 0.90 | Weblog | Django
+c43: intent of http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = informational
+c44: intent of https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = informational
+c45: content_overlap of http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ and https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = 1.0
+c46: topic_similarity of http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ and https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = 0.9958
+c47: inlinks of http://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = 1
+c48: inlinks of https://www.djangoproject.com/weblog/2005/nov/16/firstrelease/ = 2",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c45]. They cover the same topic [c46]. They answer the same search intent [c43] [c44]. Internal links are split between them [c47] [c48]. Pages and other evidence: [c41] [c42].,,
+canonicalize|http://www.djangoproject.com/weblog/2005/nov/23/template_errors/|https://www.djangoproject.com/weblog/2005/nov/23/template_errors/,canonicalize,"http://www.djangoproject.com/weblog/2005/nov/23/template_errors/
+https://www.djangoproject.com/weblog/2005/nov/23/template_errors/","c49: title of http://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = Pretty template error pages | Weblog | Django
+c50: title of https://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = Pretty template error pages | Weblog | Django
+c51: intent of http://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = informational
+c52: intent of https://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = informational
+c53: content_overlap of http://www.djangoproject.com/weblog/2005/nov/23/template_errors/ and https://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = 1.0
+c54: topic_similarity of http://www.djangoproject.com/weblog/2005/nov/23/template_errors/ and https://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = 0.9814
+c55: inlinks of http://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = 3
+c56: inlinks of https://www.djangoproject.com/weblog/2005/nov/23/template_errors/ = 3",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c53]. They cover the same topic [c54]. They answer the same search intent [c51] [c52]. Internal links are split between them [c55] [c56]. Pages and other evidence: [c49] [c50].,,
+canonicalize|http://www.djangoproject.com/weblog/2010/may/17/12/|https://www.djangoproject.com/weblog/2010/may/17/12/,canonicalize,"http://www.djangoproject.com/weblog/2010/may/17/12/
+https://www.djangoproject.com/weblog/2010/may/17/12/","c57: title of http://www.djangoproject.com/weblog/2010/may/17/12/ = Django 1.2 released | Weblog | Django
+c58: title of https://www.djangoproject.com/weblog/2010/may/17/12/ = Django 1.2 released | Weblog | Django
+c59: intent of http://www.djangoproject.com/weblog/2010/may/17/12/ = informational
+c60: intent of https://www.djangoproject.com/weblog/2010/may/17/12/ = informational
+c61: content_overlap of http://www.djangoproject.com/weblog/2010/may/17/12/ and https://www.djangoproject.com/weblog/2010/may/17/12/ = 1.0
+c62: topic_similarity of http://www.djangoproject.com/weblog/2010/may/17/12/ and https://www.djangoproject.com/weblog/2010/may/17/12/ = 0.9776
+c63: inlinks of http://www.djangoproject.com/weblog/2010/may/17/12/ = 2
+c64: inlinks of https://www.djangoproject.com/weblog/2010/may/17/12/ = 2",Keep one page and point the canonical tag of the other at it. Their text is almost the same [c61]. They cover the same topic [c62]. They answer the same search intent [c59] [c60]. Internal links are split between them [c63] [c64]. Pages and other evidence: [c57] [c58].,,
+merge_301|https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/|https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/,merge_301,"https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/
+https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/
+https://www.djangoproject.com/weblog/2012/may/24/sf-sprints/","c177: title of https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/ = Third regularly-scheduled San Francisco Sprint | Weblog | Django
+c178: title of https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/ = Second regularly-scheduled San Francisco Sprint | Weblog | Django
+c179: intent of https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/ = informational
+c180: intent of https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/ = informational
+c181: content_overlap of https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/ and https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/ = 0.589
+c182: topic_similarity of https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/ and https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/ = 0.8917
+c183: inlinks of https://www.djangoproject.com/weblog/2012/jul/05/third-regularly-scheduled-san-francisco-sprint/ = 2
+c184: inlinks of https://www.djangoproject.com/weblog/2012/jun/13/second-regularly-scheduled-san-francisco-sprint/ = 2",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c182]. They answer the same search intent [c179] [c180]. Internal links are split between them [c183] [c184]. Pages and other evidence: [c177] [c178] [c181].,,
+merge_301|https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/|https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/,merge_301,"https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/
+https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/
+https://www.djangoproject.com/weblog/2026/apr/07/could-you-host-djangocon-europe-2027-call-for-orga/","c273: title of https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/ = Could you host DjangoCon Europe 2026? Call for organizers | Weblog | Django
+c274: title of https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ = Last call for DjangoCon Europe 2025 organizers | Weblog | Django
+c275: intent of https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/ = transactional
+c276: intent of https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ = transactional
+c277: content_overlap of https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/ and https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ = 0.6158
+c278: topic_similarity of https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/ and https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ = 0.7989
+c279: inlinks of https://www.djangoproject.com/weblog/2024/aug/28/could-you-host-djangocon-europe-2026-cfp/ = 5
+c280: inlinks of https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ = 5",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c278]. They answer the same search intent [c275] [c276]. Internal links are split between them [c279] [c280]. Pages and other evidence: [c273] [c274] [c277].,,
+merge_301|https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/|https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/,merge_301,"https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/
+https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/
+https://www.djangoproject.com/weblog/2026/sep/01/djangonaut-space-session-7-accepting-applications/","c281: title of https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/ = Djangonaut Space - New session 2025 | Weblog | Django
+c282: title of https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/ = Djangonaut Space - Session 6 Accepting Applications | Weblog | Django
+c283: intent of https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/ = informational
+c284: intent of https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/ = informational
+c285: content_overlap of https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/ and https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/ = 0.724
+c286: topic_similarity of https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/ and https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/ = 0.849
+c287: inlinks of https://www.djangoproject.com/weblog/2025/jan/23/djangonaut-space-new-session-2025/ = 3
+c288: inlinks of https://www.djangoproject.com/weblog/2026/jan/21/djangonaut-space-session-6-accepting-applications/ = 4",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c286]. They answer the same search intent [c283] [c284]. Internal links are split between them [c287] [c288]. Pages and other evidence: [c281] [c282] [c285].,,
+merge_301|https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/|https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/,merge_301,"https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/
+https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/","c321: title of https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/ = Support a Great Partnership: PyCharm and Django Team up Again | Weblog | Django
+c322: title of https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/ = Support framework of a strong relationship. 30% off PyCharm and 100% to Django | Weblog | Django
+c323: intent of https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/ = navigational
+c324: intent of https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/ = navigational
+c325: content_overlap of https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/ and https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/ = 0.6198
+c326: topic_similarity of https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/ and https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/ = 0.7748
+c327: inlinks of https://www.djangoproject.com/weblog/2017/aug/15/support-dsf-2017/ = 2
+c328: inlinks of https://www.djangoproject.com/weblog/2018/oct/12/djangopycharm-promotion-2018/ = 2",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c326]. They answer the same search intent [c323] [c324]. Internal links are split between them [c327] [c328]. Pages and other evidence: [c321] [c322] [c325].,,
+merge_301|https://www.djangoproject.com/weblog/2015/jan/27/bugfix-releases-issued/|https://www.djangoproject.com/weblog/2015/may/01/bugfix-releases-issued/,merge_301,"https://www.djangoproject.com/weblog/2015/jan/27/bugfix-releases-issued/
+https://www.djangoproject.com/weblog/2015/may/01/bugfix-releases-issued/
+https://www.djangoproject.com/weblog/2015/nov/04/bugfix-release-issued/
+https://www.djangoproject.com/weblog/2015/oct/03/bugfix-release-issued/","c329: title of https://www.djangoproject.com/weblog/2016/jun/04/bugfix-release/ = Django bugfix release issued: 1.9.7 | Weblog | Django
+c330: title of https://www.djangoproject.com/weblog/2016/may/02/bugfix-releases/ = Django bugfix releases issued: 1.9.6 and 1.8.13 | Weblog | Django
+c331: intent of https://www.djangoproject.com/weblog/2016/jun/04/bugfix-release/ = informational
+c332: intent of https://www.djangoproject.com/weblog/2016/may/02/bugfix-releases/ = informational
+c333: content_overlap of https://www.djangoproject.com/weblog/2016/jun/04/bugfix-release/ and https://www.djangoproject.com/weblog/2016/may/02/bugfix-releases/ = 0.4369
+c334: topic_similarity of https://www.djangoproject.com/weblog/2016/jun/04/bugfix-release/ and https://www.djangoproject.com/weblog/2016/may/02/bugfix-releases/ = 0.8706
+c335: inlinks of https://www.djangoproject.com/weblog/2016/jun/04/bugfix-release/ = 1
+c336: inlinks of https://www.djangoproject.com/weblog/2016/may/02/bugfix-releases/ = 1",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c334]. They answer the same search intent [c331] [c332]. Internal links are split between them [c335] [c336]. Pages and other evidence: [c329] [c330] [c333].,,
+merge_301|https://www.djangoproject.com/sponsor/plans/bronze/|https://www.djangoproject.com/sponsor/plans/platinum/,merge_301,"https://www.djangoproject.com/sponsor/plans/bronze/
+https://www.djangoproject.com/sponsor/plans/platinum/
+https://www.djangoproject.com/sponsor/plans/silver/","c353: title of https://www.djangoproject.com/sponsor/plans/bronze/ = Bronze sponsorship | Django
+c354: title of https://www.djangoproject.com/sponsor/plans/silver/ = Silver sponsorship | Django
+c355: intent of https://www.djangoproject.com/sponsor/plans/bronze/ = informational
+c356: intent of https://www.djangoproject.com/sponsor/plans/silver/ = informational
+c357: content_overlap of https://www.djangoproject.com/sponsor/plans/bronze/ and https://www.djangoproject.com/sponsor/plans/silver/ = 0.6269
+c358: topic_similarity of https://www.djangoproject.com/sponsor/plans/bronze/ and https://www.djangoproject.com/sponsor/plans/silver/ = 0.6177
+c359: inlinks of https://www.djangoproject.com/sponsor/plans/bronze/ = 2
+c360: inlinks of https://www.djangoproject.com/sponsor/plans/silver/ = 2",Merge the weaker page into the stronger one and add a permanent redirect. They cover the same topic [c358]. They answer the same search intent [c355] [c356]. Internal links are split between them [c359] [c360]. Pages and other evidence: [c353] [c354] [c357].,,
+create_page|https://fastapi.tiangolo.com/advanced/stream-data/|https://fastapi.tiangolo.com/tutorial/server-sent-events/,create_page,"https://fastapi.tiangolo.com/advanced/stream-data/
+https://fastapi.tiangolo.com/tutorial/server-sent-events/
+https://fastapi.tiangolo.com/tutorial/body-nested-models/","c412: pages on topic 40 for fastapi.tiangolo.com = 10
+c413: words on topic 40 for fastapi.tiangolo.com = 14392
+c414: pages on topic 40 for djangoproject.com = 0
+c415: words on topic 40 for djangoproject.com = 0
+c416: title of https://fastapi.tiangolo.com/advanced/stream-data/ = Stream Data - FastAPI
+c417: title of https://fastapi.tiangolo.com/tutorial/server-sent-events/ = Server-Sent Events (SSE) - FastAPI
+c418: title of https://fastapi.tiangolo.com/tutorial/body-nested-models/ = Body - Nested Models - FastAPI",Create a page on this topic. The competitor has many pages on the topic [c412]. This site has little on the topic [c414] [c415]. Pages and other evidence: [c413] [c416] [c417] [c418].,,
+create_page|https://fastapi.tiangolo.com/reference/fastapi/|https://fastapi.tiangolo.com/reference/apirouter/,create_page,"https://fastapi.tiangolo.com/reference/fastapi/
+https://fastapi.tiangolo.com/reference/apirouter/
+https://fastapi.tiangolo.com/reference/parameters/","c419: pages on topic 31 for fastapi.tiangolo.com = 8
+c420: words on topic 31 for fastapi.tiangolo.com = 85737
+c421: pages on topic 31 for djangoproject.com = 0
+c422: words on topic 31 for djangoproject.com = 0
+c423: title of https://fastapi.tiangolo.com/reference/fastapi/ = FastAPI class - FastAPI
+c424: title of https://fastapi.tiangolo.com/reference/apirouter/ = APIRouter class - FastAPI
+c425: title of https://fastapi.tiangolo.com/reference/parameters/ = Request Parameters - FastAPI",Create a page on this topic. The competitor has many pages on the topic [c419]. This site has little on the topic [c421] [c422]. Pages and other evidence: [c420] [c423] [c424] [c425].,,
+create_page|https://fastapi.tiangolo.com/reference/security/|https://fastapi.tiangolo.com/reference/responses/,create_page,"https://fastapi.tiangolo.com/reference/security/
+https://fastapi.tiangolo.com/reference/responses/
+https://fastapi.tiangolo.com/reference/testclient/","c426: pages on topic 41 for fastapi.tiangolo.com = 15
+c427: words on topic 41 for fastapi.tiangolo.com = 28740
+c428: pages on topic 41 for djangoproject.com = 0
+c429: words on topic 41 for djangoproject.com = 0
+c430: title of https://fastapi.tiangolo.com/reference/security/ = Security Tools - FastAPI
+c431: title of https://fastapi.tiangolo.com/reference/responses/ = Custom Response Classes - File, HTML, Redirect, Streaming, etc. - FastAPI
+c432: title of https://fastapi.tiangolo.com/reference/testclient/ = Test Client - TestClient - FastAPI",Create a page on this topic. The competitor has many pages on the topic [c426]. This site has little on the topic [c428] [c429]. Pages and other evidence: [c427] [c430] [c431] [c432].,,
+create_page|https://fastapi.tiangolo.com/release-notes/|https://fastapi.tiangolo.com/tutorial/sql-databases/,create_page,"https://fastapi.tiangolo.com/release-notes/
+https://fastapi.tiangolo.com/tutorial/sql-databases/
+https://fastapi.tiangolo.com/deployment/docker/","c433: pages on topic 34 for fastapi.tiangolo.com = 90
+c434: words on topic 34 for fastapi.tiangolo.com = 171210
+c435: pages on topic 34 for djangoproject.com = 9
+c436: words on topic 34 for djangoproject.com = 25672
+c437: title of https://fastapi.tiangolo.com/release-notes/ = Release Notes - FastAPI
+c438: title of https://fastapi.tiangolo.com/tutorial/sql-databases/ = SQL (Relational) Databases - FastAPI
+c439: title of https://fastapi.tiangolo.com/deployment/docker/ = FastAPI in Containers - Docker - FastAPI",Create a page on this topic. The competitor has many pages on the topic [c433]. This site has little on the topic [c435] [c436]. Pages and other evidence: [c434] [c437] [c438] [c439].,,
+create_page|https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/|https://fastapi.tiangolo.com/reference/openapi/docs/,create_page,"https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/
+https://fastapi.tiangolo.com/reference/openapi/docs/
+https://fastapi.tiangolo.com/how-to/configure-swagger-ui/","c440: pages on topic 30 for fastapi.tiangolo.com = 7
+c441: words on topic 30 for fastapi.tiangolo.com = 9781
+c442: pages on topic 30 for djangoproject.com = 0
+c443: words on topic 30 for djangoproject.com = 0
+c444: title of https://fastapi.tiangolo.com/how-to/custom-docs-ui-assets/ = Custom Docs UI Static Assets (Self-Hosting) - FastAPI
+c445: title of https://fastapi.tiangolo.com/reference/openapi/docs/ = OpenAPI docs - FastAPI
+c446: title of https://fastapi.tiangolo.com/how-to/configure-swagger-ui/ = Configure Swagger UI - FastAPI",Create a page on this topic. The competitor has many pages on the topic [c440]. This site has little on the topic [c442] [c443]. Pages and other evidence: [c441] [c444] [c445] [c446].,,
+add_internal_link|https://www.djangoproject.com/community/dsf/?page=3|https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/,add_internal_link,"https://www.djangoproject.com/community/dsf/?page=3
+https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/
+https://www.djangoproject.com/weblog/2026/feb/19/2026-coc-update-phase-2/
+https://www.djangoproject.com/weblog/2026/jun/29/dsf-member-of-the-month-salim-nuru/","c575: title of https://www.djangoproject.com/community/dsf/?page=3 = Django Community | Django
+c576: inlinks of https://www.djangoproject.com/community/dsf/?page=3 = 0
+c577: sentence of https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ = DjangoCon Europe is a major pillar of the Django community, as people from across the world meet and share.
+c578: links_to of https://www.djangoproject.com/weblog/2024/may/05/last-call-djangocon-europe-2025-organizers/ and https://www.djangoproject.com/community/dsf/?page=3 = False
+c579: sentence of https://www.djangoproject.com/weblog/2026/feb/19/2026-coc-update-phase-2/ = We've merged new documentation that outlines how any member of the Django community can propose changes to our Code of Conduct and related policies.
+c580: links_to of https://www.djangoproject.com/weblog/2026/feb/19/2026-coc-update-phase-2/ and https://www.djangoproject.com/community/dsf/?page=3 = False
+c581: sentence of https://www.djangoproject.com/weblog/2026/jun/29/dsf-member-of-the-month-salim-nuru/ = I'd just like to thank the Django community for being so welcoming to newcomers, and I'm looking forward to making new contributions (especially in security) 🙂.
+c582: links_to of https://www.djangoproject.com/weblog/2026/jun/29/dsf-member-of-the-month-salim-nuru/ and https://www.djangoproject.com/community/dsf/?page=3 = False
+c583: sentence of https://www.djangoproject.com/weblog/2026/may/11/dsf-member-of-the-month-bhuvnesh-sharma/ = I’ve also been involved with the Django community through Django India, GSoC, Djangonaut Space and DjangoDay India, which has been a big part of my journey.
+c584: links_to of https://www.djangoproject.com/weblog/2026/may/11/dsf-member-of-the-month-bhuvnesh-sharma/ and https://www.djangoproject.com/community/dsf/?page=3 = False
+c585: sentence of https://www.djangoproject.com/weblog/2026/nov/20/dsf-member-of-the-month-johannes-maron/ = Johannes has long been part of the Django community.
+c586: links_to of https://www.djangoproject.com/weblog/2026/nov/20/dsf-member-of-the-month-johannes-maron/ and https://www.djangoproject.com/community/dsf/?page=3 = False","Add a link to this page from the quoted sentence, using words already there. The page gets few internal links [c576]. A sentence that suits the link already exists [c577] [c579] [c581] [c583] [c585]. The source page does not link to it yet [c578] [c580] [c582] [c584] [c586]. Pages and other evidence: [c575].",,
+fix_redirect_chain|http://djangoproject.com/foundation|https://www.djangoproject.com/foundation,fix_redirect_chain,"http://djangoproject.com/foundation
+https://www.djangoproject.com/foundation","c675: redirect_to of http://djangoproject.com/foundation = https://www.djangoproject.com/foundation
+c676: redirect_to of https://www.djangoproject.com/foundation = https://www.djangoproject.com/foundation/",Point links and the first redirect straight at the final page. The redirect passes through more than one hop [c675] [c676].,,

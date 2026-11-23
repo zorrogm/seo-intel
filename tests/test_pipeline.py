@@ -4,7 +4,7 @@ import pytest
 
 from fake_site import FakeSite
 from seo_intel import config, pipeline
-from seo_intel.plan import finalise, rationale_problem
+from seo_intel.plan import finalise, rationale_problem, supported_reasons
 
 
 @pytest.fixture
@@ -43,6 +43,11 @@ def test_second_run_is_byte_identical(sites, tmp_path):
     assert digests(tmp_path) == first
 
 
+class Truthful:
+    def check(self, claim):
+        return True, claim["value"]
+
+
 class FakeFacts:
     """Says a claim is true when value is 1."""
 
@@ -71,10 +76,38 @@ def test_rationale_rules():
     assert rationale_problem("Overlap is 82 percent [c1].", act) == "states a number or URL in prose"
 
 
-def test_bad_rationale_is_regenerated():
-    plan = finalise([action("a1", 1)], [{"id": "a1", "rationale": "Overlap is 82% [c1]"}], FakeFacts())
-    assert "Evidence: [c1]" in plan["actions"][0]["rationale"]
-    assert plan["rejections"][0]["result"] == "rationale regenerated"
+def cannibal_action(overlap):
+    claims = [
+        {"id": "c1", "url": "u1", "field": "intent", "value": "informational"},
+        {"id": "c2", "url": "u2", "field": "intent", "value": "informational"},
+        {"id": "c3", "url_a": "u1", "url_b": "u2", "metric": "content_overlap", "value": overlap},
+        {"id": "c4", "url_a": "u1", "url_b": "u2", "metric": "topic_similarity", "value": 0.9},
+    ]
+    return {"id": "a1", "type": "merge_301", "score": 0.7, "urls": ["u1", "u2"], "claims": claims}
+
+
+def test_reasons_come_only_from_what_claims_prove():
+    assert list(supported_reasons(cannibal_action(0.95))) == ["near_copy", "same_topic", "same_intent"]
+    assert "near_copy" not in supported_reasons(cannibal_action(0.3))
+
+
+def test_unsupported_reason_is_removed_and_logged():
+    picks = [{"id": "a1", "reasons": ["near_copy", "same_topic"]}]
+    plan = finalise([cannibal_action(0.3)], picks, Truthful())
+    text = plan["actions"][0]["rationale"]
+    assert "almost the same" not in text
+    assert "They cover the same topic [c4]." in text
+    assert plan["rejections"] == [
+        {"action": "a1", "reasons": ["near_copy"], "result": "unsupported reasons removed"}
+    ]
+    assert rationale_problem(text, plan["actions"][0]) == ""
+
+
+def test_rationale_without_picks_uses_every_proven_reason():
+    plan = finalise([cannibal_action(0.95)], [], Truthful())
+    text = plan["actions"][0]["rationale"]
+    assert text.startswith("Merge the weaker page into the stronger one")
+    assert "[c3]" in text and "[c4]" in text and "[c1] [c2]" in text
 
 
 def test_live_change_drops_the_action():

@@ -16,6 +16,7 @@ from seo_intel.text import jaccard, set_overlap, tokenize
 
 _PAGE_PARAM = re.compile(r"([?&])(page|p|pg|paged)=\d+")
 _PAGE_PATH = re.compile(r"/page/\d+/?$")
+_NUMBERS = re.compile(r"\d+")
 
 
 def dot(a: np.ndarray, b: np.ndarray) -> np.ndarray:
@@ -150,8 +151,23 @@ def _without_page_number(url: str) -> str:
     return _PAGE_PARAM.sub(r"\1", url).rstrip("?&/")
 
 
-def healthy_reason(a: Page, b: Page) -> str:
+def _series_key(text: str) -> Tuple[str, ...]:
+    """Words left after dropping numbers and dates."""
+    return tuple(
+        token for token in tokenize(text)
+        if not any(ch.isdigit() for ch in token) and token not in config.MONTH_WORDS
+    )
+
+
+def healthy_reason(a: Page, b: Page, overlap: float = 0.0) -> str:
     """Why two similar pages are fine together."""
+    # Versions, dates or numbered items of one series
+    if a.title != b.title and _series_key(a.title) == _series_key(b.title):
+        return "numbered series"
+    paths = urlsplit(a.url).path, urlsplit(b.url).path
+    same_shape = _series_key(paths[0]) == _series_key(paths[1])
+    if paths[0] != paths[1] and same_shape and overlap < config.NEAR_DUPLICATE_OVERLAP:
+        return "numbered series"
     if a.lang and b.lang and a.lang != b.lang:
         return "language versions"
     if b.url in a.hreflang or a.url in b.hreflang:
@@ -231,11 +247,11 @@ def find_cannibalization(pages: List[Page], rows: List[int], vectors: np.ndarray
         similarity = pair_similarity(row_a, row_b, sparse, heads)
         if similarity < config.CANNIBAL_MIN_SIMILARITY:
             continue
-        reason = healthy_reason(pages[a], pages[b])
+        signals = pair_signals(a, b, similarity, shingle_sets, inlinks, depth, anchor_tokens)
+        reason = healthy_reason(pages[a], pages[b], signals["content_overlap"])
         if reason:
             healthy.append({"url_a": pages[a].url, "url_b": pages[b].url, "reason": reason})
             continue
-        signals = pair_signals(a, b, similarity, shingle_sets, inlinks, depth, anchor_tokens)
         pair_info[(a, b)] = signals
         parent[find(a)] = find(b)
 
@@ -296,6 +312,7 @@ def find_gaps(pages: List[Page], rows: List[int], labels: np.ndarray,
         terms = sorted(topic["terms"].items(), key=lambda item: (-item[1], item[0]))
         examples = sorted(topic["theirs"], key=lambda p: (-p.word_count, p.url))[:3]
         gaps.append({
+            "topic_id": topic_id,
             "topic": [term for term, _n in terms[: config.TOPIC_LABEL_TERMS]],
             "competitor_pages": len(topic["theirs"]),
             "competitor_words": their_words,

@@ -9,20 +9,110 @@ from seo_intel import config
 from seo_intel.analysis import Analysis
 from seo_intel.facts import Facts
 
+# Instructions only; facts live in the claims
 ACTION_TEXT = {
-    "fix_redirect_chain": "This URL redirects through more than one hop. Point links and the first redirect straight at the final page.",
-    "fix_canonical": "The canonical tag points at a page that is not a clean final page. Point it at the live, indexable version.",
-    "canonicalize": "These pages are near copies of each other. Keep one and set the canonical tag of the other to it.",
-    "merge_301": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect.",
-    "retarget_intent": "These pages overlap in topic and intent. Rewrite one to serve a different intent so they stop competing.",
-    "add_internal_link": "This priority page deserves more internal links. Add a link from the quoted sentence using words already there.",
-    "create_page": "The competitor covers this topic in depth and this site barely does. Create a page for it.",
-    "do_nothing": "These similar pages are a healthy pair. Leave them as they are.",
+    "fix_redirect_chain": "Point links and the first redirect straight at the final page.",
+    "fix_canonical": "Point the canonical tag at the live, indexable version of the page.",
+    "canonicalize": "Keep one page and point the canonical tag of the other at it.",
+    "merge_301": "Merge the weaker page into the stronger one and add a permanent redirect.",
+    "retarget_intent": "Rewrite one page for a different intent so the two stop competing.",
+    "add_internal_link": "Add a link to this page from the quoted sentence, using words already there.",
+    "create_page": "Create a page on this topic.",
+    "do_nothing": "Leave these pages as they are.",
+}
+# Each reason is a sentence code can check
+REASONS = {
+    "near_copy": "Their text is almost the same {refs}.",
+    "same_topic": "They cover the same topic {refs}.",
+    "same_intent": "They answer the same search intent {refs}.",
+    "links_split": "Internal links are split between them {refs}.",
+    "few_links": "The page gets few internal links {refs}.",
+    "sentence_ready": "A sentence that suits the link already exists {refs}.",
+    "not_linked": "The source page does not link to it yet {refs}.",
+    "several_hops": "The redirect passes through more than one hop {refs}.",
+    "canonical_off_target": "The canonical tag points away from a clean page {refs}.",
+    "competitor_deep": "The competitor has many pages on the topic {refs}.",
+    "we_are_thin": "This site has little on the topic {refs}.",
 }
 _REF = re.compile(r"\[(c\d+)\]")
-_LOOSE_REF = re.compile(r"\[?\b(c\d+)\b\]?")
 _ACTION_ID = re.compile(r"\ba\d+\b")
 _BANNED = re.compile(r"\d|https?:|www\.", re.I)
+
+
+def claim_text(claim: Dict, limit: int = 160) -> str:
+    """One claim as a readable line."""
+    value = claim["value"][:limit] if isinstance(claim["value"], str) else claim["value"]
+    if "topic_id" in claim:
+        return f"{claim['metric']} on topic {claim['topic_id']} for {claim['site']} = {value}"
+    if "metric" in claim:
+        return f"{claim['metric']} of {claim['url_a']} and {claim['url_b']} = {value}"
+    return f"{claim['field']} of {claim['url']} = {value}"
+
+
+def supported_reasons(action: Dict) -> Dict[str, List[str]]:
+    """Reasons the action's claims prove, with their claims."""
+    claims = action["claims"]
+
+    def ids(test) -> List[str]:
+        return [c["id"] for c in claims if test(c)]
+
+    pair = lambda name: (lambda c: "url_a" in c and c["metric"] == name)
+    field = lambda name: (lambda c: c.get("field") == name)
+    found: Dict[str, List[str]] = {}
+    kind = action["type"]
+    if kind in ("canonicalize", "merge_301", "retarget_intent"):
+        overlap = [c for c in claims if pair("content_overlap")(c)]
+        if overlap and overlap[0]["value"] >= config.NEAR_DUPLICATE_OVERLAP:
+            found["near_copy"] = [overlap[0]["id"]]
+        similar = [c for c in claims if pair("topic_similarity")(c)]
+        if similar and similar[0]["value"] >= config.CANNIBAL_MIN_SIMILARITY:
+            found["same_topic"] = [similar[0]["id"]]
+        intents = [c for c in claims if field("intent")(c)]
+        if len(intents) >= 2 and len({c["value"] for c in intents}) == 1:
+            found["same_intent"] = [c["id"] for c in intents]
+        links = [c for c in claims if field("inlinks")(c)]
+        if len(links) >= 2 and all(c["value"] >= 1 for c in links):
+            found["links_split"] = [c["id"] for c in links]
+    elif kind == "add_internal_link":
+        few = ids(lambda c: field("inlinks")(c) and c["value"] <= config.FEW_INLINKS)
+        if few:
+            found["few_links"] = few
+        if ids(field("sentence")):
+            found["sentence_ready"] = ids(field("sentence"))
+        missing = ids(lambda c: pair("links_to")(c) and c["value"] is False)
+        if missing:
+            found["not_linked"] = missing
+    elif kind == "fix_redirect_chain":
+        if len(ids(field("redirect_to"))) >= 2:
+            found["several_hops"] = ids(field("redirect_to"))
+    elif kind == "fix_canonical":
+        found["canonical_off_target"] = [c["id"] for c in claims]
+    elif kind == "create_page":
+        theirs = ids(lambda c: "topic_id" in c and c["site"] != action.get("target_site")
+                     and c["metric"] == "pages" and c["value"] >= config.GAP_MIN_PAGES)
+        if theirs:
+            found["competitor_deep"] = theirs
+        ours = ids(lambda c: "topic_id" in c and c["site"] == action.get("target_site"))
+        if ours:
+            found["we_are_thin"] = ours
+    return found
+
+
+def write_rationale(action: Dict, wanted: List[str]) -> str:
+    """Instruction plus checked reasons, nothing else."""
+    supported = supported_reasons(action)
+    codes = [code for code in wanted if code in supported] or list(supported)
+    codes = list(dict.fromkeys(codes))[: config.MAX_REASONS_PER_ACTION]
+    parts = [ACTION_TEXT[action["type"]]]
+    used = set()
+    for code in codes:
+        refs = supported[code]
+        used.update(refs)
+        parts.append(REASONS[code].format(refs=" ".join(f"[{ref}]" for ref in refs)))
+    rest = [c["id"] for c in action["claims"] if c["id"] not in used]
+    if rest:
+        parts.append("Pages and other evidence: " + " ".join(f"[{ref}]" for ref in rest) + ".")
+    return " ".join(parts)
 
 
 def _field(facts: Facts, url: str, name: str) -> Dict:
@@ -128,7 +218,18 @@ def _link_actions(a: Analysis, facts: Facts) -> List[Dict]:
 def _gap_actions(a: Analysis, facts: Facts) -> List[Dict]:
     actions = []
     for gap in a.gaps:
-        claims = [_field(facts, url, "title") for url in gap["examples"]]
+        topic = gap["topic_id"]
+        claims = [
+            {"topic_id": topic, "site": a.competitor_site, "metric": "pages",
+             "value": gap["competitor_pages"]},
+            {"topic_id": topic, "site": a.competitor_site, "metric": "words",
+             "value": gap["competitor_words"]},
+            {"topic_id": topic, "site": a.target_site, "metric": "pages",
+             "value": gap["target_pages"]},
+            {"topic_id": topic, "site": a.target_site, "metric": "words",
+             "value": gap["target_words"]},
+        ]
+        claims += [_field(facts, url, "title") for url in gap["examples"]]
         depth = min(1.0, gap["competitor_words"] / 10000)
         actions.append({
             "type": "create_page", "score": 0.3 + 0.4 * depth,
@@ -161,19 +262,15 @@ def build_candidates(a: Analysis, facts: Facts) -> List[Dict]:
     for number, action in enumerate(actions, start=1):
         action["id"] = f"a{number}"
         action["score"] = round(action["score"], config.FLOAT_DIGITS)
+        action["target_site"] = a.target_site
         for claim in action["claims"]:
             claim_number += 1
             claim["id"] = f"c{claim_number}"
     return actions
 
 
-def template_rationale(action: Dict) -> str:
-    refs = " ".join(f"[{c['id']}]" for c in action["claims"])
-    return f"{ACTION_TEXT[action['type']]} Evidence: {refs}"
-
-
 def rationale_problem(text: str, action: Dict) -> str:
-    """Why a written rationale breaks the rules."""
+    """Why a rationale breaks the prose rules."""
     allowed = {c["id"] for c in action["claims"]}
     refs = set(_REF.findall(text))
     if not refs:
@@ -189,13 +286,14 @@ def rationale_problem(text: str, action: Dict) -> str:
 def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts, live=None) -> Dict:
     """Verify every claim and build the final plan."""
     by_id = {c["id"]: c for c in candidates}
-    order, rationale_of = [], {}
+    order, reasons_of = [], {}
     for pick in chosen:
-        if pick.get("id") in by_id and pick["id"] not in rationale_of:
+        if isinstance(pick, dict) and pick.get("id") in by_id and pick["id"] not in reasons_of:
             order.append(pick["id"])
-            rationale_of[pick["id"]] = str(pick.get("rationale", ""))
+            wanted = pick.get("reasons")
+            reasons_of[pick["id"]] = [str(r) for r in wanted] if isinstance(wanted, list) else []
     # The agent's picks first, then the best of the rest
-    order += [c["id"] for c in candidates if c["id"] not in rationale_of]
+    order += [c["id"] for c in candidates if c["id"] not in reasons_of]
     # No action type may crowd out the others
     per_type = Counter()
     first, later = [], []
@@ -229,15 +327,13 @@ def finalise(candidates: List[Dict], chosen: List[Dict], facts: Facts, live=None
             rejections.append({"action": action_id, "result": "action dropped"})
             continue
         action["claims"] = verified
-        # Accept c12 written without brackets
-        text = _LOOSE_REF.sub(r"[\1]", rationale_of.get(action_id, ""))
-        problem = rationale_problem(text, action) if text else "no rationale written"
-        if problem:
-            if text:
-                rejections.append({"action": action_id, "rationale": text, "problem": problem,
-                                   "result": "rationale regenerated"})
-            text = template_rationale(action)
-        action["rationale"] = text
+        wanted = reasons_of.get(action_id, [])
+        unsupported = [code for code in wanted if code not in supported_reasons(action)]
+        if unsupported:
+            rejections.append({"action": action_id, "reasons": unsupported,
+                               "result": "unsupported reasons removed"})
+        action["rationale"] = write_rationale(action, wanted)
         action["rank"] = len(actions) + 1
+        action.pop("target_site", None)
         actions.append(action)
     return {"actions": actions, "rejections": rejections}

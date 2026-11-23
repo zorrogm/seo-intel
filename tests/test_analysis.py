@@ -23,3 +23,19 @@ def test_new_links_only_come_from_our_own_site():
     for link in result.new_links:
         assert result.pages[link["source"]].site == "ours.test"
         assert result.pages[link["target"]].site == "ours.test"
+
+
+def test_versions_and_dates_are_a_series_not_competitors():
+    from seo_intel.topics import healthy_reason
+
+    def page(path, title):
+        return Page(url="http://s.test" + path, site="s.test", status=200, title=title)
+
+    final, candidate = page("/release/python-392/", "Python 3.9.2"), page("/release/python-392rc1/", "Python 3.9.2rc1")
+    assert healthy_reason(final, candidate) == "numbered series"
+    sep, octo = page("/press/pr20030923/", "Press Release 23-Sep-2003"), page("/press/pr20031003/", "Press Release 3-Oct-2003")
+    assert healthy_reason(sep, octo) == "numbered series"
+    # Same title, same text, different address: a real duplicate
+    one, two = page("/release/python-335-rc1/", "Python 3.3.5rc1"), page("/release/python-335rc1/", "Python 3.3.5rc1")
+    assert healthy_reason(one, two, overlap=0.9) == ""
+    assert healthy_reason(page("/guides/roses/", "Pruning roses"), page("/blog/rose-care/", "Rose pruning tips")) == ""

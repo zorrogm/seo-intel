@@ -7,20 +7,21 @@ from typing import Dict, List, Optional
 from seo_intel import config
 from seo_intel.facts import PAGE_FIELDS, Facts
 from seo_intel.llm import Gemini, LLMError
+from seo_intel.plan import REASONS, claim_text, supported_reasons
 
 _SYSTEM = (
-    "You are an SEO lead writing an action plan for a website. "
+    "You are an SEO lead building an action plan for a website. "
     "You can only learn about the site through the tools. "
     "Candidate actions were found by code and each has verified claims. "
     "Steps: call list_actions, inspect the promising ones with get_action, "
     "optionally check pages, then call submit_plan once. "
     f"Make at most {config.AGENT_MAX_LOOKUPS_PER_STEP} tool calls per step. "
-    "Prefer a mix of action types over many of one type. "
-    f"Pick up to {config.PLAN_ACTIONS} actions, ordered by expected impact. "
-    "For each write a one or two sentence rationale. "
-    "Rules for a rationale: never write a number, a URL or a page title. "
-    "Refer to facts only by claim reference such as [c12], using only "
-    "claims that belong to that action, and include at least one."
+    f"Pick up to {config.PLAN_ACTIONS} actions, ordered by expected impact, "
+    "and prefer a mix of action types over many of one type. "
+    "You do not write prose. For each action choose the reason codes that "
+    "best justify it, strongest first, only from the codes get_action lists "
+    "for that action. Code turns them into checked sentences. "
+    "The only reason codes that exist are: " + ", ".join(REASONS) + "."
 )
 
 
@@ -59,9 +60,9 @@ _TOOLS = [{
             "description": "Submit the final ranked plan and finish.",
             "parameters": {"type": "OBJECT", "required": ["actions"], "properties": {
                 "actions": {"type": "ARRAY", "items": {
-                    "type": "OBJECT", "required": ["id", "rationale"],
+                    "type": "OBJECT", "required": ["id", "reasons"],
                     "properties": {"id": _string("Action id."),
-                                   "rationale": _string("Prose with claim references.")},
+                                   "reasons": {"type": "ARRAY", "items": _string("Reason code.")}},
                 }}}},
         },
     ]
@@ -85,19 +86,20 @@ class Toolbox:
         rows = self.candidates[offset : offset + config.AGENT_LIST_PAGE_SIZE]
         return {
             "total": len(self.candidates),
-            "rows": [f"{c['id']} {c['type']} score={c['score']}" for c in rows],
+            "rows": [
+                f"{c['id']} {c['type']} score={c['score']} reasons={','.join(supported_reasons(c))}"
+                for c in rows
+            ],
         }
 
     def get_action(self, id: str = "") -> Dict:
         action = self.by_id.get(id)
         if action is None:
             return {"error": "unknown action id"}
-        claims = []
-        for claim in action["claims"]:
-            what = claim.get("field") or claim.get("metric")
-            claims.append(f"{claim['id']} {what} = {_short(claim['value'])}")
+        claims = [f"{c['id']} {claim_text(c, 100)}" for c in action["claims"]]
+        reasons = {code: REASONS[code].replace(" {refs}", "") for code in supported_reasons(action)}
         return {"id": id, "type": action["type"], "score": action["score"],
-                "urls": action["urls"][:4], "claims": claims}
+                "claims": claims, "reasons_you_may_use": reasons}
 
     def get_page(self, url: str = "") -> Dict:
         if not self.facts.knows(url):
@@ -151,12 +153,16 @@ def run_agent(candidates: List[Dict], facts: Facts, llm: Gemini) -> Optional[Lis
     toolbox = Toolbox(candidates, facts)
     contents = [{"role": "user", "parts": [{"text": "Build the action plan now."}]}]
     try:
-        for _step in range(config.LLM_MAX_STEPS):
+        for step in range(config.LLM_MAX_STEPS):
+            calling = {"mode": "ANY"}
+            if step == config.LLM_MAX_STEPS - 1:
+                # Last step: the plan must be submitted
+                calling["allowedFunctionNames"] = ["submit_plan"]
             body = {
                 "systemInstruction": {"parts": [{"text": _SYSTEM}]},
                 "contents": contents,
                 "tools": _TOOLS,
-                "toolConfig": {"functionCallingConfig": {"mode": "ANY"}},
+                "toolConfig": {"functionCallingConfig": calling},
             }
             while _too_big(body) and _trim(contents):
                 pass

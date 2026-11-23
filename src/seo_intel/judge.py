@@ -9,7 +9,7 @@ from typing import Dict, List
 
 from seo_intel import config
 from seo_intel.llm import Gemini, LLMError
-from seo_intel.plan import ACTION_TEXT, rationale_problem
+from seo_intel.plan import ACTION_TEXT, claim_text, rationale_problem
 from seo_intel.report import write_json
 
 _SYSTEM = (
@@ -50,14 +50,7 @@ def fixed_checks(action: Dict) -> List[str]:
 
 
 def _describe(action: Dict) -> str:
-    facts = []
-    for claim in action["claims"]:
-        if "metric" in claim:
-            facts.append(f"{claim['id']}: {claim['metric']} between {claim['url_a']} and "
-                         f"{claim['url_b']} is {claim['value']}")
-        else:
-            facts.append(f"{claim['id']}: {claim['field']} of {claim['url']} is "
-                         f"{str(claim['value'])[:160]}")
+    facts = [f"{claim['id']}: {claim_text(claim)}" for claim in action["claims"]]
     return f"type: {action['type']}\nrationale: {action['rationale']}\nfacts:\n" + "\n".join(facts)
 
 
@@ -103,9 +96,11 @@ def write_sheet(path: Path, actions: List[Dict]) -> None:
     """A sheet for a person to fill in."""
     with open(path, "w", newline="", encoding="utf-8") as handle:
         writer = csv.writer(handle)
-        writer.writerow(["action", "type", "rationale", "human_label", "note"])
+        writer.writerow(["action", "type", "pages", "facts", "rationale", "human_label", "note"])
         for action in actions:
-            writer.writerow([action_key(action), action["type"], action["rationale"], "", ""])
+            facts = _describe(action).split("facts:\n", 1)[1]
+            writer.writerow([action_key(action), action["type"], "\n".join(action["urls"][:4]),
+                             facts, action["rationale"], "", ""])
 
 
 def evaluate(folders: List[Path], labels_path: Path, seed: int = config.DEFAULT_SEED) -> Dict:
