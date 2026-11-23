@@ -104,6 +104,7 @@ class SiteCrawl:
         # URLs the site refused for now
         self.cooling: Set[int] = set()
         self.deferrals: Dict[int, int] = {}
+        self.refused: Set[str] = set()
 
     def in_scope(self, url: str) -> bool:
         return site_key(url) == self.site and not looks_like_file(url)
@@ -114,7 +115,10 @@ class SiteCrawl:
             return False
         trap = self.guard.check(url)
         if trap:
-            self.store.add_trap(self.site, trap[0], trap[1], url)
+            # Count each refused URL only once
+            if url not in self.refused:
+                self.refused.add(url)
+                self.store.add_trap(self.site, trap[0], trap[1], url)
             return False
         return True
 
@@ -213,7 +217,7 @@ class SiteCrawl:
                 new_urls = [target]
         elif result.status == 200 and result.body and result.is_html():
             scan = scan_page(result.body, url)
-            for name in scan.session_params:
+            for name in set(scan.session_params):
                 self.store.add_trap(self.site, "session_id", f"parameter {name}", url)
             header = result.header("x-robots-tag").lower()
             follow = not (scan.nofollow or "nofollow" in header or "none" in header)

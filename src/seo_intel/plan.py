@@ -21,6 +21,7 @@ ACTION_TEXT = {
 }
 _REF = re.compile(r"\[(c\d+)\]")
 _LOOSE_REF = re.compile(r"\[?\b(c\d+)\b\]?")
+_ACTION_ID = re.compile(r"\ba\d+\b")
 _BANNED = re.compile(r"\d|https?:|www\.", re.I)
 
 
@@ -179,7 +180,8 @@ def rationale_problem(text: str, action: Dict) -> str:
         return "no claim reference"
     if not refs <= allowed:
         return "references a claim it does not own"
-    if _BANNED.search(_REF.sub("", text)):
+    # Action names like a12 are not facts
+    if _BANNED.search(_ACTION_ID.sub("", _REF.sub("", text))):
         return "states a number or URL in prose"
     return ""
 

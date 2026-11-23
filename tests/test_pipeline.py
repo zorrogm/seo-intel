@@ -67,6 +67,7 @@ def test_rationale_rules():
     assert rationale_problem("Merge them, see [c1].", act) == ""
     assert rationale_problem("Merge them.", act) == "no claim reference"
     assert rationale_problem("See [c9].", act) == "references a claim it does not own"
+    assert rationale_problem("Action a1 is backed by [c1].", act) == ""
     assert rationale_problem("Overlap is 82 percent [c1].", act) == "states a number or URL in prose"
 
 

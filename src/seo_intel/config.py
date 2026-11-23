@@ -185,7 +185,8 @@ MAX_PATH_DEPTH = 12
 MAX_SEGMENT_REPEATS = 3
 MAX_QUERY_PARAMS = 4
 MAX_QUERY_VARIANTS_PER_PATH = 20
-CALENDAR_MAX_PER_SHAPE = 60
+# Every month in the sensible years fits
+CALENDAR_MAX_PER_SHAPE = 400
 CALENDAR_MIN_YEAR = 1995
 CALENDAR_FUTURE_YEARS = 2
 CALENDAR_PARAMS = ("year", "month", "day", "date", "week", "start", "end", "from", "to")
