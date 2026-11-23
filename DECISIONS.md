@@ -64,6 +64,25 @@ were reported as soft 404s. An empty page with scripts is now a rendering
 candidate instead, and loose phrases such as "not found" on their own were
 dropped after one matched a short Hindi news story. That run now reports 0.
 
+**Kept: how rendering is decided without rendering everything.** Two cheap
+signals pick the pages, then the budget caps them at 15%.
+
+1. Raw HTML hint. A page with under 80 words of text that also carries
+   scripts, or one whose `noscript` text asks for JavaScript, is rendered.
+2. Template samples. Pages are grouped by URL shape (first folder and
+   depth). Two pages of each shape with at least 5 pages are rendered. If
+   most samples gain 20% and 50 or more words, or 5 or more links, or a
+   changed title, canonical or robots tag, every page of that shape is
+   queued, because pages built from one template behave alike.
+
+Pages that qualify but do not fit the 15% or the 8 minute budget are still
+listed in `render_report.json` as needing JavaScript. The browser obeys the
+same 3 per second limit and robots rules as the crawler and skips images,
+fonts, media and stylesheets. On the local test site this rendered 10.8% of
+pages and caught 22 of 22 (`benchmarks/rendering.py`). The hint alone would
+have caught 12 of 22; the 10 pages that have plenty of text before
+JavaScript adds more were caught only by the template samples.
+
 **Kept: traps are refused at enqueue time, not after fetching.** A URL is
 checked against calendar, faceted, growing path and session rules before it
 enters the frontier, so a trap costs at most its cap in fetches (20 filter
@@ -163,16 +182,19 @@ Reproduce: `.venv/bin/python benchmarks/cannibalization.py`.
 | No title or heading | 30 | 1.00 | 1.00 | 1.00 |
 | No anchor text | 30 | 1.00 | 1.00 | 1.00 |
 | No title, heading or anchors | 15 | 1.00 | 1.00 | 0.50 |
+| No topic vectors | 30 | 1.00 | 1.00 | 1.00 |
 | No template removal | 30 | 1.00 | 1.00 | 1.00 |
 | No intent check | 40 | 0.75 | 1.00 | 1.00 |
 | No healthy pair rules | 50 | 0.60 | 0.50 | 1.00 |
 
 Reading it: titles and anchors back each other up, losing both halves
 recall. The intent check and the healthy pair rules are what keep precision
-up. Template removal made no difference here because the exact term check
-already ignores words that appear on most pages. These are results on a
-generated site with planted groups; they are not the judged precision the
-brief asks for, which needs human reviewers.
+up. Topic vectors and template removal made no difference on this site,
+because the title channel and the exact term check found the same groups
+without them. The tool uses hashed TF-IDF vectors it builds itself, not a
+neural embedding model, so there is no separate embedding row. These are
+results on a generated site with planted groups; they are not the judged
+precision the brief asks for, which needs human reviewers.
 
 **Kept: severity is a weighted sum of five signals.** Content overlap 0.30,
 topic similarity 0.30, internal link split 0.20, anchor conflict 0.10, depth
@@ -252,8 +274,8 @@ intent for those pages and records the error.
 
 **Kept: the model never writes facts.** Code finds candidate actions and
 builds their claims. The model reads them through five tools, picks and
-orders actions, and writes prose that may only point at claim IDs. Prose
-containing a digit or URL is rejected.
+orders actions, and chooses reason codes. Code turns codes into sentences
+that point at claim IDs.
 
 **Kept: the run cannot fail because of the LLM.** No key, an error, a prompt
 over budget or a bad answer all lead to the same place: actions ranked by

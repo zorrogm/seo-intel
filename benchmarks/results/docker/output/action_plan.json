@@ -1,0 +1,1702 @@
+[
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c1",
+    "url": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+    "value": "D-Link Australia Uses Python to Control Firmware Updates | Our Success Stories | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c2",
+    "url": "https://www.python.org/success-stories/d-link-australia/",
+    "value": "D-Link Australia Uses Python to Control Firmware Updates | Our Success Stories | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c3",
+    "url": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c4",
+    "url": "https://www.python.org/success-stories/d-link-australia/",
+    "value": "informational"
+   },
+   {
+    "id": "c5",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+    "url_b": "https://www.python.org/success-stories/d-link-australia/",
+    "value": 0.9609
+   },
+   {
+    "id": "c6",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+    "url_b": "https://www.python.org/success-stories/d-link-australia/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c7",
+    "url": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+    "value": 1
+   },
+   {
+    "field": "inlinks",
+    "id": "c8",
+    "url": "https://www.python.org/success-stories/d-link-australia/",
+    "value": 1
+   }
+  ],
+  "id": "a1",
+  "keep": "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+  "rank": 1,
+  "rationale": "Canonicalize success story entries that cover similar hardware integration topics [c6].",
+  "score": 0.9883,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/success-stories/caldintav-python-for-high-speed-railway-bridges/",
+   "https://www.python.org/success-stories/d-link-australia/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c9",
+    "url": "https://www.python.org/doc/2.5.3/download/",
+    "value": "Download Python 2.5.3 Documentation | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c10",
+    "url": "https://www.python.org/doc/2.5.4/download/",
+    "value": "Download Python 2.5.4 Documentation | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c11",
+    "url": "https://www.python.org/doc/2.5.3/download/",
+    "value": "transactional"
+   },
+   {
+    "field": "intent",
+    "id": "c12",
+    "url": "https://www.python.org/doc/2.5.4/download/",
+    "value": "transactional"
+   },
+   {
+    "id": "c13",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/doc/2.5.3/download/",
+    "url_b": "https://www.python.org/doc/2.5.4/download/",
+    "value": 0.9585
+   },
+   {
+    "id": "c14",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/doc/2.5.3/download/",
+    "url_b": "https://www.python.org/doc/2.5.4/download/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c15",
+    "url": "https://www.python.org/doc/2.5.3/download/",
+    "value": 1
+   },
+   {
+    "field": "inlinks",
+    "id": "c16",
+    "url": "https://www.python.org/doc/2.5.4/download/",
+    "value": 1
+   }
+  ],
+  "id": "a2",
+  "keep": "https://www.python.org/doc/2.4.4/download/",
+  "rank": 2,
+  "rationale": "Consolidate download paths for documentation pages sharing matching transactional intents [c11].",
+  "score": 0.9876,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/doc/2.4.4/download/",
+   "https://www.python.org/doc/2.5.3/download/",
+   "https://www.python.org/doc/2.5.4/download/",
+   "https://www.python.org/doc/2.5/download/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c17",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c18",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c19",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c20",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": "informational"
+   },
+   {
+    "id": "c21",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": 0.9606
+   },
+   {
+    "id": "c22",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": 0.9709
+   },
+   {
+    "field": "inlinks",
+    "id": "c23",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": 1
+   },
+   {
+    "field": "inlinks",
+    "id": "c24",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": 1
+   }
+  ],
+  "id": "a3",
+  "keep": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+  "rank": 3,
+  "rationale": "Merge election nominee pages for the same individual to eliminate duplicate content [c21].",
+  "score": 0.9794,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c25",
+    "url": "https://www.python.org/download/releases/2.4/msi/",
+    "value": "Using Windows Installer | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c26",
+    "url": "https://www.python.org/download/releases/2.5/msi/",
+    "value": "Using Windows Installer | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c27",
+    "url": "https://www.python.org/download/releases/2.4/msi/",
+    "value": "transactional"
+   },
+   {
+    "field": "intent",
+    "id": "c28",
+    "url": "https://www.python.org/download/releases/2.5/msi/",
+    "value": "transactional"
+   },
+   {
+    "id": "c29",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/download/releases/2.4/msi/",
+    "url_b": "https://www.python.org/download/releases/2.5/msi/",
+    "value": 0.9213
+   },
+   {
+    "id": "c30",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/download/releases/2.4/msi/",
+    "url_b": "https://www.python.org/download/releases/2.5/msi/",
+    "value": 0.9838
+   },
+   {
+    "field": "inlinks",
+    "id": "c31",
+    "url": "https://www.python.org/download/releases/2.4/msi/",
+    "value": 5
+   },
+   {
+    "field": "inlinks",
+    "id": "c32",
+    "url": "https://www.python.org/download/releases/2.5/msi/",
+    "value": 5
+   }
+  ],
+  "id": "a4",
+  "keep": "https://www.python.org/download/releases/2.4/msi/",
+  "rank": 4,
+  "rationale": "Canonicalize Windows installer documentation urls to resolve overlapping keyword targets [c29].",
+  "score": 0.9715,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/download/releases/2.4/msi/",
+   "https://www.python.org/download/releases/2.5/msi/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c33",
+    "url": "https://www.python.org/doc/2.4.4/",
+    "value": "Python 2.4.4 Documentation | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c34",
+    "url": "https://www.python.org/doc/2.5.4/",
+    "value": "Python 2.5.4 Documentation | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c35",
+    "url": "https://www.python.org/doc/2.4.4/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c36",
+    "url": "https://www.python.org/doc/2.5.4/",
+    "value": "informational"
+   },
+   {
+    "id": "c37",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/doc/2.4.4/",
+    "url_b": "https://www.python.org/doc/2.5.4/",
+    "value": 0.8871
+   },
+   {
+    "id": "c38",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/doc/2.4.4/",
+    "url_b": "https://www.python.org/doc/2.5.4/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c39",
+    "url": "https://www.python.org/doc/2.4.4/",
+    "value": 3
+   },
+   {
+    "field": "inlinks",
+    "id": "c40",
+    "url": "https://www.python.org/doc/2.5.4/",
+    "value": 3
+   }
+  ],
+  "id": "a5",
+  "keep": "https://www.python.org/doc/2.4.4/",
+  "rank": 5,
+  "rationale": "Group version-specific documentation roots that exhibit high topical similarity [c38].",
+  "score": 0.9661,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/doc/2.4.4/",
+   "https://www.python.org/doc/2.5.3/",
+   "https://www.python.org/doc/2.5.4/",
+   "https://www.python.org/doc/2.5/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c41",
+    "url": "https://www.python.org/downloads/release/python-335-rc1/",
+    "value": "Python Release Python 3.3.5rc1 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c42",
+    "url": "https://www.python.org/downloads/release/python-335rc1/",
+    "value": "Python Release Python 3.3.5rc1 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c43",
+    "url": "https://www.python.org/downloads/release/python-335-rc1/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c44",
+    "url": "https://www.python.org/downloads/release/python-335rc1/",
+    "value": "informational"
+   },
+   {
+    "id": "c45",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-335-rc1/",
+    "url_b": "https://www.python.org/downloads/release/python-335rc1/",
+    "value": 0.8789
+   },
+   {
+    "id": "c46",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-335-rc1/",
+    "url_b": "https://www.python.org/downloads/release/python-335rc1/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c47",
+    "url": "https://www.python.org/downloads/release/python-335-rc1/",
+    "value": 3
+   },
+   {
+    "field": "inlinks",
+    "id": "c48",
+    "url": "https://www.python.org/downloads/release/python-335rc1/",
+    "value": 3
+   }
+  ],
+  "id": "a6",
+  "keep": "https://www.python.org/downloads/release/python-335-rc1/",
+  "rank": 6,
+  "rationale": "Canonicalize release candidate pages sharing common informational intent [c43].",
+  "score": 0.9637,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/downloads/release/python-335-rc1/",
+   "https://www.python.org/downloads/release/python-335rc1/",
+   "https://www.python.org/downloads/release/python-335rc2/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c49",
+    "url": "https://www.python.org/psf/press-release/pr20030923/",
+    "value": "Python Software Foundation: Press Release 23-Sep-2003 | Python Software Foundation"
+   },
+   {
+    "field": "title",
+    "id": "c50",
+    "url": "https://www.python.org/psf/press-release/pr20031003/",
+    "value": "Python Software Foundation: Press Release 3-Oct-2003 | Python Software Foundation"
+   },
+   {
+    "field": "intent",
+    "id": "c51",
+    "url": "https://www.python.org/psf/press-release/pr20030923/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c52",
+    "url": "https://www.python.org/psf/press-release/pr20031003/",
+    "value": "informational"
+   },
+   {
+    "id": "c53",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/psf/press-release/pr20030923/",
+    "url_b": "https://www.python.org/psf/press-release/pr20031003/",
+    "value": 0.8731
+   },
+   {
+    "id": "c54",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/psf/press-release/pr20030923/",
+    "url_b": "https://www.python.org/psf/press-release/pr20031003/",
+    "value": 0.9784
+   },
+   {
+    "field": "inlinks",
+    "id": "c55",
+    "url": "https://www.python.org/psf/press-release/pr20030923/",
+    "value": 1
+   },
+   {
+    "field": "inlinks",
+    "id": "c56",
+    "url": "https://www.python.org/psf/press-release/pr20031003/",
+    "value": 1
+   }
+  ],
+  "id": "a7",
+  "keep": "https://www.python.org/psf/press-release/pr20030729/",
+  "rank": 7,
+  "rationale": "Merge legacy press release pages into a single canonical archive [c54].",
+  "score": 0.9555,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/psf/press-release/pr20030729/",
+   "https://www.python.org/psf/press-release/pr20030923/",
+   "https://www.python.org/psf/press-release/pr20031003/",
+   "https://www.python.org/psf/press-release/pr20031219/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c57",
+    "url": "https://www.python.org/downloads/release/pymanager-251/",
+    "value": "Python Release Python install manager 25.1 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c58",
+    "url": "https://www.python.org/downloads/release/pymanager-252/",
+    "value": "Python Release Python install manager 25.2 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c59",
+    "url": "https://www.python.org/downloads/release/pymanager-251/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c60",
+    "url": "https://www.python.org/downloads/release/pymanager-252/",
+    "value": "informational"
+   },
+   {
+    "id": "c61",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+    "url_b": "https://www.python.org/downloads/release/pymanager-252/",
+    "value": 0.8968
+   },
+   {
+    "id": "c62",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/pymanager-251/",
+    "url_b": "https://www.python.org/downloads/release/pymanager-252/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c63",
+    "url": "https://www.python.org/downloads/release/pymanager-251/",
+    "value": 1
+   },
+   {
+    "field": "inlinks",
+    "id": "c64",
+    "url": "https://www.python.org/downloads/release/pymanager-252/",
+    "value": 1
+   }
+  ],
+  "id": "a8",
+  "keep": "https://www.python.org/downloads/release/pymanager-250/",
+  "rank": 8,
+  "rationale": "Canonicalize install manager release artifacts with high content overlap [c61].",
+  "score": 0.9468,
+  "type": "canonicalize",
+  "urls": [
+   "https://www.python.org/downloads/release/pymanager-250/",
+   "https://www.python.org/downloads/release/pymanager-250b10/",
+   "https://www.python.org/downloads/release/pymanager-250b11/",
+   "https://www.python.org/downloads/release/pymanager-250b12/",
+   "https://www.python.org/downloads/release/pymanager-250b13/",
+   "https://www.python.org/downloads/release/pymanager-250b14/",
+   "https://www.python.org/downloads/release/pymanager-250b15/",
+   "https://www.python.org/downloads/release/pymanager-250b9/",
+   "https://www.python.org/downloads/release/pymanager-251/",
+   "https://www.python.org/downloads/release/pymanager-251b1/",
+   "https://www.python.org/downloads/release/pymanager-251b2/",
+   "https://www.python.org/downloads/release/pymanager-252/",
+   "https://www.python.org/downloads/release/pymanager-260/",
+   "https://www.python.org/downloads/release/pymanager-260b1/",
+   "https://www.python.org/downloads/release/pymanager-260b2/",
+   "https://www.python.org/downloads/release/pymanager-261/",
+   "https://www.python.org/downloads/release/pymanager-262/",
+   "https://www.python.org/downloads/release/pymanager-263/",
+   "https://www.python.org/downloads/release/pymanager-264b1/",
+   "https://www.python.org/downloads/release/pymanager-264b2/",
+   "https://www.python.org/downloads/release/pymanager-264b3/",
+   "https://www.python.org/downloads/release/pymanager-265b1/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c97",
+    "url": "https://www.python.org/downloads/release/python-3819/",
+    "value": "Python Release Python 3.8.19 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c98",
+    "url": "https://www.python.org/downloads/release/python-3919/",
+    "value": "Python Release Python 3.9.19 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c99",
+    "url": "https://www.python.org/downloads/release/python-3819/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c100",
+    "url": "https://www.python.org/downloads/release/python-3919/",
+    "value": "informational"
+   },
+   {
+    "id": "c101",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-3819/",
+    "url_b": "https://www.python.org/downloads/release/python-3919/",
+    "value": 0.728
+   },
+   {
+    "id": "c102",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-3819/",
+    "url_b": "https://www.python.org/downloads/release/python-3919/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c103",
+    "url": "https://www.python.org/downloads/release/python-3819/",
+    "value": 2
+   },
+   {
+    "field": "inlinks",
+    "id": "c104",
+    "url": "https://www.python.org/downloads/release/python-3919/",
+    "value": 2
+   }
+  ],
+  "id": "a13",
+  "keep": "https://www.python.org/downloads/release/python-31014/",
+  "rank": 9,
+  "rationale": "Merge legacy release pages to streamline the download architecture [c102].",
+  "score": 0.8934,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-31014/",
+   "https://www.python.org/downloads/release/python-3819/",
+   "https://www.python.org/downloads/release/python-3919/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c113",
+    "url": "https://www.python.org/events/python-user-group/2162/",
+    "value": "Python Leiden User Group | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c114",
+    "url": "https://www.python.org/events/python-user-group/2186/",
+    "value": "Python Leiden User Group | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c115",
+    "url": "https://www.python.org/events/python-user-group/2162/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c116",
+    "url": "https://www.python.org/events/python-user-group/2186/",
+    "value": "informational"
+   },
+   {
+    "id": "c117",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/events/python-user-group/2162/",
+    "url_b": "https://www.python.org/events/python-user-group/2186/",
+    "value": 0.619
+   },
+   {
+    "id": "c118",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/events/python-user-group/2162/",
+    "url_b": "https://www.python.org/events/python-user-group/2186/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c119",
+    "url": "https://www.python.org/events/python-user-group/2162/",
+    "value": 1
+   },
+   {
+    "field": "inlinks",
+    "id": "c120",
+    "url": "https://www.python.org/events/python-user-group/2186/",
+    "value": 1
+   }
+  ],
+  "id": "a15",
+  "keep": "https://www.python.org/events/python-user-group/2204/",
+  "rank": 10,
+  "rationale": "Merge user group event pages that represent recurring regional meetings [c118].",
+  "score": 0.8857,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/events/python-user-group/1884/",
+   "https://www.python.org/events/python-user-group/1930/",
+   "https://www.python.org/events/python-user-group/1988/",
+   "https://www.python.org/events/python-user-group/2039/",
+   "https://www.python.org/events/python-user-group/2085/",
+   "https://www.python.org/events/python-user-group/2115/",
+   "https://www.python.org/events/python-user-group/2125/",
+   "https://www.python.org/events/python-user-group/2162/",
+   "https://www.python.org/events/python-user-group/2185/",
+   "https://www.python.org/events/python-user-group/2186/",
+   "https://www.python.org/events/python-user-group/2204/",
+   "https://www.python.org/events/python-user-group/2207/",
+   "https://www.python.org/events/python-user-group/2212/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c121",
+    "url": "https://www.python.org/downloads/release/python-3817/",
+    "value": "Python Release Python 3.8.17 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c122",
+    "url": "https://www.python.org/downloads/release/python-3917/",
+    "value": "Python Release Python 3.9.17 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c123",
+    "url": "https://www.python.org/downloads/release/python-3817/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c124",
+    "url": "https://www.python.org/downloads/release/python-3917/",
+    "value": "informational"
+   },
+   {
+    "id": "c125",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-3817/",
+    "url_b": "https://www.python.org/downloads/release/python-3917/",
+    "value": 0.6747
+   },
+   {
+    "id": "c126",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-3817/",
+    "url_b": "https://www.python.org/downloads/release/python-3917/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c127",
+    "url": "https://www.python.org/downloads/release/python-3817/",
+    "value": 2
+   },
+   {
+    "field": "inlinks",
+    "id": "c128",
+    "url": "https://www.python.org/downloads/release/python-3917/",
+    "value": 2
+   }
+  ],
+  "id": "a16",
+  "keep": "https://www.python.org/downloads/release/python-3717/",
+  "rank": 11,
+  "rationale": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect. Evidence: [c121] [c122] [c123] [c124] [c125] [c126] [c127] [c128]",
+  "score": 0.8802,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-31012/",
+   "https://www.python.org/downloads/release/python-3717/",
+   "https://www.python.org/downloads/release/python-3817/",
+   "https://www.python.org/downloads/release/python-3917/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c129",
+    "url": "https://www.python.org/downloads/release/python-3136/",
+    "value": "Python Release Python 3.13.6 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c130",
+    "url": "https://www.python.org/downloads/release/python-3137/",
+    "value": "Python Release Python 3.13.7 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c131",
+    "url": "https://www.python.org/downloads/release/python-3136/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c132",
+    "url": "https://www.python.org/downloads/release/python-3137/",
+    "value": "informational"
+   },
+   {
+    "id": "c133",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-3136/",
+    "url_b": "https://www.python.org/downloads/release/python-3137/",
+    "value": 0.7143
+   },
+   {
+    "id": "c134",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-3136/",
+    "url_b": "https://www.python.org/downloads/release/python-3137/",
+    "value": 0.9667
+   },
+   {
+    "field": "inlinks",
+    "id": "c135",
+    "url": "https://www.python.org/downloads/release/python-3136/",
+    "value": 4
+   },
+   {
+    "field": "inlinks",
+    "id": "c136",
+    "url": "https://www.python.org/downloads/release/python-3137/",
+    "value": 4
+   }
+  ],
+  "id": "a17",
+  "keep": "https://www.python.org/downloads/release/python-3135/",
+  "rank": 12,
+  "rationale": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect. Evidence: [c129] [c130] [c131] [c132] [c133] [c134] [c135] [c136]",
+  "score": 0.8709,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-3130/",
+   "https://www.python.org/downloads/release/python-3130b4/",
+   "https://www.python.org/downloads/release/python-3130rc1/",
+   "https://www.python.org/downloads/release/python-3130rc2/",
+   "https://www.python.org/downloads/release/python-3131/",
+   "https://www.python.org/downloads/release/python-31310/",
+   "https://www.python.org/downloads/release/python-3132/",
+   "https://www.python.org/downloads/release/python-3133/",
+   "https://www.python.org/downloads/release/python-3134/",
+   "https://www.python.org/downloads/release/python-3135/",
+   "https://www.python.org/downloads/release/python-3136/",
+   "https://www.python.org/downloads/release/python-3137/",
+   "https://www.python.org/downloads/release/python-3138/",
+   "https://www.python.org/downloads/release/python-3139/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c137",
+    "url": "https://www.python.org/downloads/release/python-3815/",
+    "value": "Python Release Python 3.8.15 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c138",
+    "url": "https://www.python.org/downloads/release/python-3915/",
+    "value": "Python Release Python 3.9.15 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c139",
+    "url": "https://www.python.org/downloads/release/python-3815/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c140",
+    "url": "https://www.python.org/downloads/release/python-3915/",
+    "value": "informational"
+   },
+   {
+    "id": "c141",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-3815/",
+    "url_b": "https://www.python.org/downloads/release/python-3915/",
+    "value": 0.6379
+   },
+   {
+    "id": "c142",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-3815/",
+    "url_b": "https://www.python.org/downloads/release/python-3915/",
+    "value": 1.0
+   },
+   {
+    "field": "inlinks",
+    "id": "c143",
+    "url": "https://www.python.org/downloads/release/python-3815/",
+    "value": 2
+   },
+   {
+    "field": "inlinks",
+    "id": "c144",
+    "url": "https://www.python.org/downloads/release/python-3915/",
+    "value": 2
+   }
+  ],
+  "id": "a18",
+  "keep": "https://www.python.org/downloads/release/python-3815/",
+  "rank": 13,
+  "rationale": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect. Evidence: [c137] [c138] [c139] [c140] [c141] [c142] [c143] [c144]",
+  "score": 0.8692,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-3815/",
+   "https://www.python.org/downloads/release/python-3915/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c145",
+    "url": "https://www.python.org/downloads/release/python-3814/",
+    "value": "Python Release Python 3.8.14 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c146",
+    "url": "https://www.python.org/downloads/release/python-3914/",
+    "value": "Python Release Python 3.9.14 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c147",
+    "url": "https://www.python.org/downloads/release/python-3814/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c148",
+    "url": "https://www.python.org/downloads/release/python-3914/",
+    "value": "informational"
+   },
+   {
+    "id": "c149",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-3814/",
+    "url_b": "https://www.python.org/downloads/release/python-3914/",
+    "value": 0.6239
+   },
+   {
+    "id": "c150",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-3814/",
+    "url_b": "https://www.python.org/downloads/release/python-3914/",
+    "value": 0.9996
+   },
+   {
+    "field": "inlinks",
+    "id": "c151",
+    "url": "https://www.python.org/downloads/release/python-3814/",
+    "value": 3
+   },
+   {
+    "field": "inlinks",
+    "id": "c152",
+    "url": "https://www.python.org/downloads/release/python-3914/",
+    "value": 3
+   }
+  ],
+  "id": "a19",
+  "keep": "https://www.python.org/downloads/release/python-3714/",
+  "rank": 14,
+  "rationale": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect. Evidence: [c145] [c146] [c147] [c148] [c149] [c150] [c151] [c152]",
+  "score": 0.8648,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-3714/",
+   "https://www.python.org/downloads/release/python-3814/",
+   "https://www.python.org/downloads/release/python-3914/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c161",
+    "url": "https://www.python.org/downloads/release/python-347/",
+    "value": "Python Release Python 3.4.7 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c162",
+    "url": "https://www.python.org/downloads/release/python-349/",
+    "value": "Python Release Python 3.4.9 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c163",
+    "url": "https://www.python.org/downloads/release/python-347/",
+    "value": "informational"
+   },
+   {
+    "field": "intent",
+    "id": "c164",
+    "url": "https://www.python.org/downloads/release/python-349/",
+    "value": "informational"
+   },
+   {
+    "id": "c165",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-347/",
+    "url_b": "https://www.python.org/downloads/release/python-349/",
+    "value": 0.7946
+   },
+   {
+    "id": "c166",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-347/",
+    "url_b": "https://www.python.org/downloads/release/python-349/",
+    "value": 0.8772
+   },
+   {
+    "field": "inlinks",
+    "id": "c167",
+    "url": "https://www.python.org/downloads/release/python-347/",
+    "value": 2
+   },
+   {
+    "field": "inlinks",
+    "id": "c168",
+    "url": "https://www.python.org/downloads/release/python-349/",
+    "value": 2
+   }
+  ],
+  "id": "a21",
+  "keep": "https://www.python.org/downloads/release/python-3410/",
+  "rank": 15,
+  "rationale": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect. Evidence: [c161] [c162] [c163] [c164] [c165] [c166] [c167] [c168]",
+  "score": 0.8615,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-3410/",
+   "https://www.python.org/downloads/release/python-3410rc1/",
+   "https://www.python.org/downloads/release/python-345/",
+   "https://www.python.org/downloads/release/python-345rc1/",
+   "https://www.python.org/downloads/release/python-346/",
+   "https://www.python.org/downloads/release/python-346rc1/",
+   "https://www.python.org/downloads/release/python-347/",
+   "https://www.python.org/downloads/release/python-347rc1/",
+   "https://www.python.org/downloads/release/python-348/",
+   "https://www.python.org/downloads/release/python-348rc1/",
+   "https://www.python.org/downloads/release/python-349/",
+   "https://www.python.org/downloads/release/python-349rc1/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c169",
+    "url": "https://www.python.org/downloads/release/python-31020/",
+    "value": "Python Release Python 3.10.20 | Python.org"
+   },
+   {
+    "field": "title",
+    "id": "c170",
+    "url": "https://www.python.org/downloads/release/python-31115/",
+    "value": "Python Release Python 3.11.15 | Python.org"
+   },
+   {
+    "field": "intent",
+    "id": "c171",
+    "url": "https://www.python.org/downloads/release/python-31020/",
+    "value": "transactional"
+   },
+   {
+    "field": "intent",
+    "id": "c172",
+    "url": "https://www.python.org/downloads/release/python-31115/",
+    "value": "transactional"
+   },
+   {
+    "id": "c173",
+    "metric": "content_overlap",
+    "url_a": "https://www.python.org/downloads/release/python-31020/",
+    "url_b": "https://www.python.org/downloads/release/python-31115/",
+    "value": 0.7799
+   },
+   {
+    "id": "c174",
+    "metric": "topic_similarity",
+    "url_a": "https://www.python.org/downloads/release/python-31020/",
+    "url_b": "https://www.python.org/downloads/release/python-31115/",
+    "value": 0.9016
+   },
+   {
+    "field": "inlinks",
+    "id": "c175",
+    "url": "https://www.python.org/downloads/release/python-31020/",
+    "value": 2
+   },
+   {
+    "field": "inlinks",
+    "id": "c176",
+    "url": "https://www.python.org/downloads/release/python-31115/",
+    "value": 2
+   }
+  ],
+  "id": "a22",
+  "keep": "https://www.python.org/downloads/release/python-31020/",
+  "rank": 16,
+  "rationale": "These pages compete for the same intent. Merge the weaker page into the stronger one and add a permanent redirect. Evidence: [c169] [c170] [c171] [c172] [c173] [c174] [c175] [c176]",
+  "score": 0.86,
+  "type": "merge_301",
+  "urls": [
+   "https://www.python.org/downloads/release/python-31020/",
+   "https://www.python.org/downloads/release/python-31115/",
+   "https://www.python.org/downloads/release/python-31213/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "redirect_to",
+    "id": "c745",
+    "url": "http://www.python.org/psf/forms/sponsor-application/",
+    "value": "https://www.python.org/psf/forms/sponsor-application/"
+   },
+   {
+    "field": "redirect_to",
+    "id": "c746",
+    "url": "https://www.python.org/psf/forms/sponsor-application/",
+    "value": "https://www.python.org/sponsors/application/new/"
+   },
+   {
+    "field": "redirect_to",
+    "id": "c747",
+    "url": "https://www.python.org/sponsors/application/new/",
+    "value": "https://www.python.org/accounts/login/?next=/sponsors/application/new/"
+   }
+  ],
+  "id": "a94",
+  "rank": 17,
+  "rationale": "This URL redirects through more than one hop. Point links and the first redirect straight at the final page. Evidence: [c745] [c746] [c747]",
+  "score": 0.7,
+  "type": "fix_redirect_chain",
+  "urls": [
+   "http://www.python.org/psf/forms/sponsor-application/",
+   "https://www.python.org/psf/forms/sponsor-application/",
+   "https://www.python.org/sponsors/application/new/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "redirect_to",
+    "id": "c748",
+    "url": "http://www.python.org/sigs/distutils-sig/",
+    "value": "https://www.python.org/sigs/distutils-sig/"
+   },
+   {
+    "field": "redirect_to",
+    "id": "c749",
+    "url": "https://www.python.org/sigs/distutils-sig/",
+    "value": "https://www.python.org/community/sigs"
+   },
+   {
+    "field": "redirect_to",
+    "id": "c750",
+    "url": "https://www.python.org/community/sigs",
+    "value": "https://www.python.org/community/sigs/"
+   }
+  ],
+  "id": "a95",
+  "rank": 18,
+  "rationale": "This URL redirects through more than one hop. Point links and the first redirect straight at the final page. Evidence: [c748] [c749] [c750]",
+  "score": 0.7,
+  "type": "fix_redirect_chain",
+  "urls": [
+   "http://www.python.org/sigs/distutils-sig/",
+   "https://www.python.org/sigs/distutils-sig/",
+   "https://www.python.org/community/sigs"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "redirect_to",
+    "id": "c751",
+    "url": "https://python.org/downloads",
+    "value": "https://www.python.org/downloads"
+   },
+   {
+    "field": "redirect_to",
+    "id": "c752",
+    "url": "https://www.python.org/downloads",
+    "value": "http://www.python.org/downloads/"
+   },
+   {
+    "field": "redirect_to",
+    "id": "c753",
+    "url": "http://www.python.org/downloads/",
+    "value": "https://www.python.org/downloads/"
+   }
+  ],
+  "id": "a96",
+  "rank": 19,
+  "rationale": "This URL redirects through more than one hop. Point links and the first redirect straight at the final page. Evidence: [c751] [c752] [c753]",
+  "score": 0.7,
+  "type": "fix_redirect_chain",
+  "urls": [
+   "https://python.org/downloads",
+   "https://www.python.org/downloads",
+   "http://www.python.org/downloads/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c754",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": "Nominees for 2023 Python Software Foundation Board Election | Python.org"
+   },
+   {
+    "field": "inlinks",
+    "id": "c755",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": 1
+   },
+   {
+    "field": "sentence",
+    "id": "c756",
+    "url": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+    "value": "Nominee for 2020 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c757",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c758",
+    "url": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/tania-allard/",
+    "value": "Nominee for 2021 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c759",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/tania-allard/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c760",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c761",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c762",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c763",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c764",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c765",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c766",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c767",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c768",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c769",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c770",
+    "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+    "value": "Nominee for 2022 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c771",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c772",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c773",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c774",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c775",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c776",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c777",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c778",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c779",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c780",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c781",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c782",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c783",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c784",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/lina-katayose/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c785",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/lina-katayose/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   },
+   {
+    "field": "sentence",
+    "id": "c786",
+    "url": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
+    "value": "Nominee for 2023 Python Software Foundation Board Election"
+   },
+   {
+    "id": "c787",
+    "metric": "links_to",
+    "url_a": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/",
+    "url_b": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+    "value": false
+   }
+  ],
+  "id": "a97",
+  "links": [
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2020 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2021 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/tania-allard/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2022 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/lina-katayose/"
+   },
+   {
+    "anchor": "Software Foundation Board Election",
+    "sentence": "Nominee for 2023 Python Software Foundation Board Election",
+    "source": "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/"
+   }
+  ],
+  "rank": 20,
+  "rationale": "This priority page deserves more internal links. Add a link from the quoted sentence using words already there. Evidence: [c754] [c755] [c756] [c757] [c758] [c759] [c760] [c761] [c762] [c763] [c764] [c765] [c766] [c767] [c768] [c769] [c770] [c771] [c772] [c773] [c774] [c775] [c776] [c777] [c778] [c779] [c780] [c781] [c782] [c783] [c784] [c785] [c786] [c787]",
+  "score": 0.7,
+  "type": "add_internal_link",
+  "urls": [
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/",
+   "https://www.python.org/nominations/elections/2020-python-software-foundation-board/nominees/iqbal-abdullah/",
+   "https://www.python.org/nominations/elections/2021-python-software-foundation-board/nominees/tania-allard/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/georgi-ker/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/jay-miller/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kushal-das/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/kwonhan-bae/",
+   "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/reshama-shaikh/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/cheuk-ting-ho/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/christopher-neugebauer/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/chukwudi-nwachukwu/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/denny-perez/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/itamar-ostricher/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/kwonhan-bae/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/lina-katayose/",
+   "https://www.python.org/nominations/elections/2023-python-software-foundation-board/nominees/sayantika-banik/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c788",
+    "url": "https://www.ruby-lang.org/en/news/2013/",
+    "value": "2013 Archives | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c789",
+    "url": "https://www.ruby-lang.org/en/news/2014/",
+    "value": "2014 Archives | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c790",
+    "url": "https://www.ruby-lang.org/en/news/2005/",
+    "value": "2005 Archives | Ruby"
+   }
+  ],
+  "id": "a98",
+  "rank": 21,
+  "rationale": "The competitor covers this topic in depth and this site barely does. Create a page for it. Evidence: [c788] [c789] [c790]",
+  "score": 0.7,
+  "topic": [
+   "archives",
+   "back",
+   "year"
+  ],
+  "type": "create_page",
+  "urls": [
+   "https://www.ruby-lang.org/en/news/2013/",
+   "https://www.ruby-lang.org/en/news/2014/",
+   "https://www.ruby-lang.org/en/news/2005/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c791",
+    "url": "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released/",
+    "value": "Ruby 3.2.0 Released | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c792",
+    "url": "https://www.ruby-lang.org/en/news/2022/12/06/ruby-3-2-0-rc1-released/",
+    "value": "Ruby 3.2.0 RC 1 Released | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c793",
+    "url": "https://www.ruby-lang.org/en/news/2022/11/11/ruby-3-2-0-preview3-released/",
+    "value": "Ruby 3.2.0 Preview 3 Released | Ruby"
+   }
+  ],
+  "id": "a99",
+  "rank": 22,
+  "rationale": "The competitor covers this topic in depth and this site barely does. Create a page for it. Evidence: [c791] [c792] [c793]",
+  "score": 0.7,
+  "topic": [
+   "wasi",
+   "webassembly",
+   "args"
+  ],
+  "type": "create_page",
+  "urls": [
+   "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released/",
+   "https://www.ruby-lang.org/en/news/2022/12/06/ruby-3-2-0-rc1-released/",
+   "https://www.ruby-lang.org/en/news/2022/11/11/ruby-3-2-0-preview3-released/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c794",
+    "url": "https://www.ruby-lang.org/en/news/2023/12/25/ruby-3-3-0-released/",
+    "value": "Ruby 3.3.0 Released | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c795",
+    "url": "https://www.ruby-lang.org/en/news/2023/12/11/ruby-3-3-0-rc1-released/",
+    "value": "Ruby 3.3.0-rc1 Released | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c796",
+    "url": "https://www.ruby-lang.org/en/news/2023/11/12/ruby-3-3-0-preview3-released/",
+    "value": "Ruby 3.3.0-preview3 Released | Ruby"
+   }
+  ],
+  "id": "a100",
+  "rank": 23,
+  "rationale": "The competitor covers this topic in depth and this site barely does. Create a page for it. Evidence: [c794] [c795] [c796]",
+  "score": 0.7,
+  "topic": [
+   "threads",
+   "jit",
+   "performance"
+  ],
+  "type": "create_page",
+  "urls": [
+   "https://www.ruby-lang.org/en/news/2023/12/25/ruby-3-3-0-released/",
+   "https://www.ruby-lang.org/en/news/2023/12/11/ruby-3-3-0-rc1-released/",
+   "https://www.ruby-lang.org/en/news/2023/11/12/ruby-3-3-0-preview3-released/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c797",
+    "url": "https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/",
+    "value": "Ruby 4.0.0 Released | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c798",
+    "url": "https://www.ruby-lang.org/en/news/2025/12/18/ruby-4-0-0-preview3-released/",
+    "value": "Ruby 4.0.0 preview3 Released | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c799",
+    "url": "https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/",
+    "value": "Ruby 3.0.0 Released | Ruby"
+   }
+  ],
+  "id": "a101",
+  "rank": 24,
+  "rationale": "The competitor covers this topic in depth and this site barely does. Create a page for it. Evidence: [c797] [c798] [c799]",
+  "score": 0.7,
+  "topic": [
+   "ractor",
+   "ractors",
+   "newobj"
+  ],
+  "type": "create_page",
+  "urls": [
+   "https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/",
+   "https://www.ruby-lang.org/en/news/2025/12/18/ruby-4-0-0-preview3-released/",
+   "https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/"
+  ]
+ },
+ {
+  "claims": [
+   {
+    "field": "title",
+    "id": "c800",
+    "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+    "value": "Security advisories: multiple vulnerabilities in Regexp and String case conversion | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c801",
+    "url": "https://www.ruby-lang.org/en/news/2010/01/10/webrick-escape-sequence-injection/",
+    "value": "WEBrick has an Escape Sequence Injection vulnerability | Ruby"
+   },
+   {
+    "field": "title",
+    "id": "c802",
+    "url": "https://www.ruby-lang.org/en/news/2013/02/08/ruby-2-0-0-rc2-is-released/",
+    "value": "Ruby 2.0.0-rc2 is released | Ruby"
+   }
+  ],
+  "id": "a102",
+  "rank": 25,
+  "rationale": "The competitor covers this topic in depth and this site barely does. Create a page for it. Evidence: [c800] [c801] [c802]",
+  "score": 0.7,
+  "topic": [
+   "released",
+   "nov",
+   "posted"
+  ],
+  "type": "create_page",
+  "urls": [
+   "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+   "https://www.ruby-lang.org/en/news/2010/01/10/webrick-escape-sequence-injection/",
+   "https://www.ruby-lang.org/en/news/2013/02/08/ruby-2-0-0-rc2-is-released/"
+  ]
+ }
+]

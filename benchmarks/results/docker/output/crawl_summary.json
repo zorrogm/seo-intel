@@ -1,0 +1,22 @@
+{
+ "python.org": {
+  "by_status": {
+   "200": 9308,
+   "301": 398,
+   "302": 215,
+   "404": 434
+  },
+  "indexable": 9308,
+  "pages_fetched": 10355,
+  "soft_404": 0
+ },
+ "ruby-lang.org": {
+  "by_status": {
+   "200": 7629,
+   "404": 2451
+  },
+  "indexable": 7628,
+  "pages_fetched": 10080,
+  "soft_404": 0
+ }
+}

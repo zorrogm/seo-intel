@@ -118,6 +118,8 @@ def main():
         measure("no title or heading", use_titles=False),
         measure("no anchor text", use_anchors=False),
         measure("no title, heading or anchors", use_titles=False, use_anchors=False),
+        measure("no topic vectors",
+                patch=[(topics, "cluster", lambda vectors, seed: np.arange(len(vectors)))]),
         measure("no template removal", strip_template=False),
         measure("no intent check",
                 patch=[(intent, "rule_intent", lambda page, anchors: ("informational", False))]),

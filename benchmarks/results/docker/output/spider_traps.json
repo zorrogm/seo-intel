@@ -1,0 +1,30 @@
+{
+ "python.org": {
+  "traps": [
+   {
+    "blocked": 1,
+    "example": "https://www.python.org/psf/records/board/minutes/2009-04-13/",
+    "kind": "session_id",
+    "pattern": "parameter sessionid"
+   },
+   {
+    "blocked": 1,
+    "example": "https://www.python.org/doc/essays/",
+    "kind": "session_id",
+    "pattern": "parameter sid"
+   }
+  ],
+  "urls_blocked": 2
+ },
+ "ruby-lang.org": {
+  "traps": [
+   {
+    "blocked": 6,
+    "example": "https://www.ruby-lang.org/ja/news/2003/03/14/20030314/",
+    "kind": "session_id",
+    "pattern": "parameter sid"
+   }
+  ],
+  "urls_blocked": 6
+ }
+}

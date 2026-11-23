@@ -1,0 +1,30 @@
+Running www.djangoproject.com against fastapi.tiangolo.com, results in runs/www.djangoproject.com__fastapi.tiangolo.com
+crawl_mode: reuse
+pages: 1746
+candidates: 67
+actions: 25
+rejections: 0
+llm: {'model': 'gemini-3.5-flash-lite', 'calls': 0, 'cached_calls': 7, 'input_tokens': 0, 'output_tokens': 0, 'max_prompt_tokens': 0, 'cost_usd': 0.0, 'last_error': '', 'plan_written_by': 'agent'}
+	Command being timed: "./seo-intel www.djangoproject.com --competitor fastapi.tiangolo.com --crawl-minutes 6"
+	User time (seconds): 15.07
+	System time (seconds): 0.57
+	Percent of CPU this job got: 120%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:12.94
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 211388
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 107827
+	Voluntary context switches: 548
+	Involuntary context switches: 795
+	Swaps: 0
+	File system inputs: 20080
+	File system outputs: 1144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

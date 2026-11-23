@@ -1,0 +1,4693 @@
+{
+ "sites": {
+  "python.org": {
+   "changed_by_rendering": 0,
+   "flagged_but_not_rendered": 0,
+   "html_pages": 2336,
+   "pages": [
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/about/help/",
+     "words_raw": 734,
+     "words_rendered": 741
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/about/legal/",
+     "words_raw": 700,
+     "words_rendered": 707
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/accounts/login/?next=/success-stories/create/",
+     "words_raw": 336,
+     "words_rendered": 343
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/accounts/login/?next=/users/membership/edit/",
+     "words_raw": 336,
+     "words_rendered": 343
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/irc/",
+     "words_raw": 555,
+     "words_rendered": 562
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/lists/",
+     "words_raw": 1523,
+     "words_rendered": 1530
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/current/distutils-sig/doc/interface/",
+     "words_raw": 1355,
+     "words_rendered": 1362
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/current/distutils-sig/doc/tasks/",
+     "words_raw": 1058,
+     "words_rendered": 1065
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/retired/",
+     "words_raw": 584,
+     "words_rendered": 591
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/retired/gui-sig/",
+     "words_raw": 446,
+     "words_rendered": 453
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/sigs/retired/types-sig/",
+     "words_raw": 505,
+     "words_rendered": 512
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/community/survey/es/",
+     "words_raw": 345,
+     "words_rendered": 352
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/2.5.3/",
+     "words_raw": 457,
+     "words_rendered": 464
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/essays/",
+     "words_raw": 974,
+     "words_rendered": 981
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/essays/everybody/",
+     "words_raw": 6096,
+     "words_rendered": 6103
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/doc/essays/metaclasses/",
+     "words_raw": 3459,
+     "words_rendered": 3466
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/2.4/highlights/",
+     "words_raw": 1447,
+     "words_rendered": 1454
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/2.4/notes/",
+     "words_raw": 9622,
+     "words_rendered": 9629
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/3.0/",
+     "words_raw": 685,
+     "words_rendered": 692
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/download/releases/early/",
+     "words_raw": 411,
+     "words_rendered": 418
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/macos/",
+     "words_raw": 5996,
+     "words_rendered": 6003
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/release/python-2714/",
+     "words_raw": 533,
+     "words_rendered": 540
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/release/python-376rc1/",
+     "words_raw": 1079,
+     "words_rendered": 1086
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/downloads/source/",
+     "words_raw": 8087,
+     "words_rendered": 8094
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-events/429/",
+     "words_raw": 369,
+     "words_rendered": 376
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-events/locations/764/",
+     "words_raw": 395,
+     "words_rendered": 402
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-events/past/?page=2",
+     "words_raw": 442,
+     "words_rendered": 449
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-user-group/2174/",
+     "words_raw": 416,
+     "words_rendered": 423
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-user-group/locations/1695/",
+     "words_raw": 385,
+     "words_rendered": 392
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/events/python-user-group/past/?page=2",
+     "words_raw": 458,
+     "words_rendered": 465
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/2.5.2/",
+     "words_raw": 167,
+     "words_rendered": 167
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/3.9.3/",
+     "words_raw": 290,
+     "words_rendered": 290
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/doc/1.1/quick-ref.1.1.html",
+     "words_raw": 7413,
+     "words_rendered": 7413
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/doc/2.3.2/pkglist.html",
+     "words_raw": 41,
+     "words_rendered": 41
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/doc/3.2.1/",
+     "words_raw": 147,
+     "words_rendered": 147
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/ftp/python/doc/3.9.7/",
+     "words_raw": 159,
+     "words_rendered": 159
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/8136/",
+     "words_raw": 920,
+     "words_rendered": 927
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/8139/",
+     "words_raw": 808,
+     "words_rendered": 815
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/location/remote-within-2-hours-of-london-timezone-remote/",
+     "words_raw": 445,
+     "words_rendered": 452
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/jobs/location/vilnius-kaunas-warsaw-lithuaniapoland/",
+     "words_raw": 433,
+     "words_rendered": 440
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2021-bylaws-proposed-changes/nominees/",
+     "words_raw": 331,
+     "words_rendered": 338
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2022-python-software-foundation-board/nominees/lavnish-lalchandani/",
+     "words_raw": 462,
+     "words_rendered": 469
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/",
+     "words_raw": 18629,
+     "words_rendered": 18636
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/nominations/elections/2026-python-software-foundation-board/nominees/yin-lun-calvin-tsang/",
+     "words_raw": 1281,
+     "words_rendered": 1288
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/donations/2018-q2-drive/",
+     "words_raw": 1117,
+     "words_rendered": 1124
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/donations/matching-gifts/",
+     "words_raw": 604,
+     "words_rendered": 611
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/records/board/minutes/2016-03-09/",
+     "words_raw": 1103,
+     "words_rendered": 1110
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/records/board/minutes/2018-09-25/",
+     "words_raw": 4153,
+     "words_rendered": 4160
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/sponsorship/",
+     "words_raw": 935,
+     "words_rendered": 942
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/psf/trademarks-faq/",
+     "words_raw": 3380,
+     "words_rendered": 3387
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/building-an-open-source-and-cross-platform-azure-cli-with-python/",
+     "words_raw": 945,
+     "words_rendered": 952
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/category/arts/",
+     "words_raw": 331,
+     "words_rendered": 338
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/category/business/",
+     "words_raw": 453,
+     "words_rendered": 460
+    },
+    {
+     "needs_javascript": false,
+     "reason": "template sample",
+     "rendered": true,
+     "url": "https://www.python.org/success-stories/python-provides-convenience-and-flexibility-for-scalable-mlai/",
+     "words_raw": 456,
+     "words_rendered": 463
+    }
+   ],
+   "rendered": 54,
+   "rendered_share": 0.0231,
+   "why": {
+    "template sample": 54
+   }
+  },
+  "ruby-lang.org": {
+   "changed_by_rendering": 0,
+   "flagged_but_not_rendered": 391,
+   "html_pages": 7629,
+   "pages": [
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/community/",
+     "words_raw": 78,
+     "words_rendered": 93
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/community/mailing-lists/",
+     "words_raw": 78,
+     "words_rendered": 93
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/community/user-groups/",
+     "words_raw": 53,
+     "words_rendered": 70
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/community/weblogs/",
+     "words_raw": 66,
+     "words_rendered": 83
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2009/",
+     "words_raw": 56,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2009/12/",
+     "words_raw": 56,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2010/03/",
+     "words_raw": 69,
+     "words_rendered": 84
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2010/11/",
+     "words_raw": 58,
+     "words_rendered": 73
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2014/11/",
+     "words_raw": 57,
+     "words_rendered": 72
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2014/12/",
+     "words_raw": 76,
+     "words_rendered": 91
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2015/02/",
+     "words_raw": 74,
+     "words_rendered": 89
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2015/03/",
+     "words_raw": 57,
+     "words_rendered": 72
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2015/11/",
+     "words_raw": 57,
+     "words_rendered": 72
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2016/02/",
+     "words_raw": 61,
+     "words_rendered": 76
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2016/03/",
+     "words_raw": 55,
+     "words_rendered": 70
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2016/04/",
+     "words_raw": 79,
+     "words_rendered": 94
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/news/2016/06/",
+     "words_raw": 57,
+     "words_rendered": 72
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/bg/security/",
+     "words_raw": 48,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/conduct/",
+     "words_raw": 76,
+     "words_rendered": 80
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2002/10/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2003/01/",
+     "words_raw": 76,
+     "words_rendered": 80
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2003/09/",
+     "words_raw": 79,
+     "words_rendered": 83
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/01/",
+     "words_raw": 55,
+     "words_rendered": 59
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/02/",
+     "words_raw": 56,
+     "words_rendered": 60
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/05/",
+     "words_raw": 64,
+     "words_rendered": 68
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/08/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/09/",
+     "words_raw": 69,
+     "words_rendered": 73
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2004/10/",
+     "words_raw": 76,
+     "words_rendered": 80
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2005/02/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2006/05/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2006/06/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2007/02/",
+     "words_raw": 64,
+     "words_rendered": 68
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2007/05/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2007/10/",
+     "words_raw": 66,
+     "words_rendered": 70
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2008/01/",
+     "words_raw": 54,
+     "words_rendered": 58
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2008/03/",
+     "words_raw": 75,
+     "words_rendered": 79
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2008/04/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2008/12/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2009/05/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2009/06/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2009/07/",
+     "words_raw": 78,
+     "words_rendered": 82
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2009/09/",
+     "words_raw": 78,
+     "words_rendered": 82
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2009/11/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2010/01/",
+     "words_raw": 55,
+     "words_rendered": 59
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2010/02/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2010/06/",
+     "words_raw": 77,
+     "words_rendered": 81
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2011/04/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2011/06/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2011/08/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2011/12/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2012/03/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2012/04/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2012/09/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2012/12/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2013/01/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2013/10/",
+     "words_raw": 64,
+     "words_rendered": 68
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2014/01/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2014/06/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2014/08/",
+     "words_raw": 66,
+     "words_rendered": 70
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2015/03/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2015/05/",
+     "words_raw": 61,
+     "words_rendered": 61
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2015/06/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2015/09/",
+     "words_raw": 79,
+     "words_rendered": 83
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2015/10/",
+     "words_raw": 56,
+     "words_rendered": 60
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2015/11/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2016/02/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2016/03/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2016/07/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2016/08/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2016/12/",
+     "words_raw": 62,
+     "words_rendered": 66
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2017/04/",
+     "words_raw": 57,
+     "words_rendered": 61
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2017/07/",
+     "words_raw": 58,
+     "words_rendered": 62
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2017/08/",
+     "words_raw": 72,
+     "words_rendered": 76
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2018/05/",
+     "words_raw": 66,
+     "words_rendered": 70
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2018/08/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2019/01/",
+     "words_raw": 76,
+     "words_rendered": 80
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2019/04/",
+     "words_raw": 77,
+     "words_rendered": 81
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2019/05/",
+     "words_raw": 64,
+     "words_rendered": 68
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2019/11/",
+     "words_raw": 64,
+     "words_rendered": 68
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2020/02/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2020/04/",
+     "words_raw": 57,
+     "words_rendered": 61
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2020/09/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2020/10/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2021/05/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2021/12/",
+     "words_raw": 67,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2023/02/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2023/05/",
+     "words_raw": 67,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2023/06/",
+     "words_raw": 68,
+     "words_rendered": 72
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2023/11/",
+     "words_raw": 70,
+     "words_rendered": 74
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2024/01/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2024/06/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2024/09/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2024/11/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2025/01/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2025/05/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2025/09/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2025/10/",
+     "words_raw": 53,
+     "words_rendered": 57
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2025/11/",
+     "words_raw": 68,
+     "words_rendered": 72
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2026/06/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2026/07/",
+     "words_raw": 59,
+     "words_rendered": 63
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ja/news/2026/08/",
+     "words_raw": 69,
+     "words_rendered": 73
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/community/podcasts/",
+     "words_raw": 79,
+     "words_rendered": 83
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/community/ruby-core/writing-patches/",
+     "words_raw": 79,
+     "words_rendered": 83
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/community/user-groups/",
+     "words_raw": 74,
+     "words_rendered": 80
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/conduct/",
+     "words_raw": 52,
+     "words_rendered": 56
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2001/01/",
+     "words_raw": 51,
+     "words_rendered": 55
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2001/04/",
+     "words_raw": 53,
+     "words_rendered": 57
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2001/06/",
+     "words_raw": 51,
+     "words_rendered": 55
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2001/07/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2002/01/",
+     "words_raw": 52,
+     "words_rendered": 56
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2002/02/",
+     "words_raw": 51,
+     "words_rendered": 55
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2002/03/",
+     "words_raw": 53,
+     "words_rendered": 57
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2002/09/",
+     "words_raw": 57,
+     "words_rendered": 61
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2002/10/",
+     "words_raw": 54,
+     "words_rendered": 58
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2002/11/",
+     "words_raw": 67,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2003/02/",
+     "words_raw": 69,
+     "words_rendered": 73
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2003/08/",
+     "words_raw": 52,
+     "words_rendered": 56
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2003/11/",
+     "words_raw": 63,
+     "words_rendered": 67
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2004/01/",
+     "words_raw": 78,
+     "words_rendered": 82
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2004/02/",
+     "words_raw": 69,
+     "words_rendered": 73
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2004/04/",
+     "words_raw": 58,
+     "words_rendered": 62
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2004/08/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2004/11/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/02/",
+     "words_raw": 61,
+     "words_rendered": 65
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/03/",
+     "words_raw": 69,
+     "words_rendered": 73
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/04/",
+     "words_raw": 70,
+     "words_rendered": 74
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/06/",
+     "words_raw": 67,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/07/",
+     "words_raw": 77,
+     "words_rendered": 81
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/08/",
+     "words_raw": 77,
+     "words_rendered": 81
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2005/09/",
+     "words_raw": 67,
+     "words_rendered": 71
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2006/02/",
+     "words_raw": 51,
+     "words_rendered": 55
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2006/04/",
+     "words_raw": 65,
+     "words_rendered": 69
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2006/06/",
+     "words_raw": 52,
+     "words_rendered": 56
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2006/08/",
+     "words_raw": 53,
+     "words_rendered": 57
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2006/10/",
+     "words_raw": 58,
+     "words_rendered": 62
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2006/11/",
+     "words_raw": 52,
+     "words_rendered": 56
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2007/10/",
+     "words_raw": 53,
+     "words_rendered": 57
+    },
+    {
+     "needs_javascript": false,
+     "reason": "raw HTML looks script built",
+     "rendered": true,
+     "url": "https://www.ruby-lang.org/ko/news/2007/12/",
+     "words_raw": 55,
+     "words_rendered": 59
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2008/01/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2008/06/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2009/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2009/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2010/01/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2010/03/",
+     "words_raw": 76,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2011/07/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2011/10/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2011/11/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2013/10/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2014/01/",
+     "words_raw": 76,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2014/04/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2014/07/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2014/08/",
+     "words_raw": 61,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2014/12/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2015/02/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2015/03/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2015/06/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2015/07/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2015/10/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2015/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/02/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/03/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/05/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/06/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/07/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/08/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/09/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/10/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2016/12/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2017/03/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2017/04/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2017/07/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2017/08/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2017/10/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2018/02/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2018/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2018/06/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2018/11/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2018/12/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2019/01/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2019/04/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2019/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2019/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2019/12/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2020/04/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2020/07/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2020/09/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2020/10/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2021/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2021/08/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2021/12/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2022/02/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2022/09/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2022/12/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2023/02/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2023/05/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2023/06/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2023/09/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2023/11/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2024/01/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2024/06/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2024/09/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2024/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2025/01/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2025/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2025/09/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2025/11/",
+     "words_raw": 64,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2026/01/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2026/04/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2026/06/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2026/07/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2026/08/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ko/news/2026/09/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/community/user-groups/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/conduct/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2013/01/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2013/10/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2014/01/",
+     "words_raw": 75,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2014/04/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2014/06/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2014/07/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2014/11/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2014/12/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2015/02/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2015/03/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2015/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2015/07/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2015/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2016/02/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2016/03/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2016/05/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2016/06/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2016/11/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2016/12/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2017/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2017/12/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2018/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2018/03/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2019/01/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2019/04/",
+     "words_raw": 76,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2019/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2019/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2020/04/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2020/07/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2020/09/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2020/10/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2021/05/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2021/08/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2022/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2022/12/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2025/01/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2025/05/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2025/09/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2025/11/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2026/01/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2026/04/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2026/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2026/07/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2026/08/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/ru/news/2026/09/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/community/ruby-core/writing-patches/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/conduct/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2001/01/",
+     "words_raw": 49,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2001/04/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2001/06/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2001/07/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2002/01/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2002/02/",
+     "words_raw": 49,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2002/03/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2002/09/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2002/10/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2002/11/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2003/02/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2003/08/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2003/11/",
+     "words_raw": 61,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2004/01/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2004/02/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2004/04/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2004/05/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2004/08/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2004/11/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/02/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/03/",
+     "words_raw": 65,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/04/",
+     "words_raw": 71,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/06/",
+     "words_raw": 64,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/07/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/08/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2005/09/",
+     "words_raw": 65,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/02/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/04/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/06/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/08/",
+     "words_raw": 65,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/09/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/10/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2006/11/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/01/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/02/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/03/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/07/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/09/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/10/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2007/12/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/01/",
+     "words_raw": 71,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/03/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/04/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/05/",
+     "words_raw": 71,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/06/",
+     "words_raw": 65,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/09/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/10/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2008/12/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/01/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/02/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/04/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/05/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/07/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/08/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2009/09/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2010/01/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2010/06/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2010/10/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2010/11/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2010/12/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2011/07/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2011/08/",
+     "words_raw": 71,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2011/09/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2011/12/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2012/03/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2012/05/",
+     "words_raw": 64,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2012/06/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2012/09/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2012/12/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2013/01/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2013/10/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2014/01/",
+     "words_raw": 75,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2014/04/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2014/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2014/07/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2014/08/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2014/12/",
+     "words_raw": 75,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2015/02/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2015/03/",
+     "words_raw": 79,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2015/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2015/07/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2015/10/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2015/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/02/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/03/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/05/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/06/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/07/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/08/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/09/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/10/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2016/12/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2017/04/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2017/07/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2017/08/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2017/10/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2018/02/",
+     "words_raw": 64,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2018/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2018/06/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2018/11/",
+     "words_raw": 76,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2019/01/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2019/04/",
+     "words_raw": 76,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2019/05/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2019/11/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2020/04/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2020/07/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2020/09/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2020/10/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2021/05/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2021/08/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2021/12/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2022/02/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2022/09/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2022/12/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2023/02/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2023/05/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2023/06/",
+     "words_raw": 64,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2023/09/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2023/11/",
+     "words_raw": 65,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2024/01/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2024/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2024/09/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2024/11/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2025/01/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2025/05/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2025/09/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2025/11/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2026/01/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2026/04/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2026/06/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2026/07/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2026/08/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/uk/news/2026/09/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/community/mailing-lists/",
+     "words_raw": 79,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/community/user-groups/",
+     "words_raw": 61,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2008/01/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2008/03/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2008/06/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2008/07/",
+     "words_raw": 51,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2008/08/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2008/10/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2009/02/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2009/04/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2009/09/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2010/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2010/11/",
+     "words_raw": 61,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2011/01/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2011/11/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2011/12/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2013/02/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2013/05/",
+     "words_raw": 79,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2013/08/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2013/10/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2014/01/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2014/03/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2014/05/",
+     "words_raw": 52,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2014/07/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2014/08/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2014/12/",
+     "words_raw": 71,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2015/10/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2015/11/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2016/04/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2016/06/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2016/11/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2016/12/",
+     "words_raw": 71,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/04/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/07/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/08/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2017/10/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2018/02/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2018/05/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2018/06/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2018/11/",
+     "words_raw": 76,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2019/01/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2019/03/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2019/05/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2019/11/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2019/12/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2020/04/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2020/12/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2021/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2021/12/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2022/02/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2022/09/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2022/12/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2023/02/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2023/05/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2023/06/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2023/09/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2023/11/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2024/01/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2024/06/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2024/09/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2024/11/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2025/01/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2025/05/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2025/09/",
+     "words_raw": 73,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2025/11/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2026/01/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2026/04/",
+     "words_raw": 75,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2026/06/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2026/07/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2026/08/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_cn/news/2026/09/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/community/podcasts/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/community/user-groups/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2006/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2006/10/",
+     "words_raw": 50,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2006/11/",
+     "words_raw": 62,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2007/03/",
+     "words_raw": 74,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2007/09/",
+     "words_raw": 72,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2007/12/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2008/10/",
+     "words_raw": 64,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2009/01/",
+     "words_raw": 60,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2009/05/",
+     "words_raw": 65,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2010/07/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2013/10/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/04/",
+     "words_raw": 68,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/06/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/07/",
+     "words_raw": 75,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/08/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2014/12/",
+     "words_raw": 78,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2015/06/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2015/10/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2015/11/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/02/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/03/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/05/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/06/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/07/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/08/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/09/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/10/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2016/12/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2017/04/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2017/07/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2017/08/",
+     "words_raw": 53,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2017/10/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2018/02/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2018/05/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2018/06/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2018/11/",
+     "words_raw": 77,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2019/01/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2019/05/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2019/11/",
+     "words_raw": 59,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2019/12/",
+     "words_raw": 56,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2020/04/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2020/12/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2021/",
+     "words_raw": 58,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2021/04/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2022/02/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2022/09/",
+     "words_raw": 55,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2022/12/",
+     "words_raw": 63,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2023/09/",
+     "words_raw": 54,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2023/11/",
+     "words_raw": 70,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2024/06/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2024/09/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2024/11/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2025/01/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2025/05/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2025/09/",
+     "words_raw": 75,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2025/11/",
+     "words_raw": 66,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/01/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/06/",
+     "words_raw": 57,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/07/",
+     "words_raw": 69,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/08/",
+     "words_raw": 67,
+     "words_rendered": null
+    },
+    {
+     "needs_javascript": true,
+     "reason": "raw HTML looks script built",
+     "rendered": false,
+     "url": "https://www.ruby-lang.org/zh_tw/news/2026/09/",
+     "words_raw": 69,
+     "words_rendered": null
+    }
+   ],
+   "rendered": 138,
+   "rendered_share": 0.0181,
+   "why": {
+    "raw HTML looks script built": 529
+   }
+  }
+ },
+ "state": "done"
+}

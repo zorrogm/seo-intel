@@ -1,0 +1,1477 @@
+{
+ "canonical_problems": [],
+ "noindex_by_header": [],
+ "noindex_by_meta": [],
+ "redirect_chains": [
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://python.org/dev/peps/pep-0392/",
+    "https://www.python.org/dev/peps/pep-0392/",
+    "https://peps.python.org/pep-0392/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://python.org/dev/peps/pep-0398/",
+    "https://www.python.org/dev/peps/pep-0398/",
+    "https://peps.python.org/pep-0398/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://python.org/psf/mission",
+    "https://www.python.org/psf/mission",
+    "https://www.python.org/psf/mission/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://python.org/psf/trademarks",
+    "https://www.python.org/psf/trademarks",
+    "https://www.python.org/psf/trademarks/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq",
+    "https://www.python.org/cgi-bin/moinmoin/PythonSoftwareFoundationLicenseFaq",
+    "https://wiki.python.org/moin"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0361/",
+    "https://www.python.org/dev/peps/pep-0361/",
+    "https://peps.python.org/pep-0361/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0362",
+    "https://www.python.org/dev/peps/pep-0362",
+    "https://peps.python.org/pep-0362"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0380",
+    "https://www.python.org/dev/peps/pep-0380",
+    "https://peps.python.org/pep-0380"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0384",
+    "https://www.python.org/dev/peps/pep-0384",
+    "https://peps.python.org/pep-0384"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0391",
+    "https://www.python.org/dev/peps/pep-0391",
+    "https://peps.python.org/pep-0391"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0393",
+    "https://www.python.org/dev/peps/pep-0393",
+    "https://peps.python.org/pep-0393"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0397",
+    "https://www.python.org/dev/peps/pep-0397",
+    "https://peps.python.org/pep-0397"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0398/",
+    "https://www.python.org/dev/peps/pep-0398/",
+    "https://peps.python.org/pep-0398/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0405",
+    "https://www.python.org/dev/peps/pep-0405",
+    "https://peps.python.org/pep-0405"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0409",
+    "https://www.python.org/dev/peps/pep-0409",
+    "https://peps.python.org/pep-0409"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0411",
+    "https://www.python.org/dev/peps/pep-0411",
+    "https://peps.python.org/pep-0411"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0412",
+    "https://www.python.org/dev/peps/pep-0412",
+    "https://peps.python.org/pep-0412"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0414",
+    "https://www.python.org/dev/peps/pep-0414",
+    "https://peps.python.org/pep-0414"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0418",
+    "https://www.python.org/dev/peps/pep-0418",
+    "https://peps.python.org/pep-0418"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0420",
+    "https://www.python.org/dev/peps/pep-0420",
+    "https://peps.python.org/pep-0420"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0428",
+    "https://www.python.org/dev/peps/pep-0428",
+    "https://peps.python.org/pep-0428"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0429/",
+    "https://www.python.org/dev/peps/pep-0429/",
+    "https://peps.python.org/pep-0429/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0435",
+    "https://www.python.org/dev/peps/pep-0435",
+    "https://peps.python.org/pep-0435"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0436",
+    "https://www.python.org/dev/peps/pep-0436",
+    "https://peps.python.org/pep-0436"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0441",
+    "https://www.python.org/dev/peps/pep-0441",
+    "https://peps.python.org/pep-0441"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0442",
+    "https://www.python.org/dev/peps/pep-0442",
+    "https://peps.python.org/pep-0442"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0443",
+    "https://www.python.org/dev/peps/pep-0443",
+    "https://peps.python.org/pep-0443"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0445",
+    "https://www.python.org/dev/peps/pep-0445",
+    "https://peps.python.org/pep-0445"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0446",
+    "https://www.python.org/dev/peps/pep-0446",
+    "https://peps.python.org/pep-0446"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0448",
+    "https://www.python.org/dev/peps/pep-0448",
+    "https://peps.python.org/pep-0448"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0450",
+    "https://www.python.org/dev/peps/pep-0450",
+    "https://peps.python.org/pep-0450"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0451",
+    "https://www.python.org/dev/peps/pep-0451",
+    "https://peps.python.org/pep-0451"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0453",
+    "https://www.python.org/dev/peps/pep-0453",
+    "https://peps.python.org/pep-0453"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0454",
+    "https://www.python.org/dev/peps/pep-0454",
+    "https://peps.python.org/pep-0454"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0456",
+    "https://www.python.org/dev/peps/pep-0456",
+    "https://peps.python.org/pep-0456"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0461",
+    "https://www.python.org/dev/peps/pep-0461",
+    "https://peps.python.org/pep-0461"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0465",
+    "https://www.python.org/dev/peps/pep-0465",
+    "https://peps.python.org/pep-0465"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0468",
+    "https://www.python.org/dev/peps/pep-0468",
+    "https://peps.python.org/pep-0468"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0471",
+    "https://www.python.org/dev/peps/pep-0471",
+    "https://peps.python.org/pep-0471"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0475",
+    "https://www.python.org/dev/peps/pep-0475",
+    "https://peps.python.org/pep-0475"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0478/",
+    "https://www.python.org/dev/peps/pep-0478/",
+    "https://peps.python.org/pep-0478/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0479",
+    "https://www.python.org/dev/peps/pep-0479",
+    "https://peps.python.org/pep-0479"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0484",
+    "https://www.python.org/dev/peps/pep-0484",
+    "https://peps.python.org/pep-0484"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0485",
+    "https://www.python.org/dev/peps/pep-0485",
+    "https://peps.python.org/pep-0485"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0486",
+    "https://www.python.org/dev/peps/pep-0486",
+    "https://peps.python.org/pep-0486"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0487",
+    "https://www.python.org/dev/peps/pep-0487",
+    "https://peps.python.org/pep-0487"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0488",
+    "https://www.python.org/dev/peps/pep-0488",
+    "https://peps.python.org/pep-0488"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0489",
+    "https://www.python.org/dev/peps/pep-0489",
+    "https://peps.python.org/pep-0489"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0492",
+    "https://www.python.org/dev/peps/pep-0492",
+    "https://peps.python.org/pep-0492"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0494",
+    "https://www.python.org/dev/peps/pep-0494",
+    "https://peps.python.org/pep-0494"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0495",
+    "https://www.python.org/dev/peps/pep-0495",
+    "https://peps.python.org/pep-0495"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0498",
+    "https://www.python.org/dev/peps/pep-0498",
+    "https://peps.python.org/pep-0498"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0506",
+    "https://www.python.org/dev/peps/pep-0506",
+    "https://peps.python.org/pep-0506"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0509",
+    "https://www.python.org/dev/peps/pep-0509",
+    "https://peps.python.org/pep-0509"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0515",
+    "https://www.python.org/dev/peps/pep-0515",
+    "https://peps.python.org/pep-0515"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0519",
+    "https://www.python.org/dev/peps/pep-0519",
+    "https://peps.python.org/pep-0519"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0520",
+    "https://www.python.org/dev/peps/pep-0520",
+    "https://peps.python.org/pep-0520"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0523",
+    "https://www.python.org/dev/peps/pep-0523",
+    "https://peps.python.org/pep-0523"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0524",
+    "https://www.python.org/dev/peps/pep-0524",
+    "https://peps.python.org/pep-0524"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0525",
+    "https://www.python.org/dev/peps/pep-0525",
+    "https://peps.python.org/pep-0525"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0526",
+    "https://www.python.org/dev/peps/pep-0526",
+    "https://peps.python.org/pep-0526"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0528",
+    "https://www.python.org/dev/peps/pep-0528",
+    "https://peps.python.org/pep-0528"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0529",
+    "https://www.python.org/dev/peps/pep-0529",
+    "https://peps.python.org/pep-0529"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0530",
+    "https://www.python.org/dev/peps/pep-0530",
+    "https://peps.python.org/pep-0530"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0537",
+    "https://www.python.org/dev/peps/pep-0537",
+    "https://peps.python.org/pep-0537"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0538",
+    "https://www.python.org/dev/peps/pep-0538",
+    "https://peps.python.org/pep-0538"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0539",
+    "https://www.python.org/dev/peps/pep-0539",
+    "https://peps.python.org/pep-0539"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0540",
+    "https://www.python.org/dev/peps/pep-0540",
+    "https://peps.python.org/pep-0540"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0545",
+    "https://www.python.org/dev/peps/pep-0545",
+    "https://peps.python.org/pep-0545"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0552",
+    "https://www.python.org/dev/peps/pep-0552",
+    "https://peps.python.org/pep-0552"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0553",
+    "https://www.python.org/dev/peps/pep-0553",
+    "https://peps.python.org/pep-0553"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0557",
+    "https://www.python.org/dev/peps/pep-0557",
+    "https://peps.python.org/pep-0557"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0560",
+    "https://www.python.org/dev/peps/pep-0560",
+    "https://peps.python.org/pep-0560"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0562",
+    "https://www.python.org/dev/peps/pep-0562",
+    "https://peps.python.org/pep-0562"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0563",
+    "https://www.python.org/dev/peps/pep-0563",
+    "https://peps.python.org/pep-0563"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0564",
+    "https://www.python.org/dev/peps/pep-0564",
+    "https://peps.python.org/pep-0564"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0565",
+    "https://www.python.org/dev/peps/pep-0565",
+    "https://peps.python.org/pep-0565"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-0567",
+    "https://www.python.org/dev/peps/pep-0567",
+    "https://peps.python.org/pep-0567"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3003",
+    "https://www.python.org/dev/peps/pep-3003",
+    "https://peps.python.org/pep-3003"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3147",
+    "https://www.python.org/dev/peps/pep-3147",
+    "https://peps.python.org/pep-3147"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3148",
+    "https://www.python.org/dev/peps/pep-3148",
+    "https://peps.python.org/pep-3148"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3149",
+    "https://www.python.org/dev/peps/pep-3149",
+    "https://peps.python.org/pep-3149"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3151",
+    "https://www.python.org/dev/peps/pep-3151",
+    "https://peps.python.org/pep-3151"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3154",
+    "https://www.python.org/dev/peps/pep-3154",
+    "https://peps.python.org/pep-3154"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3155",
+    "https://www.python.org/dev/peps/pep-3155",
+    "https://peps.python.org/pep-3155"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/dev/peps/pep-3156",
+    "https://www.python.org/dev/peps/pep-3156",
+    "https://peps.python.org/pep-3156"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/jpython",
+    "https://www.python.org/jpython",
+    "http://www.jython.org/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/jpython/",
+    "https://www.python.org/jpython/",
+    "http://www.jython.org/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/mailman/listinfo/doc-sig",
+    "https://www.python.org/mailman/listinfo/doc-sig",
+    "https://mail.python.org/mailman/listinfo/doc-sig"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/mailman/listinfo/edu-sig",
+    "https://www.python.org/mailman/listinfo/edu-sig",
+    "https://mail.python.org/mailman/listinfo/edu-sig"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/mailman/listinfo/image-sig",
+    "https://www.python.org/mailman/listinfo/image-sig",
+    "https://mail.python.org/mailman/listinfo/image-sig"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/mailman/listinfo/meta-sig",
+    "https://www.python.org/mailman/listinfo/meta-sig",
+    "https://mail.python.org/mailman/listinfo/meta-sig"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/pipermail/doc-sig/",
+    "https://www.python.org/pipermail/doc-sig/",
+    "https://mail.python.org/pipermail/doc-sig/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/pipermail/edu-sig",
+    "https://www.python.org/pipermail/edu-sig",
+    "https://mail.python.org/pipermail/edu-sig"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/pipermail/image-sig/",
+    "https://www.python.org/pipermail/image-sig/",
+    "https://mail.python.org/pipermail/image-sig/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/pipermail/web-sig/",
+    "https://www.python.org/pipermail/web-sig/",
+    "https://mail.python.org/pipermail/web-sig/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/pipermail/xml-sig/",
+    "https://www.python.org/pipermail/xml-sig/",
+    "https://mail.python.org/pipermail/xml-sig/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/psf",
+    "https://www.python.org/psf",
+    "https://www.python.org/psf-landing/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/psf/",
+    "https://www.python.org/psf/",
+    "https://www.python.org/psf-landing/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/psf/forms/sponsor-application/",
+    "https://www.python.org/psf/forms/sponsor-application/",
+    "https://www.python.org/sponsors/application/new/",
+    "https://www.python.org/accounts/login/?next=/sponsors/application/new/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/sigs/distutils-sig/",
+    "https://www.python.org/sigs/distutils-sig/",
+    "https://www.python.org/community/sigs",
+    "https://www.python.org/community/sigs/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "http://www.python.org/~guido/",
+    "https://www.python.org/~guido/",
+    "https://gvanrossum.github.io//"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://python.org/dev/peps/pep-0398/",
+    "https://www.python.org/dev/peps/pep-0398/",
+    "https://peps.python.org/pep-0398/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://python.org/downloads",
+    "https://www.python.org/downloads",
+    "http://www.python.org/downloads/",
+    "https://www.python.org/downloads/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.0.1",
+    "https://www.python.org/download/releases/3.0.1/",
+    "https://www.python.org/downloads/release/python-301/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.1.1",
+    "https://www.python.org/download/releases/3.1.1/",
+    "https://www.python.org/downloads/release/python-311/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.1.2",
+    "https://www.python.org/download/releases/3.1.2/",
+    "https://www.python.org/downloads/release/python-312/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.1.4",
+    "https://www.python.org/download/releases/3.1.4/",
+    "https://www.python.org/downloads/release/python-314/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.1.5",
+    "https://www.python.org/download/releases/3.1.5/",
+    "https://www.python.org/downloads/release/python-315/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.2.5",
+    "https://www.python.org/download/releases/3.2.5/",
+    "https://www.python.org/downloads/release/python-325/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/releases/3.3.5",
+    "https://www.python.org/download/releases/3.3.5/",
+    "https://www.python.org/downloads/release/python-335/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/download/source",
+    "https://www.python.org/download/source/",
+    "https://www.python.org/downloads/source/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/m/about/success/mmtk/groel_deformation.tiff",
+    "https://www.python.org/m/about/success/mmtk/groel_deformation.tiff/",
+    "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/about/success/mmtk/groel_deformation.tiff"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/m/about/success/mmtk/lysozyme_with_solvent.tiff",
+    "https://www.python.org/m/about/success/mmtk/lysozyme_with_solvent.tiff/",
+    "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/about/success/mmtk/lysozyme_with_solvent.tiff"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/m/files/PSF1023.html",
+    "https://www.python.org/m/files/PSF1023.html/",
+    "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/PSF1023.html"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/m/files/f.py",
+    "https://www.python.org/m/files/f.py/",
+    "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/f.py"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/m/files/g.py",
+    "https://www.python.org/m/files/g.py/",
+    "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/g.py"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/news/security/PSF-2005-001",
+    "http://www.python.org/blogs/",
+    "https://www.python.org/blogs/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/news/security/PSF-2005-001/",
+    "http://www.python.org/blogs/",
+    "https://www.python.org/blogs/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/news/security/PSF-2006-001/",
+    "http://www.python.org/blogs/",
+    "https://www.python.org/blogs/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/psf/sponsorship-new",
+    "https://www.python.org/psf/sponsorship",
+    "https://www.python.org/psf/sponsorship/"
+   ]
+  },
+  {
+   "kinds": [
+    "http",
+    "http"
+   ],
+   "loop": false,
+   "urls": [
+    "https://www.python.org/psf/sponsorship-new/",
+    "https://www.python.org/psf/sponsorship",
+    "https://www.python.org/psf/sponsorship/"
+   ]
+  }
+ ]
+}

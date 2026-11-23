@@ -1,0 +1,194 @@
+[
+ {
+  "competitor_pages": 423,
+  "competitor_words": 88239,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+   "https://www.ruby-lang.org/en/news/2010/01/10/webrick-escape-sequence-injection/",
+   "https://www.ruby-lang.org/en/news/2013/02/08/ruby-2-0-0-rc2-is-released/"
+  ],
+  "target_pages": 1,
+  "target_words": 11,
+  "topic": [
+   "released",
+   "nov",
+   "posted"
+  ]
+ },
+ {
+  "competitor_pages": 218,
+  "competitor_words": 30319,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2013/",
+   "https://www.ruby-lang.org/en/news/2014/",
+   "https://www.ruby-lang.org/en/news/2005/"
+  ],
+  "target_pages": 1,
+  "target_words": 2658,
+  "topic": [
+   "archives",
+   "back",
+   "year"
+  ]
+ },
+ {
+  "competitor_pages": 22,
+  "competitor_words": 18864,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2023/12/25/ruby-3-3-0-released/",
+   "https://www.ruby-lang.org/en/news/2023/12/11/ruby-3-3-0-rc1-released/",
+   "https://www.ruby-lang.org/en/news/2023/11/12/ruby-3-3-0-preview3-released/"
+  ],
+  "target_pages": 0,
+  "target_words": 0,
+  "topic": [
+   "threads",
+   "jit",
+   "performance"
+  ]
+ },
+ {
+  "competitor_pages": 11,
+  "competitor_words": 16177,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2025/12/25/ruby-4-0-0-released/",
+   "https://www.ruby-lang.org/en/news/2025/12/18/ruby-4-0-0-preview3-released/",
+   "https://www.ruby-lang.org/en/news/2020/12/25/ruby-3-0-0-released/"
+  ],
+  "target_pages": 0,
+  "target_words": 0,
+  "topic": [
+   "ractor",
+   "ractors",
+   "newobj"
+  ]
+ },
+ {
+  "competitor_pages": 6,
+  "competitor_words": 10009,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2022/12/25/ruby-3-2-0-released/",
+   "https://www.ruby-lang.org/en/news/2022/12/06/ruby-3-2-0-rc1-released/",
+   "https://www.ruby-lang.org/en/news/2022/11/11/ruby-3-2-0-preview3-released/"
+  ],
+  "target_pages": 1,
+  "target_words": 50,
+  "topic": [
+   "wasi",
+   "webassembly",
+   "args"
+  ]
+ },
+ {
+  "competitor_pages": 6,
+  "competitor_words": 8543,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2019/11/23/ruby-2-7-0-preview3-released/",
+   "https://www.ruby-lang.org/en/news/2019/12/17/ruby-2-7-0-rc1-released/",
+   "https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/"
+  ],
+  "target_pages": 0,
+  "target_words": 0,
+  "topic": [
+   "42",
+   "emitted",
+   "foo"
+  ]
+ },
+ {
+  "competitor_pages": 12,
+  "competitor_words": 3555,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2018/11/29/fukuoka-ruby-award-2019/",
+   "https://www.ruby-lang.org/en/news/2017/12/27/fukuoka-ruby-award-2018/",
+   "https://www.ruby-lang.org/en/news/2013/11/21/fukuoka-ruby-award-2014/"
+  ],
+  "target_pages": 1,
+  "target_words": 138,
+  "topic": [
+   "competition",
+   "fukuoka",
+   "entries"
+  ]
+ },
+ {
+  "competitor_pages": 8,
+  "competitor_words": 3312,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2008/08/08/multiple-vulnerabilities-in-ruby/",
+   "https://www.ruby-lang.org/en/news/2013/02/22/rexml-dos-2013-02-22/",
+   "https://www.ruby-lang.org/en/news/2008/08/23/dos-vulnerability-in-rexml/"
+  ],
+  "target_pages": 0,
+  "target_words": 0,
+  "topic": [
+   "entity",
+   "expansion",
+   "dl"
+  ]
+ },
+ {
+  "competitor_pages": 7,
+  "competitor_words": 2896,
+  "examples": [
+   "https://www.ruby-lang.org/en/security/",
+   "https://www.ruby-lang.org/en/news/2019/10/01/nul-injection-file-fnmatch-cve-2019-15845/",
+   "https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-4-8-released/"
+  ],
+  "target_pages": 0,
+  "target_words": 0,
+  "topic": [
+   "vulnerability",
+   "2019",
+   "injection"
+  ]
+ },
+ {
+  "competitor_pages": 18,
+  "competitor_words": 2043,
+  "examples": [
+   "https://www.ruby-lang.org/en/documentation/quickstart/3/",
+   "https://www.ruby-lang.org/en/documentation/quickstart/2/",
+   "https://www.ruby-lang.org/bg/examples/greeter/"
+  ],
+  "target_pages": 2,
+  "target_words": 18,
+  "topic": [
+   "greeter",
+   "name",
+   "salute"
+  ]
+ },
+ {
+  "competitor_pages": 32,
+  "competitor_words": 1816,
+  "examples": [
+   "https://www.ruby-lang.org/en/",
+   "https://www.ruby-lang.org/bg/examples/cities/",
+   "https://www.ruby-lang.org/en/examples/cities/"
+  ],
+  "target_pages": 0,
+  "target_words": 0,
+  "topic": [
+   "puts",
+   "say",
+   "sub"
+  ]
+ },
+ {
+  "competitor_pages": 7,
+  "competitor_words": 1721,
+  "examples": [
+   "https://www.ruby-lang.org/en/news/2012/",
+   "https://www.ruby-lang.org/en/news/2012/04/21/ruby-1-9-2-p320-is-released/",
+   "https://www.ruby-lang.org/en/news/2012/10/12/cve-2012-4464-cve-2012-4466/"
+  ],
+  "target_pages": 2,
+  "target_words": 30,
+  "topic": [
+   "2012",
+   "archives",
+   "back"
+  ]
+ }
+]
