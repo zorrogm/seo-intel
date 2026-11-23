@@ -202,9 +202,10 @@ SOFT_404_PROBE_OVERLAP = 0.80
 SOFT_404_EMPTY_WORDS = 3
 SOFT_404_PHRASE_MAX_WORDS = 150
 SOFT_404_PHRASES = (
-    "page not found", "not found", "404", "doesn't exist", "does not exist",
-    "no longer available", "no longer exists", "cannot be found", "can't be found",
-    "nothing found", "no results found", "पृष्ठ नहीं मिला", "नहीं मिला", "उपलब्ध नहीं",
+    "page not found", "404", "page doesn't exist", "page does not exist",
+    "page no longer exists", "page is no longer available", "page cannot be found",
+    "page can't be found", "nothing found", "no results found",
+    "पृष्ठ नहीं मिला", "पेज नहीं मिला",
 )
 
 # Next day rerun

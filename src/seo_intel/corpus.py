@@ -24,6 +24,7 @@ class Page:
     x_robots: str = ""
     soft_404: str = ""
     lang: str = ""
+    script_built: bool = False
     total_words: int = 0
     title: str = ""
     h1: str = ""
@@ -74,14 +75,21 @@ def _fill(page: Page, data: Dict, template) -> None:
     page.meta_robots = data["meta_robots"]
     page.hreflang = data["hreflang"]
     main_blocks = []
+    seen_links = set()
     for block in data["blocks"]:
         in_content = not is_template(block, template)
         page.total_words += len(tokenize(block[2]))
         if in_content and block[2]:
             main_blocks.append(block[2])
         for target, anchor in block[3]:
-            page.links.append((target, anchor, in_content))
+            # Menu link text is never used later
+            link = (sys.intern(target), sys.intern(anchor) if in_content else "", in_content)
+            if link not in seen_links:
+                seen_links.add(link)
+                page.links.append(link)
     page.lang = data.get("lang", "")
+    heavy = data.get("script_bytes", 0) >= config.RENDER_MIN_SCRIPT_BYTES
+    page.script_built = heavy or data.get("external_scripts", 0) >= 1
     page.sentences = [s for b in main_blocks for s in sentences(b)]
     # Shared word objects keep memory low
     page.tokens = [sys.intern(t) for t in tokenize("\n".join(main_blocks))]

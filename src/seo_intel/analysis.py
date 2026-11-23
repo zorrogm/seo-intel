@@ -85,6 +85,8 @@ def analyse_pages(ours: List[Page], theirs: List[Page], target_site: str,
     docs = [topics.weighted_tokens(pages[i], anchors.get(i, ())) for i in rows]
     vectors, top_terms, idf, sparse = topics.build_vectors(docs)
     heads = topics.head_vectors(pages, rows, anchors, idf)
+    # The raw word counts are large and done with
+    del docs
     labels = topics.cluster(vectors, seed)
     judged = [intent.rule_intent(p, anchors.get(i, ())) for i, p in enumerate(pages)]
     intents = [label for label, _unsure in judged]

@@ -13,7 +13,8 @@ def _says_missing(text: str) -> bool:
 def soft_404_reason(page, probe) -> str:
     """Why a page is a soft 404, or empty."""
     if page.total_words <= config.SOFT_404_EMPTY_WORDS:
-        return "page has no text"
+        # Empty but script driven: needs rendering, not missing
+        return "" if page.script_built else "page has no text"
     short = page.word_count <= config.SOFT_404_PHRASE_MAX_WORDS
     if short and (_says_missing(page.title) or _says_missing(page.h1)):
         return "title or heading says not found"
