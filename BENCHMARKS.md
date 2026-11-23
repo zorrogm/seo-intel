@@ -116,4 +116,17 @@ The ablation table for Part C is in DECISIONS.md.
 | Tests in the container | all pass |
 | Tests on the laptop | 69 pass in about 13 s |
 
+## Final code in a clean container
+
+The full container run above used an earlier commit. The final code was
+checked the same way with a 6 minute crawl of pair 3 (4 CPUs, 2 GB cap,
+fresh clone, commit `1a53676`, which is the last code change):
+
+| Measure | Result |
+|---|---|
+| Tests | 69 pass |
+| First run | 1,746 pages, 25 actions, plan written by the agent, 13 min 26 s, tool peak 231 MB |
+| Second run | 12.9 s, 12 files byte identical |
+| Whole container peak | 1,312 MB, no out of memory events |
+
 Raw results are in `benchmarks/results/`.

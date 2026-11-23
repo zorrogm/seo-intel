@@ -1,0 +1,55 @@
+{
+ "folder": "www.djangoproject.com__fastapi.tiangolo.com",
+ "sites": {
+  "djangoproject.com": {
+   "urls_known": 1428,
+   "pages_fetched": 702,
+   "indexable": 700,
+   "soft_404": 0,
+   "blocked_by_robots": 0,
+   "trap_urls_refused": 0,
+   "trap_patterns": 0,
+   "rendered_share": 0.0029,
+   "changed_by_rendering": 0,
+   "flagged_not_rendered": 0
+  },
+  "fastapi.tiangolo.com": {
+   "urls_known": 2029,
+   "pages_fetched": 1044,
+   "indexable": 1039,
+   "soft_404": 0,
+   "blocked_by_robots": 0,
+   "trap_urls_refused": 0,
+   "trap_patterns": 0,
+   "rendered_share": 0.0462,
+   "changed_by_rendering": 0,
+   "flagged_not_rendered": 0
+  }
+ },
+ "cannibalization_groups": 27,
+ "gaps": 7,
+ "near_duplicate_pairs": 10,
+ "new_links": 40,
+ "priority_pagerank_before": 0.01486121,
+ "priority_pagerank_after": 0.15084202,
+ "actions": {
+  "retarget_intent": 8,
+  "add_internal_link": 7,
+  "create_page": 7,
+  "canonicalize": 2,
+  "merge_301": 1
+ },
+ "claims_in_plan": 227,
+ "llm": {
+  "cached_calls": 7,
+  "calls": 0,
+  "cost_usd": 0.0,
+  "input_tokens": 0,
+  "last_error": "",
+  "max_prompt_tokens": 0,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 0,
+  "plan_written_by": "agent"
+ },
+ "rejections": 0
+}
